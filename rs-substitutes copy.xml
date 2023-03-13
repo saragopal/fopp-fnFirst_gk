@@ -1,15 +1,18 @@
+<!DOCTYPE substitutes [
+    <!ENTITY nbsp "entity-value">
+]>
 <substitutes><substitute xml:id='se_ac7_5_1'>
 <div data-component="showeval" data-question_label="8.5.3" class="runestone explainer" id="se_ac7_5_1" data-tracemode="true" >
     <button class="btn btn-success" id="se_ac7_5_1_nextStep">Next Step</button>
     <button class="btn btn-default" id ="se_ac7_5_1_reset">Reset</button>
-    <div class="evalCont" style="background-color: #FDFDFD;">5 * 3 > 10 and 4 + 6 == 11<br />
+    <div class="evalCont" style="background-color: #FDFDFD;">5 * 3 &gt; 10 and 4 + 6 == 11<br />
 </div>
     <div class="evalCont"></div>
     <script>
     if (typeof window.raw_steps === "undefined") {
     window.raw_steps = {};
     }
-    raw_steps["se_ac7_5_1"] = ['\\{\\{5 * 3}}\\{\\{15}} > 10 and 4 + 6 == 11', '\\{\\{15 > 10}}\\{\\{True}} and 4 + 6 == 11', 'True and \\{\\{4 + 6}}\\{\\{10}} == 11', 'True and \\{\\{10 == 11}}\\{\\{False}}', '\\{\\{True and False}}\\{\\{False}}'];
+    raw_steps["se_ac7_5_1"] = ['\\{\\{5 * 3}}\\{\\{15}} &gt; 10 and 4 + 6 == 11', '\\{\\{15 &gt; 10}}\\{\\{True}} and 4 + 6 == 11', 'True and \\{\\{4 + 6}}\\{\\{10}} == 11', 'True and \\{\\{10 == 11}}\\{\\{False}}', '\\{\\{True and False}}\\{\\{False}}'];
     </script>
 </div>
 </substitute><substitute xml:id='eval10_5_4'>
@@ -51,7 +54,7 @@ hello2("Nick")<br />
 </div>
 </substitute><substitute xml:id='LearningZone_14a'>
 <div class="runestone ">
-<ul data-component="poll" id=LearningZone_14a  class='' data-results='instructor' data-question_label="4" >
+<ul data-component="poll" id='LearningZone_14a'  class='' data-results='instructor' data-question_label="4" >
 During this project I was primarily in my...
 
 <li>1. Comfort Zone</li>
@@ -61,7 +64,7 @@ During this project I was primarily in my...
 <li>3. Panic Zone</li>
 </ul></div></substitute><substitute xml:id='Time_14a'>
 <div class="runestone ">
-<ul data-component="poll" id=Time_14a  class='' data-results='instructor' data-question_label="5" >
+<ul data-component="poll" id='Time_14a'  class='' data-results='instructor' data-question_label="5" >
 Completing this project took...
 
 <li>1. Very little time</li>
@@ -71,7 +74,7 @@ Completing this project took...
 <li>3. More time than is reasonable</li>
 </ul></div></substitute><substitute xml:id='TaskValue_14a'>
 <div class="runestone ">
-<ul data-component="poll" id=TaskValue_14a  class='' data-results='instructor' data-question_label="6" >
+<ul data-component="poll" id='TaskValue_14a'  class='' data-results='instructor' data-question_label="6" >
 Based on my own interests and needs, the things taught in this project...
 
 <li>1. Don't seem worth learning</li>
@@ -81,7 +84,7 @@ Based on my own interests and needs, the things taught in this project...
 <li>3. Are definitely worth learning</li>
 </ul></div></substitute><substitute xml:id='Expectancy_14a'>
 <div class="runestone ">
-<ul data-component="poll" id=Expectancy_14a  class='' data-results='instructor' data-question_label="7" >
+<ul data-component="poll" id='Expectancy_14a' class='' data-results='instructor' data-question_label="7" >
 For me to master the things taught in this project feels...
 
 <li>1. Definitely within reach</li>
@@ -91,7 +94,7 @@ For me to master the things taught in this project feels...
 <li>3. Out of reach no matter how hard I try</li>
 </ul></div></substitute><substitute xml:id='plants_poll'>
 <div class="runestone ">
-<ul data-component="poll" id=plants_poll  class='' data-results='instructor' data-question_label="3" >
+<ul data-component="poll" id='plants_poll'  class='' data-results='instructor' data-question_label="3" >
 After visualizing the data how many different species do you think are represented in the data?
 
 <li>1</li>
@@ -105,7 +108,7 @@ After visualizing the data how many different species do you think are represent
 <li>5</li>
 </ul></div></substitute><substitute xml:id='LearningZone_10a'>
 <div class="runestone ">
-<ul data-component="poll" id=LearningZone_10a  class='' data-results='instructor' data-question_label="8" >
+<ul data-component="poll" id='LearningZone_10a'  class='' data-results='instructor' data-question_label="8" >
 During this project I was primarily in my...
 
 <li>1. Comfort Zone</li>
@@ -115,7 +118,7 @@ During this project I was primarily in my...
 <li>3. Panic Zone</li>
 </ul></div></substitute><substitute xml:id='Time_10a'>
 <div class="runestone ">
-<ul data-component="poll" id=Time_10a  class='' data-results='instructor' data-question_label="9" >
+<ul data-component="poll" id='Time_10a'  class='' data-results='instructor' data-question_label="9" >
 Completing this project took...
 
 <li>1. Very little time</li>
@@ -125,7 +128,7 @@ Completing this project took...
 <li>3. More time than is reasonable</li>
 </ul></div></substitute><substitute xml:id='TaskValue_10a'>
 <div class="runestone ">
-<ul data-component="poll" id=TaskValue_10a  class='' data-results='instructor' data-question_label="10" >
+<ul data-component="poll" id='TaskValue_10a'  class='' data-results='instructor' data-question_label="10" >
 Based on my own interests and needs, the things taught in this project...
 
 <li>1. Don't seem worth learning</li>
@@ -135,7 +138,7 @@ Based on my own interests and needs, the things taught in this project...
 <li>3. Are definitely worth learning</li>
 </ul></div></substitute><substitute xml:id='Expectancy_10a'>
 <div class="runestone ">
-<ul data-component="poll" id=Expectancy_10a  class='' data-results='instructor' data-question_label="11" >
+<ul data-component="poll" id='Expectancy_10a'  class='' data-results='instructor' data-question_label="11" >
 For me to master the things taught in this project feels...
 
 <li>1. Definitely within reach</li>
@@ -145,7 +148,7 @@ For me to master the things taught in this project feels...
 <li>3. Out of reach no matter how hard I try</li>
 </ul></div></substitute><substitute xml:id='LearningZone_5'>
 <div class="runestone ">
-<ul data-component="poll" id=LearningZone_5  class='' data-results='instructor' data-question_label="6" >
+<ul data-component="poll" id='LearningZone_5'  class='' data-results='instructor' data-question_label="6" >
 During this project I was primarily in my...
 
 <li>1. Comfort Zone</li>
@@ -155,7 +158,7 @@ During this project I was primarily in my...
 <li>3. Panic Zone</li>
 </ul></div></substitute><substitute xml:id='Time_5'>
 <div class="runestone ">
-<ul data-component="poll" id=Time_5  class='' data-results='instructor' data-question_label="7" >
+<ul data-component="poll" id='Time_5'  class='' data-results='instructor' data-question_label="7" >
 Completing this project took...
 
 <li>1. Very little time</li>
@@ -165,7 +168,7 @@ Completing this project took...
 <li>3. More time than is reasonable</li>
 </ul></div></substitute><substitute xml:id='TaskValue_5'>
 <div class="runestone ">
-<ul data-component="poll" id=TaskValue_5  class='' data-results='instructor' data-question_label="8" >
+<ul data-component="poll" id='TaskValue_5'  class='' data-results='instructor' data-question_label="8" >
 Based on my own interests and needs, the things taught in this project...
 
 <li>1. Don't seem worth learning</li>
@@ -175,7 +178,7 @@ Based on my own interests and needs, the things taught in this project...
 <li>3. Are definitely worth learning</li>
 </ul></div></substitute><substitute xml:id='Expectancy_5'>
 <div class="runestone ">
-<ul data-component="poll" id=Expectancy_5  class='' data-results='instructor' data-question_label="9" >
+<ul data-component="poll" id='Expectancy_5'  class='' data-results='instructor' data-question_label="9" >
 For me to master the things taught in this project feels...
 
 <li>1. Definitely within reach</li>
@@ -185,7 +188,7 @@ For me to master the things taught in this project feels...
 <li>3. Out of reach no matter how hard I try</li>
 </ul></div></substitute><substitute xml:id='LearningZone_9a'>
 <div class="runestone ">
-<ul data-component="poll" id=LearningZone_9a  class='' data-results='instructor' data-question_label="11" >
+<ul data-component="poll" id='LearningZone_9a'  class='' data-results='instructor' data-question_label="11" >
 During this project I was primarily in my...
 
 <li>1. Comfort Zone</li>
@@ -195,7 +198,7 @@ During this project I was primarily in my...
 <li>3. Panic Zone</li>
 </ul></div></substitute><substitute xml:id='Time_9a'>
 <div class="runestone ">
-<ul data-component="poll" id=Time_9a  class='' data-results='instructor' data-question_label="12" >
+<ul data-component="poll" id='Time_9a'  class='' data-results='instructor' data-question_label="12" >
 Completing this project took...
 
 <li>1. Very little time</li>
@@ -205,7 +208,7 @@ Completing this project took...
 <li>3. More time than is reasonable</li>
 </ul></div></substitute><substitute xml:id='TaskValue_9a'>
 <div class="runestone ">
-<ul data-component="poll" id=TaskValue_9a  class='' data-results='instructor' data-question_label="13" >
+<ul data-component="poll" id='TaskValue_9a'  class='' data-results='instructor' data-question_label="13" >
 Based on my own interests and needs, the things taught in this project...
 
 <li>1. Don't seem worth learning</li>
@@ -215,7 +218,7 @@ Based on my own interests and needs, the things taught in this project...
 <li>3. Are definitely worth learning</li>
 </ul></div></substitute><substitute xml:id='Expectancy_9a'>
 <div class="runestone ">
-<ul data-component="poll" id=Expectancy_9a  class='' data-results='instructor' data-question_label="14" >
+<ul data-component="poll" id='Expectancy_9a'  class='' data-results='instructor' data-question_label="14" >
 For me to master the things taught in this project feels...
 
 <li>1. Definitely within reach</li>
@@ -225,7 +228,7 @@ For me to master the things taught in this project feels...
 <li>3. Out of reach no matter how hard I try</li>
 </ul></div></substitute><substitute xml:id='LearningZone_8b'>
 <div class="runestone ">
-<ul data-component="poll" id=LearningZone_8b  class='' data-results='instructor' data-question_label="11" >
+<ul data-component="poll" id='LearningZone_8b'  class='' data-results='instructor' data-question_label="11" >
 During this project I was primarily in my...
 
 <li>1. Comfort Zone</li>
@@ -235,7 +238,7 @@ During this project I was primarily in my...
 <li>3. Panic Zone</li>
 </ul></div></substitute><substitute xml:id='Time_8b'>
 <div class="runestone ">
-<ul data-component="poll" id=Time_8b  class='' data-results='instructor' data-question_label="12" >
+<ul data-component="poll" id='Time_8b'  class='' data-results='instructor' data-question_label="12" >
 Completing this project took...
 
 <li>1. Very little time</li>
@@ -245,7 +248,7 @@ Completing this project took...
 <li>3. More time than is reasonable</li>
 </ul></div></substitute><substitute xml:id='TaskValue_8b'>
 <div class="runestone ">
-<ul data-component="poll" id=TaskValue_8b  class='' data-results='instructor' data-question_label="13" >
+<ul data-component="poll" id='TaskValue_8b'  class='' data-results='instructor' data-question_label="13" >
 Based on my own interests and needs, the things taught in this project...
 
 <li>1. Don't seem worth learning</li>
@@ -255,7 +258,7 @@ Based on my own interests and needs, the things taught in this project...
 <li>3. Are definitely worth learning</li>
 </ul></div></substitute><substitute xml:id='Expectancy_8b'>
 <div class="runestone ">
-<ul data-component="poll" id=Expectancy_8b  class='' data-results='instructor' data-question_label="14" >
+<ul data-component="poll" id='Expectancy_8b'  class='' data-results='instructor' data-question_label="14" >
 For me to master the things taught in this project feels...
 
 <li>1. Definitely within reach</li>
@@ -265,7 +268,7 @@ For me to master the things taught in this project feels...
 <li>3. Out of reach no matter how hard I try</li>
 </ul></div></substitute><substitute xml:id='LearningZone_9b'>
 <div class="runestone ">
-<ul data-component="poll" id=LearningZone_9b  class='' data-results='instructor' data-question_label="14" >
+<ul data-component="poll" id='LearningZone_9b'  class='' data-results='instructor' data-question_label="14" >
 During this project I was primarily in my...
 
 <li>1. Comfort Zone</li>
@@ -275,7 +278,7 @@ During this project I was primarily in my...
 <li>3. Panic Zone</li>
 </ul></div></substitute><substitute xml:id='Time_9b'>
 <div class="runestone ">
-<ul data-component="poll" id=Time_9b  class='' data-results='instructor' data-question_label="15" >
+<ul data-component="poll" id='Time_9b'  class='' data-results='instructor' data-question_label="15" >
 Completing this project took...
 
 <li>1. Very little time</li>
@@ -285,7 +288,7 @@ Completing this project took...
 <li>3. More time than is reasonable</li>
 </ul></div></substitute><substitute xml:id='TaskValue_9b'>
 <div class="runestone ">
-<ul data-component="poll" id=TaskValue_9b  class='' data-results='instructor' data-question_label="16" >
+<ul data-component="poll" id='TaskValue_9b'  class='' data-results='instructor' data-question_label="16" >
 Based on my own interests and needs, the things taught in this project...
 
 <li>1. Don't seem worth learning</li>
@@ -295,7 +298,7 @@ Based on my own interests and needs, the things taught in this project...
 <li>3. Are definitely worth learning</li>
 </ul></div></substitute><substitute xml:id='Expectancy_9b'>
 <div class="runestone ">
-<ul data-component="poll" id=Expectancy_9b  class='' data-results='instructor' data-question_label="17" >
+<ul data-component="poll" id='Expectancy_9b'  class='' data-results='instructor' data-question_label="17" >
 For me to master the things taught in this project feels...
 
 <li>1. Definitely within reach</li>
@@ -305,7 +308,7 @@ For me to master the things taught in this project feels...
 <li>3. Out of reach no matter how hard I try</li>
 </ul></div></substitute><substitute xml:id='LearningZone_12c'>
 <div class="runestone ">
-<ul data-component="poll" id=LearningZone_12c  class='' data-results='instructor' data-question_label="6" >
+<ul data-component="poll" id='LearningZone_12c'  class='' data-results='instructor' data-question_label="6" >
 During this project I was primarily in my...
 
 <li>1. Comfort Zone</li>
@@ -315,7 +318,7 @@ During this project I was primarily in my...
 <li>3. Panic Zone</li>
 </ul></div></substitute><substitute xml:id='Time_12c'>
 <div class="runestone ">
-<ul data-component="poll" id=Time_12c  class='' data-results='instructor' data-question_label="7" >
+<ul data-component="poll" id='Time_12c'  class='' data-results='instructor' data-question_label="7" >
 Completing this project took...
 
 <li>1. Very little time</li>
@@ -325,7 +328,7 @@ Completing this project took...
 <li>3. More time than is reasonable</li>
 </ul></div></substitute><substitute xml:id='TaskValue_12c'>
 <div class="runestone ">
-<ul data-component="poll" id=TaskValue_12c  class='' data-results='instructor' data-question_label="8" >
+<ul data-component="poll" id='TaskValue_12c'  class='' data-results='instructor' data-question_label="8" >
 Based on my own interests and needs, the things taught in this project...
 
 <li>1. Don't seem worth learning</li>
@@ -335,7 +338,7 @@ Based on my own interests and needs, the things taught in this project...
 <li>3. Are definitely worth learning</li>
 </ul></div></substitute><substitute xml:id='Expectancy_12c'>
 <div class="runestone ">
-<ul data-component="poll" id=Expectancy_12c  class='' data-results='instructor' data-question_label="9" >
+<ul data-component="poll" id='Expectancy_12c'  class='' data-results='instructor' data-question_label="9" >
 For me to master the things taught in this project feels...
 
 <li>1. Definitely within reach</li>
@@ -345,7 +348,7 @@ For me to master the things taught in this project feels...
 <li>3. Out of reach no matter how hard I try</li>
 </ul></div></substitute><substitute xml:id='LearningZone_2'>
 <div class="runestone ">
-<ul data-component="poll" id=LearningZone_2  class='' data-results='instructor' data-question_label="4" >
+<ul data-component="poll" id='LearningZone_2'  class='' data-results='instructor' data-question_label="4" >
 During this project I was primarily in my...
 
 <li>1. Comfort Zone</li>
@@ -355,7 +358,7 @@ During this project I was primarily in my...
 <li>3. Panic Zone</li>
 </ul></div></substitute><substitute xml:id='Time_2'>
 <div class="runestone ">
-<ul data-component="poll" id=Time_2  class='' data-results='instructor' data-question_label="5" >
+<ul data-component="poll" id='Time_2'  class='' data-results='instructor' data-question_label="5" >
 Completing this project took...
 
 <li>1. Very little time</li>
@@ -365,7 +368,7 @@ Completing this project took...
 <li>3. More time than is reasonable</li>
 </ul></div></substitute><substitute xml:id='TaskValue_2'>
 <div class="runestone ">
-<ul data-component="poll" id=TaskValue_2  class='' data-results='instructor' data-question_label="6" >
+<ul data-component="poll" id='TaskValue_2'  class='' data-results='instructor' data-question_label="6" >
 Based on my own interests and needs, the things taught in this project...
 
 <li>1. Don't seem worth learning</li>
@@ -375,7 +378,7 @@ Based on my own interests and needs, the things taught in this project...
 <li>3. Are definitely worth learning</li>
 </ul></div></substitute><substitute xml:id='Expectancy_2'>
 <div class="runestone ">
-<ul data-component="poll" id=Expectancy_2  class='' data-results='instructor' data-question_label="7" >
+<ul data-component="poll" id='Expectancy_2'  class='' data-results='instructor' data-question_label="7" >
 For me to master the things taught in this project feels...
 
 <li>1. Definitely within reach</li>
@@ -385,7 +388,7 @@ For me to master the things taught in this project feels...
 <li>3. Out of reach no matter how hard I try</li>
 </ul></div></substitute><substitute xml:id='LearningZone_8a'>
 <div class="runestone ">
-<ul data-component="poll" id=LearningZone_8a  class='' data-results='instructor' data-question_label="8" >
+<ul data-component="poll" id='LearningZone_8a'  class='' data-results='instructor' data-question_label="8" >
 During this project I was primarily in my...
 
 <li>1. Comfort Zone</li>
@@ -395,7 +398,7 @@ During this project I was primarily in my...
 <li>3. Panic Zone</li>
 </ul></div></substitute><substitute xml:id='Time_8a'>
 <div class="runestone ">
-<ul data-component="poll" id=Time_8a  class='' data-results='instructor' data-question_label="9" >
+<ul data-component="poll" id='Time_8a'  class='' data-results='instructor' data-question_label="9" >
 Completing this project took...
 
 <li>1. Very little time</li>
@@ -405,7 +408,7 @@ Completing this project took...
 <li>3. More time than is reasonable</li>
 </ul></div></substitute><substitute xml:id='TaskValue_8a'>
 <div class="runestone ">
-<ul data-component="poll" id=TaskValue_8a  class='' data-results='instructor' data-question_label="10" >
+<ul data-component="poll" id='TaskValue_8a'  class='' data-results='instructor' data-question_label="10" >
 Based on my own interests and needs, the things taught in this project...
 
 <li>1. Don't seem worth learning</li>
@@ -415,7 +418,7 @@ Based on my own interests and needs, the things taught in this project...
 <li>3. Are definitely worth learning</li>
 </ul></div></substitute><substitute xml:id='Expectancy_8a'>
 <div class="runestone ">
-<ul data-component="poll" id=Expectancy_8a  class='' data-results='instructor' data-question_label="11" >
+<ul data-component="poll" id='Expectancy_8a'  class='' data-results='instructor' data-question_label="11" >
 For me to master the things taught in this project feels...
 
 <li>1. Definitely within reach</li>
@@ -425,7 +428,7 @@ For me to master the things taught in this project feels...
 <li>3. Out of reach no matter how hard I try</li>
 </ul></div></substitute><substitute xml:id='LearningZone_7'>
 <div class="runestone ">
-<ul data-component="poll" id=LearningZone_7  class='' data-results='instructor' data-question_label="13" >
+<ul data-component="poll" id='LearningZone_7'  class='' data-results='instructor' data-question_label="13" >
 During this project I was primarily in my...
 
 <li>1. Comfort Zone</li>
@@ -435,7 +438,7 @@ During this project I was primarily in my...
 <li>3. Panic Zone</li>
 </ul></div></substitute><substitute xml:id='Time_7'>
 <div class="runestone ">
-<ul data-component="poll" id=Time_7  class='' data-results='instructor' data-question_label="14" >
+<ul data-component="poll" id='Time_7'  class='' data-results='instructor' data-question_label="14" >
 Completing this project took...
 
 <li>1. Very little time</li>
@@ -445,7 +448,7 @@ Completing this project took...
 <li>3. More time than is reasonable</li>
 </ul></div></substitute><substitute xml:id='TaskValue_7'>
 <div class="runestone ">
-<ul data-component="poll" id=TaskValue_7  class='' data-results='instructor' data-question_label="15" >
+<ul data-component="poll" id='TaskValue_7'  class='' data-results='instructor' data-question_label="15" >
 Based on my own interests and needs, the things taught in this project...
 
 <li>1. Don't seem worth learning</li>
@@ -455,7 +458,7 @@ Based on my own interests and needs, the things taught in this project...
 <li>3. Are definitely worth learning</li>
 </ul></div></substitute><substitute xml:id='Expectancy_7'>
 <div class="runestone ">
-<ul data-component="poll" id=Expectancy_7  class='' data-results='instructor' data-question_label="16" >
+<ul data-component="poll" id='Expectancy_7'  class='' data-results='instructor' data-question_label="16" >
 For me to master the things taught in this project feels...
 
 <li>1. Definitely within reach</li>
@@ -465,7 +468,7 @@ For me to master the things taught in this project feels...
 <li>3. Out of reach no matter how hard I try</li>
 </ul></div></substitute><substitute xml:id='LearningZone_12a'>
 <div class="runestone ">
-<ul data-component="poll" id=LearningZone_12a  class='' data-results='instructor' data-question_label="10" >
+<ul data-component="poll" id='LearningZone_12a'  class='' data-results='instructor' data-question_label="10" >
 During this project I was primarily in my...
 
 <li>1. Comfort Zone</li>
@@ -475,7 +478,7 @@ During this project I was primarily in my...
 <li>3. Panic Zone</li>
 </ul></div></substitute><substitute xml:id='Time_12a'>
 <div class="runestone ">
-<ul data-component="poll" id=Time_12a  class='' data-results='instructor' data-question_label="11" >
+<ul data-component="poll" id='Time_12a'  class='' data-results='instructor' data-question_label="11" >
 Completing this project took...
 
 <li>1. Very little time</li>
@@ -485,7 +488,7 @@ Completing this project took...
 <li>3. More time than is reasonable</li>
 </ul></div></substitute><substitute xml:id='TaskValue_12a'>
 <div class="runestone ">
-<ul data-component="poll" id=TaskValue_12a  class='' data-results='instructor' data-question_label="12" >
+<ul data-component="poll" id='TaskValue_12a'  class='' data-results='instructor' data-question_label="12" >
 Based on my own interests and needs, the things taught in this project...
 
 <li>1. Don't seem worth learning</li>
@@ -495,7 +498,7 @@ Based on my own interests and needs, the things taught in this project...
 <li>3. Are definitely worth learning</li>
 </ul></div></substitute><substitute xml:id='Expectancy_12a'>
 <div class="runestone ">
-<ul data-component="poll" id=Expectancy_12a  class='' data-results='instructor' data-question_label="13" >
+<ul data-component="poll" id='Expectancy_12a'  class='' data-results='instructor' data-question_label="13" >
 For me to master the things taught in this project feels...
 
 <li>1. Definitely within reach</li>
@@ -505,7 +508,7 @@ For me to master the things taught in this project feels...
 <li>3. Out of reach no matter how hard I try</li>
 </ul></div></substitute><substitute xml:id='LearningZone_10b'>
 <div class="runestone ">
-<ul data-component="poll" id=LearningZone_10b  class='' data-results='instructor' data-question_label="12" >
+<ul data-component="poll" id='LearningZone_10b'  class='' data-results='instructor' data-question_label="12" >
 During this project I was primarily in my...
 
 <li>1. Comfort Zone</li>
@@ -515,7 +518,7 @@ During this project I was primarily in my...
 <li>3. Panic Zone</li>
 </ul></div></substitute><substitute xml:id='Time_10b'>
 <div class="runestone ">
-<ul data-component="poll" id=Time_10b  class='' data-results='instructor' data-question_label="13" >
+<ul data-component="poll" id='Time_10b'  class='' data-results='instructor' data-question_label="13" >
 Completing this project took...
 
 <li>1. Very little time</li>
@@ -525,7 +528,7 @@ Completing this project took...
 <li>3. More time than is reasonable</li>
 </ul></div></substitute><substitute xml:id='TaskValue_10b'>
 <div class="runestone ">
-<ul data-component="poll" id=TaskValue_10b  class='' data-results='instructor' data-question_label="14" >
+<ul data-component="poll" id='TaskValue_10b'  class='' data-results='instructor' data-question_label="14" >
 Based on my own interests and needs, the things taught in this project...
 
 <li>1. Don't seem worth learning</li>
@@ -535,7 +538,7 @@ Based on my own interests and needs, the things taught in this project...
 <li>3. Are definitely worth learning</li>
 </ul></div></substitute><substitute xml:id='Expectancy_10b'>
 <div class="runestone ">
-<ul data-component="poll" id=Expectancy_10b  class='' data-results='instructor' data-question_label="15" >
+<ul data-component="poll" id='Expectancy_10b'  class='' data-results='instructor' data-question_label="15" >
 For me to master the things taught in this project feels...
 
 <li>1. Definitely within reach</li>
@@ -545,7 +548,7 @@ For me to master the things taught in this project feels...
 <li>3. Out of reach no matter how hard I try</li>
 </ul></div></substitute><substitute xml:id='LearningZone_12b'>
 <div class="runestone ">
-<ul data-component="poll" id=LearningZone_12b  class='' data-results='instructor' data-question_label="9" >
+<ul data-component="poll" id='LearningZone_12b'  class='' data-results='instructor' data-question_label="9" >
 During this project I was primarily in my...
 
 <li>1. Comfort Zone</li>
@@ -555,7 +558,7 @@ During this project I was primarily in my...
 <li>3. Panic Zone</li>
 </ul></div></substitute><substitute xml:id='Time_12b'>
 <div class="runestone ">
-<ul data-component="poll" id=Time_12b  class='' data-results='instructor' data-question_label="10" >
+<ul data-component="poll" id='Time_12b'  class='' data-results='instructor' data-question_label="10" >
 Completing this project took...
 
 <li>1. Very little time</li>
@@ -565,7 +568,7 @@ Completing this project took...
 <li>3. More time than is reasonable</li>
 </ul></div></substitute><substitute xml:id='TaskValue_12b'>
 <div class="runestone ">
-<ul data-component="poll" id=TaskValue_12b  class='' data-results='instructor' data-question_label="11" >
+<ul data-component="poll" id='TaskValue_12b'  class='' data-results='instructor' data-question_label="11" >
 Based on my own interests and needs, the things taught in this project...
 
 <li>1. Don't seem worth learning</li>
@@ -575,7 +578,7 @@ Based on my own interests and needs, the things taught in this project...
 <li>3. Are definitely worth learning</li>
 </ul></div></substitute><substitute xml:id='Expectancy_12b'>
 <div class="runestone ">
-<ul data-component="poll" id=Expectancy_12b  class='' data-results='instructor' data-question_label="12" >
+<ul data-component="poll" id='Expectancy_12b'  class='' data-results='instructor' data-question_label="12" >
 For me to master the things taught in this project feels...
 
 <li>1. Definitely within reach</li>
@@ -585,7 +588,7 @@ For me to master the things taught in this project feels...
 <li>3. Out of reach no matter how hard I try</li>
 </ul></div></substitute><substitute xml:id='LearningZone_11a'>
 <div class="runestone ">
-<ul data-component="poll" id=LearningZone_11a  class='' data-results='instructor' data-question_label="7" >
+<ul data-component="poll" id='LearningZone_11a'  class='' data-results='instructor' data-question_label="7" >
 During this project I was primarily in my...
 
 <li>1. Comfort Zone</li>
@@ -595,7 +598,7 @@ During this project I was primarily in my...
 <li>3. Panic Zone</li>
 </ul></div></substitute><substitute xml:id='Time_11a'>
 <div class="runestone ">
-<ul data-component="poll" id=Time_11a  class='' data-results='instructor' data-question_label="8" >
+<ul data-component="poll" id='Time_11a'  class='' data-results='instructor' data-question_label="8" >
 Completing this project took...
 
 <li>1. Very little time</li>
@@ -605,7 +608,7 @@ Completing this project took...
 <li>3. More time than is reasonable</li>
 </ul></div></substitute><substitute xml:id='TaskValue_11a'>
 <div class="runestone ">
-<ul data-component="poll" id=TaskValue_11a  class='' data-results='instructor' data-question_label="9" >
+<ul data-component="poll" id='TaskValue_11a'  class='' data-results='instructor' data-question_label="9" >
 Based on my own interests and needs, the things taught in this project...
 
 <li>1. Don't seem worth learning</li>
@@ -615,7 +618,7 @@ Based on my own interests and needs, the things taught in this project...
 <li>3. Are definitely worth learning</li>
 </ul></div></substitute><substitute xml:id='Expectancy_11a'>
 <div class="runestone ">
-<ul data-component="poll" id=Expectancy_11a  class='' data-results='instructor' data-question_label="10" >
+<ul data-component="poll" id='Expectancy_11a'  class='' data-results='instructor' data-question_label="10" >
 For me to master the things taught in this project feels...
 
 <li>1. Definitely within reach</li>
@@ -625,7 +628,7 @@ For me to master the things taught in this project feels...
 <li>3. Out of reach no matter how hard I try</li>
 </ul></div></substitute><substitute xml:id='LearningZone_0'>
 <div class="runestone ">
-<ul data-component="poll" id=LearningZone_0  class='' data-results='instructor' data-question_label="6" >
+<ul data-component="poll" id='LearningZone_0'  class='' data-results='instructor' data-question_label="6" >
 During this project I was primarily in my...
 
 <li>1. Comfort Zone</li>
@@ -635,7 +638,7 @@ During this project I was primarily in my...
 <li>3. Panic Zone</li>
 </ul></div></substitute><substitute xml:id='Time_0'>
 <div class="runestone ">
-<ul data-component="poll" id=Time_0  class='' data-results='instructor' data-question_label="7" >
+<ul data-component="poll" id='Time_0'  class='' data-results='instructor' data-question_label="7" >
 Completing this project took...
 
 <li>1. Very little time</li>
@@ -645,7 +648,7 @@ Completing this project took...
 <li>3. More time than is reasonable</li>
 </ul></div></substitute><substitute xml:id='TaskValue_0'>
 <div class="runestone ">
-<ul data-component="poll" id=TaskValue_0  class='' data-results='instructor' data-question_label="8" >
+<ul data-component="poll" id='TaskValue_0'  class='' data-results='instructor' data-question_label="8" >
 Based on my own interests and needs, the things taught in this project...
 
 <li>1. Don't seem worth learning</li>
@@ -655,7 +658,7 @@ Based on my own interests and needs, the things taught in this project...
 <li>3. Are definitely worth learning</li>
 </ul></div></substitute><substitute xml:id='Expectancy_0'>
 <div class="runestone ">
-<ul data-component="poll" id=Expectancy_0  class='' data-results='instructor' data-question_label="9" >
+<ul data-component="poll" id='Expectancy_0'  class='' data-results='instructor' data-question_label="9" >
 For me to master the things taught in this project feels...
 
 <li>1. Definitely within reach</li>
@@ -665,7 +668,7 @@ For me to master the things taught in this project feels...
 <li>3. Out of reach no matter how hard I try</li>
 </ul></div></substitute><substitute xml:id='LearningZone_11b'>
 <div class="runestone ">
-<ul data-component="poll" id=LearningZone_11b  class='' data-results='instructor' data-question_label="13" >
+<ul data-component="poll" id='LearningZone_11b'  class='' data-results='instructor' data-question_label="13" >
 During this project I was primarily in my...
 
 <li>1. Comfort Zone</li>
@@ -675,7 +678,7 @@ During this project I was primarily in my...
 <li>3. Panic Zone</li>
 </ul></div></substitute><substitute xml:id='Time_11b'>
 <div class="runestone ">
-<ul data-component="poll" id=Time_11b  class='' data-results='instructor' data-question_label="14" >
+<ul data-component="poll" id='Time_11b'  class='' data-results='instructor' data-question_label="14" >
 Completing this project took...
 
 <li>1. Very little time</li>
@@ -685,7 +688,7 @@ Completing this project took...
 <li>3. More time than is reasonable</li>
 </ul></div></substitute><substitute xml:id='TaskValue_11b'>
 <div class="runestone ">
-<ul data-component="poll" id=TaskValue_11b  class='' data-results='instructor' data-question_label="15" >
+<ul data-component="poll" id='TaskValue_11b'  class='' data-results='instructor' data-question_label="15" >
 Based on my own interests and needs, the things taught in this project...
 
 <li>1. Don't seem worth learning</li>
@@ -695,7 +698,7 @@ Based on my own interests and needs, the things taught in this project...
 <li>3. Are definitely worth learning</li>
 </ul></div></substitute><substitute xml:id='Expectancy_11b'>
 <div class="runestone ">
-<ul data-component="poll" id=Expectancy_11b  class='' data-results='instructor' data-question_label="16" >
+<ul data-component="poll" id='Expectancy_11b'  class='' data-results='instructor' data-question_label="16" >
 For me to master the things taught in this project feels...
 
 <li>1. Definitely within reach</li>
@@ -705,7 +708,7 @@ For me to master the things taught in this project feels...
 <li>3. Out of reach no matter how hard I try</li>
 </ul></div></substitute><substitute xml:id='LearningZone_1'>
 <div class="runestone ">
-<ul data-component="poll" id=LearningZone_1  class='' data-results='instructor' data-question_label="3" >
+<ul data-component="poll" id='LearningZone_1'  class='' data-results='instructor' data-question_label="3" >
 During this project I was primarily in my...
 
 <li>1. Comfort Zone</li>
@@ -715,7 +718,7 @@ During this project I was primarily in my...
 <li>3. Panic Zone</li>
 </ul></div></substitute><substitute xml:id='Time_1'>
 <div class="runestone ">
-<ul data-component="poll" id=Time_1  class='' data-results='instructor' data-question_label="4" >
+<ul data-component="poll" id='Time_1'  class='' data-results='instructor' data-question_label="4" >
 Completing this project took...
 
 <li>1. Very little time</li>
@@ -725,7 +728,7 @@ Completing this project took...
 <li>3. More time than is reasonable</li>
 </ul></div></substitute><substitute xml:id='TaskValue_1'>
 <div class="runestone ">
-<ul data-component="poll" id=TaskValue_1  class='' data-results='instructor' data-question_label="5" >
+<ul data-component="poll" id='TaskValue_1'  class='' data-results='instructor' data-question_label="5" >
 Based on my own interests and needs, the things taught in this project...
 
 <li>1. Don't seem worth learning</li>
@@ -735,7 +738,7 @@ Based on my own interests and needs, the things taught in this project...
 <li>3. Are definitely worth learning</li>
 </ul></div></substitute><substitute xml:id='Expectancy_1'>
 <div class="runestone ">
-<ul data-component="poll" id=Expectancy_1  class='' data-results='instructor' data-question_label="6" >
+<ul data-component="poll" id='Expectancy_1'  class='' data-results='instructor' data-question_label="6" >
 For me to master the things taught in this project feels...
 
 <li>1. Definitely within reach</li>
@@ -745,7 +748,7 @@ For me to master the things taught in this project feels...
 <li>3. Out of reach no matter how hard I try</li>
 </ul></div></substitute><substitute xml:id='LearningZone_6'>
 <div class="runestone ">
-<ul data-component="poll" id=LearningZone_6  class='' data-results='instructor' data-question_label="6" >
+<ul data-component="poll" id='LearningZone_6'  class='' data-results='instructor' data-question_label="6" >
 During this project I was primarily in my...
 
 <li>1. Comfort Zone</li>
@@ -755,7 +758,7 @@ During this project I was primarily in my...
 <li>3. Panic Zone</li>
 </ul></div></substitute><substitute xml:id='Time_6'>
 <div class="runestone ">
-<ul data-component="poll" id=Time_6  class='' data-results='instructor' data-question_label="7" >
+<ul data-component="poll" id='Time_6'  class='' data-results='instructor' data-question_label="7" >
 Completing this project took...
 
 <li>1. Very little time</li>
@@ -765,7 +768,7 @@ Completing this project took...
 <li>3. More time than is reasonable</li>
 </ul></div></substitute><substitute xml:id='TaskValue_6'>
 <div class="runestone ">
-<ul data-component="poll" id=TaskValue_6  class='' data-results='instructor' data-question_label="8" >
+<ul data-component="poll" id='TaskValue_6'  class='' data-results='instructor' data-question_label="8" >
 Based on my own interests and needs, the things taught in this project...
 
 <li>1. Don't seem worth learning</li>
@@ -775,7 +778,7 @@ Based on my own interests and needs, the things taught in this project...
 <li>3. Are definitely worth learning</li>
 </ul></div></substitute><substitute xml:id='Expectancy_6'>
 <div class="runestone ">
-<ul data-component="poll" id=Expectancy_6  class='' data-results='instructor' data-question_label="9" >
+<ul data-component="poll" id='Expectancy_6'  class='' data-results='instructor' data-question_label="9" >
 For me to master the things taught in this project feels...
 
 <li>1. Definitely within reach</li>

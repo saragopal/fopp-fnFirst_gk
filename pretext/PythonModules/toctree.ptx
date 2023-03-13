@@ -6,5 +6,5 @@
         <xi:include href='./Therandommodule.ptx' />
         <xi:include href='./Glossary.ptx' />
         <xi:include href='./Exercises.ptx' />
-        <xi:include href='./..   ChapterAssessment.ptx' />
+        <!-- <xi:include href='./..   ChapterAssessment.ptx' />     no idea what this is supposed to be called -->
     </chapter>

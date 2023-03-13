@@ -3,7 +3,7 @@
 
 <exercise label="ac21_7_1">
     <statement>
-        <p>Write code to assign to the variable <c>map_testing</c> all the elements in lst_check while adding the string <q>Fruit: <q> to the beginning of each element using mapping.</p>
+        <p>Write code to assign to the variable <c>map_testing</c> all the elements in lst_check while adding the string <q>Fruit: </q> to the beginning of each element using mapping.</p>
 
     </statement>
     <program xml:id="ac21_7_1_editor" interactive="activecode" language="python">

@@ -8,7 +8,7 @@
 n = input("Please enter your name: ")
 </input></program>
         <p>The input function allows the programmer to provide a <term>prompt string</term>. In the example above,
-            it is <q>Please enter your name: <q>.  When the function is evaluated, the prompt is
+            it is <q>Please enter your name: </q>.  When the function is evaluated, the prompt is
             shown (in the browser, look for a popup window).
             The user of the program can type some text and press <c>return</c>. When this
             happens the text that has been entered is returned from the <c>input</c> function,

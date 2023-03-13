@@ -223,14 +223,16 @@ p1.chasing_rats()
         <statement>
 
             <p>What would print after running the following code:</p>
-            <program language="python"><input>
-new_cat = Cheshire("Cat1</q>)
-class Siamese(Cat):
-  def song(self):
-    print("I am a purrrfect creature.")
-another_cat = Siamese("Cat2")
-another_cat.song()
-</input></program>
+            <program language="python">
+                <input> 
+                    new_cat = Cheshire("Cat1")
+                    class Siamese(Cat):
+                    def song(self):
+                        print("I am a purrrfect creature.")
+                    another_cat = Siamese("Cat2")
+                    another_cat.song()
+                </input>
+            </program>
 
         </statement>
 <choices>
@@ -279,7 +281,7 @@ another_cat.song()
 
             <p>What would print after running the following code:</p>
             <program language="python"><input>
-new_cat = Cheshire("Cat1</q>)
+new_cat = Cheshire("Cat1")
 class Siamese(Cat):
   def song(self):
     print("I am a purrrfect creature.")
