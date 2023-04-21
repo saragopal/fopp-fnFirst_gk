@@ -4,40 +4,39 @@
 
     <!-- 13 chapters-->
     <book xml:id="thinkcspy" permid="tcs">
-    <title>Mount Royal University - Intro to Programming</title>
-    <subtitle>The Interative Textbook for COMP1701</subtitle>
-    <frontmatter>
-    <titlepage>
-    </titlepage>
-    <xi:include href="./FrontBackMatter/preface.ptx"/>
-</frontmatter>
+        <title>Mount Royal University - Intro to Programming</title>
+        <subtitle>The Interative Textbook for COMP1701</subtitle>
+        <frontmatter>
+            <titlepage>
+            </titlepage>
+            <xi:include href="./FrontBackMatter/preface.ptx" />
+            <xi:include href="./GeneralIntro/toctree.ptx" />
 
-    <xi:include href="./GeneralIntro/toctree.ptx"/>
+            <xi:include href="./SimplePythonData/toctree.ptx" />
 
-    <xi:include href="./SimplePythonData/toctree.ptx"/>
+            <xi:include href="./Debugging/toctree.ptx" />
 
-    <xi:include href="./Debugging/toctree.ptx"/>
+            <xi:include href="./Functions/toctree.ptx" />
 
-    <xi:include href="./Functions/toctree.ptx"/>
+            <xi:include href="./Conditionals/toctree.ptx" />
+        </frontmatter>
 
-    <xi:include href="./Conditionals/toctree.ptx"/>
+        <xi:include href="./MoreAboutIteration/toctree.ptx" />
 
-    <xi:include href="./MoreAboutIteration/toctree.ptx"/>
+        <xi:include href="./Iteration/toctree.ptx" />
 
-    <xi:include href="./Iteration/toctree.ptx"/>
+        <xi:include href="./Sequences/toctree.ptx" />
 
-    <xi:include href="./Sequences/toctree.ptx"/>
+        <xi:include href="./TransformingSequences/toctree.ptx" />
 
-    <xi:include href="./TransformingSequences/toctree.ptx"/>
+        <xi:include href="./NestedData/toctree.ptx" />
 
-    <xi:include href="./NestedData/toctree.ptx"/>
+        <xi:include href="./Files/toctree.ptx" />
 
-    <xi:include href="./Files/toctree.ptx"/>
+        <xi:include href="./Exceptions/toctree.ptx" />
 
-    <xi:include href="./Exceptions/toctree.ptx"/>
-
-    <xi:include href="./Classes/toctree.ptx"/>  
+        <xi:include href="./Classes/toctree.ptx" />
 
 
-</book> 
+    </book>
 </pretext>
