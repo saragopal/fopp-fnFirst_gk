@@ -14,8 +14,8 @@
 
         class myTests(TestCaseGui):
 
-        def testOne(self):
-        self.assertEqual(int_return(10), 10, "Testing that function int_return(10) returns 10")
+          def testOne(self):
+            self.assertEqual(int_return(10), 10, "Testing that function int_return(10) returns 10")
         myTests().main()
       </input>
     </program>
@@ -34,10 +34,10 @@
 
         class myTests(TestCaseGui):
 
-        def testTwo(self):
-        self.assertEqual(add(-2), 0, "Testing that add(-2) returns 0")
-        self.assertEqual(add(6), 8, "Testing that add(6) returns 8")
-        self.assertEqual(add(4), 6, "Testing that add(4) returns 6")
+          def testTwo(self):
+            self.assertEqual(add(-2), 0, "Testing that add(-2) returns 0")
+            self.assertEqual(add(6), 8, "Testing that add(6) returns 8")
+            self.assertEqual(add(4), 6, "Testing that add(4) returns 6")
 
         myTests().main()
       </input>
@@ -57,11 +57,9 @@
 
         class myTests(TestCaseGui):
 
-        def testThree(self):
-        self.assertEqual(change("I'm Bob. "), "I'm Bob. Nice to meet you!", "Tests that change('I'm
-        Bob. '') returns 'I'm Bob. Nice to meet you!'")
-        self.assertEqual(change(""), "Nice to meet you!", "Tests that change() returns 'Nice to meet
-        you!'")
+          def testThree(self):
+            self.assertEqual(change("I'm Bob. "), "I'm Bob. Nice to meet you!", "Tests that change('I'm Bob. '') returns 'I'm Bob. Nice to meet you!'")
+            self.assertEqual(change(""), "Nice to meet you!", "Tests that change() returns 'Nice to meet you!'")
 
         myTests().main()
       </input>
@@ -81,11 +79,10 @@
 
         class myTests(TestCaseGui):
 
-        def testFourA(self):
-        self.assertEqual(addup(1, 2, 3, 4, 5), 15, "Tests that addup(1, 2, 3, 4, 5) returns 15")
-        self.assertEqual(addup(0, 0, 0, 0, 1), 1, "Tests that addup(0, 0, 0, 0, 1) returns 1")
-        self.assertEqual(addup(-1, 1, -2, 2, -3), -3, "Tests that addup(-1, 1, -2, 2, -3) returns
-        -3")
+          def testFourA(self):
+            self.assertEqual(addup(1, 2, 3, 4, 5), 15, "Tests that addup(1, 2, 3, 4, 5) returns 15")
+            self.assertEqual(addup(0, 0, 0, 0, 1), 1, "Tests that addup(0, 0, 0, 0, 1) returns 1")
+            self.assertEqual(addup(-1, 1, -2, 2, -3), -3, "Tests that addup(-1, 1, -2, 2, -3) returns -3")
         myTests().main()
       </input>
     </program>
@@ -135,13 +132,13 @@
 
         class myTests(TestCaseGui):
 
-        def testSixA(self):
-        self.assertEqual(divide(4), 2, "Tests that divide(4) returns 2")
-        def testSixB(self):
-        self.assertEqual(sum(4), 8, "Tests that sum(4) returns 8")
-        self.assertEqual(sum(2), 7, "Tests that sum(2) returns 7")
-        self.assertEqual(sum(-6), 3, "Tests that sum(-6) returns 3")
-        self.assertEqual(sum(0), 6, "Tests that sum(0) returns 6")
+          def testSixA(self):
+            self.assertEqual(divide(4), 2, "Tests that divide(4) returns 2")
+          def testSixB(self):
+            self.assertEqual(sum(4), 8, "Tests that sum(4) returns 8")
+            self.assertEqual(sum(2), 7, "Tests that sum(2) returns 7")
+            self.assertEqual(sum(-6), 3, "Tests that sum(-6) returns 3")
+            self.assertEqual(sum(0), 6, "Tests that sum(0) returns 6")
 
         myTests().main()
       </input>

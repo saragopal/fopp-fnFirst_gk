@@ -12,18 +12,18 @@
       x = 15
 
       if x % 2 == 0:
-      print(x, "is even")
+        print(x, "is even")
       else:
-      print(x, "is odd")
+        print(x, "is odd")
     </input>
   </program>
   <p>The syntax for an <c>if</c> statement looks like this:</p>
   <program language="python">
     <input>
       if BOOLEAN EXPRESSION:
-      STATEMENTS_1 # executed if condition evaluates to True
+        STATEMENTS_1 # executed if condition evaluates to True
       else:
-      STATEMENTS_2 # executed if condition evaluates to False
+        STATEMENTS_2 # executed if condition evaluates to False
     </input>
   </program>
   <p>The boolean expression after the <c>if</c> statement is called the <term>condition</term>. If
@@ -93,9 +93,9 @@
       <program language="python">
         <input>
           if (4 + 5 == 10):
-          print("TRUE")
+            print("TRUE")
           else:
-          print("FALSE")
+            print("FALSE")
         </input>
       </program>
     </statement>
@@ -144,9 +144,9 @@
       <program language="python">
         <input>
           if (4 + 5 == 10):
-          print("TRUE")
+            print("TRUE")
           else:
-          print("FALSE")
+            print("FALSE")
           print("TRUE")
         </input>
       </program>
@@ -248,11 +248,11 @@ myTests().main()
 
         class myTests(TestCaseGui):
 
-        def testTwoA(self):
-        self.assertEqual(a, 20, "Testing that a has the correct value.")
+          def testTwoA(self):
+            self.assertEqual(a, 20, "Testing that a has the correct value.")
 
-        def testTwoB(self):
-        self.assertEqual(c, 35, "Testing that c has the correct value.")
+          def testTwoB(self):
+            self.assertEqual(c, 35, "Testing that c has the correct value.")
 
         myTests().main()
       </input>

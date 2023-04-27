@@ -15,9 +15,9 @@
     <input>
       nested1 = [1, 2, ['a', 'b', 'c'],['d', 'e'],['f', 'g', 'h']]
       for x in nested1:
-      print("level1: ")
-      for y in x:
-      print(f" level2: {y}")
+        print("level1: ")
+        for y in x:
+          print(f" level2: {y}")
     </input>
   </program>
   <p>Now the nested iteration fails.</p>
@@ -26,12 +26,12 @@
     <input>
       nested1 = [1, 2, ['a', 'b', 'c'],['d', 'e'],['f', 'g', 'h']]
       for x in nested1:
-      print("level1: ")
-      if type(x) is list:
-      for y in x:
-      print(f" level2: {y}")
-      else:
-      print(x)
+        print("level1: ")
+        if type(x) is list:
+          for y in x:
+            print(f" level2: {y}")
+        else:
+          print(x)
     </input>
   </program>
   <p>You can imagine how many special case if-thens we'd need, and how complicated the code would

@@ -19,9 +19,9 @@
       field_names = header.strip().split(',')
       print(field_names)
       for row in lines[1:]:
-      vals = row.strip().split(',')
-      if vals[5] != "NA":
-      print(f"{vals[0]}: {vals[4]}; {vals[5]}")
+        vals = row.strip().split(',')
+        if vals[5] != "NA":
+          print(f"{vals[0]}: {vals[4]}; {vals[5]}")
     </input>
   </program>
   <p>In the above code, we open the file, olympics.txt, which contains data on some olympians. The
@@ -41,7 +41,7 @@
   <p>The CSV format is actually a little more general than we have described and has a couple of
     solutions for that problem. One alternative format uses a different column separator, such as |
     or a tab (t). Sometimes, when a tab is used, the format is called tsv, for tab-separated
-    values). If you get a file using a different separator, you can just call the <c>.split('|')</c>
+    values. If you get a file using a different separator, you can just call the <c>.split('|')</c>
     or <c>.split('\\t')</c>.</p>
   <p>The other advanced CSV format uses commas to separate but encloses all values in double quotes.</p>
   <p>For example, the data file might look like:</p>

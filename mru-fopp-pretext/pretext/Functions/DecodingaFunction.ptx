@@ -98,8 +98,8 @@
       <program language="python">
         <input>
           def cyu3(x: ???, y: ???) -&gt; ???:
-          COEFFICIENT = 2.5
-          return (x + y) * COEFFICIENT
+            COEFFICIENT = 2.5
+            return (x + y) * COEFFICIENT
         </input>
       </program>
     </statement>
@@ -153,8 +153,8 @@
       <program language="python">
         <input>
           def cyu3(x: ???, y: ???) -&gt; ???:
-          COEFFICIENT = 2.5
-          return (x + y) * COEFFICIENT
+            COEFFICIENT = 2.5
+            return (x + y) * COEFFICIENT
         </input>
       </program>
     </statement>
@@ -207,8 +207,8 @@
       <program language="python">
         <input>
           def cyu3(x: ???, y: ???) -&gt; ???:
-          COEFFICIENT = 2.5
-          return (x + y) * COEFFICIENT
+            COEFFICIENT = 2.5
+            return (x + y) * COEFFICIENT
         </input>
       </program>
     </statement>
@@ -262,13 +262,15 @@
         <input>
           """
           Calculates the combined areas of two squares.
+
           Parameters:
-          width_a : _____
-          The width of the first square.
-          width_b : _____
-          The width of the second square.
+            width_a : _____
+            The width of the first square.
+            width_b : _____
+            The width of the second square.
+
           Returns:
-          _____ : The combined areas of the squares.
+            _____ : The combined areas of the squares.
           """
         </input>
       </program>

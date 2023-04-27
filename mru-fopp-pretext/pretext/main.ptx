@@ -10,16 +10,17 @@
             <titlepage>
             </titlepage>
             <xi:include href="./FrontBackMatter/preface.ptx" />
-            <xi:include href="./GeneralIntro/toctree.ptx" />
-
-            <xi:include href="./SimplePythonData/toctree.ptx" />
-
-            <xi:include href="./Debugging/toctree.ptx" />
-
-            <xi:include href="./Functions/toctree.ptx" />
-
-            <xi:include href="./Conditionals/toctree.ptx" />
         </frontmatter>
+
+        <xi:include href="./GeneralIntro/toctree.ptx" />
+
+        <xi:include href="./SimplePythonData/toctree.ptx" />
+
+        <xi:include href="./Debugging/toctree.ptx" />
+
+        <xi:include href="./Functions/toctree.ptx" />
+
+        <xi:include href="./Conditionals/toctree.ptx" />
 
         <xi:include href="./MoreAboutIteration/toctree.ptx" />
 

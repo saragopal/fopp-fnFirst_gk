@@ -15,27 +15,27 @@
         <input>
             class Point:
 
-            def __init__(self, initX, initY):
+                def __init__(self, initX, initY):
+                    self.x = initX
+                    self.y = initY
 
-            self.x = initX
-            self.y = initY
+                def getX(self):
+                    return self.x
 
-            def getX(self):
-            return self.x
+                def getY(self):
+                    return self.y
 
-            def getY(self):
-            return self.y
+                def distanceFromOrigin(self):
+                    return ((self.x ** 2) + (self.y ** 2)) ** 0.5
 
-            def distanceFromOrigin(self):
-            return ((self.x ** 2) + (self.y ** 2)) ** 0.5
+                def __str__(self):
+                    return f"x = {self.x}, y = {self.y}"
 
-            def __str__(self):
-            return f"x = {self.x}, y = {self.y}"
+                def halfway(self, target):
+                    mx = (self.x + target.x)/2
+                    my = (self.y + target.y)/2
+                    return Point(mx, my)
 
-            def halfway(self, target):
-            mx = (self.x + target.x)/2
-            my = (self.y + target.y)/2
-            return Point(mx, my)
 
             p = Point(3,4)
             q = Point(5,12)

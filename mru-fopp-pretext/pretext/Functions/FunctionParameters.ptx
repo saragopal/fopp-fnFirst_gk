@@ -39,9 +39,9 @@
     function personalizes the greeting: the person to greet is specified by the parameter.</p>
   <program xml:id="clens11_3_1" interactive="codelens" language="python">
     <input>
-      def hello2(s: str):
-      print("Hello " + s)
-      print("Glad to meet you")
+      def hello2(s: str) -&gt; None:
+        print("Hello " + s)
+        print("Glad to meet you")
 
       hello2("Iman")
       hello2("Jackie")
@@ -64,9 +64,9 @@
     of your own, too.</p>
   <program xml:id="ac11_3_1" interactive="activecode" language="python">
     <input>
-      def hello2(s: str):
-      print("Hello " + s)
-      print("Glad to meet you")
+      def hello2(s: str) -&gt; None:
+        print("Hello " + s)
+        print("Glad to meet you")
 
       hello2("Iman" + " and Jackie")
       hello2("Class " * 3)
@@ -76,9 +76,9 @@
     a parameter that controls how many times the greeting will be printed.</p>
   <program xml:id="clens11_3_2" interactive="codelens" language="python">
     <input>
-      def hello3(s: str, n: int):
-      greeting = f"Hello {s} "
-      print(greeting*n)
+      def hello3(s: str, n: int) -&gt; None:
+        greeting = f"Hello {s} "
+        print(greeting*n)
 
       hello3("Wei", 4)
       hello3("", 1)
@@ -102,7 +102,7 @@
     <choices>
       <choice correct="yes">
         <statement>
-          <p>def greet(t: str):</p>
+          <p>def greet(t: str) -&gt; None:</p>
         </statement>
         <feedback>
           <p>A function may take zero or more parameters. In this case it has one.</p>
@@ -119,7 +119,7 @@
       </choice>
       <choice>
         <statement>
-          <p>greet(t: str, n: int):</p>
+          <p>greet(t: str, n: int) -&gt; None:</p>
         </statement>
         <feedback>
           <p>A function definition needs to include the keyword def.</p>
@@ -127,7 +127,7 @@
       </choice>
       <choice>
         <statement>
-          <p>def greet(t: str, n: int)</p>
+          <p>def greet(t: str, n: int) -&gt; None</p>
         </statement>
         <feedback>
           <p>A function definition header must end in a colon (:).</p>
@@ -140,17 +140,17 @@
       <p>What is the name of the following function?</p>
       <program language="python">
         <input>
-          def print_many(x: str, y: int):
-          """Print out string x, y times."""
-          message = x * y
-          print(message)
+          def print_many(x: str, y: int) -&gt; None:
+            """Print out string x, y times."""
+            message = x * y
+            print(message)
         </input>
       </program>
     </statement>
     <choices>
       <choice>
         <statement>
-          <p>def print_many(x: str, y: int):</p>
+          <p>def print_many(x: str, y: int) -&gt; None:</p>
         </statement>
         <feedback>
           <p>This line is the complete function header (except for the semi-colon) which includes
@@ -189,10 +189,10 @@
       <p>What are the parameters of the following function?</p>
       <program language="python">
         <input>
-          def print_many(x: str, y: int):
-          """Print out string x, y times."""
-          message = x * y
-          print(message)
+          def print_many(x: str, y: int) -&gt; None:
+            """Print out string x, y times."""
+            message = x * y
+            print(message)
         </input>
       </program>
     </statement>
@@ -239,10 +239,10 @@
         calls, this function (i.e., causes it to run)?</p>
       <program language="python">
         <input>
-          def print_many(x: str, y: int):
-          """Print out string x, y times."""
-          message = x * y
-          print(message)
+          def print_many(x: str, y: int) -&gt; None:
+            """Print out string x, y times."""
+            message = x * y
+            print(message)
 
           z = 3
         </input>
@@ -325,9 +325,9 @@
       <p>What output will the following code produce?</p>
       <program language="python">
         <input>
-          def cyu(n1: int, n2: int):
-          n3 = -8
-          return n1 + n2 - CONSTANT_VALUE
+          def cyu(n1: int, n2: int) -&gt; int:
+            n3 = -8
+            return n1 + n2 - CONSTANT_VALUE
 
           cyu(4, 3)
         </input>

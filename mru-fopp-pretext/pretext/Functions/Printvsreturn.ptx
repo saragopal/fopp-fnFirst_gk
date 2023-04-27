@@ -101,13 +101,13 @@
       <program language="python">
         <input>
           def square(x):
-          return x*x
+            return x*x
 
           def g(y):
-          return y + 3
+            return y + 3
 
           def h(y):
-          return square(y) + 3
+            return square(y) + 3
 
           print(h(2))
         </input>
@@ -162,15 +162,15 @@
       <program language="python">
         <input>
           def square(x):
-          return x*x
+            return x*x
 
           def g(y):
-          return y + 3
+            return y + 3
 
           def h(y):
-          return square(y) + 3
+            return square(y) + 3
 
-          print(g(h(2))
+          print(g(h(2)))
         </input>
       </program>
     </statement>

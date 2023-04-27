@@ -22,8 +22,8 @@
   <program xml:id="ac11_4_1" interactive="activecode" language="python">
     <input>
       def square(x: int) -&gt; int:
-      y = x * x
-      return y
+        y = x * x
+        return y
 
       toSquare = 10
       result = square(toSquare)
@@ -46,8 +46,8 @@
   <program xml:id="clens11_4_1" interactive="codelens" language="python">
     <input>
       def square(x: int) -&gt; int:
-      y = x * x
-      return y
+        y = x * x
+        return y
 
       toSquare = 10
       squareResult = square(toSquare)
@@ -61,8 +61,8 @@
   <program xml:id="clens11_4_2" interactive="codelens" language="python">
     <input>
       def square(x: int) -&gt; None:
-      y = x * x
-      print(y) # Bad! This is confusing! Should use return instead!
+        y = x * x
+        print(y) # Bad! This is confusing! Should use return instead!
 
       toSquare = 10
       squareResult = square(toSquare)
@@ -83,10 +83,10 @@
   <program xml:id="ac11_4_2" interactive="activecode" language="python">
     <input>
       def weird() -&gt; int:
-      print("here")
-      return 5
-      print("there")
-      return 10
+        print("here")
+        return 5
+        print("there")
+        return 10
 
       x = weird()
       print(x)
@@ -200,8 +200,8 @@
       <program language="python">
         <input>
           def addEm(x, y, z):
-          return x+y+z
-          print('the answer is', x+y+z)
+            return x+y+z
+            print('the answer is', x+y+z)
         </input>
       </program>
     </statement>
@@ -258,7 +258,7 @@
       <program language="python">
         <input>
           def addEm(x: int, y: int, z: int) -&gt; ???:
-          print(x+y+z)
+            print(x+y+z)
         </input>
       </program>
     </statement>
@@ -301,8 +301,8 @@
       <program language="python">
         <input>
           def square(x: int) -&gt; int:
-          y = x * x
-          return y
+            y = x * x
+            return y
 
           print(square(5) + square(5))
         </input>
@@ -342,8 +342,8 @@
       <program language="python">
         <input>
           def square(x: int) -&gt; int:
-          y = x * x
-          return y
+            y = x * x
+            return y
 
           print(square(square(2)))
         </input>
@@ -385,11 +385,11 @@
       <program language="python">
         <input>
           def cyu2(s1: str, s2: str):
-          x = len(s1)
-          y = len(s2)
-          return x + y
-          print(f"{s1} was {x} characters long.")
-          print(f"{s2} was {y} characters long.")
+            x = len(s1)
+            y = len(s2)
+            return x + y
+            print(f"{s1} was {x} characters long.")
+            print(f"{s2} was {y} characters long.")
 
           z = cyu2("This is a big string!", "This is a bigger string!")
         </input>
@@ -444,12 +444,12 @@
       <program language="python">
         <input>
           def square(x: int) -&gt; int:
-          print("square")
-          return x*x
+            print("square")
+            return x*x
 
           def g(y: int) -&gt; int:
-          print("g")
-          return y + 3
+            print("g")
+            return y + 3
 
           print(square(g(2)))
         </input>

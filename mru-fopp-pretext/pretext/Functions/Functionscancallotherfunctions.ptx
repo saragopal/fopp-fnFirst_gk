@@ -12,15 +12,15 @@
   <program xml:id="clens11_9_1" interactive="codelens" language="python">
     <input>
       def square(x):
-      y = x * x
-      return y
+        y = x * x
+        return y
 
       def sum_of_squares(x,y,z):
-      a = square(x)
-      b = square(y)
-      c = square(z)
+        a = square(x)
+        b = square(y)
+        c = square(z)
 
-      return a+b+c
+        return a+b+c
 
       a = -5
       b = 2
@@ -105,15 +105,15 @@
 
         class myTests(TestCaseGui):
 
-        def testOne(self):
-        self.assertEqual(mult(1), 6,"Testing the function mult with input 1 (should be 6)")
-        self.assertEqual(mult(-2), -6, "Testing the function mult with input -2 (should be -6)")
-        self.assertEqual(mult(0), 0, "Testing the function mult with input 0 (should be 0)")
+          def testOne(self):
+            self.assertEqual(mult(1), 6,"Testing the function mult with input 1 (should be 6)")
+            self.assertEqual(mult(-2), -6, "Testing the function mult with input -2 (should be -6)")
+            self.assertEqual(mult(0), 0, "Testing the function mult with input 0 (should be 0)")
 
-        def testTwo(self):
-        self.assertEqual(addit(1), 6, "Testing the function addit with input 1 (should be 6)")
-        self.assertEqual(addit(-2), 3, "Testing the function addit with input -2 (should be 3)")
-        self.assertEqual(addit(0), 5, "Testing the function addit with input 0 (should be 5)")
+          def testTwo(self):
+            self.assertEqual(addit(1), 6, "Testing the function addit with input 1 (should be 6)")
+            self.assertEqual(addit(-2), 3, "Testing the function addit with input -2 (should be 3)")
+            self.assertEqual(addit(0), 5, "Testing the function addit with input 0 (should be 5)")
         myTests().main()
       </input>
     </program>

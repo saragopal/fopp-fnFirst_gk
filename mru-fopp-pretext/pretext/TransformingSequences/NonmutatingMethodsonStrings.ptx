@@ -241,9 +241,9 @@
       <input>
         scores = [("Rodney Dangerfield", -1), ("Marlon Brando", 1), ("You", 100)]
         for person in scores:
-        name = person[0]
-        score = person[1]
-        print("Hello " + name + ". Your score is " + str(score))
+          name = person[0]
+          score = person[1]
+          print("Hello " + name + ". Your score is " + str(score))
       </input>
     </program>
     <p>In this section, you will learn to write that in a more readable way:</p>
@@ -251,9 +251,9 @@
       <input>
         scores = [("Rodney Dangerfield", -1), ("Marlon Brando", 1), ("You", 100)]
         for person in scores:
-        name = person[0]
-        score = person[1]
-        print(f"Hello {name}. Your score is {score}.")
+          name = person[0]
+          score = person[1]
+          print(f"Hello {name}. Your score is {score}.")
       </input>
     </program>
     <p>In grade school quizzes a common convention is to use fill-in-the blanks. For instance,</p>

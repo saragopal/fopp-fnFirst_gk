@@ -6,11 +6,11 @@
   <program language="python">
     <input>
       if x &lt; y:
-      print("x is less than y")
+        print("x is less than y")
       elif x &gt; y:
-      print("x is greater than y")
+        print("x is greater than y")
       else:
-      print("x and y must be equal")
+        print("x and y must be equal")
     </input>
   </program>
   <p>The flow of control can be drawn in a different orientation but the resulting pattern is
@@ -31,11 +31,11 @@
       y = 10
 
       if x &lt; y:
-      print("x is less than y")
+        print("x is less than y")
       elif x &gt; y:
-      print("x is greater than y")
+        print("x is greater than y")
       else:
-      print("x and y must be equal")
+        print("x and y must be equal")
     </input>
   </program>
   <p>The following image highlights different kinds of valid conditionals that can be used. Though
@@ -56,12 +56,12 @@
           # nested if-else statement
           x = -10
           if x &lt; 0:
-          print("The negative number ", x, " is not valid here.")
+            print("The negative number ", x, " is not valid here.")
           else:
-          if x &gt; 0:
-          print(x, " is a positive number")
-          else:
-          print(x, " is 0")
+            if x &gt; 0:
+              print(x, " is a positive number")
+            else:
+              print(x, " is 0")
         </input>
       </program>
       <program language="python">
@@ -69,11 +69,11 @@
           I.
 
           if x &lt; 0:
-          print("The negative number ", x, " is not valid here.")
+            print("The negative number ", x, " is not valid here.")
           else (x &gt; 0):
-          print(x, " is a positive number")
+            print(x, " is a positive number")
           else:
-          print(x, " is 0")
+            print(x, " is 0")
         </input>
       </program>
       <program language="python">
@@ -81,11 +81,11 @@
           II.
 
           if x &lt; 0:
-          print("The negative number ", x, " is not valid here.")
+            print("The negative number ", x, " is not valid here.")
           elif (x &gt; 0):
-          print(x, " is a positive number")
+            print(x, " is a positive number")
           else:
-          print(x, " is 0")
+            print(x, " is 0")
         </input>
       </program>
       <program language="python">
@@ -93,11 +93,11 @@
           III.
 
           if x &lt; 0:
-          print("The negative number ", x, " is not valid here.")
+            print("The negative number ", x, " is not valid here.")
           if (x &gt; 0):
-          print(x, " is a positive number")
+            print(x, " is a positive number")
           else:
-          print(x, " is 0")
+            print(x, " is 0")
         </input>
       </program>
     </statement>
@@ -151,11 +151,11 @@
       <program language="python">
         <input>
           if x &lt; y and x &lt; z:
-          print("a")
+            print("a")
           elif y &lt; x and y &lt; z:
-          print("b")
+            print("b")
           else:
-          print("c")
+            print("c")
         </input>
       </program>
     </statement>
@@ -206,13 +206,10 @@
 
         class myTests(TestCaseGui):
 
-        def testThree(self):
-        self.assertEqual(output, "True! You are you!", "Testing that output has the correct value,
-        given the str1 provided.")
-        self.assertIn("else", self.getEditorText(), "Testing output (Don't worry about actual and
-        expected values).")
-        self.assertIn("elif", self.getEditorText(), "Testing output (Don't worry about actual and
-        expected values).")
+          def testThree(self):
+            self.assertEqual(output, "True! You are you!", "Testing that output has the correct value, given the str1 provided.")
+            self.assertIn("else", self.getEditorText(), "Testing output (Don't worry about actual and expected values).")
+            self.assertIn("elif", self.getEditorText(), "Testing output (Don't worry about actual and expected values).")
 
         myTests().main()
       </input>
