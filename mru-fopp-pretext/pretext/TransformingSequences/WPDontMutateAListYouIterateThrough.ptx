@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <section xml:id="transforming-sequences_dont-mutate-a-list-that-you-are-iterating-through">
-  <title>&#x1F469;&#x200D;&#x1F4BB;  Don't Mutate A List That You Are Iterating Through</title>
+  <title>&#x1F469;&#x1F4BB;  Don't Mutate A List That You Are Iterating Through</title>
   <p>So far we've shown you how to iterate through a list:</p>
   <program xml:id="ac8_12_1" interactive="activecode" language="python">
     <input>

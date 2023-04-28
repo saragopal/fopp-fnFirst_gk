@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <section xml:id="iteration_printing-intermediate-results">
-  <title>&#x1F469;&#x200D;&#x1F4BB; Printing Intermediate Results</title>
+  <title>&#x1F469;&#x1F4BB; Printing Intermediate Results</title>
   <p>In this textbook we provide the codelens tool so that you are able to step through
             the program and watch what happens each time a line is evaluated by the Python
             interpretor. What if you didn't have codelens though, what would you do?</p>

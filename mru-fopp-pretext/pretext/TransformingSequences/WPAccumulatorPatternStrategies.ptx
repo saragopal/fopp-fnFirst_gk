@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <section xml:id="transforming-sequences_accumulator-pattern-strategies">
-  <title>&#x1F469;&#x200D;&#x1F4BB;  Accumulator Pattern Strategies</title>
+  <title>&#x1F469;&#x1F4BB;  Accumulator Pattern Strategies</title>
   <subsection xml:id="transforming-sequences_when-to-use-it">
     <title>When to Use it</title>
     <p>When children first encounter word problems in their math classes, they find it difficult to translate those words into arithmetic expressions involving addition, subtraction, multiplication, and division. Teachers offer heuristics. If the problem says <q>how many&#x2026;altogether</q>, that's an addition problem. If it says <q>how many are left</q>, that's going to be a subtraction problem.</p>
