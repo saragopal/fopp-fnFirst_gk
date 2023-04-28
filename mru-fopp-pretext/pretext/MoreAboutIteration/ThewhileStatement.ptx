@@ -106,7 +106,7 @@ print(sumTo(4))
   <p>
     <term>Check your understanding</term>
   </p>
-  <exercise label="question14_2_1">
+  <!-- <exercise label="question14_2_1">
     <statement>
       <p>True or False: You can rewrite any for-loop as a while-loop.</p>
     </statement>
@@ -128,7 +128,7 @@ print(sumTo(4))
         </feedback>
       </choice>
     </choices>
-  </exercise>
+  </exercise> -->
   <exercise label="question14_2_2">
     <statement>
       <p>The following code contains an infinite loop. Which is the best explanation for why the loop does not terminate?</p>
@@ -178,7 +178,7 @@ print(answer)
       </choice>
     </choices>
   </exercise>
-  <exercise label="question14_2_3">
+  <!-- <exercise label="question14_2_3">
     <statement>
       <p>Which type of loop can be used to perform the following iteration: You choose a positive integer at random and then print the numbers from 1 up to and including the selected integer.</p>
     </statement>
@@ -208,10 +208,10 @@ print(answer)
         </feedback>
       </choice>
     </choices>
-  </exercise>
+  </exercise> -->
   <exercise label="ac14_2_2">
     <statement>
-      <p>Write a while loop that is initialized at 0 and stops at 15. If the counter is an even number, append the counter to a list called <c>eve_nums</c>.</p>
+      <p>Write a while loop that is initialized at 0 and stops at 15. If the counter is an even number, add double its value to <c>total_score</c>. If the counter is an odd number, subtract half its value from <c>total_score</c>.</p>
     </statement>
     <program xml:id="ac14_2_2_editor" interactive="activecode" language="python">
       <input>
@@ -223,13 +223,13 @@ from unittest.gui import TestCaseGui
 class myTests(TestCaseGui):
 
   def testOne(self):
-     self.assertEqual(eve_nums, [0,2,4,6,8,10,12,14], "Testing that eve_nums has been assigned the correct elements")
+     self.assertEqual(total_score, 80.0, "Testing that eve_nums has been assigned the correct elements")
 
 myTests().main()
         </input>
     </program>
   </exercise>
-  <exercise label="ac14_2_3">
+  <!-- <exercise label="ac14_2_3">
     <statement>
       <p>Below, we've provided a for loop that sums all the elements of <c>list1</c>. Write code that accomplishes the same task, but instead uses a while loop. Assign the accumulator variable to the name <c>accum</c>.</p>
     </statement>
@@ -256,15 +256,15 @@ class myTests(TestCaseGui):
 myTests().main()
         </input>
     </program>
-  </exercise>
+  </exercise> -->
   <exercise label="ac14_2_4">
     <statement>
-      <p>Write a function called <c>stop_at_four</c> that iterates through a list of numbers. Using a while loop, append each number to a new list until the number 4 appears. The function should return the new list.</p>
+      <p>Write a function called <c>stop_at_one</c> that takes an integer as a parameter, and performes the following operations on it until the integer equals 1: If the number is odd, multiply by 3 and add 1. If the number is even, divide by two. The function should then return how many iterations it took to reach 1.</p>
     </statement>
     <program xml:id="ac14_2_4_editor" interactive="activecode" language="python">
       <input>
 
-def stop_at_four():
+def stop_at_one(x: int) -&gt; int:
 
 
 
@@ -275,10 +275,10 @@ from unittest.gui import TestCaseGui
 class myTests(TestCaseGui):
 
    def testOne(self):
-      self.assertEqual(stop_at_four([0, 9, 4.5, 1, 7, 4, 8, 9, 3]), [0, 9, 4.5, 1, 7], "Testing the function stop_at_four on the input [0, 9, 4.5, 1, 7, 4, 8, 9, 3].")
-      self.assertEqual(stop_at_four([4, 1, 2, 8]), [], "Testing the function stop_at_four on the input [4, 1, 2, 8].")
-      self.assertEqual(stop_at_four([4]), [], "Testing the function stop_at_four on the input [4].")
-      self.assertEqual(stop_at_four([1, 6, 2, 3, 9]), [1, 6, 2, 3, 9], "Testing that stop_at_four([1, 6, 2, 3, 9]) returns ([1, 6, 2, 3, 9])")
+      self.assertEqual(stop_at_one(2), 1, "Testing the function stop_at_one on the input 2.")
+      self.assertEqual(stop_at_one(3), 7, "Testing the function stop_at_one on the input 3.")
+      self.assertEqual(stop_at_one(5), 5, "Testing the function stop_at_one on the input 5.")
+      self.assertEqual(stop_at_one(50), 24, "Testing the function stop_at_one on the input 50.")
 
 myTests().main()
         </input>
