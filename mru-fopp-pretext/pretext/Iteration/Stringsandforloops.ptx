@@ -61,7 +61,7 @@ for ch in s:
       </choice>
     </choices>
   </exercise>
-  <exercise label="question6_4_2">
+  <!-- <exercise label="question6_4_2">
     <statement>
       <p>How many times is the word HELLO printed by the following statements?</p>
       <program language="python">
@@ -106,5 +106,5 @@ for ch in s[3:8]:
         </feedback>
       </choice>
     </choices>
-  </exercise>
+  </exercise> -->
 </section>

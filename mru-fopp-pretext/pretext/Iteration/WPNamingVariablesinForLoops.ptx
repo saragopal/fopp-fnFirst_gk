@@ -38,12 +38,12 @@ for genre in genres:
         </input>
   </program>
   <p>Here what we expect is much more clear, even if we didn't see how genres was initialized!</p>
-  <p>The code below was used to initialize x and genres so you're free to look at it but you
+  <!-- <p>The code below was used to initialize x and genres so you're free to look at it but you
             don't need to run it!</p>
   <program xml:id="ac6_8_3" interactive="activecode" language="python">
     <input>
 x = ["jazz", "pop", "rock", "country", "punk", "folk", "hip-hop", "rap", "alternative"]
 genres = ["jazz", "pop", "rock", "country", "punk", "folk", "hip-hop", "rap", "alternative"]
         </input>
-  </program>
+  </program> -->
 </section>
