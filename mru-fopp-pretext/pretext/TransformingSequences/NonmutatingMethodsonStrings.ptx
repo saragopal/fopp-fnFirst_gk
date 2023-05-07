@@ -225,7 +225,7 @@
     </choices>
   </exercise>
   <subsection xml:id="transforming-sequences_string-format-method">
-    <title>String Format Method</title>
+    <title>FStrings</title>
     <p>Until now, we have created strings with variable content using the + operator to concatenate
       partial strings together. That works, but it's very hard for people to read or debug a code
       line that includes variable names and strings and complex expressions. Consider the following:</p>
@@ -262,7 +262,7 @@
     </blockquote>
     <p>and you can fill in the name of the person greeted, and combine given text with a chosen
       insertion. <em>We use this as an analogy:</em> Python has a similar construction, better
-      called fill-in-the-braces. The string method <c>format</c>, makes substitutions into places in
+      called fill-in-the-braces. <c>fstrings</c>, make substitutions into places in
       a string enclosed in braces. Run this code:</p>
     <program xml:id="ac8_8_7" interactive="activecode" language="python">
       <input>
@@ -272,12 +272,8 @@
       </input>
     </program>
     <p>There are several new ideas here!</p>
-    <p>The string for the <c>format</c> method has a special form, with braces embedded. Such a
-      string is called a <em>format string</em>. Places where braces are embedded are replaced by
-      the value of an expression taken from the parameter list for the <c>format</c> method. There
-      are many variations on the syntax between the braces. In this case we use the syntax where the
-      first (and only) location in the string with braces has a substitution made from the first
-      (and only) parameter.</p>
+    <p>An <c>fstring</c> has a special form, where the string must start with an <c>f</c> outside the quotations, and with braces embedded. The data embedded in the braces will be substituted into the string. There
+      are many variations on the syntax between the braces.</p>
     <p>In the code above, this new string is assigned to the identifier <c>greeting</c>, and then
       the string is printed.</p>
     <p>The identifier <c>greeting</c> was introduced to break the operations into a clearer sequence
@@ -296,17 +292,14 @@
         origPrice = float(input('Enter the original price: $'))
         discount = float(input('Enter discount percentage: '))
         newPrice = (1 - discount/100)*origPrice
-        calculation = f'${origPrice:.2f} discounted by {discount}% is ${newPrice:.2f}.'
+        calculation = f'${origPrice} discounted by {discount}% is ${newPrice}.'
         print(calculation)
       </input>
     </program>
-    <p>It is important to pass arguments to the <c>format</c> method in the correct order, because
-      they are matched <em>positionally</em> into the <c>{}</c> places for interpolation where there
-      is more than one.</p>
     <p>If you used the data suggested, this result is not satisfying.
       Prices should appear with exactly two places beyond the decimal point,
       but that is not the default way to display floats.</p>
-    <p>Format strings can give further information inside the braces showing how to specially format
+    <p>fstrings can give further information inside the braces showing how to specially format
       data. In particular floats can be shown with a specific number of decimal places. For two
       decimal places, put <c>:.2f</c> inside the braces for the monetary values:</p>
     <program xml:id="ac8_8_10" interactive="activecode" language="python">
@@ -323,23 +316,6 @@
     <p>This kind of format string depends directly on the order of the
       parameters to the format method. There are other approaches that we will
       skip here, such as explicitly numbering substitutions.</p>
-    <p>It is also important that you give <c>format</c> the same amount of arguments as there are <c>
-      {}</c> waiting for interpolation in the string. If you have a <c>{}</c> in a string that you
-      do not pass arguments for, you may not get an error, but you will see a weird <c>undefined</c>
-      value you probably did not intend suddenly inserted into your string. You can see an example
-      below.</p>
-    <p>For example,</p>
-    <program xml:id="ac8_8_11" interactive="activecode" language="python">
-      <input>
-        name = "Sally"
-        greeting = "Nice to meet you"
-        s = "Hello, {}. {}."
-
-        print(s.format(name,greeting)) # will print Hello, Sally. Nice to meet you.
-        print(s.format(greeting,name)) # will print Hello, Nice to meet you. Sally.
-        print(s.format(name)) # 2 {}s, only one interpolation item! Not ideal.
-      </input>
-    </program>
     <p>A technical point: Since braces have special meaning in a format string, there must be a
       special rule if you want braces to actually be included in the final <em>formatted</em>
       string. The rule is to double the braces: <c>{&#x200B;{</c> and <c>}&#x200B;}</c>. For example
@@ -347,7 +323,7 @@
       string below generate literal braces in the formatted string:</p>
     <pre>a = 5
 b = 9
-setStr = 'The set is {&#x200B;{&#x200B;{}, {}&#x200B;}&#x200B;}.'.format(a, b)
+setStr = 'The set is {&#x200B;{&#x200B;{a}, {b}&#x200B;}&#x200B;}.'
 print(setStr)</pre>
     <p>Unfortunately, at the time of this writing, the ActiveCode format implementation has a bug,
       printing doubled braces, but standard Python prints <c>{5, 9}</c>.</p>
@@ -358,7 +334,7 @@ print(setStr)</pre>
           <input>
             x = 2
             y = 6
-            print('sum of {} and {} is {}; product: {}.'.format( x, y, x+y, x*y))
+            print('sum of {x} and {y} is {x+y}; product: {x*y}.')
           </input>
         </program>
       </statement>
@@ -373,10 +349,10 @@ print(setStr)</pre>
         </choice>
         <choice>
           <statement>
-            <p>sum of {} and {} is {}; product: {}. 2 6 8 12</p>
+            <p>sum of {x} and {y} is {x+y}; product: {x*y}.</p>
           </statement>
           <feedback>
-            <p>Put the data into the format string; not after it.</p>
+            <p>The outpput will be the data stored in the variables, not the variables themselves.</p>
           </feedback>
         </choice>
         <choice correct="yes">
@@ -392,7 +368,7 @@ print(setStr)</pre>
             <p>sum of {2} and {6} is {8}; product: {12}.</p>
           </statement>
           <feedback>
-            <p>Close: REPLACE the braces.</p>
+            <p>The braces do not appear in the final fstring.</p>
           </feedback>
         </choice>
       </choices>
@@ -403,7 +379,7 @@ print(setStr)</pre>
         <program language="python">
           <input>
             v = 2.34567
-            print('{:.1f} {:.2f} {:.7f}'.format(v, v, v))
+            print('{v:.1f} {v:.2f} {v:.7f}')
           </input>
         </program>
       </statement>

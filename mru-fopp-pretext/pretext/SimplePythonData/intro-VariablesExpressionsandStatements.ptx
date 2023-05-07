@@ -1,7 +1,6 @@
 <?xml version="1.0"?>
 <section xml:id="simple-python-data_introduction">
   <title>Introduction</title>
-  <video xml:id="typesnconvert" youtube="vNfCfowr-pQ" width="auto"/>
   <p>This chapter introduces several basic building blocks of Python programs:</p>
   <p>
     <ul>

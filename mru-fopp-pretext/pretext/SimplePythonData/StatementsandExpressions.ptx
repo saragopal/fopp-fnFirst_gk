@@ -1,7 +1,6 @@
 <?xml version="1.0"?>
 <section xml:id="simple-python-data_statements-and-expressions222_index-0">
   <title>Statements and Expressions</title>
-  <video xml:id="expression_vid" youtube="3WgmLIsXFkI" width="auto" />
   <p>A <term>statement</term> is an instruction that the Python interpreter can execute. You have
     only seen the assignment statement so far. Some other kinds of statements that you'll see in
     future chapters are <c>while</c> statements, <c>for</c> statements, <c>if</c> statements, and <c>

@@ -84,13 +84,14 @@ if answer == 'Y' or answer == 'y':
       shorten your code. Consider the following example:</p>
     <program xml:id="ac_logop_dangerous" interactive="activecode" language="python">
       <input>
-        total_weight = int(input('Enter total weight of luggage:'))
-        num_pieces = int(input('Number of pieces of luggage?'))
+        def check_average_weight() -&gt; None:
+          total_weight = int(input('Enter total weight of luggage:'))
+          num_pieces = int(input('Number of pieces of luggage?'))
 
-        if total_weight / num_pieces &gt; 50:
-          print('Average weight is greater than 50 pounds -&gt; $100 surcharge.')
+          if total_weight / num_pieces &gt; 50:
+            print('Average weight is greater than 50 pounds -&gt; $100 surcharge.')
 
-        print('Luggage check complete.')
+          print('Luggage check complete.')
       </input>
     </program>
     <p>This code checks to see if the average weight of a given number of pieces of luggage is
@@ -110,13 +111,14 @@ if answer == 'Y' or answer == 'y':
       to the previous version with two nested <c>if</c> statements:</p>
     <program xml:id="ac_logop_smarteval" interactive="activecode" language="python">
       <input>
-        total_weight = int(input('Enter total weight of luggage:'))
-        num_pieces = int(input('Number of pieces of luggage?'))
+        def check_average_weight() -&gt; None:
+          total_weight = int(input('Enter total weight of luggage:'))
+          num_pieces = int(input('Number of pieces of luggage?'))
 
-        if num_pieces != 0 and total_weight / num_pieces &gt; 50:
-          print('Average weight is greater than 50 pounds -&gt; $100 surcharge.')
+          if num_pieces != 0 and total_weight / num_pieces &gt; 50:
+            print('Average weight is greater than 50 pounds -&gt; $100 surcharge.')
 
-        print('Luggage check complete.')
+          print('Luggage check complete.')
       </input>
     </program>
     <p>But wait a minute: is this code safe? Try running the program and entering the value <c>500</c>

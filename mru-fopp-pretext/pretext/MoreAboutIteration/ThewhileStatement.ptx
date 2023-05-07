@@ -1,7 +1,6 @@
 <?xml version="1.0"?>
 <section xml:id="more-about-iteration_the-while-statement">
   <title>The <c>while</c> Statement</title>
-  <video xml:id="whileloop" youtube="iUbToOoAykE" width="auto"/>
   <p>There is another Python statement that can also be used to build an iteration. It is called the <c>while</c> statement.
             The <c>while</c> statement provides a much more general mechanism for iterating. Similar to the <c>if</c> statement, it uses
             a boolean expression to control the flow of execution. The body of while will be repeated as long as the controlling

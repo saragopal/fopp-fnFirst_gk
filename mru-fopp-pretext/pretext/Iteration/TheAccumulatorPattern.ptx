@@ -25,11 +25,14 @@
   <p>For example, consider the following code, which computes the sum of the numbers in a string.</p>
   <program xml:id="ac6_6_1" interactive="activecode" language="python">
     <input>
-nums = "123456789"
-accum = 0
-for w in nums:
-    accum = accum + int(w)
-print(accum)
+    def sum_nums() -&gt; int:
+      nums = "123456789"
+      accum = 0
+      for w in nums:
+          accum = accum + int(w)
+      return accum
+    
+    print(sum_nums())
         </input>
   </program>
   <p>In the program above, notice that the variable <c>accum</c> starts out with a value of 0.
@@ -45,11 +48,14 @@ print(accum)
             accumulate the result.</p>
   <program xml:id="clens6_6_1" interactive="codelens" language="python">
     <input>
-nums = "13456789"
-accum = 0
-for w in nums:
-   accum = accum + int(w)
-print(accum)
+    def sum_nums() -&gt; int:
+      nums = "123456789"
+      accum = 0
+      for w in nums:
+          accum = accum + int(w)
+      return accum
+    
+    print(sum_nums())
     </input>
   </program>
   <note>
@@ -69,18 +75,8 @@ for i in range(5):
 print("range(0,5): ")
 for i in range(0, 5):
     print(i)
-
-# Notice the casting of `range` to the `list`
-print(list(range(5)))
-print(list(range(0,5)))
-
-# Note: `range` function is already casted as `list` in the textbook
-print(range(5))
         </input>
   </program>
-  <p>One important thing to know about the range function in python3 is that if we want to use it outside of iteration, we
-            have to cast it as a list using <c>list()</c>. Inside the textbook you'll notice that <c>range</c> works with or without
-            casting it as a list but it is best for you to try and get into the habit of casting it as a list. Here's how you could use the range function in the previous problem.</p>
   <program xml:id="ac6_6_2" interactive="activecode" language="python">
     <input>
 accum = 0

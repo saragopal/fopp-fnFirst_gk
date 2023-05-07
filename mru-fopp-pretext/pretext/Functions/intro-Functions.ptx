@@ -1,7 +1,6 @@
 <?xml version="1.0"?>
 <section xml:id="functions_introduction-to-functions">
   <title>Introduction to Functions</title>
-  <video xml:id="goog_function_intro" youtube="85WYZKKnaPQ" width="auto" />
   <p>In Python, a <term>function</term> is a chunk of code that performs some operation that is
     meaningful for a person to think about as a whole unit, for example calculating a student's GPA
     in a learning system or responding to the jump action in a video game. Once a function has been

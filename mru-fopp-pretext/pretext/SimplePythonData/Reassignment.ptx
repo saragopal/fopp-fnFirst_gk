@@ -1,7 +1,6 @@
 <?xml version="1.0"?>
 <section xml:id="simple-python-data_reassignment">
   <title>Reassignment</title>
-  <video xml:id="reassignmentvid" youtube="G86akhNFHZA" width="auto"/>
   <p>As we have mentioned previously, it is legal to make more than one assignment to the
             same variable. A new assignment makes an existing variable refer to a new value
             (and stop referring to the old value).</p>

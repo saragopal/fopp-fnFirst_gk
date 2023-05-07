@@ -8,7 +8,6 @@
     pretty much the same thing on each invocation, but not exactly the same thing. The parameters
     can cause them to do
     something a little different.</p>
-  <video xml:id="goog_function_parms" youtube="Ndw_EgFO_tw" width="auto" />
   <p>The figure below shows this relationship. A function needs certain information to do its work.
     These values, often called <term>arguments</term> or <term>actual parameters</term> or <term>parameter
     values</term>, are passed to the function by the user.</p>

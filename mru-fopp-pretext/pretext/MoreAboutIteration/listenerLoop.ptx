@@ -83,7 +83,7 @@ print(theSum)
                     zero is a <term>sentinel value</term>, a value used to signal the end of the loop. Here's the code:</p>
       <program xml:id="ac14_3_2" interactive="activecode" language="python">
         <input>
-def checkout():
+def checkout() -&gt; None:
     total = 0
     count = 0
     moreItems = True
@@ -135,7 +135,7 @@ checkout()
                     When you run the following code, try typing something other than Y or N to see how the code reacts:</p>
       <program xml:id="ac14_3_3" interactive="activecode" language="python">
         <input>
-def get_yes_or_no(message):
+def get_yes_or_no(message: str) -&gt; str:
     valid_input = False
     while not valid_input:
         answer = input(message)

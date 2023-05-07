@@ -8,12 +8,15 @@
     selection</term> since there are two possible paths of execution.</p>
   <program xml:id="ac7_6_1" interactive="activecode" language="python">
     <input>
-      x = 15
+      def is_even(x: int) -&gt; None:
+        if x % 2 == 0:
+          print(x, "is even")
+        else:
+          print(x, "is odd")
 
-      if x % 2 == 0:
-        print(x, "is even")
-      else:
-        print(x, "is odd")
+      is_even(2) # 2 is even
+      is_even(3) # 3 is odd
+
     </input>
   </program>
   <p>The syntax for an <c>if</c> statement looks like this:</p>

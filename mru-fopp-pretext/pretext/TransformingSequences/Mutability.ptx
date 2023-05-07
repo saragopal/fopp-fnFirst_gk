@@ -4,7 +4,6 @@
   <p>Some Python collection types - strings and lists so far - are able to change and some are not. If
             a type is able to change, then it is said to be mutable. If the type is not able to change then it
             is said to be immutable. This will be expanded below.</p>
-  <video xml:id="mutabilityvid" youtube="fnSijYDKz3c" width="auto"/>
   <subsection xml:id="transforming-sequences_lists-are-mutable">
     <title>Lists are Mutable</title>
     <p>Unlike strings, lists are <term>mutable</term>. This means we can change an item in a list by accessing
