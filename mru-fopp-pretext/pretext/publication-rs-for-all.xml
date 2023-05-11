@@ -15,5 +15,5 @@
         <knowl exercise-inline="no" example="no" listing="yes" />
     </html>
 
-    <stringparam key="debug.rs.services.file" value="/home/ccurtis/Documents/Runestone/RunestoneComponents/runestone/dist/webpack_static_imports.xml" />
+    <stringparam key="debug.rs.services.file" value="https://runestone.academy/cdn/runestone/latest/webpack_static_imports.xml" />
 </publication>
