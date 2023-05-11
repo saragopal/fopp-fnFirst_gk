@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <section xml:id="advanced-functions_programming-with-style">
-  <title>&#x1F469;&#x1F4BB; Programming With Style</title>
+  <title>Programming With Style</title>
   <p>Readability is very important to programmers, since in practice programs are
     read and modified far more often then they are written.</p>
   <!--All

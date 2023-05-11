@@ -29,7 +29,7 @@ for fruit in fruits:
     print(fruit)
         </input>
   </program>
-  <p>If we really want to print the indexes (positions) along with the fruit names, then iterating through the indexes as in the previous versions is available to us. Python also provides an <c>enumerate</c> function which provides a more <q>pythonic</q> way of enumerating the items in a list, but we will delay the explanation of how to use <c>enumerate</c> until we cover the notions of <xref ref="tuples_tuple-assignmentwithunpacking"/>.</p>
+  <p>If we really want to print the indexes (positions) along with the fruit names, then iterating through the indexes as in the previous versions is available to us. Python also provides an <c>enumerate</c> function which provides a more <q>pythonic</q> way of enumerating the items in a list, but we will delay the explanation of how to use <c>enumerate</c> for now.</p>
   <p>
     <term>Check your understanding</term>
   </p>

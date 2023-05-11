@@ -3,10 +3,10 @@
   <title>Alternative File Reading Methods</title>
   <p>Once you have a file <q>object</q>, the thing returned by the open function, Python provides three methods to read data
             from that object. The <c>read()</c> method returns the entire contents of the file as a single string (or just some
-            characters if you provide a number as an input parameter. The <c>readlines</c> method returns the entire contents of
+            characters) if you provide a number as an input parameter. The <c>readlines</c> method returns the entire contents of
             the entire file as a list of strings, where each item in the list is one line of the file. The <c>readline</c>
             method reads one line from the file and returns it as a string. The strings returned by <c>readlines</c> or
-            <c>readline</c> will contain the newline character at the end.  <xref ref="files_filemethods2a"/> summarizes these
+            <c>readline</c> will contain the newline character at the end. The following table summarizes these
             methods and the following session shows them in action.</p>
   <table xml:id="files_files_filemethods2a">
     <tabular>

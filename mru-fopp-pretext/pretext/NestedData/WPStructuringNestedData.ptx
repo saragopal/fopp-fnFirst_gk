@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <section xml:id="nested-data_structuring-nested-data">
-  <title>&#x1F469;&#x1F4BB; Structuring Nested Data</title>
+  <title>Structuring Nested Data</title>
   <p>When constructing your own nested data, it is a good idea to keep the structure consistent
     across each level. For example,
     if you have a list of dictionaries, then each dictionary should have the same structure, meaning

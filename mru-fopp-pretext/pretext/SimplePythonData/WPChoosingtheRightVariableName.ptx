@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <section xml:id="simple-python-data_choosing-the-right-variable-name">
-  <title>&#x1F469;&#x1F4BB; Choosing the Right Variable Name</title>
+  <title>Choosing the Right Variable Name</title>
   <p>Programmers generally choose names for their variables that are meaningful to
     the human readers of the program &#x2014; they help the programmer document, or
     remember, what the variable is used for. Beginning programmers sometimes think it is funny to

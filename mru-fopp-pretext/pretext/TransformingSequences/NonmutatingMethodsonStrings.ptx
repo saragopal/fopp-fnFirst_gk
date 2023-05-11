@@ -109,7 +109,7 @@
         <cell>
           substitutions
         </cell>
-        <cell> Involved! See <xref ref="transforming-sequences_format-strings" />, below </cell>
+        <cell> Involved! See <xref ref="transforming-sequences_string-format-method" />, below </cell>
       </row>
     </tabular>
   </table>

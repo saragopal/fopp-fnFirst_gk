@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <section xml:id="debugging_know-your-error-messages">
-  <title>&#x1F469;&#x1F4BB; Know Your Error Messages</title>
+  <title>Know Your Error Messages</title>
   <p>Many problems in your program will lead to an error message. For example as I was
     writing and testing this chapter of the book I wrote the following version of the
     example program in the previous section.</p>
@@ -79,7 +79,7 @@
   <p>In writing and using this book over the last few years we have collected a lot of
     statistics about the programs in this book. Here are some statistics about error
     messages for the exercises in this book.</p>
-  <image source="Debugging/Figures/error_dist.png" width="600%" />
+  <image source="Debugging/Figures/error_dist.png" width="100%" />
   <p>Nearly 90% of the error messages encountered for this problem are SyntaxError,
     TypeError, NameError, ValueError, or AttributeError. We will look at these errors in three
     stages:</p>

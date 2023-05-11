@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <section xml:id="conditionals_setting-up-conditionals">
-  <title>&#x1F469;&#x1F4BB; Setting Up Conditionals</title>
+  <title>Setting Up Conditionals</title>
   <p>Before writing your conditionals, it can be helpful to make your own flowchart that will
     plot out the flow of each condition. By writing out the flow, you can better determine how
     complex the set of conditionals will be as well as check to see if any condition is not

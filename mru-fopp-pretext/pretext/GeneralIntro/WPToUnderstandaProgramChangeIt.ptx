@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <section xml:id="general-intro_to-understand-a-program-change-it">
-  <title>&#x1F469;&#x1F4BB; To Understand a Program, Change It!</title>
+  <title>To Understand a Program, Change It!</title>
   <p>To check your understanding or your predictions, you will run a program.</p>
   <p>To check your understanding about the state of variables before your code snippet runs, add
     diagnostic print statements that print out the types and values of variables. Add these print

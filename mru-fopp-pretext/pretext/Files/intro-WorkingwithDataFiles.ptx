@@ -13,7 +13,7 @@
             manipulate the contents.</p>
   <p>In Python, we must <term>open</term> files before we can use them and <term>close</term> them when we are done with them. As
             you might expect, once a file is opened it becomes a Python object just like all other data.
-            <xref ref="files_filemethods1a"/> shows the functions and methods that can be used to open and close files.</p>
+            The following table shows the functions and methods that can be used to open and close files.</p>
   <table xml:id="files_files_filemethods1a">
     <tabular>
       <row header="yes">

@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <section xml:id="transforming-sequences_accumulator-pattern-strategies">
-  <title>&#x1F469;&#x1F4BB;  Accumulator Pattern Strategies</title>
+  <title>Accumulator Pattern Strategies</title>
   <subsection xml:id="transforming-sequences_when-to-use-it">
     <title>When to Use it</title>
     <p>When children first encounter word problems in their math classes, they find it difficult to translate those words into arithmetic expressions involving addition, subtraction, multiplication, and division. Teachers offer heuristics. If the problem says <q>how many&#x2026;altogether</q>, that's an addition problem. If it says <q>how many are left</q>, that's going to be a subtraction problem.</p>
@@ -90,7 +90,7 @@
                 such as <c>a</c> or <c>x</c>, if you run into any bugs or look at your code later, you may have trouble understanding what you
                 intended to do and what your code is actually doing.</p>
     <p>For the accumulator variable, one thing that can help is to make the variable name end with <q>so_far</q>. The prefix can be something that helps remind you of what you're supposed to end up with. For example: <title_reference>count_so_far</title_reference>, <title_reference>total_so_far</title_reference>, or <title_reference>cubes_so_far</title_reference>.</p>
-    <p>As mentioned previously in a previous Way of the Programmer segment, <xref ref="iteration_wp-naming-variablesin-for-loops"/>, the iterator variable should be a singular noun. It should describe what one item in the original sequence, not what one item in the final result will be. For example, when accumulating the cubes of the numbers from 1-25, don't write <title_reference>for cube in range(25):</title_reference>. Instead, write <title_reference>for num in range(25):</title_reference>.  If you name the iterator variable <title_reference>cube</title_reference> you run the risk of getting confused that it has already been cubed, when that's an operation that you still have to write in your code.</p>
+    <p>Note that the iterator variable should be a singular noun. It should describe what one item in the original sequence, not what one item in the final result will be. For example, when accumulating the cubes of the numbers from 1-25, don't write <title_reference>for cube in range(25):</title_reference>. Instead, write <title_reference>for num in range(25):</title_reference>.  If you name the iterator variable <title_reference>cube</title_reference> you run the risk of getting confused that it has already been cubed, when that's an operation that you still have to write in your code.</p>
     <p>
       <term>Check Your Understanding</term>
     </p>

@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <section xml:id="more-about-iteration_infinite-loops">
-  <title>&#x1F469;&#x1F4BB; Infinite Loops</title>
+  <title>Infinite Loops</title>
   <p>Although the textbook has a time limit which prevents an active code window from running
             indefinitely, you'll still have to wait a little while if your program has an ininite loop. If
             you accidentally make one outside of the textbook, you won't have that same protection.</p>
@@ -34,9 +34,7 @@ while b &lt; 60:
             again. There is no way to break out of this loop.</p>
   <p>Sometimes programs can take a while to run, so how can you determine if your code is just talking a while or if it is stuck inside an infinite loop? Print statements are for people, so take advantage of them! You can add print statements to keep track of how your variables are changing as the program processes the instructions given to them. Below is an example of an infinite loop. Try adding print statments to see where it's coming from. When you're done, check out the answer to see what our solution was.</p>
   <p>
-    <ol marker="1">
-      <li>
-        <exercise>
+        <exercise label="question14_11_3">
           <statement/>
           <program interactive="" language=""/>
           <solution>
@@ -54,7 +52,5 @@ print("end of the while loop")
             </program>
           </solution>
         </exercise>
-      </li>
-    </ol>
   </p>
 </section>

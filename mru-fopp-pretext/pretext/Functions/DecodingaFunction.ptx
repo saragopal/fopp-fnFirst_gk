@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <section xml:id="functions_decoding-a-function">
-  <title>&#x1F469;&#x1F4BB; Decoding a Function</title>
+  <title>Decoding a Function</title>
   <p>In general, when you see a function definition you will try figure out what the function does,
     but, unless you are writing the function, you won't care <em>how it does it</em>.</p>
   <p>For example, here is a summary of some functions we have seen already.</p>
