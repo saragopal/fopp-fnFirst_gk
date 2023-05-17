@@ -1,0 +1,189 @@
+<?xml version="1.0"?>
+<section xml:id="additional_resources-books-bookshelves">
+    <title>Books and Bookshelves</title>
+    <p>This exercise is designed to give you some experience working with objects and classes. It is
+        advised that you've completed the <xref
+            xml:id="classes_introduction-classes-and-objects-the-basics">Classes</xref> exercise
+        before attempting.</p>
+    <p> You're given two classes, <c>Bookshelf</c> and <c>Book</c>. <c>Book</c>s have a few
+        properties: a <c>title</c>, an <c>author</c>, and a <c>year of publication</c>. We set these
+        when instantiating the book. A <c>Bookshelf</c> only has one property: a <c>books list</c>.
+        It's empty by default. </p>
+
+    <program language="python">
+        <input>
+            class Book:
+                def __init__(self, title: str, author: str, year: int):
+                    self.title = title
+                    self.author = author
+                    self.year = year
+
+
+            class Bookshelf:
+                def __init__(self):
+                    self.books = []
+
+                def add_book(self, book: Book) -&gt; None:
+                    self.books.append(book)
+        </input>
+    </program>
+    <subsection xml:id="subsec-additonal_resources-books-bookshelves-adding-books">
+        <title>Adding Some Books</title>
+        <p>Using the class templates from above, create a file, <c>main.py</c>, and instantiate a 
+        <c>Bookshelf</c> object. Then, create a few <c>Book</c> objects and add them to the 
+        <c>Bookshelf</c> object. </p>
+        <p>
+            Here are some books you can use:
+        </p>
+        <table>
+            <tabular>
+                <row header="yes">
+              <cell>Book Title</cell>
+                <cell>Author</cell>
+                <cell>Year</cell>
+                </row>
+                <row>
+                    <cell>No Longer Human</cell>
+                    <cell>Osamu Dazai</cell>
+                    <cell>1948</cell>
+                </row>
+                <row>
+                    <cell>The Parallax View</cell>
+                    <cell>Slavoj Žižek</cell>
+                    <cell>2006</cell>
+                </row>
+                <row>
+                    <cell>Fear Stalks the Land!</cell>
+                    <cell>Thom Yorke</cell>
+                    <cell>2021</cell>
+                </row>
+            </tabular>
+        </table>
+    </subsection>
+<subsection xml:id="subsec-additonal_resources-books-bookshelves-confirming-books">
+        <title>Confirming Book Data</title>
+        <p>It's important to make sure the data you're parsing ends up in the right places.
+        Create a method in the <c>Book</c> class called <c>get_data()</c> to return the book's information.
+        I really like APA, so format it like this:</p>
+        <program language="python">
+            <input>
+                book = Book("No Longer Human", "Osamu Dazai", 1948)
+                print(book.get_data()) # Dazai, O. (1948). No Longer Human.
+            </input>
+        </program>
+        <p>
+            Now loop through every book on the shelf and print out its data.
+
+            <note>
+                <title>Hint</title>
+                <p>
+                    It may be a good idea to utilize fstrings and the <c>.split()</c> method.
+                </p>
+            </note>
+        </p>
+    </subsection>
+<subsection xml:id="subsec-additonal_resources-books-bookshelves-searching-books">
+        <title>Searching for Books</title>
+        <p>
+            Now that all the book data is loaded in the <c>Bookshelf</c> object, let's create a few
+            methods to search for books.
+
+            </p>
+            <p>
+            Create a method in the <c>Bookshelf</c> class called <c>get_book_by_name()</c> that takes
+            a string as an argument and returns the book with the matching name. If no book is found,
+            return <c>None</c>. Don't worry about case sensitivity for now.
+        </p>
+        <p>
+            Create another method in the <c>Bookshelf</c> class called <c>get_book_by_author()</c>
+            that takes a string as an argument and returns the book with the matching author by last name. If no
+            book is found, return <c>None</c>. Again, don't worry about case sensitivity for now, and don't worry about
+            authors with multiple books. For now, each author only has one book.
+        </p>
+        <p>
+            Now, create a method in the <c>Bookshelf</c> class called <c>get_book_by_year()</c> that
+            takes an integer as an argument and returns the book with the matching year. If no book is
+            found, return <c>None</c>.
+        </p>
+        <p>
+            Finally, create a method in the <c>Bookshelf</c> class called <c>get_book_by_position()</c>
+            that takes an integer as an argument and returns the book at the matching position. If no
+            book is found, return <c>None</c>.
+        </p>
+    </subsection>
+    <subsection xml:id="subsec-additonal_resources-books-bookshelves-adding-more-books">
+        <title>Filling Up Bookshelves</title>
+        <p>
+            Now that you're able to search for books, let's fill up the bookshelf with some more books.
+            Take the following list of books and save it as a text file. Then, write a function
+            called <c>load_books()</c> that reads the file, turns each line into a <c>Book</c> object,
+            and adds it to the <c>Bookshelf</c> object. You shouldn't need to use any
+            <c>try</c>/<c>except</c> blocks for this.
+        </p>
+        <program>
+            <input>
+No Longer Human,Osamu Dazai,1948
+The Parallax View,Slavoj Žižek,2006
+Fear Stalks the Land!,Thom Yorke,2021
+A Certain Hunger,Chelsea Summers,2020
+The Stranger,Albert Camus,1942
+Annihilation,Jeff Vandermeer,2014
+Player Piano,Kurt Vonnegut,1952
+1984,George Orwell,1949
+Brave New World,Aldous Huxley,1932
+Farenheit 451,Ray Bradbury,1953
+Metamorphosis,Franz Kafka,1915
+Slaughterhouse-Five,Kurt Vonnegut,1969
+Thus Spoke Zarathustra,Friedrich Nietzche,1885
+Zen and the Art of Motorcycle Maintenance,Robert Pirsig,1974
+Sapiens,Yuval Harari,2011
+What If?,Randall Munroe,2014
+The Tipping Point,Malcolm Gladwell,2000
+Flash Boys,Michael Lewis,2014
+Hacker Hoaxer Whistleblower Spy,Gabriella Coleman,2014
+Kid A Mnesia,Thom Yorke,2021
+The Consumer,Michael Gira,1994
+Lapvona,Ottessa Moshfegh,2022
+Spelunky,Derek Yu,2016
+Siddhartha,Hermann Hesse,1922
+The Great Gatsby,F. Scott Fitzgerald,1925
+Lolita,Vladimir Nabakov,1955
+Diary of an Oxygen Thief,Anonymous,2006
+The Road,Cormac McCarthy,2006
+Metamorphosis,Franz Kafka,2005
+Crime and Punishment,Fyodor Dostoevsky,1866
+A Litte Life,Hanya Yanagihara,2015
+Gone Girl,Gillian Flynn,2012
+Neuromancer,William Gibson,1984
+Do Androids Dream of Electric Sheep?,Phillip K. Dick,1968
+Story of Your Life,Ted Chiang,1998
+The Big Short,Michael Lewis,2010
+The Brothers Karamazov,Fyodor Dostoevsky,1880
+2001: A Space Odyssey,Arthur C. Clarke,1968
+The Myth of Sisyphus,Albert Camus,1942
+On the Taboo Against Knowing Who You Are,Alan Watts,1966
+Animal Farm,George Orwell,1945
+            </input>
+        </program>
+        <p>
+            You're gonna need to make some edits to some existing functions. Not all these authors have a last name, so you'll have to use their first name without an initial.
+Also, a few searching methods may need to be revised. Some books may have been written in the same year, or by the same author. If this is the case, return a string where each book is separated by a newline.
+        </p>
+    </subsection>
+    <subsection xml:id="subsec-additonal_resources-books-bookshelves-final-touches">
+        <title>Final Touches</title>
+        <p>
+            There are a few extra methods to include, just to add some more functionality and fix some issues.
+        </p>
+        <p>
+            There were a lot of classics on that list, so add a method to the <c>Bookshelf</c> class that returns a list of books written before a specified year. Make sure
+            this method returns a list of <c>Book</c> objects, not strings. Also, make sure the year is inclusive.
+        </p>
+        <p>
+            Some authors appear on that list more than others. Write a method that returns a list of authors that have more than one book on the shelf. Make sure this method returns a list of strings, not <c>Book</c> objects.
+        </p>
+        <p>
+            Finally, there are some books that have been replaced by newer copies on the shelf. Write a method that finds any duplicate books and removes the older copies. Have this method return the number of books removed.
+        </p>
+    </subsection>
+</section>

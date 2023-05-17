@@ -38,6 +38,8 @@
 
         <xi:include href="./Classes/toctree.ptx" />
 
+        <xi:include href="./AdditionalResources/toctree.ptx" />
+
 
     </book>
 </pretext>
