@@ -1,4 +1,4 @@
-<section xml:id="simple-python-data_input219_index-0">
+<section xml:id="simple-python-data_input">
         <title>Input</title>
         <p>Our programs get more interesting if they don't do exactly the same thing every time they run.
             One way to make them more interesting is to get <term>input</term> from the user.  Luckily, in Python

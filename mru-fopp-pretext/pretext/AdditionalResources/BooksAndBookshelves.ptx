@@ -2,8 +2,7 @@
 <section xml:id="additional_resources-books-bookshelves">
     <title>Books and Bookshelves</title>
     <p>This exercise is designed to give you some experience working with objects and classes. It is
-        advised that you've completed the <xref
-            xml:id="classes_introduction-classes-and-objects-the-basics">Classes</xref> exercise
+        advised that you've completed the Classes exercises
         before attempting.</p>
     <p> You're given two classes, <c>Bookshelf</c> and <c>Book</c>. <c>Book</c>s have a few
         properties: a <c>title</c>, an <c>author</c>, and a <c>year of publication</c>. We set these

@@ -10,7 +10,7 @@
             reader - it is completely ignored by the interpreter.
             In Python, the <c>#</c> token starts a comment.  The rest of the line is ignored.
             Here is a new version of <em>Hello, World!</em>.</p>
-  <program xml:id="ac1_8_1" interactive="activecode" language="python">
+  <program xml:id="ac1_10_1" interactive="activecode" language="python">
     <input>
 #---------------------------------------------------
 # This demo program shows off how elegant Python is!
@@ -28,7 +28,7 @@ print("Hello, World!")     # Isn't this easy!
   <p>
     <term>Check your understanding</term>
   </p>
-  <exercise label="question1_8_1">
+  <exercise label="question1_10_1">
     <statement>
       <p>What are comments for?</p>
     </statement>

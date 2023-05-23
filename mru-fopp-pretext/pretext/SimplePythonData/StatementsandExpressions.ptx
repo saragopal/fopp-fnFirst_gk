@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<section xml:id="simple-python-data_statements-and-expressions222_index-0">
+<section xml:id="simple-python-data_statements-and-expressions">
   <title>Statements and Expressions</title>
   <p>A <term>statement</term> is an instruction that the Python interpreter can execute. You have
     only seen the assignment statement so far. Some other kinds of statements that you'll see in

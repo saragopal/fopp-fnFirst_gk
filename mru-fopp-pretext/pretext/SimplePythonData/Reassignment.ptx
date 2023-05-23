@@ -32,7 +32,7 @@ print(a,b)
   </program>
   <p>Line 4 changes the value of <c>a</c> but does not change the value of
             <c>b</c>, so they are no longer equal. We will have much more to say about equality in a later chapter.</p>
-  <subsection xml:id="simple-python-data_developing-your-mental-model-of-how-python-evaluates">
+  <subsection xml:id="simple-python-data_reassignment_developing-your-mental-model-of-how-python-evaluates">
     <title>Developing your mental model of How Python Evaluates</title>
     <p>Its important to start to develop a good mental model of the steps the Python interpreter takes when evaluating an assignment statement.  In an assignment statement, the interpreter first evaluates the code on the right hand side of the assignment operator.  It then gives a name to whatever that is.  The (very short) visualization below shows what is happening.</p>
     <exercise runestone="se_ac2_13_1a"/>
