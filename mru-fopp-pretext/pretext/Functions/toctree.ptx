@@ -14,7 +14,7 @@
     <xi:include href='./Functionscancallotherfunctions.ptx' />
     <xi:include href='./FlowofExecutionSummary.ptx' />
     <xi:include href='./Printvsreturn.ptx' />
-    <xi:include href='./PassingMutableObjects.ptx' />
+    <!-- <xi:include href='./PassingMutableObjects.ptx' /> -->
     <xi:include href='./SideEffects.ptx' />
     <xi:include href='./Glossary.ptx' />
     <xi:include href='./Exercises.ptx' />

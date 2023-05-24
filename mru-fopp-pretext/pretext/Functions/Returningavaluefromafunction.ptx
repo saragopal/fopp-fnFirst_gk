@@ -18,7 +18,7 @@
     parameter and return the result of squaring that number. Here is the black-box diagram with the
     Python code following.</p>
   <image source="Functions/Figures/squarefun.png" width="50%" />
-  <program xml:id="ac11_4_1" interactive="activecode" language="python">
+  <program xml:id="ac4_5_1" interactive="activecode" language="python">
     <input>
       def square(x: int) -&gt; int:
         y = x * x
@@ -42,7 +42,7 @@
     the value was named in the caller (the place where the function was invoked). Inside <c>square</c>,
     it's name is <c>x</c>. You can see this very clearly in codelens, where the global variables and
     the local variables for the square function are in separate boxes.</p>
-  <program xml:id="clens11_4_1" interactive="codelens" language="python">
+  <program xml:id="clens4_5_1" interactive="codelens" language="python">
     <input>
       def square(x: int) -&gt; int:
         y = x * x
@@ -57,7 +57,7 @@
     other than <c>None</c>. Consider the following common mistake made by beginning Python
     programmers. As you step through this example, pay very close attention to the return value in
     the local variables listing. Then look at what is printed when the function is over.</p>
-  <program xml:id="clens11_4_2" interactive="codelens" language="python">
+  <program xml:id="clens4_5_2" interactive="codelens" language="python">
     <input>
       def square(x: int) -&gt; None:
         y = x * x
@@ -79,7 +79,7 @@
     value 5 is returned and assigned to the variable x, then printed. Lines 4 and 5 never execute.
     Run the following code and try making some modifications of it to make sure you understand why <q>
     there</q> and 10 never print out.</p>
-  <program xml:id="ac11_4_2" interactive="activecode" language="python">
+  <program xml:id="ac4_5_2" interactive="activecode" language="python">
     <input>
       def weird() -&gt; int:
         print("here")
@@ -193,7 +193,7 @@
   <p>
     <term>Check your understanding</term>
   </p>
-  <exercise label="question11_4_1">
+  <exercise label="question4_5_1">
     <statement>
       <p>What is wrong with the following function definition:</p>
       <program language="python">
@@ -237,8 +237,7 @@
           <p>A function cannot return a number.</p>
         </statement>
         <feedback>
-          <p>Functions can return any legal data, including (but not limited to) numbers, strings,
-            lists, dictionaries, etc.</p>
+          <p>Functions can return any legal data, including (but not limited to) numbers, strings, booleans, etc.</p>
         </feedback>
       </choice>
       <choice>
@@ -251,7 +250,7 @@
       </choice>
     </choices>
   </exercise>
-  <exercise label="question11_4_2">
+  <exercise label="question4_5_2">
     <statement>
       <p>What will the following function return?</p>
       <program language="python">
@@ -294,7 +293,7 @@
       </choice>
     </choices>
   </exercise>
-  <exercise label="question11_4_3">
+  <exercise label="question4_5_3">
     <statement>
       <p>What will the following code output?</p>
       <program language="python">
@@ -335,7 +334,7 @@
       </choice>
     </choices>
   </exercise>
-  <exercise label="question11_4_4">
+  <exercise label="question4_5_4">
     <statement>
       <p>What will the following code output?</p>
       <program language="python">
@@ -378,7 +377,7 @@
       </choice>
     </choices>
   </exercise>
-  <exercise label="question11_4_5">
+  <exercise label="question4_5_5">
     <statement>
       <p>What will the following code output?</p>
       <program language="python">
@@ -437,7 +436,7 @@
       </choice>
     </choices>
   </exercise>
-  <exercise label="question11_4_6">
+  <exercise label="question4_5_6">
     <statement>
       <p>Which will print out first, square, g, or a number?</p>
       <program language="python">
@@ -533,12 +532,12 @@
       </choice>
     </choices>
   </exercise> -->
-  <exercise label="ac11_4_4">
+  <exercise label="ac4_5_4">
     <statement>
       <p><term>8.</term> Write a function named <c>same</c> that takes a string as input, and simply
         returns that string.</p>
     </statement>
-    <program xml:id="ac11_4_4_editor" interactive="activecode" language="python">
+    <program xml:id="ac4_5_4_editor" interactive="activecode" language="python">
       <input>
 
         =====
@@ -553,12 +552,12 @@
       </input>
     </program>
   </exercise>
-  <exercise label="ac11_4_5">
+  <exercise label="ac4_5_5">
     <statement>
       <p><term>9.</term> Write a function called <c>same_thing</c> that returns the parameter,
         unchanged.</p>
     </statement>
-    <program xml:id="ac11_4_5_editor" interactive="activecode" language="python">
+    <program xml:id="ac4_5_5_editor" interactive="activecode" language="python">
       <input>
 
         =====
@@ -576,12 +575,12 @@
       </input>
     </program>
   </exercise>
-  <exercise label="ac11_4_6">
+  <exercise label="ac4_5_6">
     <statement>
       <p><term>10.</term> Write a function called <c>subtract_three</c> that takes an integer or any
         number as input, and returns that number minus three.</p>
     </statement>
-    <program xml:id="ac11_4_6_editor" interactive="activecode" language="python">
+    <program xml:id="ac4_5_6_editor" interactive="activecode" language="python">
       <input>
 
         =====
@@ -597,12 +596,12 @@
       </input>
     </program>
   </exercise>
-  <exercise label="ac11_4_7">
+  <exercise label="ac4_5_7">
     <statement>
       <p><term>11.</term> Write a function called <c>change</c> that takes one number as its input
         and returns that number, plus 7.</p>
     </statement>
-    <program xml:id="ac11_4_7_editor" interactive="activecode" language="python">
+    <program xml:id="ac4_5_7_editor" interactive="activecode" language="python">
       <input>
 
         =====
@@ -618,14 +617,14 @@
       </input>
     </program>
   </exercise>
-  <exercise label="ac11_4_8">
+  <exercise label="ac4_5_8">
     <statement>
       <p><term>12.</term> Write a function named <c>intro</c> that takes a string as input. This
         string is intended to be a person's name and the output is a standardized greeting. For
         example, given the string <q>Becky</q> as input, the function should return: <q>Hello, my
         name is Becky and I love COMP 1701.</q></p>
     </statement>
-    <program xml:id="ac11_4_8_editor" interactive="activecode" language="python">
+    <program xml:id="ac4_5_8_editor" interactive="activecode" language="python">
       <input>
 
         =====
@@ -642,12 +641,12 @@
       </input>
     </program>
   </exercise>
-  <exercise label="ac11_4_9">
+  <exercise label="ac4_5_9">
     <statement>
       <p><term>13.</term> Write a function called <c>s_change</c> that takes one string as input and
         returns that string, concatenated with the string <q> for fun.</q>.</p>
     </statement>
-    <program xml:id="ac11_4_9_editor" interactive="activecode" language="python">
+    <program xml:id="ac4_5_9_editor" interactive="activecode" language="python">
       <input>
 
         =====

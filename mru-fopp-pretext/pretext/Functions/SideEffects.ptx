@@ -5,7 +5,7 @@
     is passed to it. Global variables are another way to have side effects. For example, similar to
     examples you have seen above, we could make <c>double</c> have a side effect on the global
     variable y.</p>
-  <program xml:id="clens11_13_1" interactive="codelens" language="python">
+  <program xml:id="clens4_13_1" interactive="codelens" language="python">
     <input>
       def double(n):
         global y
@@ -30,7 +30,7 @@
     that global variable to be equal to a value returned from the function. For example, the
     following is a better version
     of the code above.</p>
-  <program xml:id="clens11_13_2" interactive="codelens" language="python">
+  <program xml:id="clens4_13_2" interactive="codelens" language="python">
     <input>
       def double(n):
         return 2 * n

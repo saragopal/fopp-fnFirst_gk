@@ -40,7 +40,7 @@
     function is executed,
     using a function without any parameters to illustrate.</p>
   <p>Here's the definition of a simple function, hello.</p>
-  <program xml:id="ac11_1_1" interactive="activecode" language="python">
+  <program xml:id="ac4_2_1" interactive="activecode" language="python">
     <input>
       def hello() -&gt; None:
         """This function says hello and greets you"""

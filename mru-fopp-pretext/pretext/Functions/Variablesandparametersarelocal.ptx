@@ -1,10 +1,10 @@
 <?xml version="1.0"?>
-<section xml:id="functions_variables-and-parameters-are-local116_index-0">
+<section xml:id="functions_variables-and-parameters-are-local">
   <title>Variables and parameters are local</title>
   <p>An assignment statement in a function creates a <term>local variable</term> for the variable on the left hand side of the
             assignment operator. It is called local because this variable only exists inside the function and you cannot use it
             outside. For example, consider again the <c>square</c> function:</p>
-  <program xml:id="ac11_7_1" interactive="activecode" language="python">
+  <program xml:id="ac4_8_1" interactive="activecode" language="python">
     <input>
 def square(x):
     y = x * x
@@ -32,7 +32,7 @@ print(y)
   <p>
     <term>Check Your Understanding</term>
   </p>
-  <exercise label="question11_7_1">
+  <exercise label="question4_8_1">
     <statement>
       <p>True or False: Local variables can be referenced outside of the function they were defined in.</p>
     </statement>
@@ -55,7 +55,7 @@ print(y)
       </choice>
     </choices>
   </exercise>
-  <exercise label="question11_7_2">
+  <!-- <exercise label="question4_8_2">
     <statement>
       <p>Which of the following are local variables? Please, write them in order of what line they are on in the code. <var/>  <var/>  </p>
     </statement>
@@ -63,7 +63,7 @@ print(y)
       <var>
         <program language="python">
           <input>
-numbers = [1, 12, 13, 4]
+numbers = "1, 12, 13, 4"
 def foo(bar):
     aug = str(bar) + "street"
     return aug
@@ -108,8 +108,8 @@ for item in numbers:
         </condition>
       </var>
     </setup>
-  </exercise>
-  <exercise label="question11_7_3">
+  </exercise> -->
+  <exercise label="question4_8_2">
     <statement>
       <p>What would be the result of running the following code?</p>
       <program language="python">
@@ -160,7 +160,7 @@ print(subtract(x))
       </choice>
     </choices>
   </exercise>
-  <exercise label="question11_7_4">
+  <exercise label="question4_8_3">
     <statement>
       <p>What would be the result of running the following code?</p>
       <program language="python">
@@ -205,7 +205,7 @@ print(producing(adding(4)))
       </choice>
     </choices>
   </exercise>
-  <exercise label="question11_7_5">
+  <exercise label="question4_8_4">
     <statement>
       <p>What would be the result of running the following code?</p>
       <program language="python">

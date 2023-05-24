@@ -22,7 +22,7 @@
   <p>Look at the following example. See if you can predict the output. Then, Run to see if your
     predictions were
     correct:</p>
-  <program xml:id="logop_ex1" interactive="activecode" language="python">
+  <program xml:id="ac5_3_1" interactive="activecode" language="python">
     <input>
       x = True
       y = False
@@ -36,7 +36,7 @@
     example, they are often combined with the comparison operators, as in this example. Again,
     before you
     run this, see if you can predict the outcome:</p>
-  <program xml:id="ac7_3_1" interactive="activecode" language="python">
+  <program xml:id="ac5_3_2" interactive="activecode" language="python">
     <input>
       x = 5
       print(x &gt; 0 and x &lt; 10)
@@ -58,7 +58,7 @@
       both sides. The correct way to write this is <c>number == 5 or number == 6</c>. Remember that
       both operands of <c>or</c> must be booleans in order to yield proper results.</p>
   </note>
-  <subsection xml:id="conditionals_smart-evaluation50_index-0">
+  <subsection xml:id="conditionals_smart-evaluation">
     <title>Smart Evaluation</title>
     <p>Python is <q>smart</q> about the way it evaluates expressions using boolean operators.
       Consider the following example:</p>
@@ -82,7 +82,7 @@ if answer == 'Y' or answer == 'y':
       to do anything to make Python do this; it's the way Python works. It saves a little processing
       time. And, as a special bonus, you can take advantage of Python's short-circuiting behavior to
       shorten your code. Consider the following example:</p>
-    <program xml:id="ac_logop_dangerous" interactive="activecode" language="python">
+    <program xml:id="ac5_3_3" interactive="activecode" language="python">
       <input>
         def check_average_weight() -&gt; None:
           total_weight = int(input('Enter total weight of luggage:'))
@@ -109,7 +109,7 @@ if answer == 'Y' or answer == 'y':
       single <c>if</c> statement by joining the conditions using the <c>and</c> operator. Consider
       the version below, and think about why this <c>if</c> statement is equivalent in its behavior
       to the previous version with two nested <c>if</c> statements:</p>
-    <program xml:id="ac_logop_smarteval" interactive="activecode" language="python">
+    <program xml:id="ac5_3_4" interactive="activecode" language="python">
       <input>
         def check_average_weight() -&gt; None:
           total_weight = int(input('Enter total weight of luggage:'))
@@ -141,7 +141,7 @@ if answer == 'Y' or answer == 'y':
     <p>
       <term>Check your understanding</term>
     </p>
-    <exercise label="question7_3_1">
+    <exercise label="question5_3_1">
       <statement>
         <p>What is the correct Python expression for checking to see if a number stored in a
           variable x is between 0 and 5.</p>
@@ -187,7 +187,7 @@ if answer == 'Y' or answer == 'y':
         </choice>
       </choices>
     </exercise>
-    <exercise label="question7_3_2">
+    <exercise label="question5_3_2">
       <statement>
         <p>Which of the following may result in a crash at runtime if the user presses Enter without
           typing a response?</p>
@@ -220,7 +220,7 @@ if len(yesno) &gt; 0 and yesno[0] == 'Y':
         </choice>
       </choices>
     </exercise>
-    <exercise label="question7_3_3">
+    <exercise label="question5_3_3">
       <statement>
         <p>Consider the following fragment containing a nested <c>if</c> statement to prevent a
           crash in the event the user enters an empty response for <c>yesno</c>:</p>

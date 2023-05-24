@@ -21,7 +21,7 @@
     just by looking at the code. Especially when it is our own code and we are sure that
     we have done everything right!</p>
   <p>Let's try the program again, but this time in an activecode:</p>
-  <program xml:id="ac4_7_1" interactive="activecode" language="python">
+  <program xml:id="ac3_6_1" interactive="activecode" language="python">
     <input>
       current_time_str = input("What is the current time (in hours 0-23)?")
       wait_time_str = input("How many hours do you want to wait")
@@ -44,7 +44,7 @@
       for beginners,
       including the wording chosen to describe errors.</p>
   </note>
-  <exercise label="question4_7_1">
+  <exercise label="question3_6_1">
     <statement>
       <p>Which of the following explains why <c>wait_time_int = int(wait_time_int)</c> is an error?</p>
     </statement>
@@ -128,10 +128,10 @@
         perspective its a missing parenthesis. <program language="python">
           <input>
             current_time_str = input("What is the current time (in hours 0-23)?")
-            wait_time_str = input("How many hours do you want to wait"
+            wait_time_str = input("How many hours do you want to wait")
 
             current_time_int = int(current_time_str)
-            wait_time_int = int(wait_time_str)
+            wait_time_int = int(wait_time_str
 
             final_time_int = current_time_int + wait_time_int
             print(final_time_int)
@@ -231,7 +231,7 @@
       given by the error message is an accurate indication of the line.</p>
     <p>Here's an example of a type error created by a Polish learner. See if you can find
       and fix the error.</p>
-    <program xml:id="ac4_7_4" interactive="activecode" language="python">
+    <program xml:id="ac3_6_4" interactive="activecode" language="python">
       <input>
         a = input('wpisz godzine')
         x = input('wpisz liczbe godzin')
@@ -306,7 +306,7 @@
       mis-remember the name of a variable or even a function you want to call. You have
       seen one example of a NameError at the beginning of this section. Here is another one.
       See if you can get this program to run successfully:</p>
-    <program xml:id="ac4_7_5" interactive="activecode" language="python">
+    <program xml:id="ac3_6_5" interactive="activecode" language="python">
       <input>
         str_time = input("What time is it now?")
         str_wait_time = input("What is the number of hours to wait?")
@@ -342,7 +342,7 @@
       where you expected the search to find the string in question, but it will not be
       highlighted. Most often that will be the typo right there.</p>
     <p>Here is another one for you to try:</p>
-    <program xml:id="ac4_7_6" interactive="activecode" language="python">
+    <program xml:id="ac3_6_6" interactive="activecode" language="python">
       <input>
         n = input("What time is it now (in hours)?")
         n = imt(n)
@@ -364,7 +364,7 @@
       </note>
     </hint>
     <p>And one last bit of code to fix.</p>
-    <program xml:id="ac4_7_7" interactive="activecode" language="python">
+    <program xml:id="ac3_6_7" interactive="activecode" language="python">
       <input>
         present_time = input("Enter the present timein hours:")
         set_alarm = input("Set the hours for alarm:")
@@ -428,7 +428,7 @@
     <p>Value errors occur when you pass a parameter to a function and the function is
       expecting a certain limitations on the values, and the value passed is not compatible.
       We can illustrate that with this particular program in two different ways.</p>
-    <program xml:id="ac4_7_8" interactive="activecode" language="python">
+    <program xml:id="ac3_6_8" interactive="activecode" language="python">
       <input>
         current_time_str = input("What is the current time (in hours 0-23)?")
         current_time_int = int(current_time_str)

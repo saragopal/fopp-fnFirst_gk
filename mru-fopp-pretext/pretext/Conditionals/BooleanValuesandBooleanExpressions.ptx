@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<section xml:id="conditionals_boolean-values-and-boolean-expressions46_index-0">
+<section xml:id="conditionals_boolean-values-and-boolean-expressions">
   <title>Boolean Values and Boolean Expressions</title>
   <p>The Python type for storing true and false values is called <c>bool</c>, named
             after the British mathematician, George Boole. George Boole created <em>Boolean
@@ -7,7 +7,7 @@
   <p>There are only two <term>boolean values</term>.  They are <c>True</c> and <c>False</c>.  Capitalization
             is important, since <c>true</c> and <c>false</c> are not boolean values (remember Python is case
             sensitive).</p>
-  <program xml:id="ac7_2_1" interactive="activecode" language="python">
+  <program xml:id="ac5_2_1" interactive="activecode" language="python">
     <input>
 print(True)
 print(type(True))
@@ -20,7 +20,7 @@ print(type(False))
                 surrounded by quotes.  They are the only two values in the data type <c>bool</c>.  Take a close look at the
                 types shown below.</p>
   </note>
-  <program xml:id="ac7_2_2" interactive="activecode" language="python">
+  <program xml:id="ac5_2_2" interactive="activecode" language="python">
     <input>
 print(type(True))
 print(type("True"))
@@ -29,7 +29,7 @@ print(type("True"))
   <p>A <term>boolean expression</term> is an expression that evaluates to a boolean value.
             The equality operator, <c>==</c>, compares two values and produces a boolean value related to whether the
             two values are equal to one another.</p>
-  <program xml:id="ac7_2_3" interactive="activecode" language="python">
+  <program xml:id="ac5_2_3" interactive="activecode" language="python">
     <input>
 print(5 == 5)
 print(5 == 6)
@@ -64,7 +64,7 @@ x &lt;= y               # x is less than or equal to y
   <p>
     <term>Check your understanding</term>
   </p>
-  <exercise label="question7_2_1">
+  <exercise label="question5_2_1">
     <statement>
       <p>Which of the following is a Boolean expression? Select all that apply.</p>
     </statement>

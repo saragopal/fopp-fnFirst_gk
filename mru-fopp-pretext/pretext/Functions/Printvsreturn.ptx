@@ -95,7 +95,7 @@
   <p>
     <term>Check your understanding</term>
   </p>
-  <exercise label="question11_11_1">
+  <exercise label="question4_12_1">
     <statement>
       <p>What will the following code output?</p>
       <program language="python">
@@ -156,7 +156,7 @@
       </choice>
     </choices>
   </exercise>
-  <exercise label="question11_11_2">
+  <exercise label="question4_12_2">
     <statement>
       <p>What will the following code output?</p>
       <program language="python">

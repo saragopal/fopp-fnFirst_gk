@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<section xml:id="functions_flow-of-execution-summary105_index-0">
+<section xml:id="functions_flow-of-execution-summary">
   <title>Flow of Execution Summary</title>
   <p>When you are working with functions it is really important to know the order in which
     statements are executed. This is called the <term>flow of execution</term> and we've already
@@ -30,7 +30,7 @@
   <p>
     <term>Check your understanding</term>
   </p>
-  <exercise label="question11_10_1">
+  <exercise label="question4_11_1">
     <statement>
       <p>Consider the following Python code. Note that line numbers are included on the left.</p>
       <program language="python">

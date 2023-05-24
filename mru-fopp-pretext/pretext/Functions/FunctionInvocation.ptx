@@ -12,7 +12,7 @@
     we've defined a
     function, we can call it as often as we like and its statements will be executed each time we
     call it.</p>
-  <program xml:id="clens11_2_1" interactive="codelens" language="python">
+  <program xml:id="clens4_3_1" interactive="codelens" language="python">
     <input>
       def hello() -&gt; None:
         print("Hello")
@@ -64,7 +64,7 @@
   <p>
     <term>Check your understanding</term>
   </p>
-  <exercise label="question11_2_1">
+  <exercise label="question4_3_1">
     <statement>
       <p>What is a function in Python?</p>
     </statement>
@@ -108,7 +108,7 @@
       </choice>
     </choices>
   </exercise>
-  <exercise label="question11_2_2">
+  <exercise label="question4_3_2">
     <statement>
       <p>What is one main purpose of a function?</p>
     </statement>
@@ -151,7 +151,7 @@
       </choice>
     </choices>
   </exercise>
-  <exercise label="question11_2_3">
+  <exercise label="question4_3_3">
     <statement>
       <p>How many lines will be output by executing this code?</p>
       <program language="python">
@@ -190,7 +190,7 @@
       </choice>
     </choices>
   </exercise>
-  <exercise label="question11_2_4">
+  <exercise label="question4_3_4">
     <statement>
       <p>How many lines will be output by executing this code?</p>
       <program language="python">

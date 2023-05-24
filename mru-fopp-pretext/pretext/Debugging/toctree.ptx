@@ -7,5 +7,5 @@
     <xi:include href='./RuntimeErrors.ptx' />
     <xi:include href='./SemanticErrors.ptx' />
     <xi:include href='./KnowyourerrorMessages.ptx' />
-    <xi:include href='./Exercises.ptx' />
+    <!-- <xi:include href='./Exercises.ptx' /> -->
 </chapter>

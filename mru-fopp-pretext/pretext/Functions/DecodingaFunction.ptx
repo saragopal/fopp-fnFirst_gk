@@ -92,7 +92,7 @@
   <p>
     <term>Check your understanding: decode this function definition</term>
   </p>
-  <exercise label="question200_1_1">
+  <exercise label="question4_6_1">
     <statement>
       <p>How many parameters does function cyu3 take?</p>
       <program language="python">
@@ -147,7 +147,7 @@
       </choice>
     </choices>
   </exercise>
-  <exercise label="question200_1_2">
+  <exercise label="question4_6_2">
     <statement>
       <p>What are the possible types of variables x and y?</p>
       <program language="python">
@@ -201,7 +201,7 @@
       </choice>
     </choices>
   </exercise>
-  <exercise label="question200_1_3">
+  <exercise label="question4_6_3">
     <statement>
       <p>What datatype is returned?</p>
       <program language="python">
@@ -255,7 +255,7 @@
       </choice>
     </choices>
   </exercise>
-  <exercise label="df_question200_1_3">
+  <exercise label="question4_6_4">
     <statement>
       <p>What should this function's header look like?</p>
       <program language="python">

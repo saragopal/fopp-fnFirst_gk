@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<section xml:id="functions_functions-can-call-other-functions-composition109_index-0">
+<section xml:id="functions_functions-can-call-other-functions-composition">
   <title>Functions can call other functions (Composition)</title>
   <p>It is important to understand that each of the functions we write can be used and called from
     other functions we write. This is one of the most important ways that computer programmers take
@@ -9,7 +9,7 @@
     called <c>square</c> simply computes the square of a given number. The second function called <c>
     sum_of_squares</c> makes use of square to compute the sum of three numbers that have been
     squared.</p>
-  <program xml:id="clens11_9_1" interactive="codelens" language="python">
+  <program xml:id="clens4_10_1" interactive="codelens" language="python">
     <input>
       def square(x):
         y = x * x
@@ -89,14 +89,14 @@
   <p>
     <term>Check your Understanding</term>
   </p>
-  <exercise label="ac11_9_1">
+  <exercise label="ac4_10_1">
     <statement>
       <p><term>1.</term> Write two functions, one called <c>addit</c> and one called <c>mult</c>. <c>
         addit</c> takes one number as an input and adds 5. <c>mult</c> takes one number as an input,
         and multiplies that input by whatever is returned by <c>addit</c>, and then returns the
         result.</p>
     </statement>
-    <program xml:id="ac11_9_1_editor" interactive="activecode" language="python">
+    <program xml:id="ac4_10_1_editor" interactive="activecode" language="python">
       <input>
 
         =====

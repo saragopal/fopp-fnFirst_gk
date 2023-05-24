@@ -52,7 +52,7 @@
   </p>
   <p>In this chapter you will learn about named functions, functions that can be referred to by name
     when you want to execute them.</p>
-  <subsection xml:id="functions_topics">
+  <subsection xml:id="functions_introduction-to-functions_topics">
     <title>Topics</title>
     <p>
       <ul>
@@ -68,7 +68,7 @@
       </ul>
     </p>
   </subsection>
-  <subsection xml:id="functions_learning-objectives">
+  <subsection xml:id="functions_introduction-to-functions_learning-objectives">
     <title>Learning Objectives</title>
     <p>At the end of this chapter, you should be able to:</p>
     <p>
