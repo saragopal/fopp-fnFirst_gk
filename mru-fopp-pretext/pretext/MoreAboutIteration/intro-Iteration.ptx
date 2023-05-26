@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<section xml:id="iteration_introduction-iteration">
+<section xml:id="more-about-iteration_introduction-iteration">
   <title>Introduction: Iteration</title>
   <p>A basic building block of all programs is to be able to repeat some code
             over and over again.  Whether it is updating the bank balances of millions of customers each night, or sending email messages to thousands of people programming involves instructing the computer to do many repetitive actions. In computing, we refer to this repetitive execution as <term>iteration</term>.  In this section, we will explore some mechanisms for basic iteration.</p>

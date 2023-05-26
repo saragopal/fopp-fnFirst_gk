@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<section xml:id="iteration_printing-intermediate-results">
+<section xml:id="more-about-iteration_printing-intermediate-results">
   <title>Printing Intermediate Results</title>
   <p>In this textbook we provide the codelens tool so that you are able to step through
             the program and watch what happens each time a line is evaluated by the Python
@@ -8,7 +8,7 @@
             something is. This is especially helpful in the case of writing for loops or accumulating
             a value. If something is going wrong you can compare what you expect to happen to what
             is actually happening.</p>
-  <program xml:id="ac6_7_1" interactive="activecode" language="python">
+  <program xml:id="ac7_6_1" interactive="activecode" language="python">
     <input>
 w = range(10)
 
@@ -20,7 +20,7 @@ print(tot)
   </program>
   <p>Say we weren't sure what <c>num</c> was being assigned each time we iterated. One way to find out
             would be to add a print statement inside of the for loop to see.</p>
-  <program xml:id="ac6_7_2" interactive="activecode" language="python">
+  <program xml:id="ac7_6_2" interactive="activecode" language="python">
     <input>
 w = range(10)
 
@@ -32,7 +32,7 @@ print(tot)
         </input>
   </program>
   <p>If we wanted to see what was happening to <c>tot</c> as well, we could print that out in the for loop as well!</p>
-  <program xml:id="ac6_7_3" interactive="activecode" language="python">
+  <program xml:id="ac7_6_3" interactive="activecode" language="python">
     <input>
 w = range(10)
 
@@ -47,7 +47,7 @@ print(tot)
   </program>
   <p>Finally, if we wanted to make these numbers easier to understand, we could add more to the print statements
             to make them easier to read!</p>
-  <program xml:id="ac6_7_4" interactive="activecode" language="python">
+  <program xml:id="ac7_6_4" interactive="activecode" language="python">
     <input>
 w = range(10)
 

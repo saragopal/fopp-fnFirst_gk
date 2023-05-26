@@ -1,12 +1,12 @@
 <?xml version="1.0"?>
-<section xml:id="more-about-iteration_break-and-continue">
+<section xml:id="iteration_break-and-continue">
   <title>Break and Continue</title>
   <p>Python provides ways for us to control the flow of iteration with a two keywords: break and continue.</p>
   <p><c>break</c> allows the program to immediately &#x2018;break out' of the loop, regardless of the loop's conditional structure.
             This means that the program will then skip the rest of the iteration, without rechecking the condition, and just goes on
             to the next outdented code that exists after the whole while loop.</p>
-  <image source="MoreAboutIteration/Figures/while_and_break.png" width="50%" alt="image showing a rectangle with &quot;code block&quot; written on it on top. Then, text that read &quot;while {condition}&quot;: followed by an indented block with &quot;...&quot; written on it. break is then written and another indented block is placed after the phrase break, which has &quot;... (skipped)&quot; written on it. Finally, an unindented block belonging to code outside the while loop is at the bottom. It says &quot;code block&quot;. An arrow points from the word break to the unindented block at the bottom and the phrase &quot;break out of the loop&quot; is written."/>
-  <program xml:id="ac14_5_1" interactive="activecode" language="python">
+  <image source="Iteration/Figures/while_and_break.png" width="50%" alt="image showing a rectangle with &quot;code block&quot; written on it on top. Then, text that read &quot;while {condition}&quot;: followed by an indented block with &quot;...&quot; written on it. break is then written and another indented block is placed after the phrase break, which has &quot;... (skipped)&quot; written on it. Finally, an unindented block belonging to code outside the while loop is at the bottom. It says &quot;code block&quot;. An arrow points from the word break to the unindented block at the bottom and the phrase &quot;break out of the loop&quot; is written."/>
+  <program xml:id="ac6_4_1" interactive="activecode" language="python">
     <input>
 while True:
     print("this phrase will always print")
@@ -21,8 +21,8 @@ print("We are done with the while loop.")
   <p><c>continue</c> is the other keyword that can control the flow of iteration. Using <c>continue</c> allows the program to
             immediately <q>continue</q> with the next iteration. The program will skip the rest of the iteration, recheck the condition,
             and maybe does another iteration depending on the condition set for the while loop.</p>
-  <image source="MoreAboutIteration/Figures/while_and_continue.png" width="50%" alt="image showing a rectangle with &quot;code block&quot; written on it on top. Then, text that read &quot;while {condition}&quot;: followed by an indented block with &quot;...&quot; written on it. continue is then written and another indented block is placed after the phrase continue, which has &quot;... (skipped)&quot; written on it. Finally, an unindented block belonging to code outside the while loop is at the bottom. It says &quot;code block&quot;. An arrow points from the word continue to the while conditional statement at the top of the while loop. The phrase &quot;continue at the start of the loop&quot; is written."/>
-  <program xml:id="ac14_5_2" interactive="activecode" language="python">
+  <image source="Iteration/Figures/while_and_continue.png" width="50%" alt="image showing a rectangle with &quot;code block&quot; written on it on top. Then, text that read &quot;while {condition}&quot;: followed by an indented block with &quot;...&quot; written on it. continue is then written and another indented block is placed after the phrase continue, which has &quot;... (skipped)&quot; written on it. Finally, an unindented block belonging to code outside the while loop is at the bottom. It says &quot;code block&quot;. An arrow points from the word continue to the while conditional statement at the top of the while loop. The phrase &quot;continue at the start of the loop&quot; is written."/>
+  <program xml:id="ac6_4_2" interactive="activecode" language="python">
     <input>
 x = 0
 while x &lt; 10:

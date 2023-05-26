@@ -22,7 +22,7 @@
       that needs to happen when a word does not contain the letter &#x2018;n' then you won't need an
       else
       clause. The program should just continue onward!</p>
-    <exercise label="question7_11_1">
+    <exercise label="question5_10_1">
       <statement>
         <p>What is the best set of conditonal statements provided based on the following prompt? You
           want to keep track of all the words that have the letter &#x2018;t' and in a separate
@@ -68,7 +68,7 @@
         </choice>
       </choices>
     </exercise>
-    <exercise label="question7_11_2">
+    <exercise label="question5_10_2">
       <statement>
         <p>Select the most appropriate set of conditonal statements for the situation described: You
           want to keep track of all the words that contain both <q>t</q> and <q>z</q>.</p>

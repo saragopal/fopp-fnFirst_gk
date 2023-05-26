@@ -1,9 +1,9 @@
 <?xml version="1.0"?>
-<section xml:id="iteration_strings-and-for-loops">
+<section xml:id="more-about-iteration_strings-and-for-loops">
   <title>Strings and <c>for</c> loops</title>
   <p>Since a string is simply a sequence of characters, the <c>for</c> loop iterates over each character
             automatically. (As always, try to predict what the output will be from this code before your run it.)</p>
-  <program xml:id="ac6_4_1" interactive="activecode" language="python">
+  <program xml:id="ac7_4_1" interactive="activecode" language="python">
     <input>
 for achar in "Go Spot Go":
     print(achar)
@@ -15,7 +15,7 @@ for achar in "Go Spot Go":
   <p>
     <term>Check your understanding</term>
   </p>
-  <exercise label="question6_4_1">
+  <exercise label="question7_4_1">
     <statement>
       <p>How many times is the word HELLO printed by the following statements?</p>
       <program language="python">

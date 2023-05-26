@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<section xml:id="more-about-iteration_the-listener-loop">
+<section xml:id="iteration_the-listener-loop">
   <title>The Listener Loop</title>
   <p>At the end of the previous section, we advised using a for loop whenever it will be known at the beginning of the
             iteration process how many times the block of code needs to be executed. Usually, in python, you will use a for loop
@@ -7,7 +7,7 @@
             to be executed? The answer is, when it depends on something that happens during the execution.</p>
   <p>One very common pattern is called a <term>listener loop</term>. Inside the while loop there is a function call to get user input.
             The loop repeats indefinitely, until a particular input is received.</p>
-  <program xml:id="ac14_3_1" interactive="activecode" language="python">
+  <program xml:id="ac6_3_1" interactive="activecode" language="python">
     <input>
 theSum = 0
 x = -1
@@ -27,9 +27,9 @@ print(theSum)
             least once.</p>
   <p>If you're at all unsure about how that code works, try adding print statements inside the while loop that print out the
             values of x and theSum.</p>
-  <subsection xml:id="more-about-iteration_other-uses-of-while">
+  <subsection xml:id="iteration_other-uses-of-while">
     <title>Other uses of <c>while</c></title>
-    <subsubsection xml:id="more-about-iteration_sentinel-values">
+    <subsubsection xml:id="iteration_sentinel-values">
       <title>Sentinel Values</title>
       <p>Indefinite loops are much more common in the real world than definite loops.</p>
       <p>
@@ -81,7 +81,7 @@ print(theSum)
                     We don't have a <q>little plastic bar</q> data type in Python, so we'll do the next best thing: we
                     will use a <c>price</c> of zero to mean <q>this is my last item.</q> In this program,
                     zero is a <term>sentinel value</term>, a value used to signal the end of the loop. Here's the code:</p>
-      <program xml:id="ac14_3_2" interactive="activecode" language="python">
+      <program xml:id="ac6_3_2" interactive="activecode" language="python">
         <input>
 def checkout() -&gt; None:
     total = 0
@@ -123,7 +123,7 @@ checkout()
         </ul>
       </p>
     </subsubsection>
-    <subsubsection xml:id="more-about-iteration_validating-input">
+    <subsubsection xml:id="iteration_validating-input">
       <title>Validating Input</title>
       <p>You can also use a <c>while</c> loop when you want to <term>validate</term> input;  when you want to make
                     sure the user has entered valid input for a prompt. Let's say you want a function
@@ -133,7 +133,7 @@ checkout()
                     As a preview of coming attractions, it uses
                     the <c>upper()</c> method which is described in String Methods to convert a string to upper case.
                     When you run the following code, try typing something other than Y or N to see how the code reacts:</p>
-      <program xml:id="ac14_3_3" interactive="activecode" language="python">
+      <program xml:id="ac6_3_3" interactive="activecode" language="python">
         <input>
 def get_yes_or_no(message: str) -&gt; str:
     valid_input = False

@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<section xml:id="iteration_flow-of-execution-of-the-for-loop137_index-0">
+<section xml:id="more-about-iteration_flow-of-execution-of-the-for-loop">
   <title>Flow of Execution of the for Loop</title>
   <p>As a program executes, the interpreter always keeps track of which statement is
             about to be executed.  We call this the <term>control flow</term>, or the <term>flow of
@@ -12,7 +12,7 @@
             The <c>for</c> statement changes this.</p>
   <p>Flow of control is often easy to visualize and understand if we draw a flowchart.
             This flowchart shows the exact steps and logic of how the <c>for</c> statement executes.</p>
-  <image source="Figures/new_flowchart_for.png" width="300px%"/>
+  <image source="MoreAboitIteration/Figures/new_flowchart_for.png" width="300px%"/>
   <note>
     <p>Not sure what a flowchart is? Check out this funny take on it, in <url href="http://xkcd.com/518/" visual="http://xkcd.com/518/">XKCD</url>. <url href="http://xkcd.com/1195/" visual="http://xkcd.com/1195/">And this one</url>.</p>
   </note>
@@ -29,5 +29,5 @@ for name in ["Joe", "Amy", "Brad", "Angelina", "Zuki", "Thandi", "Paris"]:
   <p>While loops may not seem to be necessary when you're iterating over a few items, it is extremely helpful when
             iterating over lots of items. Imagine if you needed to change what happened in the code block. On the left, when you use
             iteration, this is easy. On the right, when you have hard coded the process, this is more difficult.</p>
-  <image source="Iteration/Figures/iteration_vs_hardcoding.png" width="50%" alt="Demonstration of using iteration over hard coding the iteration."/>
+  <image source="MoreAboutIteration/Figures/iteration_vs_hardcoding.png" width="50%" alt="Demonstration of using iteration over hard coding the iteration."/>
 </section>

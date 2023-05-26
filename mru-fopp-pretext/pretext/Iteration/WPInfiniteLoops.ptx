@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<section xml:id="more-about-iteration_infinite-loops">
+<section xml:id="iteration_infinite-loops">
   <title>Infinite Loops</title>
   <p>Although the textbook has a time limit which prevents an active code window from running
             indefinitely, you'll still have to wait a little while if your program has an ininite loop. If
@@ -18,7 +18,7 @@ print("We have escaped.")
 </input>
   </program>
   <p>Another case where an infinite loop is likely to occur is when you have reassiged the value of the variable used in the while statement in a way that prevents the loop from completing. This is an example below (if it takes too long, try reloading the page and stepping through this example in codelens):</p>
-  <program xml:id="ac14_11_1" interactive="activecode" language="python">
+  <program xml:id="ac6_5_1" interactive="activecode" language="python">
     <input>
 b = 15
 
@@ -34,7 +34,7 @@ while b &lt; 60:
             again. There is no way to break out of this loop.</p>
   <p>Sometimes programs can take a while to run, so how can you determine if your code is just talking a while or if it is stuck inside an infinite loop? Print statements are for people, so take advantage of them! You can add print statements to keep track of how your variables are changing as the program processes the instructions given to them. Below is an example of an infinite loop. Try adding print statments to see where it's coming from. When you're done, check out the answer to see what our solution was.</p>
   <p>
-        <exercise label="question14_11_3">
+        <exercise label="question6_5_3">
           <statement/>
           <program interactive="" language=""/>
           <solution>

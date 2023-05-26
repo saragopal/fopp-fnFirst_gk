@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<section xml:id="conditionals_chained-conditionals47_index-0">
+<section xml:id="conditionals_chained-conditionals">
   <title>Chained conditionals</title>
   <p>Python provides an alternative way to write nested selection such as the one shown in the
     previous section. This is sometimes referred to as a <term>chained conditional</term>.</p>
@@ -25,7 +25,7 @@
     statement ends. Even if more than one condition is true, only the first true
     branch executes.</p>
   <p>Here is the same program using <c>elif</c>.</p>
-  <program xml:id="ac7_9_1" interactive="activecode" language="python">
+  <program xml:id="ac5_9_1" interactive="activecode" language="python">
     <input>
       x = 10
       y = 10
@@ -48,7 +48,7 @@
   <p>
     <term>Check your understanding</term>
   </p>
-  <exercise label="question7_9_1">
+  <exercise label="question5_9_1">
     <statement>
       <p>Which of I, II, and III below gives the same result as the following nested if?</p>
       <program language="python">
@@ -145,7 +145,7 @@
       </choice>
     </choices>
   </exercise>
-  <exercise label="question7_9_2">
+  <exercise label="question5_9_2">
     <statement>
       <p>What will the following code print if x = 3, y = 5, and z = 2?</p>
       <program language="python">
@@ -187,7 +187,7 @@
       </choice>
     </choices>
   </exercise>
-  <exercise label="ac7_9_2">
+  <exercise label="ac5_9_2">
     <statement>
       <p>Create one conditional to find whether <q>false</q> is in string <c>str1</c>. If so, assign
         variable <c>output</c> the string <q>False. You aren't you?</q>. Check to see if <q>true</q>

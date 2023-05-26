@@ -1,0 +1,77 @@
+<?xml version="1.0"?>
+<section xml:id="more-about-iteration_the-for-loop">
+    <title>The <b>for</b> loop</title>
+    <p>Back when we drew the images with turtle it could be quite tedious. If we wanted to draw a
+        square then we had to move then turn, move then turn, etc. etc. four times. If we were
+        drawing a hexagon, or an octagon, or a polygon with 42 sides, it would have been a nightmare
+        to duplicate all that code.</p>
+    <p> A basic building block of all programs is to be able to repeat some code over and over
+        again. We refer to this repetitive idea as <b>iteration</b>. In this section, we will
+        explore some mechanisms for basic iteration. </p>
+    <p> In Python, the <b>for</b> statement allows us to write programs that implement iteration. As
+        a simple example, let's say we have some friends, and we'd like to send them each an email
+        inviting them to our party. We don't quite know how to send email yet, so for the moment
+        we'll just print a message for each friend. </p>
+  <program xml:id="ac7_2_1" interactive="activecode" language="python">
+    <input>
+for name in ["Joe", "Amy", "Brad", "Angelina", "Zuki", "Thandi", "Matthew"]:
+    print("Hi", name, "Please come to my party on Saturday!")
+        </input>
+  </program>
+  <p>
+    Take a look at the output produced when you press the <c>run</c> button. There is one line printed for each friend. Here's how it works:
+  </p>
+  <ul>
+    <li>
+        <p>
+            <c>name</c> in this <c>for</c> statement is called the <b>loop variable</b> or, alternatively, the <b>iterator</b> variable.
+        </p>
+    </li>
+    <li>
+        <p>
+            The list of names in the square brackets is the sequence over which we will iterate.
+        </p>
+    </li>
+    <li>
+        <p>
+            Line 2 is the <b>loop body</b>. The loop body is always indented. The indentation determines exactly what statements are “in the loop”. The loop body is performed one time for each name in the list.
+        </p>
+    </li>
+    <li>
+        <p>
+            On each <i>iteration</i> or <i>pass</i> of the loop, first a check is done to see if there are still more items to be processed. If there are none left (this is called the <b>terminating condition</b> of the loop), the loop has finished. Program execution continues at the next statement after the loop body.
+        </p>
+    </li>
+    <li>
+        <p>
+            If there are items still to be processed, the loop variable is updated to refer to the next item in the list. This means, in this case, that the loop body is executed here 7 times, and each time <c>name</c> will refer to a different friend.
+        </p>
+    </li>
+    <li>
+        <p>
+            At the end of each execution of the body of the loop, Python returns to the <c>for</c> statement, to see if there are more items to be handled.
+        </p>
+    </li>
+  </ul>
+  <p>
+    The overall syntax is <c>for &#60;loop_var_name&#62; in &#60;sequence&#62;:</c>
+  </p>
+  <ul>
+    <li>
+        <p>
+            Between the words for and in, there must be a variable name for the loop variable. You can't put a whole expression there.
+        </p>
+    </li>
+    <li>
+        <p>
+            A colon is required at the end of the line.
+        </p>
+    </li>
+    <li>
+        <p>
+            After the word in and before the colon is an expression that must evaluate to a sequence (e.g, a string or a list or a tuple). It could be a literal, or a variable name, or a more complex expression.
+        </p>
+    </li>
+  </ul>
+
+</section>

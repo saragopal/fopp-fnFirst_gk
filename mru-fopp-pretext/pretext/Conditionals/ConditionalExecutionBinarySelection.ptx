@@ -1,12 +1,12 @@
 <?xml version="1.0"?>
-<section xml:id="conditionals_conditional-execution-binary-selection48_index-0">
+<section xml:id="conditionals_conditional-execution-binary-selection">
   <title>Conditional Execution: Binary Selection</title>
   <p>In order to write useful programs, we almost always need the ability to check conditions and
     change the behavior of the program accordingly. <term>Selection statements</term>, sometimes
     also referred to as <term>conditional statements</term>, give us this ability. The simplest form
     of selection is the <term>if statement</term>. This is sometimes referred to as <term>binary
     selection</term> since there are two possible paths of execution.</p>
-  <program xml:id="ac7_6_1" interactive="activecode" language="python">
+  <program xml:id="ac5_6_1" interactive="activecode" language="python">
     <input>
       def is_even(x: int) -&gt; None:
         if x % 2 == 0:
@@ -49,7 +49,7 @@
   <p>
     <term>Check your understanding</term>
   </p>
-  <exercise label="question7_6_1">
+  <exercise label="question5_6_1">
     <statement>
       <p>How many lines of code can appear in the indented code block below the if and else lines in
         a conditional?</p>
@@ -89,7 +89,7 @@
       </choice>
     </choices>
   </exercise>
-  <exercise label="question7_6_2">
+  <exercise label="question5_6_2">
     <statement>
       <p>What does the following code print? (choose from output a, b, c or nothing)</p>
       <program language="python">
@@ -140,7 +140,7 @@
       </choice>
     </choices>
   </exercise>
-  <exercise label="question7_6_3">
+  <exercise label="question5_6_3">
     <statement>
       <p>What does the following code print?</p>
       <program language="python">
@@ -232,7 +232,7 @@ myTests().main()
         </input>
     </program>
   </exercise> -->
-  <exercise label="ac7_6_4">
+  <exercise label="ac5_6_4">
     <statement>
       <p>Create a variable, <c>b</c>, and assign it the value of <c>15</c>. Then, write code to see
         if the value <c>b</c> is greater than that of <c>a</c>. If it is, <c>a</c>'s value should be
@@ -240,7 +240,7 @@ myTests().main()
         happen. Finally, create variable <c>c</c> and assign it the value of the sum of <c>a</c> and <c>
         b</c>.</p>
     </statement>
-    <program xml:id="ac7_6_4_editor" interactive="activecode" language="python">
+    <program xml:id="ac5_6_4_editor" interactive="activecode" language="python">
       <input>
         a = 20
 

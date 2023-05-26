@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<section xml:id="iteration_the-accumulator-pattern">
+<section xml:id="more-about-iteration_the-accumulator-pattern">
   <title>The Accumulator Pattern</title>
   <p>One common programming <q>pattern</q> is to traverse a sequence, <term>accumulating</term> a value as we go,
             such as the sum-so-far or the maximum-so-far. That way, at the end of the traversal we have
@@ -23,7 +23,7 @@
     </li>
   </dl>
   <p>For example, consider the following code, which computes the sum of the numbers in a string.</p>
-  <program xml:id="ac6_6_1" interactive="activecode" language="python">
+  <program xml:id="ac7_5_1" interactive="activecode" language="python">
     <input>
     def sum_nums() -&gt; int:
       nums = "123456789"
@@ -46,7 +46,7 @@
             that you update the accumulator.</p>
   <p>Here is the same program in codelens.  Step through the function and watch the <q>running total</q>
             accumulate the result.</p>
-  <program xml:id="clens6_6_1" interactive="codelens" language="python">
+  <program xml:id="clens7_5_1" interactive="codelens" language="python">
     <input>
     def sum_nums() -&gt; int:
       nums = "123456789"
@@ -66,7 +66,7 @@
             takes at least one input - which should be an integer - and returns a list as long as your input. While you can provide
             two inputs, we will focus on using range with just one input. With one input, range will start at zero and go up to - but
             not include - the input. Here are the examples:</p>
-  <program xml:id="ac6_8_10" interactive="activecode" language="python">
+  <program xml:id="ac7_5_2" interactive="activecode" language="python">
     <input>
 print("range(5): ")
 for i in range(5):
@@ -77,7 +77,7 @@ for i in range(0, 5):
     print(i)
         </input>
   </program>
-  <program xml:id="ac6_6_2" interactive="activecode" language="python">
+  <program xml:id="ac7_5_3" interactive="activecode" language="python">
     <input>
 accum = 0
 for w in range(11):
@@ -96,7 +96,7 @@ print(sec_accum)
   <p>We can use the accumulation pattern is count the number of something or to sum up a total. The
             above examples only covered how to get the sum for a list, but we can also count how many items are
             in the list if we wanted to.</p>
-  <program xml:id="ac6_6_3" interactive="activecode" language="python">
+  <program xml:id="ac7_5_4" interactive="activecode" language="python">
     <input>
 nums = "123456789"
 count = 0
@@ -113,7 +113,7 @@ print(count)
   <p>
     <term>Check your understanding</term>
   </p>
-  <exercise label="question6_6_1">
+  <exercise label="question7_5_5">
     <statement>
       <p>Consider the following code:</p>
       <program language="python">
@@ -155,7 +155,7 @@ print(accum)
       </choice>
     </choices>
   </exercise>
-  <exercise label="pp6_6_1" indentation="show" language="python">
+  <exercise label="pp7_5_1" indentation="show" language="python">
     <statement>
       <p>Rearrange the code statements so that the program will add up the first n odd numbers where n is provided by the user.</p>
     </statement>
@@ -197,11 +197,11 @@ myTests().main()
         </input>
     </program>
   </exercise> -->
-  <exercise label="ac6_6_10">
+  <exercise label="ac7_5_5">
     <statement>
       <p>Count the number of characters in string <c>str1</c>. Do not use <c>len()</c>. Save the number in variable <c>numbs</c>.</p>
     </statement>
-    <program xml:id="ac6_6_10_editor" interactive="activecode" language="python">
+    <program xml:id="ac7_5_5_editor" interactive="activecode" language="python">
       <input>
 str1 = "I like nonsense, it wakes up the brain cells. Fantasy is a necessary ingredient in living."
 
@@ -219,11 +219,11 @@ myTests().main()
         </input>
     </program>
   </exercise>
-  <exercise label="ac6_8_9">
+  <exercise label="ac7_5_6">
     <statement>
       <p>Create a string of numbers 0 through 40 and assign this string to the variable <c>numbers</c>. Then, accumulate the total of the string's values and assign that sum to the variable <c>sum1</c>. Note that, although the value <c>10</c> will be added to the string, it will be summed as <c>1 + 0</c>, as the loop merely looks at one digit at a time.</p>
     </statement>
-    <program xml:id="ac6_8_9_editor" interactive="activecode" language="python">
+    <program xml:id="ac7_5_6_editor" interactive="activecode" language="python">
       <input>
 
 =====
