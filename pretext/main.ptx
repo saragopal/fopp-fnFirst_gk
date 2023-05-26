@@ -2,38 +2,44 @@
 <pretext xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
     <!-- <xi:include href="./bookinfo.ptx"/> -->
 
+    <!-- 13 chapters-->
     <book xml:id="thinkcspy" permid="tcs">
-    <title>How to Think Like a Computer Scientist</title>
-    <subtitle>The PreTeXt Interactive Edition</subtitle>
-    <frontmatter>
-    <titlepage>
-    </titlepage>
-    <xi:include href="./FrontBackMatter/preface.ptx"/>
-    </frontmatter>
-    <xi:include href="./GeneralIntro/toctree.ptx"/>
-    <xi:include href="./SimplePythonData/toctree.ptx"/>
-    <xi:include href="./Debugging/toctree.ptx"/>
-    <xi:include href="./PythonModules/toctree.ptx"/>
-    <xi:include href="./PythonTurtle/toctree.ptx"/>
-    <xi:include href="./Sequences/toctree.ptx"/>
-    <xi:include href="./Iteration/toctree.ptx"/>
-    <xi:include href="./Conditionals/toctree.ptx"/>
-    <xi:include href="./TransformingSequences/toctree.ptx"/>
-    <xi:include href="./Files/toctree.ptx"/>
-    <xi:include href="./Dictionaries/toctree.ptx"/>
-    <xi:include href="./Functions/toctree.ptx"/>
-    <xi:include href="./Tuples/toctree.ptx"/>
-    <xi:include href="./MoreAboutIteration/toctree.ptx"/>
-    <xi:include href="./AdvancedFunctions/toctree.ptx"/>
-    <xi:include href="./Sorting/toctree.ptx"/>
-    <xi:include href="./NestedData/toctree.ptx"/>
-    <xi:include href="./TestCases/toctree.ptx"/>
-    <xi:include href="./Exceptions/toctree.ptx"/>
-    <xi:include href="./Classes/toctree.ptx"/>  
-    <xi:include href="./BuildingPrograms/toctree.ptx"/>
-    <xi:include href="./Inheritance/toctree.ptx"/>
-    <xi:include href="./AdvancedAccumulation/toctree.ptx"/>
-    <xi:include href="./Projects/toctree.ptx"/>
+        <title>Mount Royal University - Intro to Programming</title>
+        <subtitle>The Interative Textbook for COMP1701</subtitle>
+        <frontmatter>
+            <titlepage>
+            </titlepage>
+            <xi:include href="./FrontBackMatter/preface.ptx" />
+        </frontmatter>
 
-</book> 
+        <xi:include href="./GeneralIntro/toctree.ptx" />
+
+        <xi:include href="./SimplePythonData/toctree.ptx" />
+
+        <xi:include href="./Debugging/toctree.ptx" />
+
+        <xi:include href="./Functions/toctree.ptx" />
+
+        <xi:include href="./Conditionals/toctree.ptx" />
+
+        <xi:include href="./Iteration/toctree.ptx" />
+
+        <xi:include href="./MoreAboutIteration/toctree.ptx" />
+
+        <xi:include href="./Sequences/toctree.ptx" />
+
+        <xi:include href="./TransformingSequences/toctree.ptx" />
+
+        <xi:include href="./NestedData/toctree.ptx" />
+
+        <xi:include href="./Files/toctree.ptx" />
+
+        <xi:include href="./Exceptions/toctree.ptx" />
+
+        <xi:include href="./Classes/toctree.ptx" />
+
+        <xi:include href="./AdditionalResources/toctree.ptx" />
+
+
+    </book>
 </pretext>

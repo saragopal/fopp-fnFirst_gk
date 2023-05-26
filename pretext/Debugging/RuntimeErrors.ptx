@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<section xml:id="debugging_runtime-errors61_index-0">
+<section xml:id="debugging_runtime-errors">
   <title>Runtime Errors</title>
   <p>The second type of error is a <term>runtime error</term>. A program with a runtime error
             is one that passed the interpreter's syntax checks, and started to execute.
@@ -53,7 +53,7 @@ print("tax on", subtotal, "is:", tax)
   <p>
     <term>Check your understanding</term>
   </p>
-  <exercise label="question4_5_1">
+  <exercise label="question3_4_1">
     <statement>
       <p>Which of the following is a run-time error?</p>
     </statement>
@@ -84,7 +84,7 @@ print("tax on", subtotal, "is:", tax)
       </choice>
     </choices>
   </exercise>
-  <exercise label="question4_5_2">
+  <exercise label="question3_4_2">
     <statement>
       <p>Who or what typically finds runtime errors?</p>
     </statement>

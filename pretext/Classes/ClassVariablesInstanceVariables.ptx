@@ -47,7 +47,7 @@ print(p2.graph())
     <li>
       <title>When the interpreter sees an expression of the form &lt;obj&gt;.&lt;varname&gt;, it:</title>
       <p>
-        <ol label="1">
+        <ol marker="1">
           <li>
             <p>Checks if the object has an instance variable set. If so, it uses that value.</p>
           </li>
@@ -63,7 +63,7 @@ print(p2.graph())
     <li>
       <title>When the interpreter sees an assignment statement of the form &lt;obj&gt;.&lt;varname&gt; = &lt;expr&gt;, it:</title>
       <p>
-        <ol label="1">
+        <ol marker="1">
           <li>
             <p>Evaluates the expression on the right-hand side to yield some python object;</p>
           </li>

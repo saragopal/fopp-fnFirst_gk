@@ -1,2 +1,34 @@
 <?xml version="1.0"?>
-<p/>
+<section xml:id="functions_passing-mutable-objects">
+  <title>Passing Mutable Objects</title>
+  <p>Take a look at the following code example. Can you predict what will happen when you run it?</p>
+    <program xml:id="ac4_13_1" interactive="activecode" language="python">
+    <input>
+def double(y):
+    y = 2 * y
+
+num = 5
+double(num)
+print(num)
+        </input>
+  </program>
+  <p>Use <b>Show CodeLens</b> to step through the code to see why the assignment to the formal parameter <c>y</c> inside <c>double</c> did
+  not affect the argument <c>num</c>. An assignment to a formal parameter inside a function <b>never</b> affects the argument in the caller.
+  </p>
+  <p>
+    On the other hand, if you are passing a mutable object, such as a list, to a function, and the function alters the object's state,
+    that state change will be visible to the caller when the function returns. Take a look at the following example.
+  </p>
+      <program xml:id="ac4_13_2" interactive="activecode" language="python">
+    <input>
+def changeit(lst):
+    lst[0] = "Michigan"
+    lst[1] = "Wolverines"
+
+mylst = ['our', 'students', 'are', 'awesome']
+changeit(mylst)
+print(mylst)
+        </input>
+  </program>
+</section>
+

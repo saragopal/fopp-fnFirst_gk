@@ -71,7 +71,7 @@ print(p.distanceFromOrigin())
     <term>Check Your Understanding</term>
   </p>
   <p>
-    <ol label="1">
+    <ol marker="1">
       <li>
         <p>Create a class called <c>Animal</c> that accepts two numbers as inputs and assigns them respectively to two instance variables: <c>arms</c> and <c>legs</c>. Create an instance method called <c>limbs</c> that, when called, returns the total number of limbs the animal has. To the variable name <c>spider</c>, assign an instance of <c>Animal</c> that has 4 arms and 4 legs. Call the limbs method on the <c>spider</c> instance and save the result to the variable name <c>spidlimbs</c>.</p>
       </li>

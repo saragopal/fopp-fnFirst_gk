@@ -1,59 +1,67 @@
 <?xml version="1.0"?>
 <section xml:id="functions_decoding-a-function">
-  <title>&#x1F469;&#x200D;&#x1F4BB; Decoding a Function</title>
-  <p>In general, when you see a function definition you will try figure out what the function does, but,
-            unless you are writing the function, you won't care <em>how it does it</em>.</p>
+  <title>Decoding a Function</title>
+  <p>In general, when you see a function definition you will try figure out what the function does,
+    but, unless you are writing the function, you won't care <em>how it does it</em>.</p>
   <p>For example, here is a summary of some functions we have seen already.</p>
   <p>
     <ul>
       <li>
-        <p><c>input</c> takes one parameter, a string. It is displayed to the user.
-                    Whatever the user types is returned, as a string.</p>
+        <p><c>input</c> takes one parameter, a string. It is displayed to the user. Whatever the
+          user types is returned, as a string.</p>
       </li>
       <li>
-        <p><c>int</c> takes one parameter. It can be of any type that can be converted
-                    into an integer, such as a floating point number or a string whose characters
-                    are all digits.</p>
+        <p><c>int</c> takes one parameter. It can be of any type that can be converted into an
+          integer, such as a floating point number or a string whose characters are all digits.</p>
       </li>
     </ul>
   </p>
-  <p>Sometimes, you will be presented with a function definition whose operation is not so neatly summarized
-            as above. Sometimes you will need to look at the code, either the function definition or code that
-            invokes the function, in order to figure out what it does.</p>
+  <p>Sometimes, you will be presented with a function definition whose operation is not so neatly
+    summarized
+    as above. Sometimes you will need to look at the code, either the function definition or code
+    that
+    invokes the function, in order to figure out what it does.</p>
   <p>To build your understanding of any function, you should aim to answer the following questions:</p>
   <p>
-    <ol label="1">
+    <ol marker="1">
       <li>
         <p>How many parameters does it have?</p>
       </li>
       <li>
         <p>What is the type of values that will be passed when the function is
-                    invoked?</p>
+          invoked?</p>
       </li>
       <li>
         <p>What is the type of the return value that the function produces when it
-                    executes?</p>
+          executes?</p>
       </li>
     </ol>
   </p>
-  <p>If you try to make use of functions, ones you write or that others write, without being able to answer
-            these questions, you will find that your debugging sessions are long and painful.</p>
-  <p>The first question is always easy to answer. Look at the line with the function definition, look inside
-            the parentheses, and count how many variable names there are.</p>
-  <p>The second and third questions are not always so easy to answer. In Python, unlike some other programming
-            languages, variables are not declared to have fixed types, and the same holds true for the variable names
-            that appear as formal parameters of functions. You have to figure it out from context.</p>
-  <p>To figure out the types of values that a function expects to receive as parameters, you can look at the
-            function invocations or you can look at the operations that are performed on the parameters inside the function.</p>
-  <p>Here are some clues that can help you determine the type of object associated with any variable, including a
-            function parameter. If you see&#x2026;</p>
+  <p>If you try to make use of functions, ones you write or that others write, without being able to
+    answer
+    these questions, you will find that your debugging sessions are long and painful.</p>
+  <p>The first question is always easy to answer. Look at the line with the function definition,
+    look inside
+    the parentheses, and count how many variable names there are.</p>
+  <p>The second and third questions are not always so easy to answer. In Python, unlike some other
+    programming
+    languages, variables are not declared to have fixed types, and the same holds true for the
+    variable names
+    that appear as formal parameters of functions. You have to figure it out from context.</p>
+  <p>To figure out the types of values that a function expects to receive as parameters, you can
+    look at the
+    function invocations or you can look at the operations that are performed on the parameters
+    inside the function.</p>
+  <p>Here are some clues that can help you determine the type of object associated with any
+    variable, including a
+    function parameter. If you see&#x2026;</p>
   <p>
     <ul>
       <li>
-        <p><c>len(x)</c>, then x must be a string or a list. (Actually, it can also be a
-                    dictionary, in which case it is equivalent to the expression
-                    <c>len(x.keys())</c>. Later in the course, we will also see some other sequence
-                    types that it could be). x can't be a number or a Boolean.</p>
+        <p><c>len(x)</c>, then x must be a string or a list. (Actually, it can also be a dictionary,
+          in which case it is equivalent to the expression <c>len(x.keys())</c>. Later in the
+          course, we will also see some other sequence types that it could be). x can't be a number
+          or a Boolean.</p>
       </li>
       <li>
         <p><c>x - y</c>, x and y must be numbers (integer or float)</p>
@@ -61,41 +69,38 @@
       <li>
         <p><c>x + y</c>, x and y must both be numbers, both be strings, or both be lists</p>
       </li>
-      <li>
-        <p><c>x[3]</c>, x must be a string or a list containing at least four items, or x
-                    must be a dictionary that includes 3 as a key.</p>
+      <!-- <li>
+        <p><c>x[3]</c>, x must be a string or a list containing at least four items, or x must be a
+          dictionary that includes 3 as a key.</p>
       </li>
       <li>
         <p><c>x['3']</c>, x must be a dictionary, with &#x2018;3' as a key.</p>
       </li>
       <li>
-        <p><c>x[y:z]</c>, x must be a sequence (string or list), and y and z must be
-                    integers</p>
-      </li>
+        <p><c>x[y:z]</c>, x must be a sequence (string or list), and y and z must be integers</p>
+      </li> -->
       <li>
         <p><c>x and y</c>, x and y must be Boolean</p>
       </li>
-      <li>
-        <p><c>for x in y</c>, y must be a sequence (string or list) or a dictionary (in which case it's really the dictionary's keys); x must be a character
-                    if y is a string; if y is a list, x could be of any type.</p>
-      </li>
+      <!-- <li>
+        <p><c>for x in y</c>, y must be a sequence (string or list) or a dictionary (in which case
+          it's really the dictionary's keys); x must be a character if y is a string; if y is a
+          list, x could be of any type.</p>
+      </li> -->
     </ul>
   </p>
   <p>
     <term>Check your understanding: decode this function definition</term>
   </p>
-  <exercise label="question200_1_1">
+  <exercise label="question4_6_1">
     <statement>
       <p>How many parameters does function cyu3 take?</p>
       <program language="python">
         <input>
-def cyu3(x, y, z):
-   if x - y &gt; 0:
-      return y -2
-   else:
-      z.append(y)
-      return x + 3
-</input>
+          def cyu3(x: ???, y: ???) -&gt; ???:
+            COEFFICIENT = 2.5
+            return (x + y) * COEFFICIENT
+        </input>
       </program>
     </statement>
     <choices>
@@ -115,20 +120,20 @@ def cyu3(x, y, z):
           <p>Count the number of variable names inside the parenetheses on line 1.</p>
         </feedback>
       </choice>
-      <choice>
+      <choice correct="yes">
         <statement>
           <p>2</p>
         </statement>
         <feedback>
-          <p>Count the number of variable names inside the parenetheses on line 1.</p>
+          <p>x and y.</p>
         </feedback>
       </choice>
-      <choice correct="yes">
+      <choice>
         <statement>
           <p>3</p>
         </statement>
         <feedback>
-          <p>x, y, and z.</p>
+          <p>Count the number of variable names inside the parenetheses on line 1.</p>
         </feedback>
       </choice>
       <choice>
@@ -136,23 +141,21 @@ def cyu3(x, y, z):
           <p>Can't tell</p>
         </statement>
         <feedback>
-          <p>You can tell by looking inside the parentheses on line 1. Each variable name is separated by a comma.</p>
+          <p>You can tell by looking inside the parentheses on line 1. Each variable name is
+            separated by a comma.</p>
         </feedback>
       </choice>
     </choices>
   </exercise>
-  <exercise label="question200_1_2">
+  <exercise label="question4_6_2">
     <statement>
       <p>What are the possible types of variables x and y?</p>
       <program language="python">
         <input>
-def cyu3(x, y, z):
-   if x - y &gt; 0:
-      return y -2
-   else:
-      z.append(y)
-      return x + 3
-</input>
+          def cyu3(x: ???, y: ???) -&gt; ???:
+            COEFFICIENT = 2.5
+            return (x + y) * COEFFICIENT
+        </input>
       </program>
     </statement>
     <choices>
@@ -161,7 +164,7 @@ def cyu3(x, y, z):
           <p>integer</p>
         </statement>
         <feedback>
-          <p>x - y, y-2, and x+3 can all be performed on integers.</p>
+          <p>Addition and multiplication can be performed on both floats and integers.</p>
         </feedback>
       </choice>
       <choice correct="yes">
@@ -169,15 +172,15 @@ def cyu3(x, y, z):
           <p>float</p>
         </statement>
         <feedback>
-          <p>x - y, y-2, and x+3 can all be performed on floats.</p>
+          <p>Addition and multiplication can be performed on both floats and integers.</p>
         </feedback>
       </choice>
       <choice>
         <statement>
-          <p>list</p>
+          <p>a could be a list and b could be a float</p>
         </statement>
         <feedback>
-          <p>x - y, y-2, and x+3 can't be performed on lists.</p>
+          <p>Although possible, there's a more general answer.</p>
         </feedback>
       </choice>
       <choice>
@@ -185,7 +188,7 @@ def cyu3(x, y, z):
           <p>string</p>
         </statement>
         <feedback>
-          <p>x - y and y-2 can't be performed on strings.</p>
+          <p>Strings cannot be multiplied by a float.</p>
         </feedback>
       </choice>
       <choice>
@@ -198,18 +201,15 @@ def cyu3(x, y, z):
       </choice>
     </choices>
   </exercise>
-  <exercise label="question200_1_3">
+  <exercise label="question4_6_3">
     <statement>
-      <p>What are the possible types of variable z?</p>
+      <p>What datatype is returned?</p>
       <program language="python">
         <input>
-def cyu3(x, y, z):
-   if x - y &gt; 0:
-      return y -2
-   else:
-      z.append(y)
-      return x + 3
-</input>
+          def cyu3(x: ???, y: ???) -&gt; ???:
+            COEFFICIENT = 2.5
+            return (x + y) * COEFFICIENT
+        </input>
       </program>
     </statement>
     <choices>
@@ -218,23 +218,15 @@ def cyu3(x, y, z):
           <p>integer</p>
         </statement>
         <feedback>
-          <p>append can't be performed on integers.</p>
-        </feedback>
-      </choice>
-      <choice>
-        <statement>
-          <p>float</p>
-        </statement>
-        <feedback>
-          <p>append can't be performed on floats.</p>
+          <p>Since the sum of x and y is multiplied by a float, the value can not be an integer.</p>
         </feedback>
       </choice>
       <choice correct="yes">
         <statement>
-          <p>list</p>
+          <p>float</p>
         </statement>
         <feedback>
-          <p>append can be performed on lists.</p>
+          <p>The sum of x and y is multiplied by a float, meaning the returned value is a float.</p>
         </feedback>
       </choice>
       <choice>
@@ -242,7 +234,15 @@ def cyu3(x, y, z):
           <p>string</p>
         </statement>
         <feedback>
-          <p>append can't be performed on strings.</p>
+          <p>Strings cannot be multiplied by floats.</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>boolean</p>
+        </statement>
+        <feedback>
+          <p>There are no boolean operations in the given function.</p>
         </feedback>
       </choice>
       <choice>
@@ -255,59 +255,70 @@ def cyu3(x, y, z):
       </choice>
     </choices>
   </exercise>
-  <exercise label="df_question200_1_3">
+  <exercise label="question4_6_4">
     <statement>
-      <p>What are the possible types of the return value from cyu3?</p>
+      <p>What should this function's header look like?</p>
       <program language="python">
         <input>
-def cyu3(x, y, z):
-   if x - y &gt; 0:
-      return y -2
-   else:
-      z.append(y)
-      return x + 3
-</input>
+          """
+          Calculates the combined areas of two squares.
+
+          Parameters:
+            width_a : _____
+            The width of the first square.
+            width_b : _____
+            The width of the second square.
+
+          Returns:
+            _____ : The combined areas of the squares.
+          """
+        </input>
       </program>
     </statement>
     <choices>
       <choice correct="yes">
         <statement>
-          <p>integer</p>
+          <p>def squares_area(width_a: int, width_b: int) -&gt; int:</p>
         </statement>
         <feedback>
-          <p>y-2 or  x+3 could produce an integer.</p>
+          <p>Since both pieces of data are integers, and the formula for calculating the area of a
+            square wouldn't result in a float given an integer, this would be correct.</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>def squares_area(width_a: float, width_b: float) -&gt; int:</p>
+        </statement>
+        <feedback>
+          <p>Based on the formula for finding the area of a square, and that no rounding is present,
+            by giving this function two floats, an integer would not be returned.</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>def squares_area(width_a: int, width_b: int) -&gt; float:</p>
+        </statement>
+        <feedback>
+          <p>Based on the formula for finding the area of a square, and that the widths are only
+            being multiplied, by giving this function two integers, a float could not be returned.</p>
         </feedback>
       </choice>
       <choice correct="yes">
         <statement>
-          <p>float</p>
+          <p>def squares_area(width_a: float, width_b: float) -&gt; float:</p>
         </statement>
         <feedback>
-          <p>y-2 or  x+3 could produce a float.</p>
+          <p>Since both pieces of data are floats, and the formula for calculating the area of a
+            square would result in a float given a float, this would be correct.</p>
         </feedback>
       </choice>
       <choice>
         <statement>
-          <p>list</p>
+          <p>def squares_area(width_a, width_b):</p>
         </statement>
         <feedback>
-          <p>y-2 or  x+3 can't produce a list.</p>
-        </feedback>
-      </choice>
-      <choice>
-        <statement>
-          <p>string</p>
-        </statement>
-        <feedback>
-          <p>neither y-2 or  x+3 could produce a string.</p>
-        </feedback>
-      </choice>
-      <choice>
-        <statement>
-          <p>Can't tell</p>
-        </statement>
-        <feedback>
-          <p>You can tell from the expressions that follow the word return.</p>
+          <p>Although technically correct, type hinting would make this function easier to
+            interpret.</p>
         </feedback>
       </choice>
     </choices>

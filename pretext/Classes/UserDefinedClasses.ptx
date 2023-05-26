@@ -48,7 +48,7 @@ class Point:
             their initial state values.  The <c>self</c> parameter (you could choose any
             other name, but nobody ever does!) is automatically set to reference
             the newly created object that needs to be initialized.</p>
-  <p>So let's use our new Point class now. This next part should look a little familiar, if you remember some of the syntax for how we created instances of the Turtle class, in the <xref ref="python-turtle_intro--hello-little-turtles"/>.</p>
+  <p>So let's use our new Point class now.</p>
   <program xml:id="chp13_classes1" interactive="activecode" language="python">
     <input>
 class Point:

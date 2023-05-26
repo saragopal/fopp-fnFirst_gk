@@ -3,10 +3,10 @@
   <title>Alternative File Reading Methods</title>
   <p>Once you have a file <q>object</q>, the thing returned by the open function, Python provides three methods to read data
             from that object. The <c>read()</c> method returns the entire contents of the file as a single string (or just some
-            characters if you provide a number as an input parameter. The <c>readlines</c> method returns the entire contents of
+            characters) if you provide a number as an input parameter. The <c>readlines</c> method returns the entire contents of
             the entire file as a list of strings, where each item in the list is one line of the file. The <c>readline</c>
             method reads one line from the file and returns it as a string. The strings returned by <c>readlines</c> or
-            <c>readline</c> will contain the newline character at the end.  <xref ref="files_filemethods2a"/> summarizes these
+            <c>readline</c> will contain the newline character at the end. The following table summarizes these
             methods and the following session shows them in action.</p>
   <table xml:id="files_files_filemethods2a">
     <tabular>
@@ -110,7 +110,7 @@ technical write ups, or scripts.
   <exercise label="ac9_4_1">
     <statement>
       <p>
-        <ol label="1">
+        <ol marker="1">
           <li>
             <p>Using the file <c>school_prompt2.txt</c>, find the number of characters in the file and assign that value to the variable <c>num_char</c>.</p>
           </li>
@@ -149,7 +149,7 @@ I only know English!
   <exercise label="ac9_4_2">
     <statement>
       <p>
-        <ol label="1">
+        <ol marker="1">
           <li>
             <p>Find the number of lines in the file, <c>travel_plans2.txt</c>, and assign it to the variable <c>num_lines</c>.</p>
           </li>
@@ -184,7 +184,7 @@ Nervous anxious jittery jumpy tense uneasy apprehensive
   <exercise label="ac9_4_3">
     <statement>
       <p>
-        <ol label="1">
+        <ol marker="1">
           <li>
             <p>Create a string called <c>first_forty</c> that is comprised of the first 40 characters of <c>emotion_words2.txt</c>.</p>
           </li>

@@ -4,7 +4,7 @@
   <p>One of the most commonly performed data processing tasks is to read data from a file,
             manipulate it in some way, and then write the resulting data out to a new data file to be used
             for other purposes later. To accomplish this, the <c>open</c> function discussed above can also be
-            used to create a new file prepared for writing. Note in <xref ref="files_intro--workingwith-data-files"/>
+            used to create a new file prepared for writing. Note in <xref ref="files_introduction-working-with-data-files"/>
             that the only difference between opening a file for writing and opening a file for reading is
             the use of the <c>'w'</c> flag instead of the <c>'r'</c> flag as the second parameter. When we open
             a file for writing, a new, empty file with that name is created and made ready to accept our

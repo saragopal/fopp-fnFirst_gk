@@ -9,8 +9,20 @@
             local variables. These will help you understand exactly how python works. Hopefully,
             they will also convince you that things can get pretty confusing when you mix
             local and global variables, and that you really shouldn't do it.</p>
+
+<note>
+  <title>Editor's Note</title>
+  <p>
+    Relying on global variables is a really bad habit to pick up, as
+    Python is a language that lets you get away with gloabls pretty
+    easily. As you move on to other languages, you'll be
+    in for a world of pain if you don't learn to avoid globals. Be warned.
+  </p>
+  
+</note>
+
   <p>Look at the following, nonsensical variation of the square function.</p>
-  <program xml:id="ac11_8_1" interactive="activecode" language="python">
+  <program xml:id="ac4_9_1" interactive="activecode" language="python">
     <input>
 def badsquare(x):
     y = x ** power
@@ -33,7 +45,7 @@ print(result)
   <p>There is another variation on this theme of local versus global variables. Assignment statements in the local function cannot
             change variables defined outside the function. Consider the following
             codelens example:</p>
-  <program xml:id="clens11_8_1" interactive="codelens" language="python">
+  <program xml:id="clens4_9_1" interactive="codelens" language="python">
     <input>
 def powerof(x,p):
     power = p   # Another dumb mistake
@@ -60,7 +72,7 @@ print(result)
             you can can do it by explicitly declaring the variable to be global, as in the example
             below. Again, you should <em>not</em> do this in your code. The example is here only
             to cement your understanding of how python works.</p>
-  <program xml:id="clens11_8_2" interactive="codelens" language="python">
+  <program xml:id="clens4_9_2" interactive="codelens" language="python">
     <input>
 def powerof(x,p):
     global power  # a really...
@@ -84,7 +96,7 @@ print(power)
             formal parameter will cause a change to the value of the variable that was
             used as the actual parameter, especially when the two share the same name.
             But this example demonstrates that that is clearly not how Python operates.</p>
-  <program xml:id="clens11_8_3" interactive="codelens" language="python">
+  <program xml:id="clens4_9_3" interactive="codelens" language="python">
     <input>
 def square(x):
     y = x * x
@@ -99,7 +111,7 @@ print(z)
   <p>
     <term>Check your understanding</term>
   </p>
-  <exercise label="question11_8_1">
+  <exercise label="question4_9_1">
     <statement>
       <p>What is a variable's scope?</p>
     </statement>
@@ -130,7 +142,7 @@ print(z)
       </choice>
     </choices>
   </exercise>
-  <exercise label="question11_8_2">
+  <exercise label="question4_9_2">
     <statement>
       <p>What is a local variable?</p>
     </statement>
@@ -161,7 +173,7 @@ print(z)
       </choice>
     </choices>
   </exercise>
-  <exercise label="question11_8_3">
+  <exercise label="question4_9_3">
     <statement>
       <p>Can you use the same name for a local variable as a global variable?</p>
     </statement>

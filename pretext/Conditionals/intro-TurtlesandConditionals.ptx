@@ -3,7 +3,7 @@
   <title>Intro: What we can do with Turtles and Conditionals</title>
   <p>So far, our programs have either been a series of statements which always execute sequentially or operations that are applied to each item in an iterable. Yet programs frequently need to be more subtle with their behavior. For example, a messaging app might only set a message's title bold if it has not been read by the user. Or a video game needs to update the position of all the characters that are not asleep. This is done with something called a <term>selection</term> or a <term>conditional statement</term>.</p>
   <p>In the context of turtle drawings, using this kind of statement will allow us to check conditions and change the behavior of the program accordingly</p>
-  <program xml:id="ac7_1_1" interactive="activecode" language="python">
+  <program xml:id="ac5_1_1" interactive="activecode" language="python">
     <input>
 import turtle
 wn = turtle.Screen()
@@ -38,7 +38,7 @@ else:
   <p>It might seem a bit odd to add the conditionals in this example. Wouldn't we already know that we set up amy
             and kenji's colors, so why would we need a conditional? While it's true that this isn't the <em>best</em> place to
             use a conditional, we can combine conditional statements with for loops to make something pretty cool!</p>
-  <program xml:id="ac7_1_2" interactive="activecode" language="python">
+  <program xml:id="ac5_1_2" interactive="activecode" language="python">
     <input>
 import turtle
 wn = turtle.Screen()

@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<section xml:id="general-intro_algorithms119_index-0">
+<section xml:id="general-intro_algorithms">
   <title>Algorithms</title>
   <p>If problem solving is a central part of computer science, then the solutions that you create through
             the problem solving process are also important.  In computer science, we refer to these solutions
@@ -8,7 +8,7 @@
   <note>
     <title>Algorithm Example 1 (English)</title>
     <p>
-      <ol label="1">
+      <ol marker="1">
         <li>
           <p>Ask for radius</p>
         </li>
@@ -29,7 +29,7 @@
   <note>
     <title>Algorithm Example 2 (Pseudocode)</title>
     <p>
-      <ol label="1">
+      <ol marker="1">
         <li>
           <p>Ask for radius</p>
         </li>
@@ -51,7 +51,7 @@
             such as Python, the language you will learn in this book.</p>
   <p>To help you understand the difference between an algorithm and a program, consider this program to compute
             the area of a circle:</p>
-  <program xml:id="alg_impl" interactive="activecode" language="python">
+  <program xml:id="ac_1_2_1" interactive="activecode" language="python">
     <input>
 radius = int(input("Enter the radius:"))
 area = (radius * radius) * 3.1415
@@ -75,7 +75,7 @@ print("The area of a circle with radius", radius, "is:", area)
   <p>
     <term>Check your understanding</term>
   </p>
-  <exercise label="question1_2_2">
+  <exercise label="question1_2_1">
     <statement>
       <p>An algorithm is:</p>
     </statement>

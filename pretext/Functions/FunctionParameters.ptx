@@ -1,95 +1,110 @@
 <?xml version="1.0"?>
 <section xml:id="functions_function-parameters">
   <title>Function Parameters</title>
-  <p>Named functions are nice because, once they are defined and we understand what they do, we can refer to them by name
-            and not think too much about what they do. With parameters, functions are even more powerful, because they can do
-            pretty much the same thing on each invocation, but not exactly the same thing. The parameters can cause them to do
-            something a little different.</p>
-  <video xml:id="goog_function_parms" youtube="Ndw_EgFO_tw" width="auto"/>
-  <p>The figure below shows this relationship. A function needs certain information to do its work. These values, often
-            called <term>arguments</term> or <term>actual parameters</term> or <term>parameter values</term>, are passed to the function by the user.</p>
-  <image source="Functions/Figures/blackboxproc.png" width="50%"/>
-  <p>This type of diagram is often called a <term>black-box diagram</term> because it only states the requirements from the
-            perspective of the user (well, the programmer, but the programmer who uses the function, who may be different than the
-            programmer who created the function). The user must know the name of the function and what arguments need to be
-            passed. The details of how the function works are hidden inside the <q>black-box</q>.</p>
-  <p>You have already been making function invocations with parameters. For example, when you write <c>len("abc")</c> or
-            <c>len([3, 9, "hello"])</c>, len is the name of a function, and the value that you put inside the parentheses, the string
-            <q>abc</q> or the list [3, 9, <q>hello</q>], is a parameter value.</p>
-  <p>When a function has one or more parameters, the names of the parameters appear in the function definition, and the
-            values to assign to those parameters appear inside the parentheses of the function invocation. Let's look at each of
-            those a little more carefully.</p>
-  <p>In the definition, the parameter list is sometimes referred to as the <term>formal parameters</term> or <term>parameter names</term>.
-            These names can be any valid variable name. If there is more than one, they are separated by commas.</p>
-  <p>In the function invocation, inside the parentheses one value should be provided for each of the parameter names. These
-            values are separated by commas. The values can be specified either directly, or by any python expression including a
-            reference to some other variable name.</p>
-  <p>That can get kind of confusing, so let's start by looking at a function with just one parameter. The revised hello
-            function personalizes the greeting: the person to greet is specified by the parameter.</p>
-  <program xml:id="clens11_3_1" interactive="codelens" language="python">
+  <p>Named functions are nice because, once they are defined and we understand what they do, we can
+    refer to them by name
+    and not think too much about what they do. With parameters, functions are even more powerful,
+    because they can do
+    pretty much the same thing on each invocation, but not exactly the same thing. The parameters
+    can cause them to do
+    something a little different.</p>
+  <p>The figure below shows this relationship. A function needs certain information to do its work.
+    These values, often called <term>arguments</term> or <term>actual parameters</term> or <term>parameter
+    values</term>, are passed to the function by the user.</p>
+  <image source="Functions/Figures/blackboxproc.png" width="50%" />
+  <p>This type of diagram is often called a <term>black-box diagram</term> because it only states
+    the requirements from the perspective of the user (well, the programmer, but the programmer who
+    uses the function, who may be different than the programmer who created the function). The user
+    must know the name of the function and what arguments need to be passed. The details of how the
+    function works are hidden inside the <q>black-box</q>.</p>
+  <p>You have already been making function invocations with parameters. For example, when you write <c>
+    len("abc")</c>, len is the name of a function, and the value that you put inside the
+    parentheses, the string <q>abc</q> is a parameter value.</p>
+  <p>When a function has one or more parameters, the names of the parameters appear in the function
+    definition, and the
+    values to assign to those parameters appear inside the parentheses of the function invocation.
+    Let's look at each of
+    those a little more carefully.</p>
+  <p>In the definition, the parameter list is sometimes referred to as the <term>formal parameters</term>
+    or <term>parameter names</term>. These names can be any valid variable name. If there is more
+    than one, they are separated by commas.</p>
+  <p>In the function invocation, inside the parentheses one value should be provided for each of the
+    parameter names. These
+    values are separated by commas. The values can be specified either directly, or by any python
+    expression including a
+    reference to some other variable name.</p>
+  <p>That can get kind of confusing, so let's start by looking at a function with just one
+    parameter. The revised hello
+    function personalizes the greeting: the person to greet is specified by the parameter.</p>
+  <program xml:id="clens4_4_1" interactive="codelens" language="python">
     <input>
-def hello2(s):
-   print("Hello " + s)
-   print("Glad to meet you")
+      def hello2(s: str) -&gt; None:
+        print("Hello " + s)
+        print("Glad to meet you")
 
-hello2("Iman")
-hello2("Jackie")
+      hello2("Iman")
+      hello2("Jackie")
     </input>
   </program>
   <p>First, notice that hello2 has one formal parameter, s. You can tell that because
-            there is exactly one variable name inside the parentheses on line 1.</p>
-  <p>Next, notice what happened during Step 2. Control was passed to the function, just like we saw before. But in
-            addition, the variable s was bound to a value, the string <q>Iman</q>. When it got to Step 7, for the second invocation of
-            the function, s was bound to <q>Jackie</q>.</p>
-  <p>Function invocations always work that way. The expression inside the parentheses on the line that invokes the function
-            is evaluated before control is passed to the function. The value is assigned to the corresponding formal parameter.
-            Then, when the code block inside the function is executing, it can refer to that formal parameter and get its value,
-            the value that was &#x2018;passed into' the function.</p>
-  <exercise runestone="eval11_3_1"/>
-  <p>To get a feel for that, let's invoke hello2 using some more complicated expressions. Try some of your own, too.</p>
-  <program xml:id="ac11_3_1" interactive="activecode" language="python">
+    there is exactly one variable name inside the parentheses on line 1.</p>
+  <p>Next, notice what happened during Step 2. Control was passed to the function, just like we saw
+    before. But in addition, the variable s was bound to a value, the string <q>Iman</q>. When it
+    got to Step 7, for the second invocation of the function, s was bound to <q>Jackie</q>.</p>
+  <p>Function invocations always work that way. The expression inside the parentheses on the line
+    that invokes the function
+    is evaluated before control is passed to the function. The value is assigned to the
+    corresponding formal parameter.
+    Then, when the code block inside the function is executing, it can refer to that formal
+    parameter and get its value,
+    the value that was &#x2018;passed into' the function.</p>
+  <exercise runestone="eval4_4_1" />
+  <p>To get a feel for that, let's invoke hello2 using some more complicated expressions. Try some
+    of your own, too.</p>
+  <program xml:id="ac4_4_1" interactive="activecode" language="python">
     <input>
-def hello2(s):
-    print("Hello " + s)
-    print("Glad to meet you")
+      def hello2(s: str) -&gt; None:
+        print("Hello " + s)
+        print("Glad to meet you")
 
-hello2("Iman" + " and Jackie")
-hello2("Class " * 3)
-        </input>
-  </program>
-  <p>Now let's consider a function with two parameters. This version of hello takes
-            a parameter that controls how many times the greeting will be printed.</p>
-  <program xml:id="clens11_3_2" interactive="codelens" language="python">
-    <input>
-def hello3(s, n):
-   greeting = "Hello {} ".format(s)
-   print(greeting*n)
-
-hello3("Wei", 4)
-hello3("", 1)
-hello3("Kitty", 11)
+      hello2("Iman" + " and Jackie")
+      hello2("Class " * 3)
     </input>
   </program>
-  <p>At Step 3 of the execution, in the first invocation of hello3, notice that the variable s is bound
-            to the value <q>Wei</q> and the variable n is bound to the value 4.</p>
-  <p>That's how function invocations always work. Each of the expressions, separated by commas, that are inside the
-            parentheses are evaluated to produce values. Then those values are matched up positionally
-            with the formal parameters. The first parameter name is bound to the first value
-            provided. The second parameter name is bound to the second value provided. And so on.</p>
+  <p>Now let's consider a function with two parameters. This version of hello takes
+    a parameter that controls how many times the greeting will be printed.</p>
+  <program xml:id="clens4_4_2" interactive="codelens" language="python">
+    <input>
+      def hello3(s: str, n: int) -&gt; None:
+        greeting = f"Hello {s} "
+        print(greeting*n)
+
+      hello3("Wei", 4)
+      hello3("", 1)
+      hello3("Kitty", 11)
+    </input>
+  </program>
+  <p>At Step 3 of the execution, in the first invocation of hello3, notice that the variable s is
+    bound to the value <q>Wei</q> and the variable n is bound to the value 4.</p>
+  <p>That's how function invocations always work. Each of the expressions, separated by commas, that
+    are inside the
+    parentheses are evaluated to produce values. Then those values are matched up positionally
+    with the formal parameters. The first parameter name is bound to the first value
+    provided. The second parameter name is bound to the second value provided. And so on.</p>
   <p>
     <term>Check your understanding</term>
   </p>
-  <exercise label="question11_3_1">
+  <exercise label="question4_4_1">
     <statement>
       <p>Which of the following is a valid function header (first line of a function definition)?</p>
     </statement>
     <choices>
       <choice correct="yes">
         <statement>
-          <p>def greet(t):</p>
+          <p>def greet(t: str) -&gt; None:</p>
         </statement>
         <feedback>
-          <p>A function may take zero or more parameters.  In this case it has one.</p>
+          <p>A function may take zero or more parameters. In this case it has one.</p>
         </feedback>
       </choice>
       <choice>
@@ -97,12 +112,13 @@ hello3("Kitty", 11)
           <p>def greet:</p>
         </statement>
         <feedback>
-          <p>A function needs to specify its parameters in its header. If there are no paramters, put () after the function name.</p>
+          <p>A function needs to specify its parameters in its header. If there are no paramters,
+            put () after the function name.</p>
         </feedback>
       </choice>
       <choice>
         <statement>
-          <p>greet(t, n):</p>
+          <p>greet(t: str, n: int) -&gt; None:</p>
         </statement>
         <feedback>
           <p>A function definition needs to include the keyword def.</p>
@@ -110,7 +126,7 @@ hello3("Kitty", 11)
       </choice>
       <choice>
         <statement>
-          <p>def greet(t, n)</p>
+          <p>def greet(t: str, n: int) -&gt; None</p>
         </statement>
         <feedback>
           <p>A function definition header must end in a colon (:).</p>
@@ -118,25 +134,26 @@ hello3("Kitty", 11)
       </choice>
     </choices>
   </exercise>
-  <exercise label="question11_3_2">
+  <exercise label="question4_4_2">
     <statement>
       <p>What is the name of the following function?</p>
       <program language="python">
         <input>
-def print_many(x, y):
-    """Print out string x, y times."""
-    for i in range(y):
-        print(x)
-</input>
+          def print_many(x: str, y: int) -&gt; None:
+            """Print out string x, y times."""
+            message = x * y
+            print(message)
+        </input>
       </program>
     </statement>
     <choices>
       <choice>
         <statement>
-          <p>def print_many(x, y):</p>
+          <p>def print_many(x: str, y: int) -&gt; None:</p>
         </statement>
         <feedback>
-          <p>This line is the complete function header (except for the semi-colon) which includes the name as well as several other components.</p>
+          <p>This line is the complete function header (except for the semi-colon) which includes
+            the name as well as several other components.</p>
         </feedback>
       </choice>
       <choice correct="yes">
@@ -144,12 +161,13 @@ def print_many(x, y):
           <p>print_many</p>
         </statement>
         <feedback>
-          <p>Yes, the name of the function is given after the keyword def and before the list of parameters.</p>
+          <p>Yes, the name of the function is given after the keyword def and before the list of
+            parameters.</p>
         </feedback>
       </choice>
       <choice>
         <statement>
-          <p>print_many(x, y)</p>
+          <p>print_many(x: str, y: int)</p>
         </statement>
         <feedback>
           <p>This includes the function name and its parameters</p>
@@ -165,16 +183,16 @@ def print_many(x, y):
       </choice>
     </choices>
   </exercise>
-  <exercise label="question11_3_3">
+  <exercise label="question4_4_3">
     <statement>
       <p>What are the parameters of the following function?</p>
       <program language="python">
         <input>
-def print_many(x, y):
-    """Print out string x, y times."""
-    for i in range(y):
-        print(x)
-</input>
+          def print_many(x: str, y: int) -&gt; None:
+            """Print out string x, y times."""
+            message = x * y
+            print(message)
+        </input>
       </program>
     </statement>
     <choices>
@@ -183,7 +201,8 @@ def print_many(x, y):
           <p>i</p>
         </statement>
         <feedback>
-          <p>i is a variable used inside of the function, but not a parameter, which is passed in to the function.</p>
+          <p>i is a variable used inside of the function, but not a parameter, which is passed in to
+            the function.</p>
         </feedback>
       </choice>
       <choice>
@@ -199,7 +218,7 @@ def print_many(x, y):
           <p>x, y</p>
         </statement>
         <feedback>
-          <p>Yes, the function specifies two parameters: x and y.</p>
+          <p>Yes, the function specifies two parameters: a string x and an int y.</p>
         </feedback>
       </choice>
       <choice>
@@ -207,23 +226,25 @@ def print_many(x, y):
           <p>x, y, i</p>
         </statement>
         <feedback>
-          <p>the parameters include only those variables whose values that the function expects to receive as input. They are specified in the header of the function.</p>
+          <p>the parameters include only those variables whose values that the function expects to
+            receive as input. They are specified in the header of the function.</p>
         </feedback>
       </choice>
     </choices>
   </exercise>
-  <exercise label="question11_3_4">
+  <exercise label="question4_4_4">
     <statement>
-      <p>Considering the function below, which of the following statements correctly invokes, or calls, this function (i.e., causes it to run)?</p>
+      <p>Considering the function below, which of the following statements correctly invokes, or
+        calls, this function (i.e., causes it to run)?</p>
       <program language="python">
         <input>
-def print_many(x, y):
-   """Print out string x, y times."""
-   for i in range(y):
-       print(x)
+          def print_many(x: str, y: int) -&gt; None:
+            """Print out string x, y times."""
+            message = x * y
+            print(message)
 
-z = 3
-</input>
+          z = 3
+        </input>
       </program>
     </statement>
     <choices>
@@ -232,7 +253,8 @@ z = 3
           <p>print_many(x, y)</p>
         </statement>
         <feedback>
-          <p>No, x and y are the names of the formal parameters to this function.  When the function is called, it requires actual values to be passed in.</p>
+          <p>No, x and y are the names of the formal parameters to this function. When the function
+            is called, it requires actual values to be passed in.</p>
         </feedback>
       </choice>
       <choice>
@@ -256,7 +278,8 @@ z = 3
           <p>print_many("Greetings", 10):</p>
         </statement>
         <feedback>
-          <p>A colon is only required in a function definition.  It will cause an error with a function call.</p>
+          <p>A colon is only required in a function definition. It will cause an error with a
+            function call.</p>
         </feedback>
       </choice>
       <choice correct="yes">
@@ -264,14 +287,16 @@ z = 3
           <p>print_many("Greetings", z)</p>
         </statement>
         <feedback>
-          <p>Since z has the value 3, we have passed in two correct values for this function. "Greetings" will be printed 3 times.</p>
+          <p>Since z has the value 3, we have passed in two correct values for this function.
+            "Greetings" will be printed 3 times.</p>
         </feedback>
       </choice>
     </choices>
   </exercise>
-  <exercise label="question11_3_5">
+  <!-- <exercise label="question11_3_x">
     <statement>
-      <p>True or false: A function can be called several times by placing a function call in the body of a for loop.</p>
+      <p>True or false: A function can be called several times by placing a function call in the
+        body of a for loop.</p>
     </statement>
     <choices>
       <choice correct="yes">
@@ -287,57 +312,61 @@ z = 3
           <p>False</p>
         </statement>
         <feedback>
-          <p>One of the purposes of a function is to allow you to call it more than once. Placing it in a loop allows it to executed multiple times as the body of the loop runs multiple times.</p>
+          <p>One of the purposes of a function is to allow you to call it more than once. Placing it
+            in a loop allows it to executed multiple times as the body of the loop runs multiple
+            times.</p>
         </feedback>
       </choice>
     </choices>
-  </exercise>
-  <exercise label="question11_3_6">
+  </exercise> -->
+  <exercise label="question4_4_5">
     <statement>
       <p>What output will the following code produce?</p>
       <program language="python">
         <input>
-def cyu(s1, s2):
-   if len(s1) &gt; len(s2):
-      print(s1)
-   else:
-      print(s2)
+          def cyu(n1: int, n2: int) -&gt; int:
+            n3 = -8
+            return n1 + n2 - CONSTANT_VALUE
 
-cyu("Hello", "Goodbye")
-</input>
+          cyu(4, 3)
+        </input>
       </program>
     </statement>
     <choices>
       <choice>
         <statement>
-          <p>Hello</p>
+          <p>7</p>
         </statement>
         <feedback>
-          <p>"Hello" is shorter than "Goodbye"</p>
+          <p>
+            n3 was given a value; it would be included in the returned value.
+          </p>
         </feedback>
       </choice>
       <choice correct="yes">
         <statement>
-          <p>Goodbye</p>
+          <p>15</p>
         </statement>
         <feedback>
-          <p>"Goodbye" is longer than "Hello"</p>
+          <p>4 + 3 - (-8) is 15.</p>
         </feedback>
       </choice>
       <choice>
         <statement>
-          <p>s1</p>
+          <p>-1</p>
         </statement>
         <feedback>
-          <p>s1 is a variable name; its value would print out, not the variable name.</p>
+          <p>n3 is a negative number that is subtracted
+            from the sum of n1 and n2.
+          </p>
         </feedback>
       </choice>
       <choice>
         <statement>
-          <p>s2</p>
+          <p>The function would produce an error.</p>
         </statement>
         <feedback>
-          <p>s2 is a variable name; its value would print out, not the variable name.</p>
+          <p>This code contains no errors.</p>
         </feedback>
       </choice>
     </choices>

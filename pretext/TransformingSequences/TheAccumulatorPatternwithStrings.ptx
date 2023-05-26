@@ -66,7 +66,7 @@ print(r)
   <exercise label="ac8_10_2">
     <statement>
       <p>
-        <ol label="1">
+        <ol marker="1">
           <li>
             <p>For each character in the string already saved in the variable <c>str1</c>, add each character to a list called <c>chars</c>.</p>
           </li>

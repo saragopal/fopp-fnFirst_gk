@@ -124,7 +124,7 @@ print(new_list)
   <exercise label="ac8_9_2">
     <statement>
       <p>
-        <ol label="1">
+        <ol marker="1">
           <li>
             <p>For each word in the list <c>verbs</c>, add an -ing ending. Save this new list in a new list, <c>ing</c>.</p>
           </li>
