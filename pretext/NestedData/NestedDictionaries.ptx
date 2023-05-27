@@ -9,7 +9,7 @@
   <p>
     <term>Check Your Understanding</term>
   </p>
-  <exercise label="question17_2_1">
+  <exercise label="question10_2_1">
     <statement>
       <p>Which of the following is a legal assignment statement, after the following code executes?</p>
       <program language="python">
@@ -53,11 +53,11 @@ d = {'key1': {'a': 5, 'c': 90, 5: 50}, 'key2':{'b': 3, 'c': "yes"}}
       </choice>
     </choices>
   </exercise>
-  <exercise label="ac17_2_1">
+  <exercise label="ac10_2_1">
     <statement>
       <p><term>1.</term> Extract the value associated with the key color and assign it to the variable <c>color</c>. Do not hard code this.</p>
     </statement>
-    <program xml:id="ac17_2_1_editor" interactive="activecode" language="python">
+    <program xml:id="ac10_2_1_editor" interactive="activecode" language="python">
       <input>
 
 info = {'personal_data':

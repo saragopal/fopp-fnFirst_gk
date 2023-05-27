@@ -11,7 +11,7 @@
     more the structure deviates, the more you will have to use special cases.</p>
   <p>For example, let's reconsider this nested iteration, but suppose not all the items in the outer
     list are lists.</p>
-  <program xml:id="ac17_50_1" interactive="activecode" language="python">
+  <program xml:id="ac10_5_1" interactive="activecode" language="python">
     <input>
       nested1 = [1, 2, ['a', 'b', 'c'],['d', 'e'],['f', 'g', 'h']]
       for x in nested1:
@@ -22,7 +22,7 @@
   </program>
   <p>Now the nested iteration fails.</p>
   <p>We can solve this with special casing, a conditional that checks the type.</p>
-  <program xml:id="ac17_50_2" interactive="activecode" language="python">
+  <program xml:id="ac10_5_2" interactive="activecode" language="python">
     <input>
       nested1 = [1, 2, ['a', 'b', 'c'],['d', 'e'],['f', 'g', 'h']]
       for x in nested1:

@@ -94,7 +94,7 @@
     <p>
       <term>Check Your Understanding</term>
     </p>
-    <exercise label="question8_11_1">
+    <exercise label="question9_12_1">
       <statement>
         <p>Does the following prompt require an accumulation pattern? If so, what words indicate that? For each string in <c>wrds</c>, add &#x2018;ed' to the end of the word (to make the word past tense). Save these past tense words to a list called <c>past_wrds</c>.</p>
       </statement>
@@ -125,7 +125,7 @@
         </choice>
       </choices>
     </exercise>
-    <exercise label="question8_11_2">
+    <exercise label="question9_12_2">
       <statement>
         <p>Does the following prompt require an accumulation pattern? If so, what words indicate that? Write code to sum up all of the numbers in the list <c>seat_counts</c>. Store that number in the variable <c>total_seat_counts</c>.</p>
       </statement>
@@ -156,7 +156,7 @@
         </choice>
       </choices>
     </exercise>
-    <exercise label="question8_11_3">
+    <exercise label="question9_12_3">
       <statement>
         <p>Does the following prompt require an accumulation pattern? If so, what words indicate that? Write code to print out each character of the string <c>my_str</c> on a separate line.</p>
       </statement>
@@ -187,7 +187,7 @@
         </choice>
       </choices>
     </exercise>
-    <exercise label="question8_11_4">
+    <exercise label="question9_12_4">
       <statement>
         <p>Does the following prompt require an accumulation pattern? If so, what words indicate that? Write code that will count the number of vowels in the sentence <c>s</c> and assign the result to the variable <c>num_vowels</c>.</p>
       </statement>
@@ -218,7 +218,7 @@
         </choice>
       </choices>
     </exercise>
-    <exercise label="question8_11_5">
+    <exercise label="question9_12_5">
       <statement>
         <p>What type should be used for the accumulator variable in the following prompt? Write code that will count the number of vowels in the sentence <c>s</c> and assign the result to the variable <c>num_vowels</c>.</p>
       </statement>
@@ -257,7 +257,7 @@
         </choice>
       </choices>
     </exercise>
-    <exercise label="question8_11_6">
+    <exercise label="question9_12_6">
       <statement>
         <p>What sequence will you iterate through as you accumulate a result in the following prompt? Write code that will count the number of vowels in the sentence <c>s</c> and assign the result to the variable <c>num_vowels</c>.</p>
       </statement>
@@ -288,7 +288,7 @@
         </choice>
       </choices>
     </exercise>
-    <exercise label="question8_11_7">
+    <exercise label="question9_12_7">
       <statement>
         <p>What type should be used for the accumulator variable in the following prompt? For each string in <c>wrds</c>, add &#x2018;ed' to the end of the word (to make the word past tense). Save these past tense words to a list called <c>past_wrds</c>.</p>
       </statement>
@@ -327,7 +327,7 @@
         </choice>
       </choices>
     </exercise>
-    <exercise label="question8_11_8">
+    <exercise label="question9_12_8">
       <statement>
         <p>What sequence will you iterate through as you accumulate a result in the following prompt? For each string in <c>wrds</c>, add &#x2018;ed' to the end of the word (to make the word past tense). Save these past tense words to a list called <c>past_wrds</c>.</p>
       </statement>
@@ -358,7 +358,7 @@
         </choice>
       </choices>
     </exercise>
-    <exercise label="question8_11_9">
+    <exercise label="question9_12_9">
       <statement>
         <p>What type should be used for the accumulator variable in the following prompt? Write code to sum up all of the numbers in the list <c>seat_counts</c>. Store that number in the variable <c>total_seat_counts</c>.</p>
       </statement>
@@ -397,7 +397,7 @@
         </choice>
       </choices>
     </exercise>
-    <exercise label="question8_11_10">
+    <exercise label="question9_12_10">
       <statement>
         <blockquote>
           <p>What sequence will you iterate through as you accumulate a result in the following prompt? Write code to sum up all of the numbers in the list <c>seat_counts</c>. Store that number in the variable <c>total_seat_counts</c>.</p>
@@ -430,7 +430,7 @@
         </choice>
       </choices>
     </exercise>
-    <exercise label="question8_11_11">
+    <exercise label="question9_12_11">
       <statement>
         <p>What type should be used for the accumulator variable in the following prompt? Write code to print out each character of the string <c>my_str</c> on a separate line.</p>
       </statement>
@@ -469,7 +469,7 @@
         </choice>
       </choices>
     </exercise>
-    <exercise label="question8_11_12">
+    <exercise label="question9_12_12">
       <statement>
         <p>What sequence will you iterate through as you accumulate a result in the following prompt? Write code to print out each character of the string <c>my_str</c> on a separate line.</p>
       </statement>
@@ -500,7 +500,7 @@
         </choice>
       </choices>
     </exercise>
-    <exercise label="question8_11_13">
+    <exercise label="question9_12_13">
       <statement>
         <p>Which of these are good alternatives to the accumulator variable and iterator variable names for the following prompt? For each string in <c>wrds</c>, add &#x2018;ed' to the end of the word (to make the word past tense). Save these past tense words to a list called <c>past_wrds</c>.</p>
       </statement>
@@ -531,7 +531,7 @@
         </choice>
       </choices>
     </exercise>
-    <exercise label="question8_11_14">
+    <exercise label="question9_12_14">
       <statement>
         <p>Which of these are good alternatives to the accumulator variable and iterator variable names for the following prompt? Write code that will count the number of vowels in the sentence <c>s</c> and assign the result to the variable <c>num_vowels</c>.</p>
       </statement>
@@ -562,7 +562,7 @@
         </choice>
       </choices>
     </exercise>
-    <exercise label="question8_11_15">
+    <exercise label="question9_12_15">
       <statement>
         <p>Which of these are good alternatives to the accumulator variable and iterator variable names for the following prompt? Write code to sum up all of the numbers in the list <c>seat_counts</c>. Store that number in the variable <c>total_seat_counts</c>.</p>
       </statement>
@@ -593,7 +593,7 @@
         </choice>
       </choices>
     </exercise>
-    <exercise label="question8_11_16">
+    <exercise label="question9_12_16">
       <statement>
         <p>Which of these are good alternatives to the accumulator variable and iterator variable names for the following prompt? Write code to print out each character of the string <c>my_str</c> on a separate line.</p>
       </statement>

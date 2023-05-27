@@ -18,7 +18,7 @@
             adding values to our running total. In this case, as long as <c>aNumber</c> is less than or equal to the bound, we
             should keep going.</p>
   <p>Here is a new version of the summation program that uses a while statement.</p>
-  <program xml:id="ac14_2_1" interactive="activecode" language="python">
+  <program xml:id="ac6_2_1" interactive="activecode" language="python">
     <input>
 def sumTo(aBound):
     """ Return the sum of 1+2+3 ... n """
@@ -41,7 +41,7 @@ print(sumTo(1000))
             of the <c>while</c> and reevaluate it. When <c>aNumber</c> becomes greater than <c>aBound</c>, the condition fails and flow
             of control continues to the <c>return</c> statement.</p>
   <p>The same program in codelens will allow you to observe the flow of execution.</p>
-  <program xml:id="clens14_2_1" interactive="codelens" language="python">
+  <program xml:id="clens6_2_1" interactive="codelens" language="python">
     <input>
 def sumTo(aBound):
     """ Return the sum of 1+2+3 ... n """
@@ -128,7 +128,7 @@ print(sumTo(4))
       </choice>
     </choices>
   </exercise> -->
-  <exercise label="question14_2_2">
+  <exercise label="question6_2_1">
     <statement>
       <p>The following code contains an infinite loop. Which is the best explanation for why the loop does not terminate?</p>
       <program language="python">
@@ -208,7 +208,7 @@ print(answer)
       </choice>
     </choices>
   </exercise> -->
-  <exercise label="ac14_2_2">
+  <exercise label="ac6_2_2">
     <statement>
       <p>Write a while loop that is initialized at 0 and stops at 15. If the counter is an even number, add double its value to <c>total_score</c>. If the counter is an odd number, subtract half its value from <c>total_score</c>.</p>
     </statement>

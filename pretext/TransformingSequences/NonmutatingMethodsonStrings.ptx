@@ -3,7 +3,7 @@
   <title>Non-mutating Methods on Strings</title>
   <p>There are a wide variety of methods for string objects.
     Try the following program.</p>
-  <program xml:id="ac8_8_1" interactive="activecode" language="python">
+  <program xml:id="ac9_9_1" interactive="activecode" language="python">
     <input>
       ss = "Hello, World"
       print(ss.upper())
@@ -118,7 +118,7 @@
       href="http://docs.python.org/3/library/stdtypes.html#string-methods"
       visual="http://docs.python.org/3/library/stdtypes.html#string-methods">Python documentation
       for strings</url>.</p>
-  <program xml:id="ac8_8_2" interactive="activecode" language="python">
+  <program xml:id="ac9_9_2" interactive="activecode" language="python">
     <input>
       ss = " Hello, World "
 
@@ -131,7 +131,7 @@
       print(news)
     </input>
   </program>
-  <program xml:id="ac8_8_3" interactive="activecode" language="python">
+  <program xml:id="ac9_9_3" interactive="activecode" language="python">
     <input>
       food = "banana bread"
       print(food.upper())
@@ -140,7 +140,7 @@
   <p>
     <term>Check your understanding</term>
   </p>
-  <exercise label="question8_8_1">
+  <exercise label="question9_9_1">
     <statement>
       <p>What is printed by the following statements?</p>
       <program language="python">
@@ -177,7 +177,7 @@
       </choice>
     </choices>
   </exercise>
-  <exercise label="question8_8_2">
+  <exercise label="question9_9_2">
     <statement>
       <p>What is printed by the following statements?</p>
       <program language="python">
@@ -229,7 +229,7 @@
     <p>Until now, we have created strings with variable content using the + operator to concatenate
       partial strings together. That works, but it's very hard for people to read or debug a code
       line that includes variable names and strings and complex expressions. Consider the following:</p>
-    <program xml:id="ac8_8_4" interactive="activecode" language="python">
+    <program xml:id="ac9_9_4" interactive="activecode" language="python">
       <input>
         name = "Rodney Dangerfield"
         score = -1 # No respect!
@@ -237,7 +237,7 @@
       </input>
     </program>
     <p>Or perhaps more realistically:</p>
-    <program xml:id="ac8_8_5" interactive="activecode" language="python">
+    <program xml:id="ac9_9_5" interactive="activecode" language="python">
       <input>
         scores = [("Rodney Dangerfield", -1), ("Marlon Brando", 1), ("You", 100)]
         for person in scores:
@@ -247,7 +247,7 @@
       </input>
     </program>
     <p>In this section, you will learn to write that in a more readable way:</p>
-    <program xml:id="ac8_8_6" interactive="activecode" language="python">
+    <program xml:id="ac9_9_6" interactive="activecode" language="python">
       <input>
         scores = [("Rodney Dangerfield", -1), ("Marlon Brando", 1), ("You", 100)]
         for person in scores:
@@ -264,7 +264,7 @@
       insertion. <em>We use this as an analogy:</em> Python has a similar construction, better
       called fill-in-the-braces. <c>fstrings</c>, make substitutions into places in
       a string enclosed in braces. Run this code:</p>
-    <program xml:id="ac8_8_7" interactive="activecode" language="python">
+    <program xml:id="ac9_9_7" interactive="activecode" language="python">
       <input>
         person = input('Your name: ')
         greeting = f"Hello {person}!"
@@ -279,7 +279,7 @@
     <p>The identifier <c>greeting</c> was introduced to break the operations into a clearer sequence
       of steps. However, since the value of <c>greeting</c> is only referenced once, it can be
       eliminated with the more concise version:</p>
-    <program xml:id="ac8_8_8" interactive="activecode" language="python">
+    <program xml:id="ac9_9_8" interactive="activecode" language="python">
       <input>
         person = input('Enter your name: ')
         print(f'Hello {person}!')
@@ -287,7 +287,7 @@
     </program>
     <p>There can be multiple substitutions, with data of any type.
       Next we use floats. Try original price $2.50 with a 7% discount:</p>
-    <program xml:id="ac8_8_9" interactive="activecode" language="python">
+    <program xml:id="ac9_9_9" interactive="activecode" language="python">
       <input>
         origPrice = float(input('Enter the original price: $'))
         discount = float(input('Enter discount percentage: '))
@@ -302,7 +302,7 @@
     <p>fstrings can give further information inside the braces showing how to specially format
       data. In particular floats can be shown with a specific number of decimal places. For two
       decimal places, put <c>:.2f</c> inside the braces for the monetary values:</p>
-    <program xml:id="ac8_8_10" interactive="activecode" language="python">
+    <program xml:id="ac9_9_10" interactive="activecode" language="python">
       <input>
         origPrice = float(input('Enter the original price: $'))
         discount = float(input('Enter discount percentage: '))
@@ -327,7 +327,7 @@ setStr = 'The set is {&#x200B;{&#x200B;{a}, {b}&#x200B;}&#x200B;}.'
 print(setStr)</pre>
     <p>Unfortunately, at the time of this writing, the ActiveCode format implementation has a bug,
       printing doubled braces, but standard Python prints <c>{5, 9}</c>.</p>
-    <exercise label="question8_8_3">
+    <exercise label="question9_9_3">
       <statement>
         <p>What is printed by the following statements?</p>
         <program language="python">
@@ -373,7 +373,7 @@ print(setStr)</pre>
         </choice>
       </choices>
     </exercise>
-    <exercise label="question8_8_4">
+    <exercise label="question9_9_4">
       <statement>
         <p>What is printed by the following statements?</p>
         <program language="python">

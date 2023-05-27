@@ -4,7 +4,7 @@
   <p>
     <term>Check your understanding</term>
   </p>
-  <exercise label="assess_question2_1_1_1">
+  <exercise label="question8_10_1">
     <statement>
       <p>What will the output be for the following code?</p>
       <program language="python">
@@ -60,11 +60,11 @@ print(m)
       </choice>
     </choices>
   </exercise>
-  <exercise label="assess_ac_2_1_1_2">
+  <exercise label="ac8_10_1">
     <statement>
       <p>Write a program that extracts the last three items in the list <c>sports</c> and assigns it to the variable <c>last</c>. Make sure to write your code so that it works no matter how many items are in the list.</p>
     </statement>
-    <program xml:id="assess_ac_2_1_1_2_editor" interactive="activecode" language="python">
+    <program xml:id="ac8_10_1_editor" interactive="activecode" language="python">
       <input>
 sports = ['cricket', 'football', 'volleyball', 'baseball', 'softball', 'track and field', 'curling', 'ping pong', 'hockey']
 
@@ -85,11 +85,11 @@ myTests().main()
         </input>
     </program>
   </exercise>
-  <exercise label="assess_ac_2_1_1_3">
+  <exercise label="ac8_10_2">
     <statement>
       <p>Write code that combines the following variables so that the sentence <q>You are doing a great job, keep it up!</q> is assigned to the variable <c>message</c>. Do not edit the values assigned to <c>by</c>, <c>az</c>, <c>io</c>, or <c>qy</c>.</p>
     </statement>
-    <program xml:id="assess_ac_2_1_1_3_editor" interactive="activecode" language="python">
+    <program xml:id="ac8_10_2_editor" interactive="activecode" language="python">
       <input>
 by = "You are"
 az = "doing a great "
@@ -116,7 +116,7 @@ myTests().main()
         </input>
     </program>
   </exercise>
-  <exercise label="assess_question2_1_1_4">
+  <exercise label="question8_10_2">
     <statement>
       <p>What will the output be for the following code?</p>
       <program language="python">
@@ -162,7 +162,7 @@ print(new)
       </choice>
     </choices>
   </exercise>
-  <exercise label="assess_question2_1_1_5">
+  <exercise label="question8_10_3">
     <statement>
       <p>What is the type of <c>m</c>?</p>
       <program language="python">
@@ -207,7 +207,7 @@ m = l[1:2]
       </choice>
     </choices>
   </exercise>
-  <exercise label="assess_question2_1_1_6">
+  <exercise label="question8_10_4">
     <statement>
       <p>What is the type of <c>m</c>?</p>
       <program language="python">
@@ -252,7 +252,7 @@ m = l[1]
       </choice>
     </choices>
   </exercise>
-  <exercise label="assess_question2_1_1_7">
+  <exercise label="question8_10_5">
     <statement>
       <p>What is the type of <c>x</c>?</p>
       <program language="python">
@@ -297,7 +297,7 @@ x = b.split(',')
       </choice>
     </choices>
   </exercise>
-  <exercise label="assess_question2_1_1_8">
+  <exercise label="question8_10_6">
     <statement>
       <p>What is the type of <c>a</c>?</p>
       <program language="python">
@@ -345,11 +345,11 @@ a = "".join(y)
       </choice>
     </choices>
   </exercise>
-  <exercise label="assess_ac2_1_1_9">
+  <exercise label="ac8_10_3">
     <statement>
       <p>Write code to determine how many 9's are in the list <c>nums</c> and assign that value to the variable <c>how_many</c>. Do not use a for loop to do this.</p>
     </statement>
-    <program xml:id="assess_ac2_1_1_9_editor" interactive="activecode" language="python">
+    <program xml:id="ac8_10_3_editor" interactive="activecode" language="python">
       <input>
 nums = [4, 2, 23.4, 9, 545, 9, 1, 234.001, 5, 49, 8, 9 , 34, 52, 1, -2, 9.1, 4]
 

@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
-<section xml:id="sequences_length207_index-0">
+<section xml:id="sequences_length">
   <title>Length</title>
   <p>The <c>len</c> function, when applied to a string, returns the number of characters in a string.</p>
-  <program xml:id="ac5_5_1" interactive="activecode" language="python">
+  <program xml:id="ac8_5_1" interactive="activecode" language="python">
     <input>
 fruit = "Banana"
 print(len(fruit))
@@ -10,7 +10,7 @@ print(len(fruit))
   </program>
   <p>To get the last letter of a string, you might be tempted to try something like
             this:</p>
-  <program xml:id="ac5_5_2" interactive="activecode" language="python">
+  <program xml:id="ac8_5_2" interactive="activecode" language="python">
     <input>
 fruit = "Banana"
 sz = len(fruit)
@@ -22,7 +22,7 @@ print(last)
             that there is no letter at index position 6 in <c>"Banana"</c>. Since we started counting at zero, the
             six indexes are numbered 0 to 5. To get the last character, we have to subtract 1 from the length.
             Give it a try in the example above.</p>
-  <program xml:id="ac5_5_3" interactive="activecode" language="python">
+  <program xml:id="ac8_5_3" interactive="activecode" language="python">
     <input>
 fruit = "Banana"
 sz = len(fruit)
@@ -52,7 +52,7 @@ midchar = fruit[len(fruit)//2]
   <p>As with strings, the function <c>len</c> returns the length of a list (the number of items in the list).
             However, since lists can have items which are themselves sequences (e.g., strings),
             it important to note that <c>len</c> only returns the top-most length.</p>
-  <program xml:id="ac5_5_4" interactive="activecode" language="python">
+  <program xml:id="ac8_5_4" interactive="activecode" language="python">
     <input>
 alist =  ["hello", 2.0, 5]
 print(len(alist))
@@ -63,7 +63,7 @@ print(len(alist[0]))
   <p>
     <term>Check your understanding</term>
   </p>
-  <exercise label="question5_5_1">
+  <exercise label="question8_5_1">
     <statement>
       <p>What is printed by the following statements?</p>
       <program language="python">
@@ -92,7 +92,7 @@ print(len(s))
       </choice>
     </choices>
   </exercise>
-  <exercise label="question5_5_2">
+  <exercise label="question8_5_2">
     <statement>
       <p>What is printed by the following statements?</p>
       <program language="python">
@@ -121,11 +121,11 @@ print(len(alist))
       </choice>
     </choices>
   </exercise>
-  <exercise label="ac5_5_5">
+  <exercise label="ac8_5_5">
     <statement>
       <p>Assign the number of elements in <c>lst</c> to the variable <c>output</c>.</p>
     </statement>
-    <program xml:id="ac5_5_5_editor" interactive="activecode" language="python">
+    <program xml:id="ac8_5_5_editor" interactive="activecode" language="python">
       <input>
 lst = ["hi", "morning", "dog", "506", "caterpillar", "balloons", 106, "yo-yo", "python", "moon", "water", "sleepy", "daffy", 45, "donald", "whiteboard", "glasses", "markers", "couches", "butterfly", "100", "magazine", "door", "picture", "window", ["Olympics", "handle"], "chair", "pages", "readings", "burger", "juggle", "craft", ["store", "poster", "board"], "laptop", "computer", "plates", "hotdog", "salad", "backpack", "zipper", "ring", "watch", "finger", "bags", "boxes", "pods", "peas", "apples", "horse", "guinea pig", "bowl", "EECS"]
 
