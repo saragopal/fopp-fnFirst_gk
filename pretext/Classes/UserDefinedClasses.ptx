@@ -49,7 +49,7 @@ class Point:
             other name, but nobody ever does!) is automatically set to reference
             the newly created object that needs to be initialized.</p>
   <p>So let's use our new Point class now.</p>
-  <program xml:id="chp13_classes1" interactive="activecode" language="python">
+  <program xml:id="ac13_3_1" interactive="activecode" language="python">
     <input>
 class Point:
     """ Point class for representing and manipulating x,y coordinates. """
@@ -72,7 +72,7 @@ print("Nothing seems to have happened with the points")
   <image source="Classes/Figures/objectpic4.png" width="50%" alt="Simple object has state and methods"/>
   <p>The following program adds a few print statements. You can see that the output suggests that each one is a <c>Point object</c>.
             However, notice that the <c>is</c> operator returns <c>False</c> meaning that they are different objects (we will have more to say about this in a later section).</p>
-  <program xml:id="chp13_classes2" interactive="activecode" language="python">
+  <program xml:id="ac13_3_2" interactive="activecode" language="python">
     <input>
 class Point:
     """ Point class for representing and manipulating x,y coordinates. """
@@ -104,7 +104,7 @@ print(p is q)
   <p>The combined process of <q>make me a new object</q> and <q>get its settings initialized
             to the factory default settings</q> is called <term>instantiation</term>.</p>
   <p>To get a clearer understanding of what happens when instantiating a new instance, examine the previous code using CodeLens.</p>
-  <program xml:id="chp13_classes2a" interactive="codelens" language="python">
+  <program xml:id="ac13_3_3" interactive="codelens" language="python">
     <input>
 class Point:
     """ Point class for representing and manipulating x,y coordinates. """

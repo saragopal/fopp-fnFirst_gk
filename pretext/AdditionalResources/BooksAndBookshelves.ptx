@@ -59,7 +59,7 @@
             </tabular>
         </table>
     </subsection>
-<subsection xml:id="subsec-additonal_resources-books-bookshelves-confirming-books">
+<subsection xml:id="additonal_resources-books-bookshelves-confirming-books">
         <title>Confirming Book Data</title>
         <p>It's important to make sure the data you're parsing ends up in the right places.
         Create a method in the <c>Book</c> class called <c>get_data()</c> to return the book's information.
@@ -81,7 +81,7 @@
             </note>
         </p>
     </subsection>
-<subsection xml:id="subsec-additonal_resources-books-bookshelves-searching-books">
+<subsection xml:id="additonal_resources-books-bookshelves-searching-books">
         <title>Searching for Books</title>
         <p>
             Now that all the book data is loaded in the <c>Bookshelf</c> object, let's create a few
@@ -110,7 +110,7 @@
             book is found, return <c>None</c>.
         </p>
     </subsection>
-    <subsection xml:id="subsec-additonal_resources-books-bookshelves-adding-more-books">
+    <subsection xml:id="additonal_resources-books-bookshelves-adding-more-books">
         <title>Filling Up Bookshelves</title>
         <p>
             Now that you're able to search for books, let's fill up the bookshelf with some more books.
@@ -169,7 +169,7 @@ Animal Farm,George Orwell,1945
 Also, a few searching methods may need to be revised. Some books may have been written in the same year, or by the same author. If this is the case, return a string where each book is separated by a newline.
         </p>
     </subsection>
-    <subsection xml:id="subsec-additonal_resources-books-bookshelves-final-touches">
+    <subsection xml:id="additonal_resources-books-bookshelves-final-touches">
         <title>Final Touches</title>
         <p>
             There are a few extra methods to include, just to add some more functionality and fix some issues.

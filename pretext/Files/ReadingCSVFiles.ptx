@@ -11,7 +11,7 @@
     and simply iterating over the file object itself - will work on CSV files. In our examples, we
     will iterate over the lines. Because the values on each line are separated with commas, we can
     use the <c>.split()</c> method to parse each line into a collection of separate value.</p>
-  <program xml:id="ac9_13_1" interactive="activecode" language="python">
+  <program xml:id="ac11_10_1" interactive="activecode" language="python">
     <input>
       fileconnection = open("olympics.txt", 'r')
       lines = fileconnection.readlines()

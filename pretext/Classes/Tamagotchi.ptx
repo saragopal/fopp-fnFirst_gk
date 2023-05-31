@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<section xml:id="classes_a-tamagotchi-game40_index-0">
+<section xml:id="classes_a-tamagotchi-game">
     <title>A Tamagotchi Game</title>
     <p>There are also a lot of interesting ways to put user-defined classes to use that don't
         involve data from the internet. Let's pull all these mechanics together in a slightly more
@@ -51,7 +51,7 @@
         method. It decrements the boredom state by an amount that it reads from the class variable <c>
         boredom_decrement</c>. The boredom state can never go below <c>0</c>.</p>
     <p>To relieve hunger, we call the <c>feed()</c> method.</p>
-    <program xml:id="tamagotchi_1" interactive="activecode" language="python">
+    <program xml:id="ac13_11_1" interactive="activecode" language="python">
         <input>
             from random import randrange
 
@@ -105,7 +105,7 @@
     <p>Let's try making a pet and playing with it a little. Add some of your own commands, too, and
         keep printing <c>p1</c> to see what the effects are. If you want to directly inspect the
         state, try printing <c>p1.boredom</c> or <c>p1.hunger</c>.</p>
-    <program xml:id="tamagotchi_2_copy" interactive="activecode" language="python">
+    <program xml:id="ac13_11_2" interactive="activecode" language="python">
         <input>
             p1 = Pet("Fido")
             print(p1)
@@ -129,7 +129,7 @@
         pet, with a Greet, Teach, or Feed command.</p>
     <p>No matter what the user does, with each command entered, the clock ticks for all their pets.
         Watch out, if you have too many pets, you won't be able to keep them all satisfied!</p>
-    <program xml:id="tamogotchi_3" interactive="activecode" language="python">
+    <program xml:id="ac13_11_3" interactive="activecode" language="python">
         <input>
             import sys
             sys.setExecutionLimit(60000)

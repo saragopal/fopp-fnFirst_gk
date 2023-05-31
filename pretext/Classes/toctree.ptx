@@ -9,7 +9,7 @@
     <xi:include href='./ObjectsasArgumentsandParameters.ptx' />
     <xi:include href='./ConvertinganObjecttoaString.ptx' />
     <xi:include href='./InstancesasReturnValues.ptx' />
-    <xi:include href='./sorting_instances.ptx' />
+    <!-- <xi:include href='./sorting_instances.ptx' /> -->
     <xi:include href='./ClassVariablesInstanceVariables.ptx' />
     <xi:include href='./ThinkingAboutClasses.ptx' />
     <!-- <xi:include href='./TestingClasses.ptx' /> -->

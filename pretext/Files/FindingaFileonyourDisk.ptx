@@ -18,7 +18,7 @@
   <p>
     <term>Check Your Understanding</term>
   </p>
-  <exercise label="question9_2_1">
+  <exercise label="question11_5_1">
     <statement>
       <p>Say you are in a directory called Project. In it, you have a file with your Python code. You would like to read in data from a file called <q>YearlyProjections.csv</q> which is in a folder called CompanyData, which is inside of Project. What is the best way to open the file in your Python program?</p>
     </statement>
@@ -65,7 +65,7 @@
       </choice>
     </choices>
   </exercise>
-  <exercise label="question9_2_2">
+  <exercise label="question11_5_2">
     <statement>
       <p>Which of the following paths are relative file paths?</p>
     </statement>

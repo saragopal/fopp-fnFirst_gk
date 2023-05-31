@@ -11,7 +11,7 @@
         other target point. We would like to write a method, let's call it <c>halfway</c>, which
         takes another <c>Point</c> as a parameter and returns the <c>Point</c> that is halfway
         between the point and the target point it accepts as input.</p>
-    <program xml:id="chp13_classesmid1" interactive="activecode" language="python">
+    <program xml:id="ac13_8_1" interactive="activecode" language="python">
         <input>
             class Point:
 

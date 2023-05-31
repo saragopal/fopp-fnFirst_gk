@@ -10,7 +10,7 @@
 2,24
 3,36
 ...</pre>
-  <program xml:id="ac9_14_1" interactive="activecode" language="python">
+  <program xml:id="ac11_12_1" interactive="activecode" language="python">
     <input>
       n = [0] * 12
       for i in range(1,13):
@@ -25,7 +25,7 @@
   </program>
   <p>Here is a more complex example, where we a have a list of tuples, each representing one
     Olympian, a subset of the rows and columns from the file we have been reading from.</p>
-  <program xml:id="ac9_14_3" interactive="activecode" language="python">
+  <program xml:id="ac11_12_3" interactive="activecode" language="python">
     <input>
       olympians = [("John Aalberg", 31, "Cross Country Skiing"),
       ("Minna Maarit Aalto", 30, "Sailing"),
@@ -69,7 +69,7 @@
     that one can be used to delimit the string and the other can be a character in the string. If
     you get to the point where you need to quote all of the values, we recommend learning to use
     python's csv module.</p>
-  <program xml:id="ac9_14_2" interactive="activecode" language="python">
+  <program xml:id="ac11_12_2" interactive="activecode" language="python">
     <input>
       olympians = [("John Aalberg", 31, "Cross Country Skiing, 15KM"),
       ("Minna Maarit Aalto", 30, "Sailing"),

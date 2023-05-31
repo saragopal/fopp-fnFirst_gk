@@ -107,7 +107,7 @@ Different schools have different requirements, but everyone uses
 writing at some point in their academic career, be it essays, research papers,
 technical write ups, or scripts.
 &lt;/pre&gt;</raw>
-  <exercise label="ac9_4_1">
+  <exercise label="ac11_3_1">
     <statement>
       <p>
         <ol marker="1">
@@ -117,7 +117,7 @@ technical write ups, or scripts.
         </ol>
       </p>
     </statement>
-    <program xml:id="ac9_4_1_editor" interactive="activecode" language="python">
+    <program xml:id="ac11_3_1_editor" interactive="activecode" language="python">
       <input>
 
 =====
@@ -146,7 +146,7 @@ I will probably not even want to come back!
 However, I wonder how I will get by with all the different languages.
 I only know English!
 &lt;/pre&gt;</raw>
-  <exercise label="ac9_4_2">
+  <exercise label="ac11_3_2">
     <statement>
       <p>
         <ol marker="1">
@@ -156,7 +156,7 @@ I only know English!
         </ol>
       </p>
     </statement>
-    <program xml:id="ac9_4_2_editor" interactive="activecode" language="python">
+    <program xml:id="ac11_3_2_editor" interactive="activecode" language="python">
       <input>
 
 =====
@@ -181,7 +181,7 @@ Excited eager thrilled delighted
 Scared afraid fearful panicked terrified petrified startled
 Nervous anxious jittery jumpy tense uneasy apprehensive
 &lt;/pre&gt;</raw>
-  <exercise label="ac9_4_3">
+  <exercise label="ac11_3_3">
     <statement>
       <p>
         <ol marker="1">
@@ -191,7 +191,7 @@ Nervous anxious jittery jumpy tense uneasy apprehensive
         </ol>
       </p>
     </statement>
-    <program xml:id="ac9_4_3_editor" interactive="activecode" language="python">
+    <program xml:id="ac11_3_3_editor" interactive="activecode" language="python">
       <input>
 
 =====
