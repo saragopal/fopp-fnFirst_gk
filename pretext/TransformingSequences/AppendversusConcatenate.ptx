@@ -4,7 +4,7 @@
   <p>The <c>append</c> method adds a new item to the end of a list. It is also possible to add a new item to the end of a list
             by using the concatenation operator. However, you need to be careful.</p>
   <p>Consider the following example. The original list has 3 integers. We want to add the word <q>cat</q> to the end of the list.</p>
-  <program xml:id="clens8_7_1" interactive="activecode" language="python">
+  <program xml:id="clens9_8_1" interactive="activecode" language="python">
     <input>
 origlist = [45,32,88]
 
@@ -16,7 +16,7 @@ origlist.append("cat")
   <pre>origlist = origlist + ["cat"]</pre>
   <p>Note that the word <q>cat</q> needs to be placed in a list since the concatenation operator needs two lists
             to do its work.</p>
-  <program xml:id="clens8_7_2" interactive="codelens" language="python">
+  <program xml:id="clens9_8_2" interactive="codelens" language="python">
     <input>
 origlist = [45,32,88]
 
@@ -28,7 +28,7 @@ origlist = origlist + ["cat"]
             where``newlist`` refers to a list which is a copy of the original list, <c>origlist</c>, with the new item
             <q>cat</q> added to the end.  <c>origlist</c> still contains the three values it did before the concatenation.
             This is why the assignment operation is necessary as part of the accumulator pattern.</p>
-  <program xml:id="clens8_7_3" interactive="codelens" language="python">
+  <program xml:id="clens9_8_3" interactive="codelens" language="python">
     <input>
 origlist = [45,32,88]
 
@@ -48,7 +48,7 @@ newlist = origlist + ["cat"]
 &gt;&gt;&gt;
 </input>
   </program>
-  <program xml:id="ac8_7_1" interactive="activecode" language="python">
+  <program xml:id="ac9_8_1" interactive="activecode" language="python">
     <input>
 origlist = [45,32,88]
 print("origlist:", origlist)
@@ -63,7 +63,7 @@ print("the identifier:", id(origlist))             #id of the list after append 
   </program>
   <p>Note how even though <c>newlist</c> and <c>origlist</c> appear the same, they have different identifiers.</p>
   <p>We have previously described <title_reference>x += 1</title_reference> as a shorthand for <title_reference>x = x + 1</title_reference>. With lists, <title_reference>+=</title_reference> is actually a little different. In particular, <title_reference>origlist += [<q>cat</q>] appends <q>cat</q> to the end of the original list object. If there is another alias for `origlist</title_reference>, this can make a difference, as in the code below. See if you can follow (or, better yet, predict, changes in the reference diagram).</p>
-  <program xml:id="clens8_7_2a" interactive="codelens" language="python">
+  <program xml:id="clens9_8_4" interactive="codelens" language="python">
     <input>
 origlist = [45,32,88]
 aliaslist = origlist
@@ -72,14 +72,14 @@ origlist = origlist + ["cow"]
     </input>
   </program>
   <p>We can use append or concatenate repeatedly to create new objects. If we had a string and wanted to make a new list, where each element in the list is a character in the string, where do you think you should start? In both cases, you'll need to first create a variable to store the new object.</p>
-  <program xml:id="ac8_72" interactive="activecode" language="python">
+  <program xml:id="ac9_8_2" interactive="activecode" language="python">
     <input>
 st = "Warmth"
 a = []
         </input>
   </program>
   <p>Then, character by character, you can add to the empty list. The process looks different if you concatentate as compared to using append.</p>
-  <program xml:id="ac8_7_3" interactive="activecode" language="python">
+  <program xml:id="ac9_8_3" interactive="activecode" language="python">
     <input>
 st = "Warmth"
 a = []
@@ -92,7 +92,7 @@ g = f + [st[5]]
 print(g)
         </input>
   </program>
-  <program xml:id="ac8_7_4" interactive="activecode" language="python">
+  <program xml:id="ac9_8_4" interactive="activecode" language="python">
     <input>
 st = "Warmth"
 a = []
@@ -110,7 +110,7 @@ print(a)
   <p>
     <term>Check your understanding</term>
   </p>
-  <exercise label="question8_7_1">
+  <exercise label="question9_8_1">
     <statement>
       <p>What is printed by the following statements?</p>
       <program language="python">

@@ -1,55 +1,58 @@
 <?xml version="1.0"?>
-<section xml:id="conditionals_conditional-execution-binary-selection48_index-0">
+<section xml:id="conditionals_conditional-execution-binary-selection">
   <title>Conditional Execution: Binary Selection</title>
-  <video xml:id="binaryselection" youtube="OQ8uakCJ6yE" width="auto"/>
-  <p>In order to write useful programs, we almost always need the ability to check
-            conditions and change the behavior of the program accordingly. <term>Selection statements</term>, sometimes
-            also referred to as <term>conditional statements</term>, give us this ability. The simplest form of selection is the <term>if statement</term>.
-            This is sometimes referred to as <term>binary selection</term> since there are two possible paths of execution.</p>
-  <program xml:id="ac7_6_1" interactive="activecode" language="python">
+  <p>In order to write useful programs, we almost always need the ability to check conditions and
+    change the behavior of the program accordingly. <term>Selection statements</term>, sometimes
+    also referred to as <term>conditional statements</term>, give us this ability. The simplest form
+    of selection is the <term>if statement</term>. This is sometimes referred to as <term>binary
+    selection</term> since there are two possible paths of execution.</p>
+  <program xml:id="ac5_6_1" interactive="activecode" language="python">
     <input>
-x = 15
+      def is_even(x: int) -&gt; None:
+        if x % 2 == 0:
+          print(x, "is even")
+        else:
+          print(x, "is odd")
 
-if x % 2 == 0:
-    print(x, "is even")
-else:
-    print(x, "is odd")
-        </input>
+      is_even(2) # 2 is even
+      is_even(3) # 3 is odd
+
+    </input>
   </program>
   <p>The syntax for an <c>if</c> statement looks like this:</p>
   <program language="python">
     <input>
-if BOOLEAN EXPRESSION:
-    STATEMENTS_1        # executed if condition evaluates to True
-else:
-    STATEMENTS_2        # executed if condition evaluates to False
-</input>
+      if BOOLEAN EXPRESSION:
+        STATEMENTS_1 # executed if condition evaluates to True
+      else:
+        STATEMENTS_2 # executed if condition evaluates to False
+    </input>
   </program>
-  <p>The boolean expression after the <c>if</c> statement is called the <term>condition</term>.
-            If it is true, then the indented statements get executed. If not, then the statements
-            indented under the <c>else</c> clause get executed.</p>
+  <p>The boolean expression after the <c>if</c> statement is called the <term>condition</term>. If
+    it is true, then the indented statements get executed. If not, then the statements indented
+    under the <c>else</c> clause get executed.</p>
   <sidebar>
     <title>Flowchart of a <term>if</term> statement with an <term>else</term></title>
-    <image source="Conditionals/Figures/flowchart_if_else.png" width="50%"/>
+    <image source="Conditionals/Figures/flowchart_if_else.png" width="50%" />
   </sidebar>
-  <p>As with the function definition from the last chapter and other compound
-            statements like <c>for</c>, the <c>if</c> statement consists of a header line and a body. The header
-            line begins with the keyword <c>if</c> followed by a <em>boolean expression</em> and ends with
-            a colon (:).</p>
-  <p>The indented statements that follow are called a <term>block</term>. The first
-            unindented statement marks the end of the block.</p>
+  <p>As with the function definition from the last chapter and other compound statements like <c>for</c>,
+    the <c>if</c> statement consists of a header line and a body. The header line begins with the
+    keyword <c>if</c> followed by a <em>boolean expression</em> and ends with a colon (:).</p>
+  <p>The indented statements that follow are called a <term>block</term>. The first unindented
+    statement marks the end of the block.</p>
   <p>Each of the statements inside the first block of statements is executed in order if the boolean
-            expression evaluates to <c>True</c>. The entire first block of statements
-            is skipped if the boolean expression evaluates to <c>False</c>, and instead
-            all the statements under the <c>else</c> clause are executed.</p>
-  <p>There is no limit on the number of statements that can appear under the two clauses of an
-            <c>if</c> statement, but there has to be at least one statement in each block.</p>
+    expression evaluates to <c>True</c>. The entire first block of statements is skipped if the
+    boolean expression evaluates to <c>False</c>, and instead all the statements under the <c>else</c>
+    clause are executed.</p>
+  <p>There is no limit on the number of statements that can appear under the two clauses of an <c>if</c>
+    statement, but there has to be at least one statement in each block.</p>
   <p>
     <term>Check your understanding</term>
   </p>
-  <exercise label="question7_6_1">
+  <exercise label="question5_6_1">
     <statement>
-      <p>How many lines of code can appear in the indented code block below the if and else lines in a conditional?</p>
+      <p>How many lines of code can appear in the indented code block below the if and else lines in
+        a conditional?</p>
     </statement>
     <choices>
       <choice>
@@ -86,16 +89,16 @@ else:
       </choice>
     </choices>
   </exercise>
-  <exercise label="question7_6_2">
+  <exercise label="question5_6_2">
     <statement>
       <p>What does the following code print? (choose from output a, b, c or nothing)</p>
       <program language="python">
         <input>
-if (4 + 5 == 10):
-    print("TRUE")
-else:
-    print("FALSE")
-</input>
+          if (4 + 5 == 10):
+            print("TRUE")
+          else:
+            print("FALSE")
+        </input>
       </program>
     </statement>
     <choices>
@@ -104,7 +107,8 @@ else:
           <p>TRUE</p>
         </statement>
         <feedback>
-          <p>TRUE is printed by the if-block, which only executes if the conditional (in this case, 4+5 == 10) is true.  In this case 5+4 is not equal to 10.</p>
+          <p>TRUE is printed by the if-block, which only executes if the conditional (in this case,
+            4+5 == 10) is true. In this case 5+4 is not equal to 10.</p>
         </feedback>
       </choice>
       <choice correct="yes">
@@ -112,7 +116,8 @@ else:
           <p>FALSE</p>
         </statement>
         <feedback>
-          <p>Since 4+5==10 evaluates to False, Python will skip over the if block and execute the statement in the else block.</p>
+          <p>Since 4+5==10 evaluates to False, Python will skip over the if block and execute the
+            statement in the else block.</p>
         </feedback>
       </choice>
       <choice>
@@ -120,7 +125,8 @@ else:
           <p>TRUE on one line and FALSE on the next</p>
         </statement>
         <feedback>
-          <p>Python would never print both TRUE and FALSE because it will only execute one of the if-block or the else-block, but not both.</p>
+          <p>Python would never print both TRUE and FALSE because it will only execute one of the
+            if-block or the else-block, but not both.</p>
         </feedback>
       </choice>
       <choice>
@@ -128,22 +134,23 @@ else:
           <p>Nothing will be printed</p>
         </statement>
         <feedback>
-          <p>Python will always execute either the if-block (if the condition is true) or the else-block (if the condition is false).  It would never skip over both blocks.</p>
+          <p>Python will always execute either the if-block (if the condition is true) or the
+            else-block (if the condition is false). It would never skip over both blocks.</p>
         </feedback>
       </choice>
     </choices>
   </exercise>
-  <exercise label="question7_6_3">
+  <exercise label="question5_6_3">
     <statement>
       <p>What does the following code print?</p>
       <program language="python">
         <input>
-if (4 + 5 == 10):
-    print("TRUE")
-else:
-    print("FALSE")
-print("TRUE")
-</input>
+          if (4 + 5 == 10):
+            print("TRUE")
+          else:
+            print("FALSE")
+          print("TRUE")
+        </input>
       </program>
       <pre>a. TRUE
 
@@ -165,7 +172,9 @@ d.
           <p>Output a</p>
         </statement>
         <feedback>
-          <p>Although TRUE is printed after the if-else statement completes, both blocks within the if-else statement print something too.  In this case, Python would have had to have skipped both blocks in the if-else statement, which it never would do.</p>
+          <p>Although TRUE is printed after the if-else statement completes, both blocks within the
+            if-else statement print something too. In this case, Python would have had to have
+            skipped both blocks in the if-else statement, which it never would do.</p>
         </feedback>
       </choice>
       <choice>
@@ -173,7 +182,8 @@ d.
           <p>Output b</p>
         </statement>
         <feedback>
-          <p>Because there is a TRUE printed after the if-else statement ends, Python will always print TRUE as the last statement.</p>
+          <p>Because there is a TRUE printed after the if-else statement ends, Python will always
+            print TRUE as the last statement.</p>
         </feedback>
       </choice>
       <choice correct="yes">
@@ -181,7 +191,8 @@ d.
           <p>Output c</p>
         </statement>
         <feedback>
-          <p>Python will print FALSE from within the else-block (because 5+4 does not equal 10), and then print TRUE after the if-else statement completes.</p>
+          <p>Python will print FALSE from within the else-block (because 5+4 does not equal 10), and
+            then print TRUE after the if-else statement completes.</p>
         </feedback>
       </choice>
       <choice>
@@ -189,14 +200,17 @@ d.
           <p>Output d</p>
         </statement>
         <feedback>
-          <p>To print these three lines, Python would have to execute both blocks in the if-else statement, which it can never do.</p>
+          <p>To print these three lines, Python would have to execute both blocks in the if-else
+            statement, which it can never do.</p>
         </feedback>
       </choice>
     </choices>
   </exercise>
-  <exercise label="ac7_6_2">
+  <!-- <exercise label="ac7_6_2">
     <statement>
-      <p>Write code to assign the string <c>"You can apply to SI!"</c> to <c>output</c> <em>if</em> the string <c>"SI 106"</c> is in the list <c>courses</c>. If it is not in <c>courses</c>, assign the value <c>"Take SI 106!"</c> to the variable <c>output</c>.</p>
+      <p>Write code to assign the string <c>"You can apply to SI!"</c> to <c>output</c> <em>if</em> the
+  string <c>"SI 106"</c> is in the list <c>courses</c>. If it is not in <c>courses</c>, assign the
+  value <c>"Take SI 106!"</c> to the variable <c>output</c>.</p>
     </statement>
     <program xml:id="ac7_6_2_editor" interactive="activecode" language="python">
       <input>
@@ -209,35 +223,41 @@ from unittest.gui import TestCaseGui
 class myTests(TestCaseGui):
 
    def testOne(self):
-      self.assertEqual(output, "You can apply to SI!", "Testing that output has the correct value, given the courses list provided")
-      self.assertIn("if", self.getEditorText(), "Testing output (Don't worry about actual and expected values).")
+      self.assertEqual(output, "You can apply to SI!", "Testing that output has the correct value, given
+  the courses list provided")
+      self.assertIn("if", self.getEditorText(), "Testing output (Don't worry about actual and expected
+  values).")
 
 myTests().main()
         </input>
     </program>
-  </exercise>
-  <exercise label="ac7_6_4">
+  </exercise> -->
+  <exercise label="ac5_6_4">
     <statement>
-      <p>Create a variable, <c>b</c>, and assign it the value of <c>15</c>. Then, write code to see if the value <c>b</c> is greater than that of <c>a</c>. If it is, <c>a</c>'s value should be multiplied by 2. If the value of <c>b</c> is less than or equal to <c>a</c>, nothing should happen. Finally, create variable <c>c</c> and assign it the value of the sum of <c>a</c> and <c>b</c>.</p>
+      <p>Create a variable, <c>b</c>, and assign it the value of <c>15</c>. Then, write code to see
+        if the value <c>b</c> is greater than that of <c>a</c>. If it is, <c>a</c>'s value should be
+        multiplied by 2. If the value of <c>b</c> is less than or equal to <c>a</c>, nothing should
+        happen. Finally, create variable <c>c</c> and assign it the value of the sum of <c>a</c> and <c>
+        b</c>.</p>
     </statement>
-    <program xml:id="ac7_6_4_editor" interactive="activecode" language="python">
+    <program xml:id="ac5_6_4_editor" interactive="activecode" language="python">
       <input>
-a = 20
+        a = 20
 
-=====
+        =====
 
-from unittest.gui import TestCaseGui
+        from unittest.gui import TestCaseGui
 
-class myTests(TestCaseGui):
+        class myTests(TestCaseGui):
 
-   def testTwoA(self):
-      self.assertEqual(a, 20, "Testing that a has the correct value.")
+          def testTwoA(self):
+            self.assertEqual(a, 20, "Testing that a has the correct value.")
 
-   def testTwoB(self):
-      self.assertEqual(c, 35, "Testing that c has the correct value.")
+          def testTwoB(self):
+            self.assertEqual(c, 35, "Testing that c has the correct value.")
 
-myTests().main()
-        </input>
+        myTests().main()
+      </input>
     </program>
   </exercise>
 </section>

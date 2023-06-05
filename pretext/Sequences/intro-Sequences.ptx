@@ -16,7 +16,7 @@
             examine some special functions that are defined only for strings, and we'll find out one importance
             difference between strings and lists, that lists can be changed (or mutated) while strings are
             immutable.</p>
-  <subsection xml:id="sequences_learning-goals">
+  <subsection xml:id="sequences_introduction-sequences_learning-goals">
     <title>Learning Goals</title>
     <p>
       <ul>
@@ -29,7 +29,7 @@
       </ul>
     </p>
   </subsection>
-  <subsection xml:id="sequences_objectives">
+  <subsection xml:id="sequences_introduction-sequences_objectives">
     <title>Objectives</title>
     <p>
       <ul>

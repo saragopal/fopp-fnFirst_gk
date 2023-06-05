@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<section xml:id="transforming-sequences_objects-and-references257_index-0">
+<section xml:id="transforming-sequences_objects-and-references">
   <title>Objects and References</title>
   <p>If we execute these assignment statements,</p>
   <program language="python">
@@ -19,7 +19,7 @@ b = "banana"
             refer to.</p>
   <p>We can test whether two names refer to the same object using the <em>is</em>
             operator.  The <em>is</em> operator will return true if the two references are to the same object.  In other words, the references are the same.  Try our example from above.</p>
-  <program xml:id="ac8_3_1" interactive="activecode" language="python">
+  <program xml:id="ac9_4_1" interactive="activecode" language="python">
     <input>
 a = "banana"
 b = "banana"
@@ -30,7 +30,7 @@ print(a is b)
   <p>The answer is <c>True</c>. This tells us that both <c>a</c> and <c>b</c> refer to the same object, and that it is the second
             of the two reference diagrams that describes the relationship. Python assigns every object a unique id and when we
             ask <c>a is b</c> what python is really doing is checking to see if id(a) == id(b).</p>
-  <program xml:id="ac8_3_2" interactive="activecode" language="python">
+  <program xml:id="ac9_4_2" interactive="activecode" language="python">
     <input>
 a = "banana"
 b = "banana"
@@ -43,7 +43,7 @@ print(id(b))
             refer to the same object. You shouldn't count on this (that is, use <c>==</c> to compare strings, not <c>is</c>), but don't be surprised if you find that two variables,each bound to the string <q>banana</q>, have the same id..</p>
   <p>This is not the case with lists, which never share an id just because they have the same contents. Consider the following example. Here, <c>a</c> and <c>b</c> refer to two different lists,
             each of which happens to have the same element values. They need to have different ids so that mutations of list <c>a</c> do not affect list <c>b</c>.</p>
-  <program xml:id="ac8_3_3" interactive="activecode" language="python">
+  <program xml:id="ac9_4_3" interactive="activecode" language="python">
     <input>
 a = [81,82,83]
 b = [81,82,83]

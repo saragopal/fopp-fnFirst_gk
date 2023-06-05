@@ -28,13 +28,13 @@ p = Point(7,6)
     <term>Check Your Understanding</term>
   </p>
   <p>
-    <ol label="1">
+    <ol marker="1">
       <li>
         <p>Create a class called <c>NumberSet</c> that accepts 2 integers as input, and defines two instance variables: <c>num1</c> and <c>num2</c>, which hold each of the input integers. Then, create an instance of  <c>NumberSet</c> where its num1 is 6 and its num2 is 10. Save this instance to a variable <c>t</c>.</p>
       </li>
     </ol>
   </p>
-  <program xml:id="ee_ch13_011" interactive="activecode" language="python">
+  <program xml:id="ac13_4_1" interactive="activecode" language="python">
     <input>
 =====
 

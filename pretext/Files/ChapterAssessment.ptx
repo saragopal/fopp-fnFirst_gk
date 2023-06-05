@@ -7,11 +7,11 @@
         </DataFileNode>
   <DataFileNode line="25" runestone_options="{'fromfile': 'emotion_words.txt', 'hide': None, 'subchapter': 'ChapterAssessment', 'chapter': 'Files', 'basecourse': 'fopp', 'optional': '', 'optclass': '', 'divid': 'emotion_words.txt', 'qnumber': '', 'cols': 62, 'rows': 20, 'filecontent': 'Sad upset blue down melancholy somber bitter troubled\nAngry mad enraged irate irritable wrathful outraged infuriated\nHappy cheerful content elated joyous delighted lively glad\nConfused disoriented puzzled perplexed dazed befuddled\nExcited eager thrilled delighted\nScared afraid fearful panicked terrified petrified startled\nNervous anxious jittery jumpy tense uneasy apprehensive\n', 'hidden': 'data-hidden', 'edit': 'false', 'question_label': '10.15.3'}" source="/home/ccurtis/Documents/Runestone/fopp-pretext/_sources/Files/ChapterAssessment.rst">
         </DataFileNode>
-  <exercise label="ac9_10_1">
+  <exercise label="ac11_14_1">
     <statement>
       <p>The textfile, <c>travel_plans.txt</c>, contains the summer travel plans for someone with some commentary. Find the total number of characters in the file and save to the variable <c>num</c>.</p>
     </statement>
-    <program xml:id="ac9_10_1_editor" interactive="activecode" language="python">
+    <program xml:id="ac11_14_1_editor" interactive="activecode" language="python">
       <input>
 
 =====
@@ -27,11 +27,11 @@ myTests().main()
         </input>
     </program>
   </exercise>
-  <exercise label="ac9_10_2">
+  <exercise label="ac11_14_2">
     <statement>
       <p>We have provided a file called <c>emotion_words.txt</c> that contains lines of words that describe emotions. Find the total number of words in the file and assign this value to the variable <c>num_words</c>.</p>
     </statement>
-    <program xml:id="ac9_10_2_editor" interactive="activecode" language="python">
+    <program xml:id="ac11_14_2_editor" interactive="activecode" language="python">
       <input>
 
 =====
@@ -47,11 +47,11 @@ myTests().main()
         </input>
     </program>
   </exercise>
-  <exercise label="ac9_10_3">
+  <exercise label="ac11_14_3">
     <statement>
       <p>Assign to the variable <c>num_lines</c> the number of lines in the file <c>school_prompt.txt</c>.</p>
     </statement>
-    <program xml:id="ac9_10_3_editor" interactive="activecode" language="python">
+    <program xml:id="ac11_14_3_editor" interactive="activecode" language="python">
       <input>
 
 =====
@@ -67,11 +67,11 @@ myTests().main()
         </input>
     </program>
   </exercise>
-  <exercise label="ac9_10_4">
+  <exercise label="ac11_14_4">
     <statement>
       <p>Assign the first 30 characters of <c>school_prompt.txt</c> as a string to the variable <c>beginning_chars</c>.</p>
     </statement>
-    <program xml:id="ac9_10_4_editor" interactive="activecode" language="python">
+    <program xml:id="ac11_14_4_editor" interactive="activecode" language="python">
       <input>
 
 =====
@@ -88,11 +88,11 @@ myTests().main()
         </input>
     </program>
   </exercise>
-  <exercise label="ac9_10_5">
+  <exercise label="ac11_14_5">
     <statement>
       <p><term>Challenge:</term> Using the file <c>school_prompt.txt</c>, assign the third word of every line to a list called <c>three</c>.</p>
     </statement>
-    <program xml:id="ac9_10_5_editor" interactive="activecode" language="python">
+    <program xml:id="ac11_14_5_editor" interactive="activecode" language="python">
       <input>
 
 =====
@@ -108,11 +108,11 @@ myTests().main()
         </input>
     </program>
   </exercise>
-  <exercise label="ac9_10_6">
+  <exercise label="ac11_14_6">
     <statement>
       <p><term>Challenge:</term> Create a list called <c>emotions</c> that contains the first word of every line in <c>emotion_words.txt</c>.</p>
     </statement>
-    <program xml:id="ac9_10_6_editor" interactive="activecode" language="python">
+    <program xml:id="ac11_14_6_editor" interactive="activecode" language="python">
       <input>
 
 =====
@@ -128,11 +128,11 @@ myTests().main()
         </input>
     </program>
   </exercise>
-  <exercise label="ac9_10_7">
+  <exercise label="ac11_14_7">
     <statement>
       <p>Assign the first 33 characters from the textfile, <c>travel_plans.txt</c> to the variable <c>first_chars</c>.</p>
     </statement>
-    <program xml:id="ac9_10_7_editor" interactive="activecode" language="python">
+    <program xml:id="ac11_14_7_editor" interactive="activecode" language="python">
       <input>
 
 =====
@@ -148,11 +148,11 @@ myTests().main()
         </input>
     </program>
   </exercise>
-  <exercise label="ac9_10_8">
+  <exercise label="ac11_14_8">
     <statement>
       <p><term>Challenge:</term> Using the file <c>school_prompt.txt</c>, if the character &#x2018;p' is in a word, then add the word to a list called <c>p_words</c>.</p>
     </statement>
-    <program xml:id="ac9_10_8_editor" interactive="activecode" language="python">
+    <program xml:id="ac11_14_8_editor" interactive="activecode" language="python">
       <input>
 
 =====
@@ -168,12 +168,12 @@ myTests().main()
         </input>
     </program>
   </exercise>
-  <exercise label="ac_9_10_9">
+  <exercise label="ac11_14_9">
     <statement>
       <p>Read in the contents of the file <c>SP500.txt</c> which has monthly data for 2016 and 2017 about the S&amp;P 500 closing prices as well as some other financial indicators, including the <q>Long Term Interest Rate</q>, which is interest rate paid on 10-year U.S. government bonds.</p>
       <p>Write a program that computes the average closing price (the second column, labeled SP500) and the highest long-term interest rate. Both should be computed only for the period from June 2016 through May 2017. Save the results in the variables <c>mean_SP</c> and <c>max_interest</c>.</p>
     </statement>
-    <program xml:id="ac_9_10_9_editor" interactive="activecode" language="python">
+    <program xml:id="ac11_14_9_editor" interactive="activecode" language="python">
       <input>
 
 =====

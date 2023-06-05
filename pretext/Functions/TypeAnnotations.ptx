@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<section xml:id="functions_type-annotations115_index-0">
+<section xml:id="functions_type-annotations">
   <title>Type Annotations</title>
   <p>In the previous section, we discussed the decoding work that is required when you look at a function and
             are trying to determine the types of its parameters. In this section, we'll introduce a feature that can help
@@ -18,7 +18,7 @@ def duplicate(msg):
             function do if given an <c>int</c> or a <c>float</c> value?)</p>
   <p>Python allows you to indicate the intended type of the function parameters and the type of the function return value
             in a function definition using a special notation demonstrated in this example:</p>
-  <program xml:id="ac_annotate1" interactive="activecode" language="python">
+  <program xml:id="ac4_7_1" interactive="activecode" language="python">
     <input>
 def duplicate(msg: str) -&gt; str:
     """Returns a string containing two copies of `msg`"""
@@ -36,7 +36,7 @@ print(result)
   <p>In the definition above, the annotation <c>: str</c> in <c>msg: str</c> indicates that the caller should pass a <c>str</c> value as an argument.
             The annotation  <c>-&gt; str</c> indicates that the function will produce a <c>str</c> result.</p>
   <p>Here are some more examples of functions with type annotations:</p>
-  <program xml:id="ac_annotate2" interactive="activecode" language="python">
+  <program xml:id="ac4_7_2" interactive="activecode" language="python">
     <input>
 def add(x: int, y: int) -&gt; int:
     """Returns the sum of `x` and `y`"""
@@ -71,7 +71,7 @@ def display_msg(msg: str):
   <p>
     <term>Check your understanding</term>
   </p>
-  <exercise label="question_ta_1">
+  <exercise label="question4_7_1">
     <statement>
       <p>What happens when the following is executed?</p>
       <program language="python">

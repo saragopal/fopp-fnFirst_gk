@@ -1,8 +1,12 @@
 <?xml version="1.0"?>
-<section xml:id="conditionals_precedence-of-operators53_index-0">
+<section xml:id="conditionals_precedence-of-operators">
   <title>Precedence of Operators</title>
-  <p>Arithmetic operators take precedence over logical operators. Python will always evaluate the arithmetic operators first (** is highest, then multiplication/division, then addition/subtraction).  Next comes the relational operators.  Finally, the logical operators are done last.  This means that the expression <c>x*5 &gt;= 10 and y-6 &lt;= 20</c> will be evaluated so as to first perform the arithmetic and then check the relationships.  The <c>and</c> will be done last.  Many programmers might place parentheses around the two relational expressions, <c>(x*5 &gt;= 10) and (y-6 &lt;= 20)</c>. It is not necessary to do so, but causes no harm and may make it easier for people to read and understand the code.</p>
-  <p>The following table summarizes the operator precedence from highest to lowest.  A complete table for the entire language can be found in the <url href="http://docs.python.org/py3k/reference/expressions.html#expression-lists" visual="http://docs.python.org/py3k/reference/expressions.html#expression-lists">Python Documentation</url>.</p>
+  <p>Arithmetic operators take precedence over logical operators.
+  Python will always evaluate the arithmetic operators first (** is highest, then multiplication/division, then addition/subtraction).
+  Next comes the relational operators.  Finally, the logical operators are done last.  This means that the expression <c>x*5 &gt;= 10 and y-6 &lt;= 20</c> will be evaluated so as to first perform the arithmetic and then check the relationships.
+  The <c>and</c> will be done last.  Many programmers might place parentheses around the two relational expressions, <c>(x*5 &gt;= 10) and (y-6 &lt;= 20)</c>. It is not necessary to do so, but causes no harm and may make it easier for people to read and understand the code.</p>
+  <p>The following table summarizes the operator precedence from highest to lowest.
+  A complete table for the entire language can be found in the <url href="http://docs.python.org/py3k/reference/expressions.html#expression-lists" visual="http://docs.python.org/py3k/reference/expressions.html#expression-lists">Python Documentation</url>.</p>
   <table>
     <tabular>
       <row header="yes">
@@ -97,7 +101,7 @@
   </table>
   <note>
     <p>This workspace is provided for your convenience.  You can use this activecode window to try out anything you like.</p>
-    <program xml:id="ac7_5_1" interactive="activecode" language="python">
+    <program xml:id="ac5_5_1" interactive="activecode" language="python">
       <input>
 
 
@@ -122,7 +126,7 @@
   <p>
     <term>Check your understanding</term>
   </p>
-  <exercise label="question7_5_1">
+  <exercise label="question5_5_1">
     <statement>
       <p>Which of the following properly expresses the  precedence of operators (using parentheses) in the following expression: 5*3 &gt; 10 and 4+6==11</p>
     </statement>
@@ -162,5 +166,5 @@
     </choices>
   </exercise>
   <p>Here is an animation for the above expression:</p>
-  <exercise runestone="se_ac7_5_1"/>
+  <exercise runestone="se_ac5_5_1"/>
 </section>

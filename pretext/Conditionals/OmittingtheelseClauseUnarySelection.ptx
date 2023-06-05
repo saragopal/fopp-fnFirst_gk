@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
-<section xml:id="conditionals_omitting-the-else-clause-unary-selection52_index-0">
+<section xml:id="conditionals_omitting-the-else-clause-unary-selection">
   <title>Omitting the <c>else</c> Clause: Unary Selection</title>
-  <video xml:id="unaryselection" youtube="Fd4a8ktQURc" width="auto"/>
+
   <sidebar>
     <title>Flowchart of an <term>if</term> with no <term>else</term></title>
     <image source="Conditionals/Figures/flowchart_if_only.png" width="50%"/>
@@ -9,7 +9,7 @@
   <p>Another form of the <c>if</c> statement is one in which the <c>else</c> clause is omitted entirely. This creates what
             is sometimes called <term>unary selection</term>. In this case, when the condition evaluates to <c>True</c>, the statements
             are executed. Otherwise the flow of execution continues to the statement after the body of the <c>if</c>.</p>
-  <program xml:id="ac7_7_1" interactive="activecode" language="python">
+  <program xml:id="ac5_7_1" interactive="activecode" language="python">
     <input>
 x = 10
 if x &lt; 0:
@@ -21,7 +21,7 @@ print("This is always printed")
   <p>
     <term>Check your understanding</term>
   </p>
-  <exercise label="question7_7_1">
+  <exercise label="question5_7_1">
     <statement>
       <p>What does the following code print?</p>
       <program language="python">
@@ -77,7 +77,7 @@ The negative number -10 is not valid here</pre>
       </choice>
     </choices>
   </exercise>
-  <exercise label="question7_7_2">
+  <exercise label="question5_7_2">
     <statement>
       <p>Will the following code cause an error?</p>
       <program language="python">

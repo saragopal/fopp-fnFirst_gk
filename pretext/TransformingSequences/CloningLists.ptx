@@ -7,7 +7,7 @@
   <p>The easiest way to clone a list is to use the slice operator.</p>
   <p>Taking any slice of <c>a</c> creates a new list. In this case the slice happens to
             consist of the whole list.</p>
-  <program xml:id="clens8_5_1" interactive="activecode" language="python">
+  <program xml:id="clens9_6_1" interactive="activecode" language="python">
     <input>
 a = [81,82,83]
 
@@ -26,7 +26,7 @@ print(b)
   <p>
     <term>Check your understanding</term>
   </p>
-  <exercise label="question8_5_1">
+  <exercise label="question9_6_1">
     <statement>
       <p>What is printed by the following statements?</p>
       <program language="python">

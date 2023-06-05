@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<chapter xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
-    <title>Additional Resources</title>
-    <xi:include href='./intro-AdditionalResources.ptx' />
-    <xi:include href='./BooksAndBookshelves.ptx' />
-</chapter>

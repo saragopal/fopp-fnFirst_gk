@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<chapter xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
+    <title>Additional Resources</title>
+    <xi:include href='./intro-AdditionalResources.ptx' />
+    <xi:include href='./BooksAndBookshelves.ptx' />
+    <xi:include href='./FileSystems.ptx' />
+    <xi:include href='./CommandLine.ptx' />
+    <xi:include href='./IntroToGit.ptx' />
+    <xi:include href='./AdvancedGit.ptx' />
+    <xi:include href='./VSCode.ptx' />
+</chapter>

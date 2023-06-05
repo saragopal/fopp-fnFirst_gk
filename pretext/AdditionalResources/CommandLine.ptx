@@ -1,0 +1,99 @@
+<?xml version="1.0"?>
+<section xml:id="additional_resources-command_line">
+    <title>The Command Line</title>
+    <p>The <term>command line</term>, or CLI, is a powerful tool that provides direct access to the
+        core functionalities of your operating system. While graphical interfaces are widely used,
+        understanding the command line and its basic usage is essential for quickly navigating file
+        systems, managing source control, and running programs.</p>
+    <subsection xml:id="command_line-git-bash">
+        <title>GitBash</title>
+        <p>For this section, GitBash will be used as the command line interface. GitBash is a
+            command line interface that is included with Git for Windows. It is a Bash shell
+            emulator that provides a Linux-like CLI environment on Windows. GitBash can be
+            downloaded from <ulink url="https://gitforwindows.org/">https://gitforwindows.org/</ulink>
+            .</p>
+        <p>Once GitBash is installed, it can be opened through a shortcut, or by right-clicking in a
+            folder and selecting <guibutton>Git Bash Here</guibutton>.</p>
+        <p>GitBash will open in the current directory. The command line prompt will be displayed,
+            followed by the current directory. The prompt will be different depending on the
+            operating system. For Windows, the prompt will be <literal>$</literal>. For Linux and
+            Mac, the prompt will be <literal>%</literal>.</p>
+    </subsection>
+    <subsection xml:id="command_line-commands">
+        <title>Commands</title>
+        <p> Command lines allow users to interact with the operating system by entering commands.
+            Commands are entered into the command line, and then executed by pressing the <keycap>
+            Enter</keycap> key. Commands can be entered one at a time, or multiple commands can be
+            entered on the same line by separating them with a semicolon. </p>
+        <subsection xml:id="command_line-commands-navigation">
+            <title>Navigation Commands</title>
+            <p> Arguably the most important command is <command>cd</command>, which is used to
+                change directories. Directories are the folders that contain files. The current
+                directory is displayed in the command line prompt. To change directories, enter <command>
+                cd</command> followed by the name of the directory. For example, to change to the <filename>
+                src</filename> directory, enter <command>cd src</command>. </p>
+            <p> In order to navigate into a parent directory - that is, the directory that contains
+                the current directory - use <command>cd ..</command>. For example, if the current
+                directory is <filename>src</filename>, then <command>cd ..</command> will change to
+                the parent directory. </p>
+            <p> Next, the <command>ls</command> command is used to list the contents of the current
+                directory. This command will list the files and directories in the current
+                directory. For example, if the current directory contains the files <filename>
+                main.py</filename> and <filename>README.md</filename>, then <command>ls</command>
+                will list these files. Folders, when listed, will not have a file extension, and
+                instead will be followed by a forward slash. For example, if the current directory
+                contains the folder <filename>src</filename>, then <command>ls</command> will list <filename>
+                src/</filename>. </p>
+        </subsection>
+        <subsection xml:id="command_line-commands-files_directories">
+            <title>File and Directory Commands</title>
+            <p> To create a new directory, use the <command>mkdir</command> command. For example, to
+                create a new directory named <filename>src</filename>, enter <command>mkdir src</command>
+                . </p>
+            <p> To create a new file, use the <command>touch</command> command. For example, to
+                create a new file named <filename>main.py</filename>, enter <command>touch main.py</command>
+                . </p>
+            <p> To remove a file, use the <command>rm</command> command. For example, to remove the
+                file <filename>main.py</filename>, enter <command>rm main.py</command>. Be warned,
+                this command will permanently delete the file. </p>
+        </subsection>
+        <exercise label="pp11_5_1" indentation="show" language="python">
+            <statement>
+                <p>Using the following file structure, move into the <c>src</c> directory, remove <c>main.py</c>, add the file <c>not_main.py</c>, and return to the <c>home</c> directory:</p>
+                <program>
+                    home/
+                      src/
+                        main.py
+                        README.md
+                      test/
+                        test_main.py
+                        README.md
+                      plans/
+                        whatever.txt
+                        old.txt
+                </program>
+            </statement>
+            <blocks>
+                <block order="2">
+                    <cline>ls</cline>
+                </block>
+                <block order="1">
+                    <cline>cd src</cline>
+                </block>
+                <block order="6">
+                    <cline>cd ..</cline>
+                </block>
+                <block order="5">
+                    <cline>touch not_main.py</cline>
+                </block>
+                <block order="3">
+                    <cline>main.py</cline>
+                    <cline>README.md</cline>
+                </block>
+                <block order="4">
+                    <cline>rm main.py</cline>
+                </block>
+            </blocks>
+        </exercise>
+    </subsection>
+</section>

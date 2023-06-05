@@ -14,7 +14,7 @@
                 <c>append</c> is a list method which adds the argument passed to it to the end of
                 the list. Continuing with this example, we show several other list methods.  Many of them are
                 easy to understand.</p>
-    <program xml:id="ac8_6_1" interactive="activecode" language="python">
+    <program xml:id="ac9_7_1" interactive="activecode" language="python">
       <input>
 mylist = []
 mylist.append(5)
@@ -204,7 +204,7 @@ print(mylist)
                 <c>None</c>. They change the list; they don't produce a new list. So, while we did reassignment to
                 increment a number, as in <c>x = x + 1</c>, doing the analogous thing with these operations will lose
                 the entire list contents (see line 8 below).</p>
-    <program xml:id="ac8_6_2" interactive="activecode" language="python">
+    <program xml:id="ac9_7_2" interactive="activecode" language="python">
       <input>
 mylist = []
 mylist.append(5)
@@ -220,7 +220,7 @@ print(mylist)
     <p>
       <term>Check your understanding</term>
     </p>
-    <exercise label="question8_6_1">
+    <exercise label="question9_7_1">
       <statement>
         <p>What is printed by the following statements?</p>
         <program language="python">

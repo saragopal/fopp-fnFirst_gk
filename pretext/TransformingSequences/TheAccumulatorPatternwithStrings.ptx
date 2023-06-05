@@ -3,7 +3,7 @@
   <title>The Accumulator Pattern with Strings</title>
   <p>We can also accumulate strings rather than accumulating numbers, as you've seen before. The following program isn't
             particularly useful for data processing, but we will see more useful things later that accumulate strings.</p>
-  <program xml:id="ac8_10_1" interactive="activecode" language="python">
+  <program xml:id="ac9_11_1" interactive="activecode" language="python">
     <input>
 s = input("Enter some text")
 ac = ""
@@ -23,7 +23,7 @@ print(ac)
   <p>
     <term>Check your understanding</term>
   </p>
-  <exercise label="question8_10_1">
+  <exercise label="question9_11_1">
     <statement>
       <p>What is printed by the following statements:</p>
       <program language="python">
@@ -63,17 +63,17 @@ print(r)
       </choice>
     </choices>
   </exercise>
-  <exercise label="ac8_10_2">
+  <exercise label="ac9_11_2">
     <statement>
       <p>
-        <ol label="1">
+        <ol marker="1">
           <li>
             <p>For each character in the string already saved in the variable <c>str1</c>, add each character to a list called <c>chars</c>.</p>
           </li>
         </ol>
       </p>
     </statement>
-    <program xml:id="ac8_10_2_editor" interactive="activecode" language="python">
+    <program xml:id="ac9_11_2_editor" interactive="activecode" language="python">
       <input>
 str1 = "I love python"
 # HINT: what's the accumulator? That should go here.
@@ -92,11 +92,11 @@ myTests().main()
         </input>
     </program>
   </exercise>
-  <exercise label="ac6_6_6">
+  <exercise label="ac9_11_6">
     <statement>
       <p>Assign an empty string to the variable <c>output</c>. Using the <c>range</c> function, write code to make it so that the variable <c>output</c> has 35 <c>a</c> s inside it (like <c>"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"</c>). Hint: use the accumulation pattern!</p>
     </statement>
-    <program xml:id="ac6_6_6_editor" interactive="activecode" language="python">
+    <program xml:id="ac9_11_6_editor" interactive="activecode" language="python">
       <input>
 
 =====

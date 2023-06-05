@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<section xml:id="simple-python-data_data-types214_index-0">
+<section xml:id="simple-python-data_data-types">
   <title>Data Types</title>
   <p>If you are not sure what class (data type) a value falls into, Python has a function called
             <term>type</term> which can tell you.</p>

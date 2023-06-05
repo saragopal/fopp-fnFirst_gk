@@ -6,13 +6,13 @@
   <p>You have currently encountered two instances where we have used square brackets. The first is creating lists and the second
             is indexing. At first glance, creating and indexing are difficult to distinguish. However, indexing requires referencing
             an already created list while simply creating a list does not.</p>
-  <program xml:id="ac5_4_1" interactive="activecode" language="python">
+  <program xml:id="ac8_4_1" interactive="activecode" language="python">
     <input>
 new_lst = []
         </input>
   </program>
   <p>In the code above, a new list is created using the empty brackets. Since there's nothing in it though, we can't index into it.</p>
-  <program xml:id="ac5_4_2" interactive="activecode" language="python">
+  <program xml:id="ac8_4_2" interactive="activecode" language="python">
     <input>
 new_lst = ["NFLX", "AMZN", "GOOGL", "DIS", "XOM"]
 part_of_new_lst = new_lst[0]
@@ -24,7 +24,7 @@ part_of_new_lst = new_lst[0]
             How would python know which list we want to index into if we don't tell it?
             Additionally, we have to specify what element we want to extract. This belongs inside of the brakets.</p>
   <p>Though it may be easier to distinguish in this above activecode, below may be a bit more difficult.</p>
-  <program xml:id="ac5_4_3" interactive="activecode" language="python">
+  <program xml:id="ac8_4_3" interactive="activecode" language="python">
     <input>
 lst = [0]
 n_lst = lst[0]
@@ -37,7 +37,7 @@ print(n_lst)
             the value associated with the first element of lst. Dispite the variable names, only one of the above variables is
             assigned to a list. Note that in this example, what sets creating apart from indexing is the reference to the list to let
             python know that you are extracting an element from another list.</p>
-  <exercise label="question5_4_1">
+  <exercise label="question8_4_1">
     <statement>
       <p>Which of the following correctly uses indexing? Assume that <c>a</c> is a list or string. Select as many as apply.</p>
     </statement>

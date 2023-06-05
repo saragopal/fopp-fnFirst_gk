@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<section xml:id="sequences_index-operator-working-with-the-characters-of-a-string206_index-0">
+<section xml:id="sequences_index-operator-working-with-the-characters-of-a-string">
   <title>Index Operator: Working with the Characters of a String</title>
   <p>The <term>indexing operator</term> (Python uses square brackets to enclose the index)
             selects a single character from a string.  The characters are accessed by their position or
@@ -8,7 +8,7 @@
   <image source="Sequences/Figures/indexvalues.png" width="50%" alt="index values"/>
   <p>It is also the case that the positions are named from right to left using negative numbers where -1 is
             the rightmost index and so on. Note that the character at index 6 (or -8) is the blank character.</p>
-  <program xml:id="ac5_3_1" interactive="activecode" language="python">
+  <program xml:id="ac8_3_1" interactive="activecode" language="python">
     <input>
 school = "Luther College"
 m = school[2]
@@ -42,7 +42,7 @@ print(lastchar)
     <p>Try to predict what will be printed out by the following code, and then run it to check your
                 prediction. (Actually, it's a good idea to always do that with the code examples. You
                 will learn much more if you force yourself to make a prediction before you see the output.)</p>
-    <program xml:id="ac5_3_2" interactive="activecode" language="python">
+    <program xml:id="ac8_3_2" interactive="activecode" language="python">
       <input>
 numbers = [17, 123, 87, 34, 66, 8398, 44]
 print(numbers[2])
@@ -50,7 +50,7 @@ print(numbers[9-8])
 print(numbers[-2])
         </input>
     </program>
-    <program xml:id="ac5_3_3" interactive="activecode" language="python">
+    <program xml:id="ac8_3_3" interactive="activecode" language="python">
       <input>
 prices = (1.99, 2.00, 5.50, 20.95, 100.98)
 print(prices[0])
@@ -61,7 +61,7 @@ print(prices[3-5])
     <p>
       <term>Check your understanding</term>
     </p>
-    <exercise label="question5_3_1">
+    <exercise label="question8_3_1">
       <statement>
         <p>What is printed by the following statements?</p>
         <program language="python">
@@ -106,7 +106,7 @@ print(s[3])
         </choice>
       </choices>
     </exercise>
-    <exercise label="question5_3_2">
+    <exercise label="question8_3_2">
       <statement>
         <p>What is printed by the following statements?</p>
         <program language="python">
@@ -159,7 +159,7 @@ print(s[2] + s[-4])
         </choice>
       </choices>
     </exercise>
-    <exercise label="question5_3_3">
+    <exercise label="question8_3_3">
       <statement>
         <p>What is printed by the following statements?</p>
         <program language="python">
@@ -204,11 +204,11 @@ print(alist[5])
         </choice>
       </choices>
     </exercise>
-    <exercise label="ac5_3_4">
+    <exercise label="ac8_3_4">
       <statement>
         <p>Assign the value of the 34th element of <c>lst</c> to the variable <c>output</c>.</p>
       </statement>
-      <program xml:id="ac5_3_4_editor" interactive="activecode" language="python">
+      <program xml:id="ac8_3_4_editor" interactive="activecode" language="python">
         <input>
 lst = ["hi", "morning", "dog", "506", "caterpillar", "balloons", 106, "yo-yo", "python", "moon", "water", "sleepy", "daffy", 45, "donald", "whiteboard", "glasses", "markers", "couches", "butterfly", "100", "magazine", "door", "picture", "window", ["Olympics", "handle"], "chair", "pages", "readings", "burger", "juggle", "craft", ["store", "poster", "board"], "laptop", "computer", "plates", "hotdog", "salad", "backpack", "zipper", "ring", "watch", "finger", "bags", "boxes", "pods", "peas", "apples", "horse", "guinea pig", "bowl", "EECS"]
 
@@ -225,11 +225,11 @@ myTests().main()
         </input>
       </program>
     </exercise>
-    <exercise label="ac5_3_5">
+    <exercise label="ac8_3_5">
       <statement>
         <p>Assign the value of the 23rd element of <c>l</c> to the variable <c>checking</c>.</p>
       </statement>
-      <program xml:id="ac5_3_5_editor" interactive="activecode" language="python">
+      <program xml:id="ac8_3_5_editor" interactive="activecode" language="python">
         <input>
 l = ("hi", "goodbye", "python", "106", "506", 91, ['all', 'Paul', 'Jackie', "UMSI", 1, "Stephen", 4.5], 109, "chair", "pizza", "wolverine", 2017, 3.92, 1817, "account", "readings", "papers", 12, "facebook", "twitter", 193.2, "snapchat", "leaders and the best", "social", "1986", 9, 29, "holiday", ["women", "olympics", "gold", "rio", 21, "2016", "men"], "26trombones")
 
@@ -246,11 +246,11 @@ myTests().main()
         </input>
       </program>
     </exercise>
-    <exercise label="ac5_3_6">
+    <exercise label="ac8_3_6">
       <statement>
         <p>Assign the value of the last chacter of <c>lst</c> to the variable <c>output</c>. Do this so that the length of lst doesn't matter.</p>
       </statement>
-      <program xml:id="ac5_3_6_editor" interactive="activecode" language="python">
+      <program xml:id="ac8_3_6_editor" interactive="activecode" language="python">
         <input>
 lst = "Every chess or checkers game begins from the same position and has a finite number of moves that can be played. While the number of possible scenarios and moves is quite large, it is still possible for computers to calculate that number and even be programmed to respond well against a human player..."
 

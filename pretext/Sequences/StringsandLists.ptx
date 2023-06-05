@@ -5,18 +5,16 @@
             wanted to print out. Our definition was simple: a string is simply some characters inside quotes.
             In this chapter we explore strings in much more detail.</p>
   <p>Additionally, we explore lists, which are very much like strings but can hold different types.</p>
-  <subsection xml:id="sequences_strings">
+  <subsection xml:id="sequences_strings-and-lists_strings">
     <title>Strings</title>
-    <video xml:id="stringintro" youtube="T435lvYXE_w" width="auto"/>
     <p>Strings can be defined as sequential collections of characters.  This means that the individual
                 characters that make up a string are in a particular order from left to right.</p>
     <p>A string that contains no characters, often referred to as the <term>empty string</term>, is still considered
                 to be a string. It is simply a sequence of zero characters and is represented by &#x2018;' or <q/> (two single
                 or two double quotes with nothing in between).</p>
   </subsection>
-  <subsection xml:id="sequences_lists">
+  <subsection xml:id="sequences_strings-and-lists_lists">
     <title>Lists</title>
-    <video xml:id="listintro" youtube="mrwSbE5MDn0" width="auto"/>
     <p>A <term>list</term> is a sequential collection of Python data values, where each value is identified by an
                 index. The values that make up a list are called its <term>elements</term>. Lists are similar to strings, which
                 are ordered collections of characters, except that the elements of a list can have any type and for
@@ -45,7 +43,7 @@
                     easier to deal with.</p>
     </note>
   </subsection>
-  <subsection xml:id="sequences_tuples">
+  <subsection xml:id="sequences_strings-and-lists_tuples">
     <title>Tuples</title>
     <p>A <term>tuple</term>, like a list, is a sequence of items of any type. The printed representation of a tuple is a comma-separated
                 sequence of values, enclosed in parentheses. In other words, the representation is just like lists, except with
@@ -58,10 +56,10 @@ julia = ("Julia", "Roberts", 1967, "Duplicity", 2009, "Actress", "Atlanta, Georg
 </input>
     </program>
     <p>The key difference between lists and tuples is that a tuple is immutable, meaning that its contents can't be changed after the tuple is
-                created. We will examine the mutability of lists in detail in the chapter on <xref ref="transforming-sequences_mutability"/>.</p>
+                created. We will examine the mutability of lists in detail in the next chapter.</p>
     <p>To create a tuple with a single element (but you're probably not likely to do that too often), we have to include the
                 final comma, because without the final comma, Python treats the <c>(5)</c> below as an integer in parentheses:</p>
-    <program xml:id="ac5_2_1" interactive="activecode" language="python">
+    <program xml:id="ac8_2_1" interactive="activecode" language="python">
       <input>
 t = (5,)
 print(type(t))
@@ -73,7 +71,7 @@ print(type(x))
     <p>
       <term>Check your understanding</term>
     </p>
-    <exercise label="question5_2_1">
+    <exercise label="question8_2_1">
       <statement>
         <p>A list can only contain integer items.</p>
       </statement>

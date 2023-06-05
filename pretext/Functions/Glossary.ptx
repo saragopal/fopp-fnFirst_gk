@@ -26,7 +26,7 @@
       <title>compound statement</title>
       <p>A statement that consists of two parts:</p>
       <p>
-        <ol label="1">
+        <ol marker="1">
           <li>
             <p>header - which begins with a keyword determining the statement
                                     type, and ends with a colon.</p>

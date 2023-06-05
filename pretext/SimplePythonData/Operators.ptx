@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<section xml:id="simple-python-data_operators-and-operands220_index-0">
+<section xml:id="simple-python-data_operators-and-operands">
   <title>Operators and Operands</title>
   <p>You can build complex expressions out of simpler ones using <term>operators</term>. Operators are special tokens that represent computations like addition,
             multiplication and division. The values the operator works on are called
@@ -39,7 +39,7 @@ print(7.0 / 3.0)
 print(7.0 // 3.0)
         </input>
   </program>
-  <p xml:id="simple-python-data_index-1">The <term>modulus operator</term>, sometimes also called the <term>remainder operator</term> or <term>integer remainder operator</term> works on integers (and integer expressions) and yields
+  <p xml:id="simple-python-data_modulus-operator">The <term>modulus operator</term>, sometimes also called the <term>remainder operator</term> or <term>integer remainder operator</term> works on integers (and integer expressions) and yields
             the remainder when the first operand is divided by the second. In Python, the
             modulus operator is a percent sign (<c>%</c>). The syntax is the same as for other
             operators.</p>

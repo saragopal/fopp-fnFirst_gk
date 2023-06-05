@@ -4,7 +4,7 @@
   <p>Using slices to delete list elements can be awkward and therefore error-prone.
             Python provides an alternative that is more readable.
             The <c>del</c> statement removes an element from a list by using its position.</p>
-  <program xml:id="ac8_2_1" interactive="activecode" language="python">
+  <program xml:id="ac9_3_1" interactive="activecode" language="python">
     <input>
 a = ['one', 'two', 'three']
 del a[1]

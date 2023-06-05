@@ -1,16 +1,15 @@
 <?xml version="1.0"?>
-<section xml:id="transforming-sequences_index-0">
+<section xml:id="transforming-sequences_mutability">
   <title>Mutability</title>
   <p>Some Python collection types - strings and lists so far - are able to change and some are not. If
             a type is able to change, then it is said to be mutable. If the type is not able to change then it
             is said to be immutable. This will be expanded below.</p>
-  <video xml:id="mutabilityvid" youtube="fnSijYDKz3c" width="auto"/>
   <subsection xml:id="transforming-sequences_lists-are-mutable">
     <title>Lists are Mutable</title>
     <p>Unlike strings, lists are <term>mutable</term>. This means we can change an item in a list by accessing
                 it directly as part of the assignment statement. Using the indexing operator (square brackets) on
                 the left side of an assignment, we can update one of the list items.</p>
-    <program xml:id="ac8_1_4" interactive="activecode" language="python">
+    <program xml:id="ac9_2_1" interactive="activecode" language="python">
       <input>
 fruit = ["banana", "apple", "cherry"]
 print(fruit)
@@ -24,7 +23,7 @@ print(fruit)
                 for strings. Recall that strings are immutable.</p>
     <p>Here is the same example in codelens so that you can step through the statements and see the
                 changes to the list elements.</p>
-    <program xml:id="clens8_1_1" interactive="codelens" language="python">
+    <program xml:id="clens9_2_1" interactive="codelens" language="python">
       <input>
 fruit = ["banana", "apple", "cherry"]
 
@@ -33,7 +32,7 @@ fruit[-1] = "orange"
     </input>
     </program>
     <p>By combining assignment with the slice operator we can update several elements at once.</p>
-    <program xml:id="ac8_1_5" interactive="activecode" language="python">
+    <program xml:id="ac9_2_2" interactive="activecode" language="python">
       <input>
 alist = ['a', 'b', 'c', 'd', 'e', 'f']
 alist[1:3] = ['x', 'y']
@@ -41,7 +40,7 @@ print(alist)
         </input>
     </program>
     <p>We can also remove elements from a list by assigning the empty list to them.</p>
-    <program xml:id="ac8_1_6" interactive="activecode" language="python">
+    <program xml:id="ac9_2_3" interactive="activecode" language="python">
       <input>
 alist = ['a', 'b', 'c', 'd', 'e', 'f']
 alist[1:3] = []
@@ -50,7 +49,7 @@ print(alist)
     </program>
     <p>We can even insert elements into a list by squeezing them into an empty slice at the
                 desired location.</p>
-    <program xml:id="ac8_1_7" interactive="activecode" language="python">
+    <program xml:id="ac9_2_4" interactive="activecode" language="python">
       <input>
 alist = ['a', 'd', 'f']
 alist[1:1] = ['b', 'c']
@@ -67,7 +66,7 @@ print(alist)
                 the <c>[]</c> operator on the left side of an assignment, with the intention of changing a character
                 in a string. For example, in the following code, we would like to change the first letter of
                 <c>greeting</c>.</p>
-    <program xml:id="ac8_1_1" interactive="activecode" language="python">
+    <program xml:id="ac9_2_5" interactive="activecode" language="python">
       <input>
 greeting = "Hello, world!"
 greeting[0] = 'J'            # ERROR!
@@ -78,7 +77,7 @@ print(greeting)
                 runtime error <c>TypeError: 'str' object does not support item assignment</c>.</p>
     <p>Strings are <term>immutable</term>, which means you cannot change an existing string. The
                 best you can do is create a new string that is a variation on the original.</p>
-    <program xml:id="ac8_1_2" interactive="activecode" language="python">
+    <program xml:id="ac9_2_6" interactive="activecode" language="python">
       <input>
 greeting = "Hello, world!"
 newGreeting = 'J' + greeting[1:]
@@ -90,7 +89,7 @@ print(greeting)          # same as it was
                 This operation has no effect on the original string.</p>
     <p>While it's possible to make up new variable names each time we make changes to existing
                 values, it could become difficult to keep track of them all.</p>
-    <program xml:id="ac8_1_3" interactive="activecode" language="python">
+    <program xml:id="ac9_2_7" interactive="activecode" language="python">
       <input>
 phrase = "many moons"
 phrase_expanded = phrase + " and many stars"
@@ -112,7 +111,7 @@ julia[0] = 'X'  # TypeError: 'tuple' object does not support item assignment
     <p>
       <term>Check your understanding</term>
     </p>
-    <exercise label="question8_1_1">
+    <exercise label="question9_2_1">
       <statement>
         <p>What is printed by the following statements?</p>
         <program language="python">
@@ -150,7 +149,7 @@ print(alist)
         </choice>
       </choices>
     </exercise>
-    <exercise label="question8_1_2">
+    <exercise label="question9_2_2">
       <statement>
         <p>What is printed by the following statements:</p>
         <program language="python">

@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<section xml:id="conditionals_nested-conditionals51_index-0">
+<section xml:id="conditionals_nested-conditionals">
   <title>Nested conditionals</title>
   <p>One conditional can also be <term>nested</term> within another. For example, assume we have two integer variables, <c>x</c> and
             <c>y</c>. The following pattern of selection shows how we might decide how they are related to each other.</p>
@@ -21,7 +21,7 @@ else:
   <p>The flow of control for this example can be seen in this flowchart illustration.</p>
   <image source="Conditionals/Figures/flowchart_nested_conditional.png" width="50%"/>
   <p>Here is a complete program that defines values for <c>x</c> and <c>y</c>.  Run the program and see the result.  Then change the values of the variables to change the flow of control.</p>
-  <program xml:id="ac7_8_1" interactive="activecode" language="python">
+  <program xml:id="ac5_8_1" interactive="activecode" language="python">
     <input>
 x = 10
 y = 10
@@ -40,7 +40,7 @@ else:
                 the case. The indentation pattern tells us exactly which else belongs to which if.</p>
   </note>
   <p>If you are still a bit unsure, here is the same selection as part of a codelens example.  Step through it to see how the correct <c>print</c> is chosen.</p>
-  <program xml:id="clens7_8_1" interactive="codelens" language="python">
+  <program xml:id="clens5_8_1" interactive="codelens" language="python">
     <input>
 x = 10
 y = 10
@@ -57,7 +57,7 @@ else:
   <p>
     <term>Check your understanding</term>
   </p>
-  <exercise label="question7_8_1">
+  <exercise label="question5_8_1">
     <statement>
       <p>Will the following code cause an error?</p>
       <program language="python">
