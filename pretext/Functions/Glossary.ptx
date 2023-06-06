@@ -108,6 +108,10 @@ keyword expression:
       <p>A special kind of function that is invoked on objects of particular types of
                             objects, using the syntax <c>&lt;expr&gt;.&lt;methodname&gt;(&lt;additional parameter values&gt;)</c></p>
     </gi>
+     <gi>
+      <title>non-fruitful (void) function</title>
+      <p>A function that does not return a value upon invocation. In some languages, this kind of function is called a procedure.</p>
+    </gi>
     <gi>
       <title>None</title>
       <p>A special Python value. One use in Python is that it is returned
@@ -121,6 +125,10 @@ keyword expression:
     <gi>
       <title>parameter list</title>
       <p>Also, formal parameters or parameter names, the ordered names of the parameters listed in the function definition.</p>
+    </gi>
+    <gi>
+      <title>return</title>
+      <p>The keyword or a statement, optionally followed by a value, ends a function call and provides a return value from the function to the caller.</p>
     </gi>
     <gi>
       <title>return value</title>
@@ -139,5 +147,6 @@ keyword expression:
       <title>type annotation</title>
       <p>An optional notation that specifies the type of a function parameter or function result.</p>
     </gi>
+   
   </glossary>
 </section>
