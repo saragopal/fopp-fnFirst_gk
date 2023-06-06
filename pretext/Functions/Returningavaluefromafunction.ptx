@@ -72,7 +72,7 @@
   </program>
   <p>When we suggested earlier that functions could be <em>generalized</em>, this is what we meant: a function could be provided the instructions to deal with 
   any value of parameter, execute, and provide a value based on its parameters.Thus, our <c>square</c> function can work <c>"""With any integer...[to]... 
-  produce its squared value."""</p>
+  produce its squared value."""</c></p>
   <p>There is one more aspect of function return values that should be noted. By default, all Python functions
     return the special value <c>None</c> unless there is an explicit return statement with a value
     other than <c>None</c>. Consider the following common mistake made by beginning Python
@@ -111,23 +111,22 @@
       print(x)
     </input>
   </program>
-  <p>The fact that a return statement immediately ends execution of the code block inside a function
-    is important to
+  <p>The fact that a return statement immediately ends execution of the code block inside a function is important to
     understand for writing complex programs, and it can also be very useful. The following example uses a programming structure we cover later, 
-    <term>conditionals</term>, but we will use the idea here to hint at what is possible.</P>
+    <term>conditionals</term>, but we will use the idea here to hint at what is possible.</p>
     <p>Consider a circumstance where <em>all</em> of a student's previous 35 course grades had to be greater than or equal to 60% to use them as prerequisites
     to be considered for an honours program. 
     If we used a function to look at each course grade one at a time, and found one was below 60%, it would not be efficient to continue checking
     the rest of the grades - the function would already have been able to determine it had to return <c>False</c>. Consider the following pseudocode description of a 
     function's algorithm:</p>
   <program language="python">
-  <input>
-  def prerequisite_checker( gradesList ) -> bool:
-    # look at first grade, if < 60%, return False
-    # look at second grade, if < 60%, return False
-    # et cetera
-    # having checked all 35 previous grades, and not finding any < 60%, return True
-    </input> 
+     <input>
+    def prerequisite_checker( gradesList ) -> bool:
+      # look at first grade, if less than 60%, return False
+      # look at second grade, if less than 60%, return False
+      # et cetera
+      # having checked all 35 previous grades, and not finding any less than 60%, return True
+      </input> 
   </program>
   <p>Do consider though the challenges with using multiple return statements: the programmer (and thus the function's code) has to repeat the return statement
   for every circumstance - and cannot overlook even one outcome. In fact, the <em>structured programming</em> tradition considers 

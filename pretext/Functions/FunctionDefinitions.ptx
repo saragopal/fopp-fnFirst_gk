@@ -26,7 +26,7 @@
   <p>
     The parameters specify
     what information, if any, you have to provide in order to use the new function. 
-    Another way to say this is that the parameters specify what the function needs to do its work. <br>
+    Another way to say this is that the parameters specify what the function needs to do its work.
     Notice that in the example function headers above, the programmer has included hints to indicate the parameter's data type and/or its value. 
     And, the data type of the function's result has been annotated too. Be sure to check out the text's later section \
     on "Type Annotations" for more explanation on these ideas.</p>

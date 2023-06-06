@@ -43,7 +43,7 @@
   <p>Line 6 is just there to remind you of the difference between referring to the variable name
     (function name) hello and referring to the string <q>hello</q>. When we print a string's type, we see it is of the 'str' class.</p>
   <p>At Step 4 we get to line 8, which has an <em>invocation of the function</em>. When  a function is <em>called</em> (or <em>invoked</em> by a line of code,
-    the lines of code inside the function's body are executed in the usual way, <br>
+    the lines of code inside the function's body are executed in the usual way,
     <em>but at the end of the function's code block</em>, the program's execution jumps back to line of code just
     after the function invocation.</p>
   <p>You can see that by following the next few steps. At Step 5, the green arrow indicates the 'line that just executed', aka the function's invocation, 
@@ -55,15 +55,16 @@
     second time.</p>
   <note>
     <title>Common Mistakes with Functions</title>
-    <p>There are two common mistakes beginners tend to make:
-    <0l>
+    <p>There are two common mistakes beginners tend to make:</p>
+    <ol>
     <li>They tend to forget the pair of parentheses after the function name.
       This is particularly common in the function that do not require parameters. Because the hello function defined
       above does not
       require parameters, it's easy to forget the parentheses. This is less common, but still
       possible, when trying to
-      call functions that require parameters.<li>
-      <li>They tend to overlook the indentation that separates the function's body code from the code that invokes the function. </p>
+      call functions that require parameters.</li>
+      <li>They tend to overlook the indentation that separates the function's body code from the code that invokes the function. </li>
+      </ol>
   </note>
   <p>
     <term>Check your understanding</term>

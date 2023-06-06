@@ -31,7 +31,7 @@
   <p>
     <ul>
       <li>
-        <p>display a single post,<br> which in turn calls functions to:</p>
+        <p>display a single post, which in turn calls functions to:</p>
       </li>
       <ul>
       <li>

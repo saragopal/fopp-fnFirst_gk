@@ -7,7 +7,7 @@
       <p>A value provided to a function when the function is called. This value
                             is assigned to the corresponding parameter in the function. The argument
                             can be the result of an expression which may involve operators,
-                            operands and calls to other fruitful functions.<br>
+                            operands and calls to other fruitful functions.
                             Also called actual parameters or parameter values.</p>
     </gi>
     <gi>
@@ -41,11 +41,11 @@
       <p>The syntax of a compound statement looks like this:</p>
       <program language="python">
         <input>
-keyword expression:
-    statement
-    statement
-    ...
-</input>
+          keyword expression:
+              statement
+              statement
+              ...
+          </input>
       </program>
     </gi>
     <gi>

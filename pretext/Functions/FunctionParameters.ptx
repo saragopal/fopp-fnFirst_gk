@@ -16,9 +16,9 @@
     so useful to explain a function). The 'user'
     must know the name of the function and what arguments it needs to be passed. The details of how the
     function works are hidden inside the <q>black-box</q>.</p>
-  <p>You have already been making function invocations with parameters. For example, when you write <c>
-    len("abc")</c>, len is the name of a function, and the value that you put inside the
-    parentheses, the string <q>abc</q> is a parameter value.Or <c>print("Answer", 3 - 4, sep=" is equal to ") where the print function is passed three
+  <p>You have already been making function invocations with parameters. For example, when you write <c>len("abc")</c>, len is 
+  the name of a function, and the value that you put inside the
+    parentheses, the string <q>abc</q> is a parameter value.Or <c>print("Answer", 3 - 4, sep=" is equal to ")</c> where the print function is passed three
     parameters, one of which is named.</p>
   <p>When a function has one or more parameters, the names of the parameters appear in the function
     definition, separated by commas, and the
