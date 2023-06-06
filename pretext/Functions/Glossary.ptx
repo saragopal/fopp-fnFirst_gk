@@ -49,8 +49,7 @@ keyword expression:
     </gi>
     <gi>
       <title>docstring</title>
-      <p>If the first thing in a function body is a string (or, we'll see later, in other situations
-                            too) that is attached to the function as its <c>__doc__</c> attribute.</p>
+      <p>Triple-quote string, placed as the first line of a function, that documents the function as its <c>__doc__</c> attribute.</p>
     </gi>
     <gi>
       <title>flow of execution</title>
@@ -58,7 +57,7 @@ keyword expression:
     </gi>
     <gi>
       <title>function</title>
-      <p>A named sequence of statements that performs some useful operation.
+      <p>A named sequence of statements that performs a specific operation.
                             Functions may or may not take parameters and may or may not produce a
                             result.</p>
     </gi>
