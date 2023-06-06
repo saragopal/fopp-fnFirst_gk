@@ -7,7 +7,8 @@
       <p>A value provided to a function when the function is called. This value
                             is assigned to the corresponding parameter in the function. The argument
                             can be the result of an expression which may involve operators,
-                            operands and calls to other fruitful functions.</p>
+                            operands and calls to other fruitful functions.<br>
+                            Also called actual parameters or parameter values.</p>
     </gi>
     <gi>
       <title>body</title>
@@ -116,6 +117,10 @@ keyword expression:
       <title>parameter</title>
       <p>A name used inside a function to refer to the value which was passed
                             to it as an argument.</p>
+    </gi>
+    <gi>
+      <title>parameter list</title>
+      <p>Also, formal parameters or parameter names, the ordered names of the parameters listed in the function definition.</p>
     </gi>
     <gi>
       <title>return value</title>

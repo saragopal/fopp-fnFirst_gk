@@ -25,7 +25,7 @@
     values to assign to those parameters appear inside the parentheses of the function invocation in the same order and again separated by commas.
     Let's look at each of
     those a little more carefully.</p>
-  <p>In the definition, the parameter list is sometimes referred to as the <term>formal parameters</term>
+  <p>In the definition, the <term>parameter list</term> is sometimes referred to as the <term>formal parameters</term>
     or <term>parameter names</term>. These names can be any valid variable name.</p>
   <p>In the function invocation, inside the parentheses one value should be provided for each of the
     parameter names. These
