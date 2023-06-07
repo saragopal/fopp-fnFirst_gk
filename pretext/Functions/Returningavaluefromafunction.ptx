@@ -12,8 +12,6 @@
   Notice how in the function header example below the function definition indicates the function returns <c>-> None</c>, that there
   is no data being processed, and that there is no <c>return</c> statement.</p>
   
-
-  <p>More usefully, a function can also be used to produce a value from from one or more parameters. </p>
   <program xml:id="ac4_2_1" interactive="activecode" language="python">
     <input>
       def hello() -&gt; None:
@@ -23,6 +21,9 @@
         print("Glad to meet you")
     </input>
   </program> 
+
+  <p>More usefully, a function can also be used to produce a value from from one or more parameters. </p>
+
   <image source="Functions/Figures/function_call.gif" width="50%"
     alt="gif of a box labeled function with three spaces on the top for input and a space on the bottom for output. Three arrows enter the top and are labeled as input or arguments. The function box shakes, and then one arrow leaves the bottom of the function box." />
 
