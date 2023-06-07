@@ -41,7 +41,7 @@ value of a provided number. Or how <c>=input()</c> returns anything a user types
   <program xml:id="ac4_5_1" interactive="activecode" language="python">
     <input>
       def square(anInteger: int) -&gt; int:
-      """With any integer, this function will produce its squared value."
+        """With any integer, this function will produce its squared value."
         y = anInteger * anInteger
         return y
 
