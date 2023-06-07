@@ -28,7 +28,7 @@
     </ul>
   </p>
   <p>And each of those is made up of functions as well. For example, the function that displays your
-    friends' posts is a <c>for</c> loopthat calls a 'sub'-function to display a single post, which in turn calls 'sub-sub'-fucntions to:</p>
+    friends' posts is a <c>for</c> loopthat calls a 'sub'-function to display a single post, which in turn calls 'sub-sub'-functions to:</p>
   <p>
     <ul>
       <li>
