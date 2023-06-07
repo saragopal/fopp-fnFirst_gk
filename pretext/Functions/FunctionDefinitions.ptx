@@ -16,7 +16,7 @@
 
 <program language="python">
     <input>
-      def findAverage (grades:list ) -> float:
+      def find_Average (grades:list ) -> float:
           statements
 
       def increase (number:int, by=2) -> int:
@@ -69,9 +69,8 @@
       and the return value (if there is one).</p>
       <p>This first line is called a <term>docstring</term> (documentation string) and because it gets special treatment in
       Python, you can use the interactive interpreter <em>at runtime</em>, and enter the
-      expression <c>&lt;function_name&gt;.__doc__</c>, or <c>help(&lt;function_name&gt;)</c>) to retrieve this docstring (the thus an explanation) for the
-      function. This is different from comments in your code, which are
-      completely eliminated when the program is parsed.</p>
+      expression <c>&lt;function_name&gt;.__doc__</c>, or <c>help(&lt;function_name&gt;</c>), to retrieve a function's docstring (the thus its explanation). This is different from comments in your code, which are
+      completely ignored when the program is run.</p>
     
   </note>
   </section>

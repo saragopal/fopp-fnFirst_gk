@@ -3,12 +3,13 @@
   <title>Introduction to Functions</title>
   <p>In Python, a <term>function</term> is a chunk of code that performs a specific operation that is a
     meaningful and self-contained part of a larger problem. For example calculating a student's grade in one class is part of detemining their GPA
-    in a learning system or responding to the jump action in a video game. Once a function has been
+    in a learning system or keeping track of a score in order to earn rewards in a video game. Once a function has been
     defined and you are satisfied that it does what it is supposed to do, it is useful to start thinking
     about it as a step in the larger operation that it performs rather than how its specific lines of
     code work.</p>
-  <p>This breaking down of a task or problem is crucial to the successful implementation of any
-    program of more than 50 or so lines (and plenty of smaller ones too). For example, the program
+  <p>In computer programming, this breaking down of a task or problem into smaller, solveable, sub-tasks, is called <term>decomposition</term> and 
+  learing how to do this is crucial to the successful implementation of any
+    program of more than 50 or so lines (and plenty of smaller ones too). And <term>functions</term> For example, the program
     that displays the Instagram landing page is made up of functions that:</p>
   <p>
     <ul>
@@ -27,13 +28,9 @@
     </ul>
   </p>
   <p>And each of those is made up of functions as well. For example, the function that displays your
-    friends' posts is a <c>for loop</c> that calls a function to:</p>
+    friends' posts is a <c>for</c> loopthat calls a 'sub'-function to display a single post, which in turn calls 'sub-sub'-fucntions to:</p>
   <p>
     <ul>
-      <li>
-        <p>display a single post, which in turn calls functions to:</p>
-      </li>
-      <ul>
       <li>
         <p>display the photo and name of the person posting the story</p>
       </li>
@@ -49,8 +46,7 @@
       <li>
         <p>etc.</p>
       </li>
-      </ul>
-    </ul>
+     </ul>
   </p>
   <p>In this chapter you will learn about named functions, i.e. functions that are referred to by a name
     when you want to execute them.</p>
