@@ -121,7 +121,7 @@
     function's algorithm:</p>
   <program language="python">
      <input>
-    def prerequisite_checker( gradesList ) -> bool:
+    def prerequisite_checker( gradesList ) -> bool:pret
       # look at first grade, if less than 60%, return False
       # look at second grade, if less than 60%, return False
       # et cetera

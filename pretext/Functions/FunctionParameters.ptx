@@ -38,20 +38,20 @@
     function personalizes the greeting: the person to greet is specified by the parameter.</p>
   <program xml:id="clens4_4_1" interactive="codelens" language="python">
     <input>
-      def hello2(who: str) -&gt; None:
-        print("Hello " + who)
+      def hello2(s: str) -&gt; None:
+        print("Hello " + s)
         print("Glad to meet you")
 
       hello2("Iman")
-      hello2("Jackie" + " " + "Chan")
+      hello2("Jackie")
     </input>
   </program>
-  <p>First, notice that hello2 has one formal parameter, <c>who</c>. You can tell that because
+  <p>First, notice that hello2 has one formal parameter, <c>s</c>. You can tell that because
     there is exactly one variable name inside the parentheses on line 1 
     (the colon and the 'str' are part of Type Annotation, a topic we will discuss shortly).</p>
   <p>Next, notice what happened during Step 2. Control was passed to the function, just like we saw
-    before. But in addition, the variable<c>who</c> was bound to a value, the string <q>Iman</q>. When it
-    got to Step 7, for the second invocation of the function, <c>who</c> was bound to <q>Jackie + ' ' + Chan</q>.</p>
+    before. But in addition, the variable<c>s</c> was bound to a value, the string <q>Iman</q>. When it
+    got to Step 7, for the second invocation of the function, <c>who</c> was bound to <q>Jackie</q>.</p>
   <p>Function invocations always work that way. The expression inside the parentheses on the line
     that invokes the function
     is evaluated before control is passed to the function. The value is assigned to the
@@ -60,8 +60,8 @@
     parameter and get its value,
     the value that was <em>passed into</em> the function.</p>
   <exercise runestone="eval4_4_1" />
-  <p>To get a feel for that, let's invoke hello2 using some more complicated expressions. Try some
-    of your own, too.</p>
+  <p>To get a feel for that, let's invoke hello2 using some more complicated expressions, but one where we use more self-documenting parameter names. 
+  Feel free to modify things on your own - allowing them to 'break' but then fixing things too.</p>
   <program xml:id="ac4_4_1" interactive="activecode" language="python">
     <input>
       def hello2(who: str) -&gt; None:
@@ -72,12 +72,11 @@
       hello2("Class " * 3)
     </input>
   </program>
-  <p>Now let's consider a function with two parameters. This version of hello takes
-    a parameter that controls how many times the greeting will be printed.</p>
+  <p>Now let's consider a function with two (not all that self-documenting) parameters. Can you determine what the two variables are? What they are for?</p>
   <program xml:id="clens4_4_2" interactive="codelens" language="python">
     <input>
-      def hello3(who: str, n: int) -&gt; None:
-        greeting = f"Hello {who} "
+      def hello3(s: str, n: int) -&gt; None:
+        greeting = f"Hello {s} "
         print(greeting*n)
 
       hello3("Wei", 4)
@@ -85,17 +84,18 @@
       hello3("Kitty", 11)
     </input>
   </program>
-  <p>At Step 2 of the execution, in the first invocation of hello3, notice that the variable <c>who</c> is
+  <p>At Step 2 of the execution, in the first invocation of hello3, notice that the variable <c>s</c> is
     bound to the value <q>Wei</q> and the variable <c>n</c> is bound to the value 4.</p>
-  <p>That's how function invocations always work. Each of the expressions, separated by commas, that
-    are inside the
+  <p>That's how function invocations always work. Each of the comma separated expressions inside the
     parentheses are evaluated to produce values. Then those values are matched up positionally (in the same order)
-    with the formal parameters. The first parameter name is bound to the first value
+    with the formal parameters of the function definition. The first parameter name is bound to the first value
     provided. The second parameter name is bound to the second value provided. And so on.
     </p>
     <p>
-    <em>Try defining a similar function as the above on your own, but when your code invokes the function place the arguments in the reverse order: 4, "Wei".
-    What happens when you run the code? It should produce a'run-time' error: the code is syntactic (correct) but the function's code
+    <em>Try defining a similar function as the above on your own, but when your code invokes the 
+    function pass the arguments in the reverse order:<c>hello3(4, "Wei")</c>.
+    What happens when you run the code? It should produce a <term>runtime' error</term>- an error that happens
+    only when the <em>syntactic (correct)</em> is run there are errors in the code like when it
     can't deal with the variables being of a different than expected data type.</em></p>
   <p>
     <term>Check your understanding</term>
