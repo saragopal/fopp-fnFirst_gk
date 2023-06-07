@@ -91,7 +91,7 @@ value of a provided number. Or how <c>=input()</c> returns anything a user types
   <c>anotherInteger</c> being passed to the function, which then deals with them <em>locally</em> as <c>anInteger</c> to produce <c>result</c> 
   demonstrates how a function can be generalized and how self-documenting names make the code easier to design, develop and debug.</p>
   <p>There is one more aspect of fruitful functions. By default, all Python functions
-    return the special value <c>None</c> to indicate there is no value at all. This isnot the same as <c>0</c>, <c>False</c>, nor an empty string <c>""</c>.
+    return the special value <c>None</c> to indicate there is no value at all. This isnot the same as <c>0</c>, <c>False</c>, nor an empty string <c>""</c>.</p>
     <p><em>A function will only return a value if there is an explicit return statement with a value. </em></p>
     <p>Consider the following common mistake made by beginning Python
     programmers. As you step through this example, pay very close attention to the return value in
