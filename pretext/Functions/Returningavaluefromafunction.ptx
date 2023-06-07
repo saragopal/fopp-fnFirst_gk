@@ -33,17 +33,20 @@ value of a provided number. Or how <c>=input()</c> returns anything a user types
 <p>These kinds of functions, ones that return values are sometimes called <term>fruitful functions</term> because they <em>produce</em> a result.</p>
  
   <image source="Functions/Figures/blackboxfun.png" width="50%" />
+
   <p>How do we write our own fruitful function? Let's start by creating a very simple mathematical
     function that we will call <c>square</c>. The square function will take one number as a
     parameter and return the result of squaring that number. Here is the black-box diagram with the
     Python code following.</p>
+
   <image source="Functions/Figures/squarefun.png" width="50%" />
+
   <program xml:id="ac4_5_1" interactive="activecode" language="python">
     <input>
       def square(anInteger: int) -&gt; int:
         """With any integer, this function will produce its squared value."""
-        y = anInteger * anInteger
-        return y
+        result = anInteger * anInteger
+        return result
 
       theInteger = 10
       result = square(theInteger)
@@ -54,48 +57,45 @@ value of a provided number. Or how <c>=input()</c> returns anything a user types
 
     </input>
   </program>
+
   <p>The <term>return</term> statement is followed by an expression which is evaluated. Its result
     is returned to the caller (the line of code that invoked the function) as the <q>fruit</q> of calling this function. 
     Because the return
     statement can contain any Python expression we could have avoided creating the <term>temporary
-    variable</term> <c>y</c> and simply used <c>return anInteger*anInteger</c>. Try modifying the square function
+    variable</term> <c>result</c> and simply used <c>return anInteger*anInteger</c>. Try modifying the square function
     above to see that this works just the same. On the other hand, using <term>temporary variables</term>
-    like <c>y</c> in the program above makes debugging easier. These temporary variables are
+    like <c>result</c> in the function above makes debugging easier, especially when a function is a many step process. 
+    These temporary variables are
     referred to as <term>local variables</term>. In general, programmers should not try to place a multiple step process into the 
     <c>return</c> statement.</p>
+  
   <p>Notice something important here: the name of the variable we pass as an argument does not have
    to have anything to do with the name of the formal parameter &#x2014; <c>anInteger</c>.
    You can see this very clearly in the Codelens: it doesn't matter what names the caller uses &#x2014; <c>theInteger</c> or 
    <c>anotherInteger</c>). When <c>square</c> is executed, inside that function, its parameter, a local variable &#x2014; <c>anInteger</c>, 
    is given the value that is passed, the <em>local temporary</em> variable &#x2014; <c>result</c> is determined, and finally, is the return value that the
    function produces.</p>
-    <p>IN the following, watch how the global variables and
-    the local variables for the square function are poorly named (<c>x</c>? <c>y</c>?), assigned values, and how
-    these global versus local scope are shown by the separate boxes in the following.</p>
-  <program xml:id="clens4_5_1" interactive="codelens" language="python">
-    <input>
-      def square(anInteger: int) -&gt; int:
-        """With any integer, this function will produce its squared value."""
-        result = anInteger * anInteger
-        return result
+  <p>Return the previous CodeLens example and step through the code once again. This time make note of the <em>Frames</em> being displayed, the appearance 
+  (and disappearance of) those variables in those frames, and the values of the variables.</p>
 
-      theInteger = 10
-      squareResult = square(theInteger)
-      anotherInteger = 11
-      squareResult = square(anotherInteger)
-    </input>
-  </program>
-  <p>When we suggested earlier that functions could be <em>generalized</em>, this is what we meant: a function could be provided the instructions to deal with 
-  any value of parameter, execute, and provide a value based on its parameters.Thus, our <c>square</c> function can work <c>"""With any integer...[to]... 
-  produce its squared value."""</c>. It should also be apparent that using <em>self-documenting</em> variables names, like <c>theInteger</c> and 
-  <c>anotherInteger</c> being passed to the function, which then deals with them <em>locally</em> as <c>anInteger</c> to produce <c>result</c> 
-  demonstrates how a function can be generalized and how self-documenting names make the code easier to design, develop and debug.</p>
+  <p>When we suggested earlier that functions could be <em>generalized</em>, this illustrates what we meant. A fruitful function 
+  should be coded to deal with any value of parameter(s), process things, and then to provide 
+  a value based on its parameter(s).
+  Thus, our <c>square</c> function can work <c>"""With any integer..."""</c>.</p>
+
+  <p>It should also be apparent that using <em>self-documenting</em> variables names, like <c>theInteger</c> and 
+  <c>anotherInteger</c>, make clearer what is being passed to the function and what variables are local to the function (<c>anInteger</c> 
+  and <c>result</c>). And, using these kinds of self-documenting variable names makes the code easier to design, develop and debug.</p>
+
   <p>There is one more aspect of fruitful functions. By default, all Python functions
-    return the special value <c>None</c> to indicate there is no value at all. This isnot the same as <c>0</c>, <c>False</c>, nor an empty string <c>""</c>.</p>
-    <p><em>A function will only return a value if there is an explicit return statement with a value. </em></p>
-    <p>Consider the following common mistake made by beginning Python
-    programmers. As you step through this example, pay very close attention to the return value in
-    the local variables listing. Then look at what is printed when the function is over.</p>
+    return the special value <c>None</c> to indicate there is no value at all. This is not the same as <c>0</c>, <c>False</c>, 
+    nor an empty string <c>""</c>.</p>
+
+  <p><em>A function will only return a value if it includes an explicit return statement with a value in the function's body.</em></p>
+
+  <p>Notice in the following how the <c>square</c> function does not contain a <c>return</c> statement.
+    As you step through this example, pay very close attention to the Return Value in
+    the square function's frame. Then look at what is printed when the function is over.</p>
   <program xml:id="clens4_5_2" interactive="codelens" language="python">
     <input>
       def square(anInteger: int) -&gt; None:
@@ -107,12 +107,16 @@ value of a provided number. Or how <c>=input()</c> returns anything a user types
       print(f"The result of {theInteger} squared is {squareResult}.")
     </input>
   </program>
-  <p>The problem with this function is that even though it prints the value of the squared input,
-    that value will not be returned to the place where the call was done. Instead, the value <c>None</c>
-    will be returned. Since line 6 assigns the function's return value to <c>squareResult</c>, that variable will have <c>None</c> as its value 
-    and the code will be incorrect when it prints in line 7. Much more useful would be to code fruitful functions that 
+
+  <p>A problem with this function is that even though it prints the resulting squared value (line 3),
+    that value will not be available to be subsequently displayable, accessed nor used after the function has been executed.
+    Instead, the value <c>None</c>
+    will be returned to the caller's scope. Since line 6 assigns the function's return value to <c>squareResult</c>, 
+    that variable will have <c>None</c> as its value and that is what will be printed in line 7.</p>
+  <p> Much more usefully one would code a fruitful function that 
     return a value and assigns that value to a variables for later processing or display.</p>
-  <p>A return statement, once executed, immediately terminates execution of a function, even if it
+
+  <p>Next, a return statement, once executed, immediately terminates execution of a function, even if it
     is not the last statement in the function. In the following code, when line 3 executes, the
     value 5 is returned and assigned to the variable x, then printed. Lines 4 and 5 never execute.
     Run the following code and try making some modifications of it to make sure you understand why <q>
@@ -130,13 +134,12 @@ value of a provided number. Or how <c>=input()</c> returns anything a user types
     </input>
   </program>
   <p>The fact that a return statement immediately ends execution of the code block inside a function is important to
-    understand for writing complex programs, and it can also be very useful. The following example uses a programming structure we cover later, 
-    <term>conditionals</term>, but we will use the idea here to hint at what is possible.</p>
+    understand for writing complex programs, and it can also be useful. The following example algorithm uses a programming structure,
+    <term>conditionals</term>, that we will cover later, but for now we will use the idea here to hint at what is possible.</p>
     <p>Consider a circumstance where <em>all</em> of a student's previous 35 course grades had to be greater than or equal to 60% to use them as prerequisites
-    to be considered for an honours program. 
-    If we used a function to look at each course grade one at a time, and found one was below 60%, it would not be efficient to continue checking
-    the rest of the grades - the function would already have been able to determine it had to return <c>False</c>. Consider the following pseudocode description of a 
-    function's algorithm:</p>
+    for an honours program. 
+    If we used a function to look at each course grade one at a time, and found one was below 60%, it would be inefficient to continue checking
+    the rest of the grades - the function would already have been to return <c>False</c>.</p>
   <program language="python">
      <input>
     def prerequisite_checker( gradesList ) -> bool:pret
@@ -144,13 +147,15 @@ value of a provided number. Or how <c>=input()</c> returns anything a user types
       # look at second grade, if less than 60%, return False
       # et cetera
       # having checked all 35 previous grades, and not finding any less than 60%, return True
+
       </input> 
   </program>
-  <p>Do consider though the challenges with using multiple return statements: the programmer (and thus the function's code) has to repeat the return statement
+  <p>Do consider the challenges with using multiple return statements: the programmer (and thus the function's code) has to repeat the return statement
   for every circumstance - and cannot overlook even one outcome. In fact, the <em>structured programming</em> tradition considers 
   the use of multiple return statements to be bad practice. Instead, it suggests programmers get
-  into the habit of always having a single return statement as very last line of their function's body, which avoids 'forgetting' to 
-  include all the returns, and may make tracing and debugging the code easier.</p>
+  into the habit of always having a <em>single return statement as very last line of their function's body</em>, to avoid 'forgetting' to 
+  include all the returns. This practice, making the last line of every function a return statement, also makes
+  tracing and debugging the complex function code easier.</p>
 
   <p>So far, we have just seen return values being assigned to variables. For example, we had the
     line <c>squareResult = square(theInteger)</c>. As with all assignment statements, the right-hand
@@ -161,28 +166,28 @@ value of a provided number. Or how <c>=input()</c> returns anything a user types
   <p>Function invocations, however, can also be used as part of more complicated expressions. For
     example, <c>squareResult = 2 * square(theInteger + 1)</c>. In this case, the value 11 is evaluated, passed to the function,
     and is returned to the right-hand side of the instructions. Then, the returned value (121) is multiplied by 2 to produce the value 242.</p>
-  <p>To reiterate, when executing a line of code <c>squareResult = 2 * square(theInteger)</c>, the
+  <p>To reiterate, when executing the line of code <c>squareResult = 2 * square(theInteger + 1)</c>, the
     Python interpreter does these steps:</p>
   <p>
     <ol marker="1">
       <li>
-        <p>It's an assignment statement, so evaluate the right-hand side expression <c>2 *
-          square(theInteger + 11)</c>.</p>
+        <p>It's an assignment statement, so it evaluates the right-hand side expression 
+        <c>2 * square(theInteger + 1)</c>.</p>
       </li>
       <li>
-        <p>Look up the values of the variables square and theInteger: square is a function object and
+        <p>Looks up the values of the variables square and theInteger: square is a function object and
           theInteger is 10</p>
       </li>
-      <li><p>Evalute the argument expression <c>theInteger + 1</c> as 11.</p>
+      <li><p>Evalutes the argument expression <c>(theInteger + 1)</c> as 11</p>
       </li>
       <li>
-        <p>Pass 11 as a parameter value to the function (where anInteger is assigned 11 as a value), get back the return value 121</p>
+        <p>Pasess 11 as a parameter value to the square function (where anInteger is assigned 11 as a value), get back the return value 121</p>
       </li>
       <li>
-        <p>Substitute 121 for square(), so that the expression now reads <c>2 * 121</c></p>
+        <p>Substitutes 121 for square, so that the expression now reads <c>2 * 121</c></p>
       </li>
       <li>
-        <p>Assign 242 to variable <c>squareResult</c></p>
+        <p>Assigns 242 to variable <c>squareResult</c></p>
       </li>
     </ol>
   </p>
@@ -251,7 +256,7 @@ value of a provided number. Or how <c>=input()</c> returns anything a user types
       <p>What will the following function return?</p>
       <program language="python">
         <input>
-          def addEm(x: int, y: int, z: int) -&gt; ???:
+          def addEm(x: int, y: int, z: int):
             print(x+y+z)
         </input>
       </program>
@@ -373,7 +378,7 @@ value of a provided number. Or how <c>=input()</c> returns anything a user types
       </choice>
     </choices>
   </exercise>
-  <exercise label="question4_5_5">
+  <!--exercise label="question4_5_5">
     <statement>
       <p>What will the following code output?</p>
       <program language="python">
@@ -431,7 +436,7 @@ value of a provided number. Or how <c>=input()</c> returns anything a user types
         </feedback>
       </choice>
     </choices>
-  </exercise>
+  </exercise -->
   <exercise label="question4_5_6">
     <statement>
       <p>Which will print out first, square, g, or a number?</p>
