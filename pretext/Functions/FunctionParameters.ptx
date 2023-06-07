@@ -2,8 +2,8 @@
 <section xml:id="functions_function-parameters">
   <title>Function Parameters</title>
   <p>Named functions are very useful because, once they are defined and we understand what they do, we can
-    refer to them by name and no longer have to think too much about their inner workings. The functions then can be treated <aside>
-      separate tools that we can use repeatedly and in conjunction with other functions to solve a larger <em>decomposed</em> problem.</p>
+    refer to them by name and no longer have to think too much about their inner workings. The functions then can be treated as
+    separate tools that we can use repeatedly and in conjunction with other functions to solve a larger <em>decomposed</em> problem.</p>
   <p>With parameters, functions are even more powerful,
     because they allow us to generalize a function's actions so that it can do the same thing on each invocation, 
     but with different starting values. With parameters our functions becomes <em>adjustable</em> tools that can be resused to solve different

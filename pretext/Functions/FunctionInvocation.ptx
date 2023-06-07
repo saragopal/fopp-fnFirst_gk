@@ -7,9 +7,8 @@
     <p>This section is a review of something we learned in the beginning of the textbook.</p>
   </note>
   <p>The way to invoke a function is to refer to it by name, followed by parentheses. Since there
-    are no parameters for
-    the function hello, we won't need to put anything inside the parentheses when we call it.<p>
-    <p><em> Once we've defined a function, we can call it as often as we like and its statements will 
+    are no parameters forthe function hello, we won't need to put anything inside the parentheses when we call it.</p>
+  <p><em> Once we've defined a function, we can call it as often as we like and its statements will 
     be executed each time we call it.</em></p>
   <program xml:id="clens4_3_1" interactive="codelens" language="python">
     <input>
