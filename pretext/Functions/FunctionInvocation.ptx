@@ -56,13 +56,13 @@
     <title>Common Mistakes with Functions</title>
     <p>There are two common mistakes beginners tend to make:</p>
     <ol>
-    <li>They tend to forget the pair of parentheses after the function name.
+    <li>They tend to forget the pair of <em>parentheses after the function name</em>.
       This is particularly common in the function that do not require parameters. Because the hello function defined
       above does not
       require parameters, it's easy to forget the parentheses. This is less common, but still
       possible, when trying to
       call functions that require parameters.</li>
-      <li>They tend to overlook the indentation that separates the function's body code from the code that invokes the function. </li>
+      <li>They tend to overlook the <em>indentation</em> that separates the function's body code from the code that invokes the function. </li>
       </ol>
   </note>
   <p>
