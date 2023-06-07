@@ -21,7 +21,7 @@
     as above. Sometimes you will need to look at the code, either the function definition or code
     that
     invokes the function, in order to figure out what it does. (Consider practicing this by <url href="https://docs.python.org/3/library/functions.html#print" 
-    visual="Official Python documentation - Have you started to develop the habit of looking at this?">looking up docstring for <c>print</c></url>.</p>
+    visual="Official Python documentation - Have you started to develop the habit of looking at this?">looking up the <c>print</c>functions docstring.</url></p>
   <p>To build your understanding of any function, you should aim to answer the following questions:</p>
   <p>
     <ol marker="1">
@@ -59,16 +59,15 @@
   <p>
     <ul>
       <li>
-        <p><c>len(x)</c>, then x must be a string or a list. (Actually, it can also be a dictionary,
-          in which case it is equivalent to the expression <c>len(x.keys())</c>. Later in the
-          course, we will also see some other sequence types that it could be). x can't be a number
+        <p><c>len(x)</c>, then x must be a string or a list. Later in the
+          course, we may also see some other sequence types that it could be). x can't be a number
           or a Boolean.</p>
       </li>
       <li>
         <p><c>x - y</c>, x and y must be numbers (integer or float)</p>
       </li>
       <li>
-        <p><c>x + y</c>, x and y must both be numbers, both be strings, or both be lists</p>
+        <p><c>x + y</c>, x and y must <em>both</em> be numbers, <em>both</em> be strings, or <em>both</em> be lists</p>
       </li>
       <!-- <li>
         <p><c>x[3]</c>, x must be a string or a list containing at least four items, or x must be a
@@ -81,7 +80,8 @@
         <p><c>x[y:z]</c>, x must be a sequence (string or list), and y and z must be integers</p>
       </li> -->
       <li>
-        <p><c>x and y</c>, x and y must be Boolean</p>
+        <p><c>x and y</c>, x and y must be data types that <url href="https://docs.python.org/3/library/stdtypes.html" visual="Built-in Types Python Docs">
+        can be evaluated as Booleans.</url></p>
       </li>
       <!-- <li>
         <p><c>for x in y</c>, y must be a sequence (string or list) or a dictionary (in which case
