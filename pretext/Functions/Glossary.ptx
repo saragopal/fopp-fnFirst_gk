@@ -107,7 +107,10 @@
     <gi>
       <title>local variable</title>
       <p>A variable defined inside a function. A local variable can only be used
-                            inside its function. Parameters of a function are also a special kind
+                            inside its function.It's <em>scope</em> means it only exists while 
+                            the function's code is being executed. Trying to access (to display or for later processing)
+                            a local variable outside of, or after a function will produce a runtime error - <c>NameError: variable name is not defined</c>.
+                            Parameters of a function are also a special kind
                             of local variable.</p>
     </gi>
     <gi>

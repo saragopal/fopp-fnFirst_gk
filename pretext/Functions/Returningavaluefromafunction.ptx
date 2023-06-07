@@ -48,30 +48,36 @@ value of a provided number. Or how <c>=input()</c> returns anything a user types
       theInteger = 10
       result = square(theInteger)
       print(f"The result of {theInteger} squared is {result}.")
+      anotherInteger = 11
+      result = square(anotherInteger)
+      print(f"The result of {theInteger} squared is {result}.")
+
     </input>
   </program>
   <p>The <term>return</term> statement is followed by an expression which is evaluated. Its result
     is returned to the caller (the line of code that invoked the function) as the <q>fruit</q> of calling this function. 
     Because the return
     statement can contain any Python expression we could have avoided creating the <term>temporary
-    variable</term> <c>y</c> and simply used <c>return x*x</c>. Try modifying the square function
+    variable</term> <c>y</c> and simply used <c>return anInteger*anInteger</c>. Try modifying the square function
     above to see that this works just the same. On the other hand, using <term>temporary variables</term>
     like <c>y</c> in the program above makes debugging easier. These temporary variables are
     referred to as <term>local variables</term>. In general, programmers should not try to place a multiple step process into the 
     <c>return</c> statement.</p>
-  <p>Notice something important here. The name of the variable we pass as an argument &#x2014; <c>theInteger</c> &#x2014; does not have
+  <p>Notice something important here: the name of the variable we pass as an argument does not have
    to have anything to do with the name of the formal parameter &#x2014; <c>anInteger</c>.
-   You can see this very clearly in the Codelens: it doesn't matter what names (<c>theInteger</c> or <c>anotherInteger</c>) are used in the caller, 
-    the value was named in the caller (the place where the function was invoked). Inside <c>square</c>,
-    when <c>square</c> is executed, its parameter <c>anInteger</c> is given the value that is passed. Watch how the global variables and
-    the local variables for the square function are in separate boxes.</p>
+   You can see this very clearly in the Codelens: it doesn't matter what names the caller uses &#x2014; <c>theInteger</c> or 
+   <c>anotherInteger</c>). When <c>square</c> is executed, inside that function, its parameter, a local variable &#x2014; <c>anInteger</c>, 
+   is given the value that is passed, the <em>local temporary</em> variable &#x2014; <c>result</c> is determined, and finally, is the return value that the
+   function produces.</p>
+    <p>IN the following, watch how the global variables and
+    the local variables for the square function are poorly named (<c>x</c>? <c>y</c>?), assigned values, and how
+    these global versus local scope are shown by the separate boxes in the following.</p>
   <program xml:id="clens4_5_1" interactive="codelens" language="python">
     <input>
       def square(anInteger: int) -&gt; int:
-      """With any integer, this function will produce its squared value."""
-
-        y = anInteger * anInteger
-        return y
+        """With any integer, this function will produce its squared value."""
+        result = anInteger * anInteger
+        return result
 
       theInteger = 10
       squareResult = square(theInteger)
@@ -81,10 +87,13 @@ value of a provided number. Or how <c>=input()</c> returns anything a user types
   </program>
   <p>When we suggested earlier that functions could be <em>generalized</em>, this is what we meant: a function could be provided the instructions to deal with 
   any value of parameter, execute, and provide a value based on its parameters.Thus, our <c>square</c> function can work <c>"""With any integer...[to]... 
-  produce its squared value."""</c></p>
-  <p>There is one more aspect of function return values that should be noted. By default, all Python functions
-    return the special value <c>None</c> unless there is an explicit return statement with a value
-    other than <c>None</c>. Consider the following common mistake made by beginning Python
+  produce its squared value."""</c>. It should also be apparent that using <em>self-documenting</em> variables names, like <c>theInteger</c> and 
+  <c>anotherInteger</c> being passed to the function, which then deals with them <em>locally</em> as <c>anInteger</c> to produce <c>result</c> 
+  demonstrates how a function can be generalized and how self-documenting names make the code easier to design, develop and debug.</p>
+  <p>There is one more aspect of fruitful functions. By default, all Python functions
+    return the special value <c>None</c> to indicate there is no value at all. This isnot the same as <c>0</c>, <c>False</c>, nor an empty string <c>""</c>.
+    <p><em>A function will only return a value if there is an explicit return statement with a value. </em></p>
+    <p>Consider the following common mistake made by beginning Python
     programmers. As you step through this example, pay very close attention to the return value in
     the local variables listing. Then look at what is printed when the function is over.</p>
   <program xml:id="clens4_5_2" interactive="codelens" language="python">
