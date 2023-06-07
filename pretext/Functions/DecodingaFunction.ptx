@@ -20,7 +20,8 @@
     summarized
     as above. Sometimes you will need to look at the code, either the function definition or code
     that
-    invokes the function, in order to figure out what it does.</p>
+    invokes the function, in order to figure out what it does. (Consider practicing this by <url href="https://docs.python.org/3/library/functions.html#print" 
+    visual="docs.pythonh.org">looking up docstring for <c>print</c></url>.</p>
   <p>To build your understanding of any function, you should aim to answer the following questions:</p>
   <p>
     <ol marker="1">
