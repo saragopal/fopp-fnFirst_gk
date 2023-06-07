@@ -1,10 +1,19 @@
 <?xml version="1.0"?>
 <section xml:id="functions_returning-a-value-from-a-function">
   <title>Returning a value from a function</title>
-  <p>The functions we've used as examples thus far have not been all that useful: we enclosed a <c>print()</c> function within 
-  a function we defined to illustrate parameters. 
-  Functions that don't return a value; are sometimes called <term>procedures</term>, <term>non-fruitful</term>, or <em>void</em> functions. Notice how in the function header example below
-  it indicates the function returns <c>-> None</c>.</p>
+
+  <p>The functions we've used as examples thus far have not been all that useful: we enclosed <c>print()</c> functions within 
+  our own function, as a way to illustrate parameters, when we could have just used the <c>print()</c> functions on their own. And, the
+  functions we've defined so far don't do much to be useful to help solve a decomposed larger problem. One of the reasons that our illustrative
+  functions don't appear to be useful is because few of them have returned a value. In this section we will discuss how to create more useful functions that 
+  produce useful data for our problem solving.</p>
+
+  <p>Functions that don't return a value are sometimes called <term>procedures</term>, and <term>non-fruitful</term> or <em>void</em> functions. 
+  Notice how in the function header example below the function definition indicates the function returns <c>-> None</c>, that there
+  is no data being processed, and that there is no <c>return</c> statement.</p>
+  
+
+  <p>More usefully, a function can also be used to produce a value from from one or more parameters. </p>
   <program xml:id="ac4_2_1" interactive="activecode" language="python">
     <input>
       def hello() -&gt; None:
@@ -16,12 +25,11 @@
   </program> 
   <image source="Functions/Figures/function_call.gif" width="50%"
     alt="gif of a box labeled function with three spaces on the top for input and a space on the bottom for output. Three arrows enter the top and are labeled as input or arguments. The function box shakes, and then one arrow leaves the bottom of the function box." />
-  <p>More usefully, a function can also be used to produce a value from from one or more parameters. 
-  You have already seen this in a function like <c>len</c> which
-  takes a list or string as a parameter value and returns a number, the length of that list or
-  string. A function like <c>= range( )</c> takes an integer as a parameter value and returns a list containing all the
-  numbers from 0 up to (but not including) that parameter's value.</p>
-  <p>These kinds of functions, ones that return values are sometimes called <term>fruitful functions</term> because they <em>produce</em> a result.</p>
+
+<p>You probably can apprecaite how a built-in Python function like <c>= abs()</c> will find, and then return, the absolute
+value of a provided number. Or how <c>=input()</c> returns anything a user types on the keyboard as a string.</p>
+
+<p>These kinds of functions, ones that return values are sometimes called <term>fruitful functions</term> because they <em>produce</em> a result.</p>
  
   <image source="Functions/Figures/blackboxfun.png" width="50%" />
   <p>How do we write our own fruitful function? Let's start by creating a very simple mathematical
