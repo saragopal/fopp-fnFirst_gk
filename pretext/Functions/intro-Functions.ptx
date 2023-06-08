@@ -54,7 +54,7 @@
   <subsection xml:id="functions_introduction-to-functions_topics">
     <title>Topics</title>
     <p>
-      <ul>
+      <ul marker="">
         <li>
           <p>The purpose of functions as a means of abstraction</p>
         </li>
@@ -63,10 +63,6 @@
         </li>
         <li>
           <p>Parameters (and arguments) and their use with functions</p>
-          <ul>
-          <li>sub list?</li>
-          <li>sub list 2</li>
-          </ul>
         </li>
         <li>
         <p>Local and global scope</p>
