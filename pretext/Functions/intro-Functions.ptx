@@ -7,9 +7,9 @@
     defined and you are satisfied that it does what it is supposed to do, it is useful to start thinking
     about it as a step in the larger operation that it performs rather than how its specific lines of
     code work.</p>
-  <p>In computer programming, this breaking down of a task or problem into smaller, solveable, sub-tasks, is called <term>decomposition</term> and 
-  learing how to do this is crucial to the successful implementation of any
-    program of more than 50 or so lines (and plenty of smaller ones too). And <term>functions</term> For example, the program
+  <p>In computer programming, this breaking down of a task or problem into smaller, solveable, sub-functions, is called <term>decomposition</term> and 
+  learning how to do this is crucial to the successful implementation of any
+    program of more than 50 or so lines (and plenty of smaller ones too). For example, the program
     that displays the Instagram landing page is made up of functions that:</p>
   <p>
     <ul>
