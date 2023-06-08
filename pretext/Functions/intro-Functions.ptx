@@ -59,20 +59,17 @@
           <p>The purpose of functions as a means of abstraction</p>
         </li>
         <li>
-          <p>The syntax of functions</p>
-        </li>
-        <li>
-          <p>Parameters (and arguments) and their use with functions</p>
+          <p>The syntax and parts of functions</p>
           <ul>
-          <li>one</li>
-          <li>two</li>
-          </ul>
+            <li>Parameters and arguments</li>
+            <li>Return statement</li>
+            </ul>
         </li>
         <li>
-        <p>Local and global scope</p>
+        <p>Local and global scope and the flow of execution</p>
         </li>
         <li>
-          <p>side effects</p>
+          <p>Side effects</p>
         </li>
       </ul>
     </p>
