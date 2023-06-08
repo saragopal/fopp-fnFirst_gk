@@ -59,15 +59,15 @@
           <p>The purpose of functions as a means of abstraction</p>
         </li>
         <li>
-        <p>The syntax of functions</<p>
-          </li>
+          <p>The syntax of functions</<p>
+        </li>
         <li>
           <p>Parameters (and arguments) and their use with functions</p>
           <ul>
           <li>sub list?</li>
           <li>sub list 2</li>
-          <ul>
-          </li>
+          </ul>
+        </li>
         <li>
         <p>Local and global scope</p>
         </li>
