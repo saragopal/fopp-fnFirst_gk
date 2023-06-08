@@ -152,6 +152,12 @@
       <p>The value provided as the result of a function call.</p>
     </gi>
     <gi>
+      <title>scope</title>
+      <p>A description of where an identified item (a variable, a function etc.) is recognized and accessible: where in a program is that item valid to be used.
+              For example, a function can only be called after it has been defined. A parameter within a function can only be accessed by instructions
+              within the function.</p>
+    </gi>
+    <gi>
       <title>side effect</title>
       <p>Some lasting effect of a function call, other than its return value. Side effects include print statements, changes to mutable objects, and changes to the values of global variables.</p>
     </gi>
