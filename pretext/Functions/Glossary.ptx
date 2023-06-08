@@ -2,6 +2,13 @@
 <section xml:id="functions_glossary">
   <title>Glossary</title>
   <glossary sorted="False">
+     <gi>
+      <title>abstraction</title>
+      <p>A common computer programming approach and problem solving technique where, in order to make the algorithm less complex
+            easier to understand, the various sub-steps to the solution are 'hidden' (often in functions but also in data structures).
+            Using abstraction allows computer programmers to work with the solution's components without having conceptualize
+            the entire system.</p>
+    </gi>
     <gi>
       <title>argument</title>
       <p>A value provided to a function when the function is called. This value

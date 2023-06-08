@@ -7,10 +7,11 @@
     defined and you are satisfied that it does what it is supposed to do, it is useful to start thinking
     about it as a step in the larger operation that it performs rather than how its specific lines of
     code work.</p>
-  <p>In computer programming, this breaking down of a task or problem into smaller, solveable, sub-functions, is called <term>decomposition</term> and 
-  learning how to do this is crucial to the successful implementation of any
-    program of more than 50 or so lines (and plenty of smaller ones too). For example, the program
-    that displays the Instagram landing page is made up of functions that:</p>
+  <p>In computer programming, this breaking down of a task or problem into smaller, solveable, sub-functions, is called <term>decomposition</term>
+  and the idea of hiding the complexity of the sub-steps of the algorithm in a function is called <term>abstraction</term>.
+  Learning how to do both of these problem solving techniques is crucial to the successful implementation of any
+    program of more than 50 or so lines (and plenty of smaller ones too). For example, the programmer who coded the Instagram landing page
+    decomposed it into functions that:</p>
   <p>
     <ul>
       <li>
@@ -55,10 +56,20 @@
     <p>
       <ul>
         <li>
-          <p>functions as a means of abstraction</p>
+          <p>The purpose of functions as a means of abstraction</p>
         </li>
         <li>
-          <p>local and global scope</p>
+        <p>The syntax of functions</<p>
+          </li>
+        <li>
+          <p>Parameters (and arguments) and their use with functions</p>
+          <ul>
+          <li>sub list?</li>
+          <li>sub list 2</li>
+          <ul>
+          </li>
+        <li>
+        <p>Local and global scope</p>
         </li>
         <li>
           <p>side effects</p>
