@@ -282,7 +282,7 @@ adding()
   
   <p>In the code below, notice and interpret the different error messages produced when each is run.</p>
   <ul>
-    <<li>
+    <li>
       <p><alert>NameError:</alert> Local variables cannot be used (add one to 'existing value') if it does not yet have a value.</p>
       <p>In a similar way, a function is not defined before its function header.</p>
     </li>
