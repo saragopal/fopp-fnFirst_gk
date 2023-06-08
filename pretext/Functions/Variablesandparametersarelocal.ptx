@@ -293,31 +293,36 @@ adding()
     </li>
   </ul>
   <p>
+    <program language="python">
+      <input>
+      v1 += 1
+
+      NameError: name 'v1' is not defined
+
+        </input>
+    </program>
+  </p>
+  <p>
+    <program language="python">
+      <input>
+        foo()
+        
+        def foo():
+            v1 += 1
+        
+        NameError: name 'foo' is not defined
+      </input>
+    </program>
+  </p>
+
+  <p>
   <program language="python">
     <input>
-    v1 += 1
-
-    NameError: name 'v1' is not defined
-
-    </input></program>
-    </p>
-    <p>
-  <program language="python">
-    foo()
-    
-    def foo():
-        v1 += 1
-    
-    NameError: name 'foo' is not defined
-    </input></program></p>
-
-    <p>
-  <program language="python">
       def foo():
         v1 += 1
-    foo()
+      foo()
       
-    UnboundLocalError: local variable 'v1' referenced before assignment
+      UnboundLocalError: local variable 'v1' referenced before assignment
 </input>
   </program>
   </p>
