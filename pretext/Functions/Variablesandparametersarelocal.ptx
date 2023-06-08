@@ -6,7 +6,9 @@
             outside. For example, consider again the <c>square</c> function:</p>
 
   <note>
-    <p>We ommited the docstring, type annotations, and have used non-self-documenting names in the following example on purpose; 
+    <p>We've ommited the docstring, type annotations, and have used non-self-documenting names in the following example on purpose,
+    to put you into a similar position as the code's interpreter - it can only 'do' what the code tells it to 
+    and cannot 'know' what it is supposed to do. But it will follow the scope rules.</p>
   </note>
   <program xml:id="ac4_8_1" interactive="activecode" language="python">
     <input>
