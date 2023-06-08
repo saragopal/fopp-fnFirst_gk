@@ -66,11 +66,11 @@ def display_msg(msg: str):
   <p>the function will receive two string values, concatenate them, and return the resulting string &#x2018;515'. The <c>int</c>
             annotations are completely ignored by the Python interpreter. Think of type annotations as a kind of function
             documentation, and remember that they have no effect on the program's behavior.</p>
-  <p>Type annotations are an optional aspect of documenting functions. Still, type annotations are an important tool to increase
-            the readability of your code, and you should use them in your programs.</p>
+  <p>Type annotations are an optional aspect of documenting functions, docstrings, and are an important tool to increase
+            the readability of your code. <alert>You should use them in your programs.</alert></p>
   <note>
     <p>Although type annotations are ignored by the Python interpreter, there are tools such as
-                <url href="http://mypy-lang.org/" visual="http://mypy-lang.org/">mypy</url> that can analyze your code containing type annotations and flag potential problems.</p>
+                <url href="http://mypy-lang.org/" visual="http://mypy-lang.org/">mypy</url> that can analyze code containing type annotations and flag potential problems.</p>
   </note>
   <p>
     <term>Check your understanding</term>
