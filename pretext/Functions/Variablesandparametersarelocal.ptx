@@ -47,11 +47,13 @@ print(z)
   <p>Within CodeLens, use <c>Edit this code</c> to delete line 6 <c>print(y)</c> and take a moment to work out for yourself what will now happen.
   Then <c>Visualize Execution</c> and proceed through all the steps. <em>What happened? Why?</em></p>
 
-  <p>By tracing the algorithm (the <term>flow of execution</term>) and the CodeLens fames, you will see that formal parameters are also local variables; their scope is limited to within their function.
-    For example, after a function is called, the scope of the local variables <c>x</c> and <c>y</c> exist with the function's invocation (line 6 invoking line 1). And, 
-        the lifetime of those parameters </c> ends when the function completes its execution and the scope passes back to the calling instruction (line 3's <c>return</c> to line 6).</p>
-  <p>When a function assigns and uses a local variable, upon completing its execution, it is not possible to recover that local variable the next time it is called.
-      Each call of the function creates new local variables, and their lifetimes expire when the function returns to the caller's scope.</p>
+  <p>By tracing the algorithm (the <term>flow of execution</term>) and the CodeLens fames, you will see that formal parameters are also local variables; 
+  their scope is limited to within their function.</p>
+  <p>For example, after a function is called, the scope of the local variables <c>x</c> and <c>y</c> exist with the function's invocation (line 6 invoking line 1). And, 
+    the lifetime of those parameters ends when the function completes its execution and the scope passes back to the calling instruction (line 3's <c>return</c> to line 6).</p>
+
+  <p><note>When a function assigns and uses a local variable, upon completing its execution, it is not possible to recover that local variable the next time it is called.
+      Each call of the function creates new local variables, and their lifetimes expire when the function returns to the caller's scope.</note></p>
       <p><em>Try stepping through the code and any time there is an error, <c>Edit this code</c> to fix the <em>runtime error</em>.</p>
   <p>
     <term>Check Your Understanding</term>
