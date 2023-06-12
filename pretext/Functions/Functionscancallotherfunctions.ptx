@@ -67,7 +67,7 @@
   
   </p> </li>
   </ul> 
-  <p> Then the area of , their area can be found with the following formula:</p>
+  <p> Then the area of a regular polygon can be found with the following formula:</p>
   <p>
   <me>
   area = perimeter * apothem / 2
@@ -109,7 +109,7 @@
       def apothem (sides:int,length:float ) -> float:
         """With sides more than 3 and length greater than zero"""
         from math import tan, radians # math module's tan only works in radians
-        anApo = length / (2 * tan (radians(radians(180/sides)))
+        anApo = length / (2 * tan (radians(180/sides)))
         return anApo 
 
       def perimeter (sides:int, length:float) -> float:
