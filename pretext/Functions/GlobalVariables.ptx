@@ -2,11 +2,11 @@
 <section xml:id="functions_global-variables">
   <title>Global Variables</title>
   <p>Variable names that are at the <em>top-level</em>, not inside any function definition,
-            are called global.</p>
-  <p>It is legal for a function to access a global variable. However, this is considered
-            <term>bad form</term> by nearly all programmers and should be avoided. This subsection
+            are called <term>global variables</term> and they have a global scope.</p>
+  <p>It is possible and syntactically valid for a function to access a global variable. However, doing so is considered
+            <alert>bad form</alert> by nearly all programmers and should be avoided. This subsection
             includes some examples that illustrate the potential interactions of global and
-            local variables. These will help you understand exactly how python works. Hopefully,
+            local variables. These will help you better understand variable scope. Hopefully,
             they will also convince you that things can get pretty confusing when you mix
             local and global variables, and that you really shouldn't do it.</p>
 
@@ -21,7 +21,7 @@
   
 </note>
 
-  <p>Look at the following, nonsensical variation of the square function.</p>
+  <p>Look at the following, working but poor form variation of the square function.</p>
   <program xml:id="ac4_9_1" interactive="activecode" language="python">
     <input>
 def badsquare(x):
@@ -33,22 +33,22 @@ result = badsquare(10)
 print(result)
         </input>
   </program>
-  <p>Although the <c>badsquare</c> function works, it is silly and poorly written. We have done it here to illustrate
+  <p>Although the <c>badsquare</c> function works, it is poorly written. It illustrates
             an important rule about how variables are looked up in Python.
             First, Python looks at the variables that are defined as local variables in
-            the function.  We call this the <term>local scope</term>. If the variable name is not
+            the function.  Recall, this is the function's <alert>local</alert> scope. If the variable name is not
             found in the local scope, then Python looks at the global variables,
-            or <term>global scope</term>. This is exactly the case illustrated in the code above.
-            <c>power</c> is not found locally in <c>badsquare</c> but it does exist globally.
-            The appropriate way to write this function would be to pass power as a parameter.
-            For practice, you should rewrite the badsquare example to have a second parameter called power.</p>
-  <p>There is another variation on this theme of local versus global variables. Assignment statements in the local function cannot
-            change variables defined outside the function. Consider the following
+            or <alert>global</alert> scope. This is the case illustrated in the code above.
+            The variable <c>power</c> is not found locally in <c>badsquare</c> but it does exist globally.
+            The appropriate way to write this function would be to pass power as a second parameter.
+            Practice this by using <c>Edit this code</c> to rewrite the badsquare example to have a second parameter.</p>
+  <p>There is another variation on this theme of local versus global variables. <alert>Assignment statements in the local function cannot
+            change variables defined outside the function.</alert> Consider the following
             codelens example:</p>
   <program xml:id="clens4_9_1" interactive="codelens" language="python">
     <input>
 def powerof(x,p):
-    power = p   # Another dumb mistake
+    power = p   # Another example of poor form
     y = x ** power
     return y
 
