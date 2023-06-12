@@ -114,9 +114,12 @@ print(z)
 
 
   <note>
-  <p><alert>Instructor's Counsel:</alert> <em>Just because you can, doesn't mean you should.</em> Global variables exist,
-  but, as a novice programmer, you really should not use them. </<p>
-    </note>
+
+  <p>
+    <alert>Instructor's Counsel:</alert> <em>Just because you can, doesn't mean you should.</em> Global variables exist,
+  but, as a novice programmer, you really should not use them. </p>
+
+  </note>
   
   <p>
     <alert>Check your understanding</alert>
