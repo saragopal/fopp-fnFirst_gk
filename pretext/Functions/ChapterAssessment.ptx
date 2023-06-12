@@ -148,44 +148,44 @@
     <statement>
       <p>You will need to write three functions for this problem.</p>
       <ul>
-      <li>
-        <p> The first function, <c>average</c>
-        that takes in any three numbers and returns the average.
-        </p>
-      </li>
-      <li>
-        <p> The second function
-        called <c>diffSquare</c> that takes one number and the average of the three numbers, subtracts those numbers, and then returns the square of this difference.
-        </p>
-      </li>
-      <li>
-        <p>
-          A third function called <c>stdev</c> which is passed the three numbers and then:</p>
-          <ol>
-          <li>
-            <p>
-              Calls on <c>average</c> to find the averaage of those three values, and assign the resulting average to a local variable.
+        <li>
+          <p> The first function, <c>average</c>
+          that takes in any three numbers and returns the average.
+          </p>
+        </li>
+        <li>
+          <p> The second function
+          called <c>diffSquare</c> that takes one number and the average of the three numbers, subtracts those numbers, and then returns the square of this difference.
+          </p>
+        </li>
+        <li>
+          <p>
+            A third function called <c>stdev</c> which is passed the three numbers and then:
             </p>
-          </li>
-          <li>
-            <p>
-              Calls on <c>diffSquare</c> three times, passing each of the three numbers in turn and the local variable average, assigning the resulting squared differences to three
-              local variables.
-            </p>
-          </li>
-          <li>
-            <p>
-              Calls on <c>averages</c> again, this time passing in the three squared differences, and assigning this new average to a variable called <c>variance</c>.
-            </p>
-          </li>
-          </ol>
-          <li>
-            <p>
-              Finally, <c>stdev</c> finds the square root of <c>variance</c> as the standard deviation
-            </p>
-          </li>
-        </p>
-      </li>
+            <ol>
+              <li>
+                <p>
+                  Calls on <c>average</c> to find the averaage of those three values, and assign the resulting average to a local variable.
+                </p>
+              </li>
+              <li>
+                <p>
+                  Calls on <c>diffSquare</c> three times, passing each of the three numbers in turn and the local variable average, assigning the resulting squared differences to three
+                  local variables.
+                </p>
+              </li>
+              <li>
+                <p>
+                  Calls on <c>averages</c> again, this time passing in the three squared differences, and assigning this new average to a variable called <c>variance</c>.
+                </p>
+              </li>
+            </ol>
+        </li>
+        <li>
+          <p>
+            Finally, <c>stdev</c> finds the square root of <c>variance</c> as the standard deviation
+          </p>
+        </li>
       </ul>
       <p> Do not worry about rounding the decimals.</p>
     </statement>
