@@ -25,8 +25,8 @@
     the rules of the Python language for what should and should not execute as it flows through the program. But
     when the function returns, control goes back to the calling location, and a return value can
     come back with it.</p>
-  <p>You've seen some function calls in earlier chapters. When we told you about the function <c>
-    square</c> that we defined, you saw that the expression <c>square(2)</c> evaluated to the
+  <p>You've seen some function calls in earlier chapters. When we told you about the function <c>square</c> 
+  that we defined, you saw that the expression <c>square(2)</c> evaluated to the
     integer value <c>4</c>.</p>
   <p>That's because the <c>square</c> function <em>returns</em> a value: the square of whatever
     input is passed into it.</p>
@@ -37,20 +37,20 @@
         <dl>
           <li>
             <title>Save it for later.</title>
-            <p>The returned value may be:</p>
+            <p>The returned value may be:<fn>The last two possibilities, data structures and files, will be discussed in later chapters</fn></p>
             <p>
               <ul>
                 <li>
                   <p>Assigned to a variable. For example, <c>w = square(3)</c></p>
                 </li>
                 <li>
-                  <p>Put in a data structure like a list. For example, <c>L.append(square(3))</c></p>
+                  <p>Put into a data structure like a list. For example, <c>L.append(square(3))</c></p>
                 </li>
                 <li>
                   <p>Sent to a file. For example, <c>someFile.write(square(3))</c></p>
                 </li>
               </ul>
-              <aside><p>The last two possibilities, data structures and files, will be discussed in later chapters</p></aside>
+              
             </p>
           </li>
         </dl>
@@ -83,7 +83,7 @@
     definition and not bother to return anything from the function (the value None will be
     returned). In that case, invoke the function without a print statement. For example, you can
     have an entire line of code that reads <c>f(3)</c>. That will run the function f and throw away
-    the return value. Of course, if square doesn't print anything out or have any side effects, it's
+    the return value. Of course, if square doesn't print anything out, it's
     useless to call it and do nothing with the return value. But with a function that has print
     statements inside it, it can be quite useful.</p>
   <p>The other possibility is to return a value from the function and print it, as in <c>print(f(3))</c>.
