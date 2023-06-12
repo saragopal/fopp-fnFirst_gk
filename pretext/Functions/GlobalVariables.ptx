@@ -227,8 +227,29 @@ print(z)
     may mess up the processing for all the other functions. Consider a function that is designed to round and display
     an assessment's mark to the nearest whole percentage (78.7% becomes 79%). However, when calculating 
     an overall course grade, we don't use the individual assignments' rounded marks, we use their raw, unrounded marks (you don't 'round' a 'rounded' mark).
-    So global changes to individual course grades would make the overall course grade incorrect. However, it <em>might</em> make sense to 
+    So global changes to individual assessement grades would make the overall course grade incorrect. However, it <em>might</em> make sense to 
     round the overall course grade (changed as a global variable) when that final overall grade is being sent to the Registrar.</p>
+    <p>An example of an appropriate use of a global variable is the use of a constant by a series of functions. In the example below, <c>PI</c> is 
+    a global variable (a constant) that does not need to be defined locally for each of the functions. <em>Do note, <c>PI</c> is <alert>not</alert>
+    changed within any of the functions.</<p>
+       <program language="python">
+    <input>
+    from math import pi as PI
+      def areaCircle( anyRadius: float ) -> float:
+        """with any length greater than zero, return area"""
+        return PI * anyRadius**2
+
+      def circumferenceCircle(anyRadius:float) -> float:
+        """with any length greater than zero, return circumference"""
+        return 2 * PI * anyRadius
+
+      def volumeSphere(anyRadius:float) -> float:
+        """With any length greater than zero, return volume"""
+        return 4/3 * PI * radius**3
+
+    </input>
+  </program>
+    </p>
     
   </note>
 </section>
