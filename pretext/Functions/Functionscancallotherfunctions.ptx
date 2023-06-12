@@ -47,7 +47,7 @@
   
   
   
-  <<p>Let's use composition to build up another function: finding the area of <alert>any</alert> regular polygon</p>
+  <p>Let's use composition to build up another function: finding the area of <alert>any</alert> regular polygon</p>
   <p>Knowing that:</p>
   <ul>
   <li><p>Regular polygons are 2D shapes that have more than 3 sides where all sides have the same length.</p></li>
@@ -61,7 +61,7 @@
   </li>
   <li><p>The perimeter of the polygon can be found with:</p>
   <p>
-  <<me>
+  <me>
     perimeter = length of side * number of sides
   </me>
   
