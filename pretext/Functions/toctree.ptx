@@ -17,11 +17,9 @@
     <xi:include href='./Exercises.ptx' />
     <xi:include href='./ChapterAssessment.ptx' />
 
-    <!-- topics to include in Functions Revisited
-        <!-- xi:include href='./SideEffects.ptx' />  -->
+    <!-- topics to include in Functions Revisited-->
+        <!-- xi:include href='./SideEffects.ptx' / --> 
 
-        <!-- <xi:include href='./Afunctionthataccumulates.ptx' /> -->
-        <!-- <xi:include href='./PassingMutableObjects.ptx' /> -->
-      
-    -->
+        <!-- <xi:include href='./Afunctionthataccumulates.ptx' / -->
+        <!-- <xi:include href='./PassingMutableObjects.ptx' / -->
 </chapter>
