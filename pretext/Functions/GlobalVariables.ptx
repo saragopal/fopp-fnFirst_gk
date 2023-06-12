@@ -232,7 +232,7 @@ print(z)
     <p>An example of an appropriate use of a global variable is the use of a constant by a series of functions. In the example below, <c>PI</c> is 
     a global variable (a constant) that does not need to be defined locally for each of the functions. Do note, <c>PI</c> is <alert>not</alert>
     changed within any of the functions.</p>
-
+<p>
        <program language="python">
     <input>
     from math import pi as PI
