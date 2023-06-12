@@ -195,11 +195,9 @@
       Using these values: 10, 13, 15,
       you should get:
       - an average of 12.66666667.
-      - these squared differences are:
-        - 7.1111111 0.11111111, 5.4444444
+      - these squared differences are: 7.1111111 0.11111111, 5.4444444
       - which sum to 12.66666667 and average to be 4.2222222
-      - the square root of which is:
-        - 2.054804667
+      - the square root of which is: 2.054804667
         """"
 
       def average( ,  ,  ): 
