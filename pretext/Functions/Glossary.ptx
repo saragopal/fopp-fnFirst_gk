@@ -163,8 +163,8 @@
     </gi>
     <gi>
       <title>stack frame</title>
-      <p>A frame that keeps track of the values of local variables during a function execution,
-                            and where to return control when the function execution completes.</p>
+      <p>A frame that keeps track of the values of local variables during a function execution (within the scope of the function),
+                            and where (what scope) to return control to when the function execution completes.</p>
     </gi>
     <gi>
       <title>type annotation</title>

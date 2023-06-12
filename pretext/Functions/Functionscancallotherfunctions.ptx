@@ -4,11 +4,11 @@
   <p>It is important to understand that each of the functions we write can be used and called from
     other functions we write. This is one of the most important ways that computer programmers take
     a large problem and break it down into a group of smaller problems. This process of breaking a
-    problem into smaller subproblems is called <term>functional decomposition</term>.</p>
+    problem into smaller, more easily solved, subproblems is called <term>functional decomposition</term>.</p>
   <p>Here's a simple example of functional decomposition using two functions. The first function
-    called <c>square</c> simply computes the square of a given number. The second function called <c>
-    sum_of_squares</c> makes use of square to compute the sum of three numbers that have been
-    squared.</p>
+    called <c>square</c> simply computes the square of a given number. The second function called <c>sum_of_squares</c> 
+    makes use of <c>square</c> to compute the sum of three numbers that have been
+    squared. <em>BTW: This 'sum of squares' process is part of a very common statistical calcuation used to determine variation and ultimately standard deviation.</em></p>
   <program xml:id="clens4_10_1" interactive="codelens" language="python">
     <input>
       def square(x):
@@ -30,64 +30,110 @@
     </input>
   </program>
   <p>Even though this is a pretty simple idea, in practice this example illustrates many very
-    important Python concepts, including local and global variables along with parameter passing.
-    Note that the body of <c>square</c> is not executed until it is called from inside the <c>
-    sum_of_squares</c> function for the first time on line 6.</p>
-  <p>Also notice that when <c>square</c> is called (at Step 8, for example), there are two groups of
+    important Python concepts, including local variables, global variables, parameter passing, and how a larger function can be <alert>decomposed</alert>
+    into smaller sub-functions.The function <c>sum_of_squares</c> is <alert>composed</alert>of the <c>square</c>function and some addition.</p>
+    <p>
+    Note that the body of <c>square</c> is not executed until it is called from inside the <c>sum_of_squares</c> function for the first time on line 6.</p>
+
+  <p>Also notice that when <c>square</c> is called (at Steps 8, 13, and 18), there are two groups of
     local variables, one for <c>square</c> and one for <c>sum_of_squares</c>. Each group of local
     variables is called a <term>stack frame</term>. The variables <c>x</c>, and <c>y</c> are local
     variables in both functions. These are completely different variables, even though they have the
     same name. Each function invocation creates a new frame, and variables are looked up in that
-    frame. Notice that at step 9, y has the value 25 is one frame and 2 in the other.</p>
-  <p>What happens when you to refer to variable y on line 3? Python looks up the value of y in the
+    frame. Notice that at step 11, y has the value 25 is one frame and 2 in the other.</p>
+  <p>What happens when you to refer to variable y on line 3 at this step? Python looks up the value of y in the
     stack frame for the <c>square</c> function. If it didn't find it there, it would go look in the
     global frame.</p>
-  <!-- <p>Let's use composition to build up a little more useful function. Recall from the
-  dictionaries
-    chapter that we had a two-step process for finding the letter that appears most frequently in a
-    text string:</p>
+  
+  
+  
+  <<p>Let's use composition to build up another function: finding the area of <alert>any</alert> regular polygon</p>
+  <p>Knowing that:</p>
+  <ul>
+  <li><p>Regular polygons are 2D shapes that have more than 3 sides where all sides have the same length.</p></li>
+  <li><p>The perpendicular measurement from the midpoint of one of the sides to the center of the polygon is called the <alert>apothem</alert>.</p></li>
+  <li><p>The length of the apothem can be found with:</p>
+  <p> 
+  <me>
+    apothem = length of side / (2*tan(180/n))
+  </me>
+   </p> 
+  </li>
+  <li><p>The perimeter of the polygon can be found with:</p>
   <p>
-    <ol marker="1">
-      <li>
-        <p>Accumulate a dictionary with letters as keys and counts as values. See <xref
-            ref="dictionaries_intro-accumulating-multiple-results-ina-dictionary" />.</p>
-      </li>
-      <li>
-        <p>Find the best key from that dictionary. See <xref
-            ref="dictionaries_accumulatingthe-best-key" />.</p>
-      </li>
-    </ol>
+  <<me>
+    perimeter = length of side * number of sides
+  </me>
+  
+  </p> </li>
+  </ul> 
+  <p> Then the area of , their area can be found with the following formula:</p>
+  <p>
+  <me>
+  area = perimeter * apothem / 2
+  </me>
+    
   </p>
-  <p>We can make functions for each of those and then compose them into a single function that finds
-    the most common letter.</p>
-  <program xml:id="ac_11_9_1" interactive="activecode" language="python">
+
+  <p>We can decompose the problem of finding the area of a regular polygon into:</p>
+  <ol>
+  <li>
+    <p>
+      Set the number of sides.
+    </p>
+  </li>
+  <li>
+    <p>
+      Set the length of the sides.
+    </p>
+  </li>
+  <li>
+    <p>
+      Determine the apothem.
+    </p>
+  </li>
+  <li>
+    <p>
+      Determine the perimeter.
+    </p>
+  </li>
+  <li>
+    <p>
+      Determine the area.
+    </p>
+  </li>
+  </ol>
+  <p>Thus the sub functions are:</p>
+<program language="python">
     <input>
-      def most_common_letter(s):
-      frequencies = count_freqs(s)
-      return best_key(frequencies)
+      def apothem (sides:int,length:float ) -> float:
+        """With sides more than 3 and length greater than zero"""
+        from math import tan, radians # math module's tan only works in radians
+        anApo = length / (2 * tan (radians(radians(180/sides)))
+        return anApo 
 
-      def count_freqs(st):
-      d = {}
-      for c in st:
-      if c not in d:
-      d[c] = 0
-      d[c] = d[c] + 1
-      return d
+      def perimeter (sides:int, length:float) -> float:
+        """with sides more than 3 and length greater than zero"""
+        aPer = sides * length
+        return aPer 
 
-      def best_key(dictionary):
-      ks = dictionary.keys()
-      best_key_so_far = list(ks)[0] # Have to turn ks into a real list before using [] to select an
-      item
-      for k in ks:
-      if dictionary[k] &gt; dictionary[best_key_so_far]:
-      best_key_so_far = k
-      return best_key_so_far
+      def area(sides:int, length:float)->float:
+        """with sides more than 3 and length greater than zero"""
+        apo = apothem(sides,length)
+        per = perimeter(sides, length)
+        return per * apo /2 
 
-      print(most_common_letter("abbbbbbbbbbbccccddddd"))
     </input>
-  </program> -->
+  </program>
+
+<p>On paper, trace what will happen, the values of the local and global variables with this function call testing a square with of 10 units long: <c>test=area(4,10)</c>. 
+Try some other polygons of your own to test the algorithm. <em>In your own words, express how the algorithm to find the area of a regular polygon has been
+functionally decomposed.</em></p>
+
+
+
   <p>
-    <term>Check your Understanding</term>
+    <alert>Check your Understanding</alert>
   </p>
   <exercise label="ac4_10_1">
     <statement>
