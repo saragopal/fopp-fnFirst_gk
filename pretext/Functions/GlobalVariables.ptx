@@ -11,7 +11,7 @@
             local and global variables, and that you really shouldn't do it.</p>
 
 <note>
-  <title>Editor's Note</title>
+  <title>Instructor's Note</title>
   <p>
     Relying on global variables is a really bad habit to pick up, as
     Python is a language that lets you get away with gloabls pretty

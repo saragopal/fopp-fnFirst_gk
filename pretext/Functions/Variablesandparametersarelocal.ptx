@@ -39,23 +39,22 @@ print(z)
 
   <p>The local variable <c>y</c> only exists while the function is being executed &#x2014; we call this its <term>lifetime</term>. When the
             execution of the function terminates (returns), the local variables are destroyed and the code passes outside of the function's scope. 
-            CodeLens helps you visualize this because the function's local variables disappear after the function returns to the function caller's scope (line5). 
-            Go back and step through the statements again, paying
+            CodeLens helps you visualize this because the function's local variables disappear after the function returns to the function caller's scope (line 5).</p>
+  <p>Go back and step through the statements again, paying
             particular attention to the variables that are created when the function is called and note when they are subsequently
-            destroyed with the function's return.</p>
+            destroyed with the function's return. </p>
+  <p>Use <c>Edit this code</c> to delete line 6 <c>print(y)</c> and take a moment to work out for yourself what will now happen.
+  Then <c>Visualize Execution</c> and proceed through all the steps. Answer for yourself <em>what happened? Why?</em></p>
 
-  <p>Within CodeLens, use <c>Edit this code</c> to delete line 6 <c>print(y)</c> and take a moment to work out for yourself what will now happen.
-  Then <c>Visualize Execution</c> and proceed through all the steps. <em>What happened? Why?</em></p>
-
-  <p>By tracing the algorithm (the <term>flow of execution</term>) and the CodeLens fames, you will see that formal parameters are also local variables; 
+  <p>By tracing the algorithm (the <term>flow of execution</term>) and watching the CodeLens frames (scope), you can see that formal parameters are local variables; 
   their scope is limited to within their function.</p>
-  <p>For example, after a function is called, the scope of the local variables <c>x</c> and <c>y</c> exist with the function's invocation (line 6 invoking line 1). And, 
-    the lifetime of those parameters ends when the function completes its execution and the scope passes back to the calling instruction (line 3's <c>return</c> to line 6).</p>
+  <p>For example, after a function is called, the scope of the local variable <c>x</c> exists with the function's invocation (lines 1 through 3). And, 
+    the lifetime of all local parameters ends when the function completes its execution and the scope passes back to the calling instruction (line 3's <c>return</c> to line 6).</p>
 
   <p><note>When a function assigns and uses a local variable, upon completing its execution, it is not possible to recover that local variable the next time it is called.
       Each call of the function creates new local variables, and their lifetimes expire when the function returns to the caller's scope.</note></p>
 
-      <p><em>Try stepping through the code and any time there is an error, <c>Edit this code</c> to fix the runtime error</em>.</p>
+      <p><em>Try stepping through the code again. look for, undestand and fix any other runtime errors</em>.</p>
   <p>
     <term>Check Your Understanding</term>
   </p>
