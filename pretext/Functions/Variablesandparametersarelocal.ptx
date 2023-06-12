@@ -7,7 +7,7 @@
   its definition or assignment will trigger a runtime error because the item is outside of the program's scope at that moment.</p>
   <p>Scope becomes an even more important issue when large problems are decomposed with functions. Within
   a function, its parameters (and any other variable assigned a value in the function's body) can only be accessed by code within the same scope.
-  These <term>local variables</term> only exists inside the function and you cannot use them outside of them. For example, consider again the <c>square</c> function:</p>
+  These <term>local variables</term> only exists inside the function and you cannot use them outside of them. For example, consider the following version of the <c>square</c> function:</p>
 
   <note>
     <p>We've ommitted the docstring, type annotations, and have used non-self-documenting names in the following example on purpose,
@@ -28,31 +28,31 @@ print(z)
         </input>
   </program>
   
-  <p>Examine the code on your own first. Make note of which variables are 'inside' the function's scope.</p>
-  <p>Try running this in Codelens. When a function is invoked in Codelens, the local scope is separated from  the program's <term>global</term> scope by
-      'Frame' boxes. Variables in the currently active <alert>local</alert> scope will be placed in a blue box while <term>global variables</term>
-      will stay in the global frame. 
-      Press the &#x2018;Next &gt;&gt;' button until you see an error message. When we try to use <c>y</c> on line 6 (outside the
-            function) Python looks for a global variable named <c>y</c> but does not find one. This results in the runtime error:
+  <p><em>Examine the code on your own first. Make note of which variables are 'inside' the function's scope.</em></p>
+  <p><em>Show in Codelens</em> and step through the code with the <c>Next</c>&gt; button (follow the <term>flow of execution</term>). Codelens, 
+    indicates the scope of the variables with 'Frame' boxes. Variables that become active, those who's scope is <alert>local</alert> to the function, will be placed in a named box, and
+    <term>global variables</term>, those variables assigned values outside of the function, will stay in the global frame.</p>
+    <p>Go through the steps until you see an error message. When we try to access <c>y</c> on line 6 (outside the
+            function's scope) Python looks for a global variable named <c>y</c> but does not find one. This results in the runtime error:
             <c>Name Error: 'y' is not defined.</c></p>
-  <p> <em>This is neither a syntax nor a semantic error - line 6 is syntactic and the algorithm is still valid </em> however...</p>
+  <p> <em>This is neither a syntax nor a semantic error - line 6 is syntactic and the algorithm is valid </em> however...</p>
 
-  <p>The variable <c>y</c> only exists while the function is being executed &#x2014; we call this its <term>lifetime</term>. When the
+  <p>The local variable <c>y</c> only exists while the function is being executed &#x2014; we call this its <term>lifetime</term>. When the
             execution of the function terminates (returns), the local variables are destroyed and the code passes outside of the function's scope. 
-            CodeLens helps you visualize this
-            because the function's local variables disappear after the function returns to the function caller's scope (line5). Go back and step through the statements paying
+            CodeLens helps you visualize this because the function's local variables disappear after the function returns to the function caller's scope (line5). 
+            Go back and step through the statements again, paying
             particular attention to the variables that are created when the function is called and note when they are subsequently
             destroyed with the function's return.</p>
 
   <p>Within CodeLens, use <c>Edit this code</c> to delete line 6 <c>print(y)</c> and take a moment to work out for yourself what will now happen.
   Then <c>Visualize Execution</c> and proceed through all the steps. <em>What happened? Why?</em></p>
 
-  <p>Hopefully you will have discovered that formal parameters are also local variables and their scope is limited to within their function. For example,
-        the lifetime of <c>x</c> begins when
-            <c>square</c> is called, and its lifetime ends when the function completes its execution and the scope passes back to the calling instruction.</p>
-  <p>It is not possible for a function to set some local variable to a value, complete its execution, and then when it
-            is called again next time, recover the local variable. Each call of the function creates new local variables, and
-            their lifetimes expire when the function returns to the caller's scope.</p>
+  <p>By tracing the algorithm (the <term>flow of execution</term>) and the CodeLens fames, you will see that formal parameters are also local variables; their scope is limited to within their function.
+    For example, after a function is called, the scope of the local variables <c>x</c> and <c>y</c> exist with the function's invocation (line 6 invoking line 1). And, 
+        the lifetime of those parameters </c> ends when the function completes its execution and the scope passes back to the calling instruction (line 3's <c>return</c> to line 6).</p>
+  <p>When a function assigns and uses a local variable, upon completing its execution, it is not possible to recover that local variable the next time it is called.
+      Each call of the function creates new local variables, and their lifetimes expire when the function returns to the caller's scope.</p>
+      <p><em>Try stepping through the code and any time there is an error, <c>Edit this code</c> to fix the <em>runtime error</em>.</p>
   <p>
     <term>Check Your Understanding</term>
   </p>
