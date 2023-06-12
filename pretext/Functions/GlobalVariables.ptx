@@ -237,16 +237,16 @@ print(z)
     <input>
     from math import pi as PI
       def areaCircle( anyRadius: float ) -> float:
-        """with any length greater than zero, return area"""
-        return PI * anyRadius**2
+        """with any length greater than zero, returns area"""
+        return (PI * anyRadius**2)
 
       def circumferenceCircle(anyRadius:float) -> float:
-        """with any length greater than zero, return circumference"""
-        return 2 * PI * anyRadius
+        """with any length greater than zero, returns circumference"""
+        return (2 * PI * anyRadius)
 
       def volumeSphere(anyRadius:float) -> float:
-        """With any length greater than zero, return volume"""
-        return 4/3 * PI * radius**3
+        """With any length greater than zero, returns volume"""
+        return (4/3 * PI * anyRadius**3)
 
     </input>
   </program>
