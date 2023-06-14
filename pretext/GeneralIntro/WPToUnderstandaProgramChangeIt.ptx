@@ -1,10 +1,13 @@
 <?xml version="1.0"?>
 <section xml:id="general-intro_to-understand-a-program-change-it">
   <title>To Understand a Program, Change It!</title>
-  <p>To check your understanding or your predictions, you will run a program.</p>
+  <p>To check your understanding or your predictions, <alert>always run the program.</alert> This seems like 
+  an obvious step a programmer would always make, but it is something that novice programmers too often overlook.</p>
   <p>To check your understanding about the state of variables before your code snippet runs, add
-    diagnostic print statements that print out the types and values of variables. Add these print
+    diagnostic print statements that print out the types and values of variables. Sometimes referred to as 'echo prints', add these print
     statements just <em>before</em> the code snippet you are trying to understand.</p>
+
+    
   <p>If you made a prediction about the output that will be generated when the code snippet runs,
     then you can just run
     the program. If, however, you made a prediction about a change that occurs in the value of a
