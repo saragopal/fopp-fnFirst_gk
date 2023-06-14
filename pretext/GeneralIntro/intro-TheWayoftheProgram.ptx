@@ -23,16 +23,22 @@
     <p>
       <ul>
         <li>
-          <p>Introduce terminology used in computer science</p>
+          <p>Introduce terminology used to describe how solutions are expressed.</p>
         </li>
         <li>
-          <p>Introduce the features of this book</p>
+          <p>
+            Introduce the Python programming language and how it is executed in this book.
+          </p>
+          <li>
+          <p>Distinguish between formal &amp; natural languages.</p>
+        </li>
+            <li>
+          <p>Demonstrate a simple program.</p>
         </li>
         <li>
-          <p>Describe the purpose of programming languages</p>
-        </li>
-        <li>
-          <p>Distinguish between formal &amp; natural languages</p>
+          <p>
+            Introduce the use of comments to express a program's algorithm.
+          </p>
         </li>
       </ul>
     </p>
