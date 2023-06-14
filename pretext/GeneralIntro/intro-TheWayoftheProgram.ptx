@@ -29,10 +29,11 @@
           <p>
             Introduce the Python programming language and how it is executed in this book.
           </p>
-          <li>
+        </li>
+        <li>
           <p>Distinguish between formal &amp; natural languages.</p>
         </li>
-            <li>
+        <li>
           <p>Demonstrate a simple program.</p>
         </li>
         <li>
