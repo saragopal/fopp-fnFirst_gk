@@ -11,13 +11,13 @@
             molecules. And most importantly:</p>
   <blockquote>
     <p>
-      <em>Programming languages are formal languages that have been designed to
-                    express computations.</em>
+      <alert>Programming languages are formal languages that have been designed to
+                    express computations.</alert>
     </p>
   </blockquote>
-  <p>Formal languages tend to have strict rules about syntax. For example, <c>3+3=6</c>
-            is a syntactically correct mathematical statement, but <c>3=+6$</c> is not.
-            H<subscript>2</subscript>O is a syntactically correct chemical name, but <subscript>2</subscript>Zz is
+  <p>Formal languages tend to have strict rules about syntax. For example, <c>3 + 3 = 6</c>
+            is a syntactically correct mathematical statement, but <c>3 = + 6$</c> is not.
+            H&#8322;O is a syntactically correct chemical name, but &#8322;Zz is
             not.</p>
   <p>Syntax rules come in two flavors, pertaining to <term>tokens</term> and structure.
             Tokens are the basic elements of the language, such as words, numbers, and
