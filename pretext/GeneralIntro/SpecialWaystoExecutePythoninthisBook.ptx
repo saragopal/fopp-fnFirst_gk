@@ -14,10 +14,10 @@ print("My first program adds two numbers, 2 and 3:")
 print(2 + 3)
         </input>
   </program>
-  <p>Now try modifying the program shown above.  First, modify the string in the
-            first print statement by changing the word <em>adds</em> to the word <em>multiplies</em>.  Now press
+  <p>Now try modifying the program shown above.  First, modify the text in the
+            first line by changing the word <em>adds</em> to the word <em>multiplies</em>.  Now press
             <em>Save &amp; Run</em> again.  You can see that the result of the program has changed.  However, it still prints
-            <q>5</q> as the answer.  Modify the second print statement by changing the addition symbol, the
+            <q>5</q> as the answer.  Modify the second print statement by changing the addition symbol,
             <c>+</c>, to the multiplication symbol, <c>*</c>.  Press <em>Save &amp; Run</em> again to see the new results.</p>
   <p>As the name suggests, <em>Save &amp; Run</em> also <em>saves</em> your latest version of the code,
             and you can recover it even in later sessions when <em>logged in</em>. If <em>not</em> logged in,
