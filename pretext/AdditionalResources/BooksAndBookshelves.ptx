@@ -166,7 +166,7 @@ Animal Farm,George Orwell,1945
         </program>
         <p>
             You're gonna need to make some edits to some existing functions. Not all these authors have a last name, so you'll have to use their first name without an initial.
-Also, a few searching methods may need to be revised. Some books may have been written in the same year, or by the same author. Change the <c>get_book_by_author()</c> and <c>get_book_by_year()</c> methods to return a list of all matching <c>Book</c> objects. If the search returns only one match, the list will contain only one entry. If the search returns nothing the list will be empty.
+Also, a few searching methods may need to be revised. Some books may have been written in the same year, or by the same author. Change the <c>get_book_by_author()</c> and <c>get_book_by_year()</c> methods to return a list of all matching <c>Book</c> objects. If the search returns only one match, the list will contain only one item. If the search returns nothing the list will be empty.
         </p>
     </subsection>
     <subsection xml:id="additonal_resources-books-bookshelves-final-touches">
