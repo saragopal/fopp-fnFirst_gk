@@ -5,7 +5,7 @@
     computation. The computation might be something as complex as rendering an html page in a web
     browser or encoding a video and streaming it across the network. It can also be a symbolic
     computation, such as searching for and replacing text in a document or (strangely enough)
-    compiling a program.</p>
+    a program that is designed to compile another program.</p>
   <p>The details look different in different languages, but a few basic instructions
     appear in just about every language.</p>
   <dl>
@@ -18,8 +18,12 @@
       <p>Display data on the screen or send data to a file or other device.</p>
     </li>
     <li>
-      <title>math and logic</title>
-      <p>Perform basic mathematical operations like addition and multiplication and logical
+      <title>assignment</title>
+      <p>Create, and give a name to, a memory location that stores a value or process.</p>
+    </li>
+     <li>
+      <title>process</title>
+      <p>Perform basic mathematical operations like addition and multiplication; and logical
         operations like <c>and</c>, <c>or</c>, and <c>not</c>.</p>
     </li>
     <li>
@@ -28,7 +32,7 @@
         statements.</p>
     </li>
     <li>
-      <title>repetition</title>
+      <title>repetition (or interation)</title>
       <p>Perform some action repeatedly, usually with some variation.</p>
     </li>
   </dl>
