@@ -4,20 +4,22 @@
   <p>The goal of this book is to teach you to understand and create computer programs in Python.
             At the beginning of each chapter, we will outline for you the learning goals and objectives
             that should be accomplished once you have gone through the chapter.</p>
-  <p>Understanding computer programs requires algorithmic, mechanistic thinking.
-            Programs specify mechanistic sequences of actions to perform; when executed,
-            they transform input data into output data. They execute very reliably, and
-            very fast, but not creatively. Computers do what you tell them to do, not what you
-            mean for them to do. Thus, understanding computer code
-            involves a lot of mental simulation of what will actually happen, not what you
+  <p>Understanding computer programs requires a very step-by-step approach where
+  each step is very specifically expressed. When executed (run), programs are the sequences of actions performed
+            that transform input data into output data. They execute very reliably, and
+            very fast, but not creatively. <alert>Computers do what you tell them to do, not what you
+            mean for them to do.</alert> Thus, understanding computer code
+            involves a lot of mental simulation of what will <em>actually happen</em>, not what you
             wish would happen.</p>
-  <p>Writing computer programs requires not only mechanistic thinking but creative
-            problem solving. Problem solving means the ability to formulate problems, think
-            creatively about solutions, and express a solution clearly and accurately. As
+  <p>The tools we use to write computer programs can feel quite mechanistic - precise, specific, and linear, but
+          the process of programming requires creative
+            problem solving. Problem solving involves the ability to understand and analyze problems, to think
+            creatively about solutions, and to express a solution clearly and accurately. As
             it turns out, the process of learning to program is an excellent opportunity to
-            practice problem solving skills.</p>
+            practice your problem solving skills.</p>
   <subsection xml:id="general-intro_learning-goals">
     <title>Learning Goals</title>
+    <p>This chapter will:</p>
     <p>
       <ul>
         <li>
