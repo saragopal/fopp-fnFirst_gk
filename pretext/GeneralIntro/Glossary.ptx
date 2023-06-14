@@ -60,6 +60,12 @@
                             humans to read and write.</p>
     </gi>
     <gi>
+  <title>integrated development environment (ID) </title>
+  <p>
+    A software applications that helps programmers code efficiently by providing tools to develop,
+        edit, and test their programs. </p>
+    </gi>
+    <gi>
       <title>interpret</title>
       <p>To execute a program in a high-level language by translating it one
                             line at a time.</p>
@@ -147,6 +153,13 @@
       <title>token</title>
       <p>One of the basic elements of the syntactic structure of a program,
                             analogous to a word in a natural language.</p>
+    </gi>
+    <gi>
+      <title>virtual machine</title>
+      <p>Software that runs programs and apps that does not depend on the computer's physical hardware.
+                This allows those programs and apps to interact with the user in the same way no matter
+                what computer platform (OS, CPU etc.) the user has. Python's virtual machine converts
+                (interprets) the byte code into computer specific machine code. </p>
     </gi>
   </glossary>
 </section>

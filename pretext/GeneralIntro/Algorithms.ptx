@@ -22,7 +22,7 @@
     </p>
   </note>
   <p>Notice that this algorithm consists of a set of steps. It is written in English, for ease of
-            understanding. Although simple algorithms are easily understood when written in English, more complicated
+            understanding but that it assumes the reader knows the required sub-steps. Although simple algorithms are easily understood when written in English, more complicated
             algorithms need more precise notation. For improved precision, algorithms are often written in pseudocode. <term>Pseudocode</term> is
             a notation that is more precise than English but generally not as precise as a programming language.
             The same algorithm expressed in pseudocode might look something like this:</p>
@@ -46,7 +46,7 @@
           </ol>
         </li>
         <li>
-          <p>let <me>hypotenuse = \sqrt{a^2 + b^2}</me></p>
+          <p>Let <me>hypotenuse = \sqrt{a^2 + b^2}</me></p>
         </li>
         <li>
           <p>Display hypotenuse length</p>
@@ -54,8 +54,8 @@
       </ol>
     </p>
   </note>
-  <p>Note how the pseudocode example is more structured, using numbered steps and a hierarchy of sub-steps as needed, and, how it uses variables and a formula
-            to express the mathematics  more precisely.</p>
+  <p>Notice how the pseudocode example is more structured - using numbered steps and a hierarchy of sub-steps as needed; and how it uses variables and a formula
+            to express the mathematics more precisely.</p>
 
   <p>Our goal in computer science is to take a problem and develop an algorithm that can serve as a <alert>general solution</alert>:
           a solution that can work in (most) circumstances.
