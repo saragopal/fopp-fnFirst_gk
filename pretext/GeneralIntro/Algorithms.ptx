@@ -33,16 +33,17 @@
         <li>
           <p>Ask for length of non-hypotenuse sides:</p>
           <ol marker="i">
-          <li>
-            <p>
-              Ask for first side's length. Call this side <m>a</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              Ask for second side's length. Call this side <m>b</m>
-            </p>
-          </li>
+            <li>
+              <p>
+                Ask for first side's length. Call this side <m>a</m>
+              </p>
+            </li>
+            <li>
+              <p>
+                Ask for second side's length. Call this side <m>b</m>
+              </p>
+            </li>
+          </ol>
         </li>
         <li>
           <p>let <me>hypotenuse = \sqrt{a^2 + b^2}</me></p>
