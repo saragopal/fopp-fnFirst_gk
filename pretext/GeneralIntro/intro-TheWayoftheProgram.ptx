@@ -39,18 +39,19 @@
   </subsection>
   <subsection xml:id="general-intro_objectives">
     <title>Objectives</title>
+    <p>Readers should be able to:</p>
     <p>
       <ul>
         <li>
-          <p>To be able to use the activecode component and multiple choice questions in textbook</p>
+          <p>Use the Activecode and CodeLens components to explore and understand code.</p>
         </li>
         <li>
-          <p>To be able to use and interpret the Codelens component</p>
+          <p>Answer the Checkpoint questions successfully.</p>
         </li>
         <li>
-          <p>To be able to describe what a comment is</p>
+          <p>Express how an algorithm is related to a program.</p>
         </li>
-      </ul>
+              </ul>
     </p>
   </subsection>
 </section>

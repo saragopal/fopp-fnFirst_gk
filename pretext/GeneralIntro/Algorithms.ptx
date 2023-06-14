@@ -4,24 +4,24 @@
   <p>If problem solving is a central part of computer science, then the solutions that you create through
             the problem solving process are also important.  In computer science, we refer to these solutions
             as <term>algorithms</term>.  An algorithm is a step by step list of instructions that if followed exactly will solve the problem under consideration.</p>
-  <p>For example, an algorithm to compute the area of a circle given its radius might look like this:</p>
+  <p>For example, an algorithm to compute the length of a hypotenuse might look like this:</p>
   <note>
     <title>Algorithm Example 1 (English)</title>
     <p>
-      <ol marker="1">
+      <ul>
         <li>
-          <p>Ask for radius</p>
+          <p>Ask for the lengths of the two sides</p>
         </li>
         <li>
-          <p>Compute area by squaring radius and multiplying the result by pi</p>
+          <p>Use Pythagorean Theorum to find hypotenuese</p>
         </li>
         <li>
-          <p>Display the computed area</p>
+          <p>Display the hypotenuse</p>
         </li>
-      </ol>
+      </ul>
     </p>
   </note>
-  <p>Notice that this algorithm consists of a set of numbered steps. It is written in English, for ease of
+  <p>Notice that this algorithm consists of a set of steps. It is written in English, for ease of
             understanding. Although simple algorithms are easily understood when written in English, more complicated
             algorithms need more precise notation. For improved precision, algorithms are often written in pseudocode. <term>Pseudocode</term> is
             a notation that is more precise than English but generally not as precise as a programming language.
@@ -31,13 +31,24 @@
     <p>
       <ol marker="1">
         <li>
-          <p>Ask for radius</p>
+          <p>Ask for length of non-hypotenuse sides:</p>
+          <ol marker="i">
+          <li>
+            <p>
+              Ask for first side's length. Call this side <m>a</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              Ask for second side's length. Call this side <m>b</m>
+            </p>
+          </li>
         </li>
         <li>
-          <p>let area = (radius<superscript>2</superscript>) &#xD7; &#x3C0;</p>
+          <p>let <me>hypotenuse = \sqrt{a^2 + b^2}</me></p>
         </li>
         <li>
-          <p>Display area</p>
+          <p>Display hypotenuse length</p>
         </li>
       </ol>
     </p>

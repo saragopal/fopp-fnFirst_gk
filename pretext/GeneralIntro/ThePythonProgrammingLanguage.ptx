@@ -2,11 +2,14 @@
 <section xml:id="general-intro_the-python-programming-language">
   <title>The Python Programming Language</title>
   <p>The programming language you will be learning is Python. Python is an example
-            of a <term>high-level language</term>; other high-level languages you might have heard
+            of a <term>high-level language</term> that is designed to be easily read by humans and where 
+            the human does <em>not</em> need to have specific knowledge about the computer 
+            hardware. Other high-level languages you might have heard
             of are C++, PHP, and Java.</p>
   <p>As you might infer from the name high-level language, there are also
             <term>low-level languages</term>, sometimes referred to as machine languages or assembly
-            languages. Loosely speaking, computers can only execute programs written in
+            languages. Loosely speaking, low-level languages use numerical codes or symbols to tell the 
+            computer how to process and move data. Generally, computers can only execute programs written in
             low-level languages. Thus, programs written in a high-level language have to be
             processed before they can run. This extra processing takes some time, which is
             a small disadvantage of high-level languages.
