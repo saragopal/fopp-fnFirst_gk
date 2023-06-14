@@ -4,7 +4,7 @@
   <p>If problem solving is a central part of computer science, then the solutions that you create through
             the problem solving process are also important.  In computer science, we refer to these solutions
             as <term>algorithms</term>.  An algorithm is a step by step list of instructions that if followed exactly will solve the problem under consideration.</p>
-  <p>For example, an algorithm to compute the length of a hypotenuse might look like this:</p>
+  <p>For example, an algorithm to compute the length of a triangle's hypotenuse might look like this:</p>
   <note>
     <title>Algorithm Example 1 (English)</title>
     <p>
@@ -54,25 +54,28 @@
       </ol>
     </p>
   </note>
-  <p>Note how the pseudocode example expresses step 2 more precisely, specifying the formula in mathematical
-            terms.</p>
-  <p>Our goal in computer science is to take a problem and develop an algorithm that can serve as a general solution.
-            Once we have such a solution, we can use our computer to automate its execution using programming.
+  <p>Note how the pseudocode example is more structured, using numbered steps and a hierarchy of sub-steps as needed, and, how it uses variables and a formula
+            to express the mathematics  more precisely.</p>
+
+  <p>Our goal in computer science is to take a problem and develop an algorithm that can serve as a <alert>general solution</alert>:
+          a solution that can work in (most) circumstances.
+            Once we have such a solution, we can use our computer to automate its execution.
             Programming is a skill that allows a computer scientist to take an algorithm and represent it in
             a notation (a program) that can be followed by a computer.  A program is written in a <term>programming language</term>
             such as Python, the language you will learn in this book.</p>
-  <p>To help you understand the difference between an algorithm and a program, consider this program to compute
-            the area of a circle:</p>
+  <p>To help you understand the difference amongst an algorithm, psuedocode and a program, consider this program that finds 
+  the hypothenuse of a right-angled triangle:</p>
   <program xml:id="ac_1_2_1" interactive="activecode" language="python">
     <input>
-radius = int(input("Enter the radius:"))
-area = (radius * radius) * 3.1415
-print("The area of a circle with radius", radius, "is:", area)
+side_a = int(input("Enter the length of the first side:"))
+side_b = int(input("Enter the length of the second side:"))
+hypotenuse = (side_a**2 + side_b**2)**(1/2)
+print("The hypotenuse of that triangle is:", hypotenuse)
         </input>
   </program>
   <p>A <term>program</term> is an algorithm expressed in a programming language. We might also say
             that a program is an <em>implementation</em> of an algorithm. In this example, both the
-            algorithm and the program have three steps. The first step gets some input from
+            algorithm and the program have three major steps. The first step gets some input from
             the user and the input into something the computer can do math with;
             the second step performs a calculation using the information obtained
             in the first step; and the final step displays the result to the user. Even
@@ -80,9 +83,9 @@ print("The area of a circle with radius", radius, "is:", area)
             correspondence between the steps of the algorithm, which could be followed by a
             human (but not executed by a computer), and the steps of the program, which can
             be executed by a computer (try executing this one using the Run button).</p>
-  <p>Algorithms are important because the process of solving a problem through programming often begins
-            by designing an algorithm. The programmer often expresses the algorithm in
-            pseudocode, then converts the algorithm to a program for the computer to execute.
+  <p>Algorithms are important because the process of solving a problem through programming begins
+            with designing an algorithm. The programmer often expresses the algorithm in
+            pseudocode to better understand the sub-steps, then converts the algorithm to a program for the computer to execute.
             In the next section, you will learn how to execute Python programs on a computer.</p>
   <p>
     <term>Check your understanding</term>
