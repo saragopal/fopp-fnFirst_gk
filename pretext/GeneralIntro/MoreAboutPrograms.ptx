@@ -19,17 +19,16 @@
     </li>
     <li>
       <title>assignment</title>
-      <p>Create, and give a name to, a memory location that stores a value or process.</p>
+      <p>Create, and give a name to, a memory location that refers to a value or even a process.</p>
     </li>
      <li>
-      <title>process</title>
+      <title>expression (processing)</title>
       <p>Perform basic mathematical operations like addition and multiplication; and logical
         operations like <c>and</c>, <c>or</c>, and <c>not</c>.</p>
     </li>
     <li>
       <title>conditional execution</title>
-      <p>Check for certain conditions and execute the appropriate sequence of
-        statements.</p>
+      <p>Check to see which instructions should be executed.</p>
     </li>
     <li>
       <title>repetition (or interation)</title>
@@ -42,6 +41,54 @@
     breaking a large, complex task into smaller and smaller subtasks until the
     subtasks are simple enough to be performed with sequences of these basic
     instructions.</p>
+
+     <p>
+      <term>Check your understanding</term>
+    </p>
+    <exercise label="question1_5_1">
+      <statement>
+        <p>A program is:</p>
+      </statement>
+      <choices>
+        <choice correct="yes">
+          <statement>
+            <p>a sequence of instructions that specifies how to perform a computation.</p>
+          </statement>
+          <feedback>
+            <p>It is just step-by-step instructions that the computer can understand and execute.
+              Programs often implement algorithms, but note that algorithms are typically less
+              precise than programs and do not have to be written in a programming language.</p>
+          </feedback>
+        </choice>
+        <choice>
+          <statement>
+            <p>something you follow along at a play or concert.</p>
+          </statement>
+          <feedback>
+            <p>True, but not in this context. We mean a program as related to a computer.</p>
+          </feedback>
+        </choice>
+        <choice>
+          <statement>
+            <p>a computation, even a symbolic computation.</p>
+          </statement>
+          <feedback>
+            <p>A program can perform a computation, but by itself it is not one.</p>
+          </feedback>
+        </choice>
+        <choice>
+          <statement>
+            <p>the same thing as an algorithm.</p>
+          </statement>
+          <feedback>
+            <p>Programs often implement algorithms, but they are not the same thing. An algorithm is
+              a step by step list of instructions, but those instructions are not necessarily
+              precise enough for a computer to follow. A program must be written in a programming
+              language that the computer knows how to interpret.</p>
+          </feedback>
+        </choice>
+      </choices>
+    </exercise>
   <!-- <subsection xml:id="general-intro_preview-of-control-structures">
     <title>Preview of Control Structures</title>
     <p>We won't get too much into python control structures yet, but it is good to mention them

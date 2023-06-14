@@ -3,12 +3,16 @@
   <title>Glossary</title>
   <glossary sorted="False">
     <gi>
-      <title>activecode</title>
+      <title>Activecode</title>
       <p>A unique interpreter environment that allows Python to be executed from within a web browser.</p>
     </gi>
     <gi>
       <title>algorithm</title>
       <p>A step by step list of instructions that if followed exactly will solve the problem under consideration.</p>
+    </gi>
+     <gi>
+      <title>assignment</title>
+      <p>Creating and giving a name to, a memory location that refers to a value or a process.</p>
     </gi>
     <gi>
       <title>bug</title>
@@ -21,7 +25,7 @@
                             interpret the byte code with a program called a <em>virtual machine</em>.</p>
     </gi>
     <gi>
-      <title>codelens</title>
+      <title>Codelens</title>
       <p>An interactive environment that allows the user to control the step by step execution of a Python program</p>
     </gi>
     <gi>
@@ -35,6 +39,13 @@
       <p>To translate a program written in a high-level language into a
                             low-level language all at once, in preparation for later execution.</p>
     </gi>
+
+    <gi>
+    <title>conditional execution</title>
+    <p>Also known as selections or decisions. The checking to see which steps are appropriate to execute.
+    </p>
+    </gi>
+
     <gi>
       <title>debugging</title>
       <p>The process of finding and removing any of the three kinds of
@@ -48,6 +59,10 @@
       <title>executable</title>
       <p>Another name for object code that is ready to be executed.</p>
     </gi>
+      <gi>
+      <title>expression</title>
+      <p> Performing the basic mathematical and logical operations.</p>
+    </gi>
     <gi>
       <title>formal language</title>
       <p>Any one of the languages that people have designed for specific
@@ -59,6 +74,12 @@
       <p>A programming language like Python that is designed to be easy for
                             humans to read and write.</p>
     </gi>
+   <gi>
+      <title>input</title>
+      <p>Getting data from the keyboard, a file, or some other device.
+              Also, <c>= input( )</c> a built-in Python function that gets data from the user via the keyboard.</p>
+    </gi>
+
     <gi>
   <title>integrated development environment (ID) </title>
   <p>
@@ -82,6 +103,10 @@
     <gi>
       <title>object code</title>
       <p>The output of the compiler after it translates the program.</p>
+    </gi>
+     <gi>
+      <title>output</title>
+      <p>Displaying data to the screen, to a file or other device.</p>
     </gi>
     <gi>
       <title>parse</title>
@@ -116,6 +141,15 @@
                             Python shell types commands at the prompt (&gt;&gt;&gt;), and presses the return
                             key to send these commands immediately to the interpreter for
                             processing. To initiate the Python Shell, the user should open theterminal and type <q>python</q>. Once the user presses           enter, the Python Shell appears and the user can interact with it.</p>
+    </gi>
+
+    <gi>
+<title>repetition</title>
+<p>
+  Also called iterating. Executing a set of instructions, performing some algorithm steps, more than once.
+</p>
+
+
     </gi>
     <gi>
       <title>runtime error</title>
