@@ -5,9 +5,9 @@
      <gi>
       <title>abstraction</title>
       <p>A common computer programming approach and problem solving technique where, in order to make the algorithm less complex
-            easier to understand, the various sub-steps to the solution are 'hidden' (often in functions but also in data structures).
-            Using abstraction allows computer programmers to work with the solution's components without having conceptualize
-            the entire system.</p>
+            easier to understand, the various sub-steps to the solution are 'hidden' within a named object (like a function) - the abstraction.
+            Then to solve a problem the the programmer refers to this and other abstractions without having conceptualize
+            their inner workings.</p>
     </gi>
     <gi>
       <title>argument</title>
@@ -24,13 +24,7 @@
                             of the header. The standard amount of indentation used within the
                             Python community is 4 spaces.</p>
     </gi>
-    <gi>
-      <title>calling stack</title>
-      <p>A sequence (stack) of frames, showing all the function calls that are in process
-                            but not yet complete. When one function's code invokes another function call,
-                            there will be more than one frame on the stack.</p>
-    </gi>
-    <gi>
+     <gi>
       <title>compound statement</title>
       <p>A statement that consists of two parts:</p>
       <p>
@@ -78,7 +72,7 @@
     </gi>
     <gi>
       <title>function call</title>
-      <p>A statement that executes a function. It consists of the name of the
+      <p>Also known as a function invocation. A statement that executes a function. It consists of the name of the
                             function followed by a list of arguments enclosed in parentheses.</p>
     </gi>
     <gi>
@@ -119,11 +113,6 @@
                             a local variable outside of, or after a function will produce a runtime error - <c>NameError: variable name is not defined</c>.
                             Parameters of a function are also a special kind
                             of local variable.</p>
-    </gi>
-    <gi>
-      <title>method</title>
-      <p>A special kind of function that is invoked on objects of particular types of
-                            objects, using the syntax <c>&lt;expr&gt;.&lt;methodname&gt;(&lt;additional parameter values&gt;)</c></p>
     </gi>
      <gi>
       <title>non-fruitful (void) function</title>

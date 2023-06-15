@@ -36,7 +36,7 @@
   <p>
     <ol marker="1">
       <li>
-        <p>A header line which begins with a keyword and ends with a colon, <c>:</c>.</p>
+        <p>A <term>header line</term> which begins with a keyword and ends with a colon, <c>:</c>.</p>
       </li>
       <li>
         <p>A <term>body</term> consisting of one or more Python statements, each indented the same

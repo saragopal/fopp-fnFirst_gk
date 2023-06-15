@@ -10,7 +10,12 @@
 
   <p>Functions that don't return a value are sometimes called <term>procedures</term>, and <term>non-fruitful</term> or <em>void</em> functions. 
   Notice how in the function header example below the function definition indicates the function returns <c>-> None</c>, that there
-  is no data being processed, and that there is no <c>return</c> statement.</p>
+  is no data being processed, and that there is no <c>return</c> statement.<term>None</term> is a special Python value used to indicate no value at all.
+  <note>
+  <alert>None</alert> is not the same as 0, False of an empty string (<c>""</c>). It is its own data type (<c>NoneType</c>). Other computer languages
+  use the term <c>null</c>.
+  </note>
+  </p>
   
   <program xml:id="ac4_2_1" interactive="activecode" language="python">
     <input>
