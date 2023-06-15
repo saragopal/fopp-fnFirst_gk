@@ -15,17 +15,13 @@
       <p>Creating and giving a name to, a memory location that refers to a value or a process.</p>
     </gi>
     <gi>
-      <title>bug</title>
-      <p>An error in a program.</p>
-    </gi>
-    <gi>
       <title>byte code</title>
       <p>An intermediate language between source code and object code. Many
                             modern languages first compile source code into byte code and then
                             interpret the byte code with a program called a <em>virtual machine</em>.</p>
     </gi>
     <gi>
-      <title>Codelens</title>
+      <title>CodeLens</title>
       <p>An interactive environment that allows the user to control the step by step execution of a Python program</p>
     </gi>
     <gi>
@@ -46,29 +42,18 @@
     </p>
     </gi>
 
+
     <gi>
-      <title>debugging</title>
-      <p>The process of finding and removing any of the three kinds of
-                            programming errors: <term>*syntax error*</term>, <term>*semantic error*</term>, and <term>*runtime error*</term>.</p>
+      <title>execute</title>
+      <p>The process by which a computer program is read and acted upon. Also sometimes we say 'run'.</p>
     </gi>
-    <gi>
-      <title>exception</title>
-      <p>Another name for a runtime error.</p>
-    </gi>
-    <gi>
-      <title>executable</title>
-      <p>Another name for object code that is ready to be executed.</p>
-    </gi>
-      <gi>
-      <title>expression</title>
-      <p> Performing the basic mathematical and logical operations.</p>
-    </gi>
-    <gi>
+     <gi>
       <title>formal language</title>
       <p>Any one of the languages that people have designed for specific
                             purposes, such as representing mathematical ideas or computer programs;
                             all programming languages are formal languages.</p>
     </gi>
+    
     <gi>
       <title>high-level language</title>
       <p>A programming language like Python that is designed to be easy for
@@ -113,7 +98,7 @@
       <p>To examine a program and analyze the syntactic structure.</p>
     </gi>
     <gi>
-      <title>portability</title>
+      <title>portable</title>
       <p>A property of a program that can run on more than one kind of computer.</p>
     </gi>
     <gi>
@@ -176,7 +161,7 @@
     </gi>
     <gi>
       <title>syntax</title>
-      <p>The structure of a program.</p>
+      <p>The rules that define a programming language.</p>
     </gi>
     <gi>
       <title>syntax error</title>

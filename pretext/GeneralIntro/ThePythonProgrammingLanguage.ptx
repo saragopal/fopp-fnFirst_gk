@@ -15,9 +15,8 @@
             a small disadvantage of high-level languages.
             However, the advantages to high-level languages are enormous.</p>
   <p>First, it is much easier to program in a
-            high-level language: being easier to read and shorter, programs written in a high-level language take less time
-            to write and are more likely to be
-            correct. Second, high-level languages are <term>portable</term>, meaning that they can
+            high-level language. Programs are shorter so they take less time
+            to write, and being easier to read, they are easier to correct. Second, high-level languages are <term>portable</term>, meaning that they can
             run on different kinds of computers with few or no modifications. Low-level
             programs are based on the hardward for a particular kind of computer system 
             and have to be rewritten to run on another.</p>

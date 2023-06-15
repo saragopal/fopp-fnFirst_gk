@@ -10,28 +10,28 @@
     appear in just about every language.</p>
   <dl>
     <li>
-      <title>input</title>
+      <title><term>input</term></title>
       <p>Get data from the keyboard, a file, or some other device.</p>
     </li>
     <li>
-      <title>output</title>
+      <title><term>output</term></title>
       <p>Display data on the screen or send data to a file or other device.</p>
     </li>
     <li>
-      <title>assignment</title>
+      <title><term>assignment</term></title>
       <p>Create, and give a name to, a memory location that refers to a value or even a process.</p>
     </li>
      <li>
-      <title>expression (processing)</title>
+      <title><term>expression</term> (processing)</title>
       <p>Perform basic mathematical operations like addition and multiplication; and logical
         operations like <c>and</c>, <c>or</c>, and <c>not</c>.</p>
     </li>
     <li>
-      <title>conditional execution</title>
+      <title><term>conditional execution</term></title>
       <p>Check to see which instructions should be executed.</p>
     </li>
     <li>
-      <title>repetition (or interation)</title>
+      <title><term>repetition</term> (or interation)</title>
       <p>Perform some action repeatedly, usually with some variation.</p>
     </li>
   </dl>
