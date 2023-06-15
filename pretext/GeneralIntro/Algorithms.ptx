@@ -34,7 +34,7 @@
           <p>Ask for radius</p>
         </li>
         <li>
-          <p>let area = (radius<superscript>2</superscript>) &#xD7; &#x3C0;</p>
+          <p>let area = <m>\pi \times r^2</m></p>
         </li>
         <li>
           <p>Display area</p>
@@ -54,7 +54,7 @@
   <program xml:id="ac_1_2_1" interactive="activecode" language="python">
     <input>
 radius = int(input("Enter the radius:"))
-area = (radius * radius) * 3.1415
+area = 3.1415 * radius ** 2
 print("The area of a circle with radius", radius, "is:", area)
         </input>
   </program>
