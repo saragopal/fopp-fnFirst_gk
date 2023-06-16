@@ -12,7 +12,7 @@
     </gi>
      <gi>
       <title>assignment</title>
-      <p>Creating and giving a name to, a memory location that refers to a value or a process.</p>
+      <p>Binding a (variable) name to a specific value.</p>
     </gi>
     <gi>
       <title>byte code</title>
@@ -66,7 +66,7 @@
     </gi>
 
     <gi>
-  <title>integrated development environment (ID) </title>
+  <title>integrated development environment (IDE) </title>
   <p>
     A software applications that helps programmers code efficiently by providing tools to develop,
         edit, and test their programs. </p>

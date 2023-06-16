@@ -26,8 +26,8 @@ print("Hello, World!")     # Isn't this easy!
             are also ignored by the interpreter, but comments and blank lines can make your
             programs much easier for humans to parse.  Use them liberally!</p>
 
-  <p>Another way novices can use comments is to use them to plan their program - by including the natural language or pseudocode version of the algorithm
-    an outline before they start coding. Consider how the code below uses comment to indicate the steps one might use to solve a word problem:</p>
+  <p>Another way to use comments is to use them to plan your program - by including the natural language or pseudocode version of the algorithm
+    an outline before you start coding. Consider how the code below uses comment to indicate the steps one might use to solve a word problem:</p>
      <program language="python">
     <input>
       #1 set all known values and constants
@@ -52,9 +52,8 @@ print("Hello, World!")     # Isn't this easy!
     </input>
   </program>
 
-  <p>There is one other way in Python that code is sometimes documented, by enclosing portions of the code within triple-quotes, <c>"""   """</c>. 
-  Code within triple-quotes is not executed and can span multiple lines. Strictly speaking, triple-quotes <em>do not create comments</em> because the interpreter can
-  still access their contents. In a later chapter we will discuss how this is useful when we document portions of our code (<alert>functions</alert>) with (<alert>docstrings</alert>).
+  <p>There is one other way in Python that code is sometimes documented, by enclosing portions of the text within triple-quotes, <c>"""   """</c>. 
+  This tells Python that the text should be treated as a <em>string</em> instead of as code to interpret. Strictly speaking, triple-quotes <em>are not comments</em> because the interpreter can still access their contents. In a later chapter we will discuss how this is useful when we document portions of our code (<alert>functions</alert>) with (<alert>docstrings</alert>).
   Some programmers take advantage
   of triple-quoted code not being executed as part of their debugging process: one can essentially 'turn off' portions of our code without having to delete it, and then turn it 'back on' 
   by removing the enclosing triple-quotes. </p>

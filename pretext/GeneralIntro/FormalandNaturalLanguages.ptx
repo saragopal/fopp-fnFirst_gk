@@ -27,7 +27,7 @@
             <c>Zz</c>.</p>
   <p>When you read a word in English, you have to make sure the tokens are correct and appropriate.
   Humans are quite good at figuring out the tokens despite their many variations as seen by our ability to read various fonts, bumper stickers,
-  and Internet spellings (e.g.s: &#945;, &#8704;, and <em>a</em> are all recognizable as the letter a; the text 'e5c4p3' can be read as 'escape').</p>
+  and Internet spellings (e.g.: &#945;, &#8704;, and <em>a</em> are all recognizable as the letter a; the text 'e5c4p3' can be read as 'escape').</p>
 
   <p>The second type of syntax rule pertains to the <term>structure</term> of a statement&#x2014;
             that is, the way the tokens are arranged. The statement <c>3 = + 6 $</c> is

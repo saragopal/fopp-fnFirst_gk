@@ -13,7 +13,7 @@
           <p>Ask for the lengths of the two sides</p>
         </li>
         <li>
-          <p>Use Pythagorean Theorum to find hypotenuese</p>
+          <p>Use Pythagorean Theorem to find hypotenuse</p>
         </li>
         <li>
           <p>Display the hypotenuse</p>
@@ -63,7 +63,7 @@
             Programming is a skill that allows a computer scientist to take an algorithm and represent it in
             a notation (a program) that can be followed by a computer.  A program is written in a <term>programming language</term>
             such as Python, the language you will learn in this book.</p>
-  <p>To help you understand the difference amongst an algorithm, psuedocode and a program, consider this program that finds 
+  <p>To help you understand the differences amongst an algorithm, psuedocode and a program, consider this program that finds 
   the hypothenuse of a right-angled triangle:</p>
   <program xml:id="ac_1_2_1" interactive="activecode" language="python">
     <input>

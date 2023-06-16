@@ -34,7 +34,7 @@
             <term>executable</term>. Once a program is compiled, you can execute it repeatedly
             without further translation.</p>
   <image source="GeneralIntro/Figures/compile.png" width="50%" alt="Compile illustration"/>
-  <p>Like many modern languages, Python uses both processes. Programms are first compiled into a lower
+  <p>Like many modern languages, Python uses both processes. Programs are first compiled into a lower
             level language, called <term>byte code</term>, and then interpreted by a program called
             a <term>virtual machine</term>. <em>Because of the way
             programmers interact with it (often adding individual lines of code and then running their programms), 
