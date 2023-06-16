@@ -4,11 +4,13 @@
 
     <!-- 13 chapters-->
     <book xml:id="thinkcspy" permid="tcs">
-        <title>Mount Royal University - Intro to Programming</title>
-        <subtitle>The Interative Textbook for COMP1701</subtitle>
+        <title>Foundations of Python Programming</title>
+        <subtitle>Functions First</subtitle>
         <frontmatter>
             <titlepage>
             </titlepage>
+            <xi:include href="./FrontBackMatter/foreword.ptx" />
+            <xi:include href="./FrontBackMatter/foreword_og.ptx" />
             <xi:include href="./FrontBackMatter/preface.ptx" />
         </frontmatter>
 

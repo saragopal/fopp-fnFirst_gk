@@ -21,10 +21,24 @@
             technical error or a less-than-transparent explanation, just by sending us a
             note.</p>
   <p>Impossible as it may seem after so many corrections, there may still be errors
-            in this book. If you should stumble across one, we hope you will take a minute
-            to contact us. The email address is <url href="mailto:jeff@elkner.net" visual="mailto:jeff@elkner.net">jeff@elkner.net</url>
-            . Substantial changes made due to your suggestions will add you to the next
-            version of the contributor list (unless you ask to be omitted). Thank you!</p>
+            in this book. If you should stumble across one, we hope you will take a minute to report the problem on our <url href="https://github.com/MRU-COMP1701-dev/fopp-pretext/issues" >issue tracker.</url></p>
+  <subsection xml:id="font-back-matter_ff-edition">
+    <title>Functions First Edition</title>
+    <p>
+      <ul>
+        <li>
+          <p>
+            Conversion from RST to PreTeXt and the majority of chapter reordering and associated exercise modification was completed by Matthew Hrehirchuk. Matthew also wrote the "Additional Resources" chapter and designed many exercises.
+          </p>
+        </li>
+        <li>
+          <p>
+            Eric Chalmers, Charlotte Curtis, and Patrick Perri did the final edits and are responsible for the ongoing maintenance of the book.
+          </p>
+        </li>
+      </ul>
+    </p>
+  </subsection>
   <subsection xml:id="front-back-matter_second-edition">
     <title>Second Edition</title>
     <p>
