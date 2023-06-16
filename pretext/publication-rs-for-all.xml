@@ -1,9 +1,9 @@
 <!-- Testing for Runestone -->
 <publication>
 
-    <common>
+    <!-- <common>
         <chunking level="1" />
-    </common>
+    </common> -->
 
     <source>
         <directories external="Figures" generated="GenFigs" />
@@ -11,6 +11,7 @@
 
     <html>
         <platform host="web" />
+        <platform host="runestone" />
         <!-- knowled checkpoints interfere with ActiveCode problems -->
         <knowl exercise-inline="no" example="no" listing="yes" />
     </html>
