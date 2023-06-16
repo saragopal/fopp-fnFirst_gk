@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<section xml:id="front-back-matter_contributor-list">
-  <title>Contributor List</title>
+<acknowledgement xml:id="front-back-matter_contributor-list">
+  <title>Acknowledgements</title>
   <p>To paraphrase the philosophy of the Free Software Foundation, this book is free
             like free speech, but not necessarily free like free pizza. It came about
             because of a collaboration that would not have been possible without the GNU
@@ -22,7 +22,7 @@
             note.</p>
   <p>Impossible as it may seem after so many corrections, there may still be errors
             in this book. If you should stumble across one, we hope you will take a minute to report the problem on our <url href="https://github.com/MRU-COMP1701-dev/fopp-pretext/issues" >issue tracker.</url></p>
-  <subsection xml:id="font-back-matter_ff-edition">
+  <paragraphs xml:id="font-back-matter_ff-edition">
     <title>Functions First Edition</title>
     <p>
       <ul>
@@ -38,8 +38,8 @@
         </li>
       </ul>
     </p>
-  </subsection>
-  <subsection xml:id="front-back-matter_second-edition">
+  </paragraphs>
+  <paragraphs xml:id="front-back-matter_second-edition">
     <title>Second Edition</title>
     <p>
       <ul>
@@ -103,8 +103,8 @@
         </li>
       </ul>
     </p>
-  </subsection>
-  <subsection xml:id="front-back-matter_first-edition">
+  </paragraphs>
+  <paragraphs xml:id="front-back-matter_first-edition">
     <title>First Edition</title>
     <p>
       <ul>
@@ -265,5 +265,5 @@
         </li>
       </ul>
     </p>
-  </subsection>
-</section>
+  </paragraphs>
+</acknowledgement>
