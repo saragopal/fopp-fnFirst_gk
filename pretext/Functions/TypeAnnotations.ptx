@@ -30,10 +30,7 @@ result = duplicate('Hello')
 print(result)
         </input>
   </program>
-  <p>This definition of <c>duplicate</c> makes use of type annotations to suggest the function's expected parameter and return value
-            type. A <term>type annotation</term> is an optional notation that specifies the data type for parameters and function result. It is an effort to 
-            tell the programmer using the function what kind of data to pass to the function, and what kind of data to expect when
-            the function returns a value.</p>
+  <p>This definition of <c>duplicate</c> makes use of type annotations to suggest the function's expected parameter and return value types. A <term>type annotation</term> is an optional notation that specifies the data type for parameters and function result. It is an effort to tell the programmer using the function what kind of data to pass to the function, and what kind of data to expect when the function returns a value.</p>
   <p>In the definition above, the annotation <c>: str</c> in <c>msg: str</c> indicates that the caller should pass a <c>str</c> value as an argument.
             The annotation  <c>-&gt; str</c> indicates that the function will produce a <c>str</c> result.</p>
   <p>Here are some more examples of functions with type annotations:</p>

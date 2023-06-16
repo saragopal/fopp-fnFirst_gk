@@ -198,14 +198,14 @@
       - these squared differences are: 7.1111111 0.11111111, 5.4444444
       - which sum to 12.66666667 and average to be 4.2222222
       - the square root of which is: 2.054804667
-        """"
+      """"
 
       def average( ,  ,  ): 
 
 
 
 
-        return mean
+          return mean
 
 
       def diffSquare(   ,   ): 
@@ -214,14 +214,14 @@
 
 
 
-        return squaredDifference
+          return squaredDifference
 
 
       def stdev(   ,   ,   ):
 
 
-        variance = average (  ,   ,   )
-        return variance**(1/2)
+          variance = average (  ,   ,   )
+          return variance**(1/2)
 
       print('The standard deviation of the values 10, 13 and 15 is', stdev(10,13,15))
 

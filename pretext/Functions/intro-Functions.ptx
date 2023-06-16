@@ -2,11 +2,11 @@
 <section xml:id="functions_introduction-to-functions">
   <title>Introduction to Functions</title>
   <p>In Python, a <term>function</term> is a chunk of code that performs a specific operation that is a
-    meaningful and self-contained part of a larger problem. For example calculating a student's grade in one class is part of detemining their GPA
-    in a learning system or keeping track of a score in order to earn rewards in a video game. Once a function has been
+    meaningful and self-contained part of a larger problem, such as calculating a student's GPA
+    in a learning system or responding to the jump action in a video game. Once a function has been
     defined and you are satisfied that it does what it is supposed to do, it is useful to start thinking
-    about it as a step in the larger operation that it performs rather than how its specific lines of
-    code work.</p>
+    about it in terms of the larger operation that it performs rather than the specific lines of
+    code that make it work.</p>
   <p>In computer programming, this breaking down of a task or problem into smaller, solveable, sub-functions, is called <term>decomposition</term>
   and the idea of hiding the complexity of the sub-steps of the algorithm in a function is called <term>abstraction</term>.
   Learning how to do both of these problem solving techniques is crucial to the successful implementation of any
@@ -29,7 +29,7 @@
     </ul>
   </p>
   <p>And each of those is made up of functions as well. For example, the function that displays your
-    friends' posts is a <c>for</c> loopthat calls a 'sub'-function to display a single post, which in turn calls 'sub-sub'-functions to:</p>
+    friends' posts is a <c>for</c> loop that calls a 'sub'-function to display a single post, which in turn calls 'sub-sub'-functions to:</p>
   <p>
     <ul>
       <li>
@@ -54,23 +54,20 @@
   <subsection xml:id="functions_introduction-to-functions_topics">
     <title>Topics</title>
     <p>
-      <ul marker="">
+      <ul>
         <li>
           <p>The purpose of functions as a means of abstraction</p>
         </li>
         <li>
           <p>The syntax and parts of functions</p>
           <ul>
+            <li>Function headers</li>
             <li>Parameters and arguments</li>
-            <li>Return statement</li>
+            <li>Body and return statement</li>
             </ul>
         </li>
-        <li>
-        <p>Local and global scope and the flow of execution</p>
-        </li>
-        <li>
-          <p>Side effects</p>
-        </li>
+        <li><p>Local and global scope and the flow of execution</p></li>
+        <!-- <li><p>Side effects</p></li> -->
       </ul>
     </p>
   </subsection>
@@ -92,9 +89,9 @@
           <p>avoid the use of global variables in function definitions by creating formal parameters
             for all values that are needed</p>
         </li>
-        <li>
+        <!-- <li>
           <p>identify whether a function has any side effects</p>
-        </li>
+        </li> -->
       </ul>
     </p>
   </subsection>

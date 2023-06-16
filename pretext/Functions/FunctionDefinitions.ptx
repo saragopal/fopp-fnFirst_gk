@@ -1,15 +1,16 @@
 <?xml version="1.0"?>
 <section xml:id="functions_function-definition">
   <title>Function Definition</title>
-  <p>The simpliest syntax for creating a named function, a <term>function definition</term>, is:</p>
+  <p>The syntax for creating a named function, a <term>function definition</term>, is:</p>
   <program language="python">
     <input>
       def name( parameters ):
-        statements
+          statements
     </input>
   </program>
   <p>You can make up any names you want for the functions you create, except that you can't use a
-    name that is a Python keyword, and the names must follow the rules for legal identifiers that were previously explained for variables. 
+    name that is a Python keyword, and the names must follow the rules for legal identifiers that were previously explained for variables. </p>
+    <p>
     It is good practice to choose function names that are meaningful to the human readers of the program. 
     This means the names will need to be unique and to make clear the function's purpose. Since functions 'do' something, some programmers 
     like to use verbs in their function names.</p>
@@ -57,19 +58,19 @@
   <program xml:id="ac4_2_1" interactive="activecode" language="python">
     <input>
       def hello() -&gt; None:
-        """This function says hello and greets you"""
-        print("Hello")
-        print("Glad to meet you")
+          """This function says hello and greets you"""
+          print("Hello")
+          print("Glad to meet you")
     </input>
   </program>
   <note>
     <title>docstrings</title>
-    <p>By convention, Python programmers use a triple-quoted string as the first line of the function's body,
+    <p>By convention, Python programmers use a triple-quoted string as the first line(s) of the function's body,
     to have one- or two-sentences used to explain their functions, making clear the function's parameters (data type requirements, limitations to their values, default values if set)
       and the return value (if there is one).</p>
-      <p>This first line is called a <term>docstring</term> (documentation string) and because it gets special treatment in
+      <p>This unassigned string literal is called a <term>docstring</term> (documentation string) and because it gets special treatment in
       Python, you can use the interactive interpreter <em>at runtime</em>, and enter the
-      expression <c>&lt;function_name&gt;.__doc__</c>, or <c>help(&lt;function_name&gt;</c>), to retrieve a function's docstring (the thus its explanation). This is different from comments in your code, which are
+      expression <c>&lt;function_name&gt;.__doc__</c>, or <c>help(&lt;function_name&gt;</c>), to retrieve a function's docstring (and thus its explanation). This is different from comments in your code, which are
       completely ignored when the program is run.</p>
     
   </note>

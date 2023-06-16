@@ -2,7 +2,7 @@
 <section xml:id="functions_flow-of-execution-summary">
   <title>Flow of Execution Summary</title>
   <p>When you are working with functions it is really important to know the order in which
-    statements are executed. This is called the <term>flow of execution</term>.We've already
+    statements are executed. This is called the <term>flow of execution</term>. We've already
     talked about it a number of times in this chapter and you've practiced every time you've traced the steps of an algorithm.</p>
 
   <p>Execution always begins at the first statement of the program. Statements are executed one at a
@@ -33,7 +33,7 @@
   </p>
   <exercise label="question4_11_1">
     <statement>
-      <p>Consider the following Python code. Note that line numbers are included on the left.</p>
+      <p>Consider the following Python code.</p>
       <program language="python">
         <input>
           def pow(b, p):

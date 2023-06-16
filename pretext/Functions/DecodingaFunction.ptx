@@ -59,8 +59,7 @@
   <p>
     <ul>
       <li>
-        <p>a build in function, look at its docstring to see what it requires and what it returns. For example, <c>len(x)</c>, must be passed a sequenced data type like 
-        a string or a list, and will return an integer. x can't be a number or a Boolean.</p>
+        <p>a built in function, look at its docstring to see what it requires and what it returns. For example, <c>len(x)</c>, must be passed a sequence data type like a string and will return an integer. x can't be a number or a Boolean.</p>
       </li>
       <li>
         <p>mathematical operators, then:</p>
@@ -70,10 +69,10 @@
           </li>
 
           <li>
-            <p><c>x + y</c>: x and y must <em>both</em> be numbers, <em>both</em> be strings, or <em>both</em> be lists</p>
+            <p><c>x + y</c>: x and y must <em>both</em> be numbers or <em>both</em> be strings</p>
           </li>
          <li>
-            <p><c>x * y</c>: x and y can <em>both</em> be numbers; or x can be a string or a list, and y must be a number</p>
+            <p><c>x * y</c>: x and y can <em>both</em> be numbers; or one can be a string and the other <em>must</em> be a number</p>
           </li>
         </ul>
         
@@ -188,7 +187,7 @@
       </choice>
       <choice>
         <statement>
-          <p>a could be a list and b could be a float</p>
+          <p>x could be a string and y could be a float</p>
         </statement>
         <feedback>
           <p>Although possible, there's a more general answer.</p>

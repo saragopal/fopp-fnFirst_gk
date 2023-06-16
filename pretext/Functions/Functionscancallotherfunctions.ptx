@@ -12,15 +12,15 @@
   <program xml:id="clens4_10_1" interactive="codelens" language="python">
     <input>
       def square(x):
-        y = x * x
-        return y
+          y = x * x
+          return y
 
       def sum_of_squares(x,y,z):
-        a = square(x)
-        b = square(y)
-        c = square(z)
+          a = square(x)
+          b = square(y)
+          c = square(z)
 
-        return a+b+c
+          return a+b+c
 
       a = -5
       b = 2
@@ -31,7 +31,7 @@
   </program>
   <p>Even though this is a pretty simple idea, in practice this example illustrates many very
     important Python concepts, including local variables, global variables, parameter passing, and how a larger function can be <alert>decomposed</alert>
-    into smaller sub-functions.The function <c>sum_of_squares</c> is <alert>composed</alert>of the <c>square</c>function and some addition.</p>
+    into smaller sub-functions.The function <c>sum_of_squares</c> is <alert>composed</alert> of the <c>square</c>function and some addition.</p>
     <p>
     Note that the body of <c>square</c> is not executed until it is called from inside the <c>sum_of_squares</c> function for the first time on line 6.</p>
 
@@ -47,22 +47,22 @@
   
   
   
-  <p>Let's use composition to build up another function: finding the area of <alert>any</alert> regular polygon</p>
+  <p>Let's use composition to build up another function: finding the area of <alert>any</alert> regular polygon.</p>
   <p>Knowing that:</p>
   <ul>
   <li><p>Regular polygons are 2D shapes that have more than 3 sides where all sides have the same length.</p></li>
   <li><p>The perpendicular measurement from the midpoint of one of the sides to the center of the polygon is called the <alert>apothem</alert>.</p></li>
-  <li><p>The length of the apothem can be found with:</p>
+  <li><p>The length of the apothem for a polygon with <m>n</m> sides of length <m>length</m> can be found with:</p>
   <p> 
   <me>
-    apothem = length of side / (2*tan(180/n))
+    apothem = \frac{length}{2\tan(180/n)}
   </me>
    </p> 
   </li>
   <li><p>The perimeter of the polygon can be found with:</p>
   <p>
   <me>
-    perimeter = length of side * number of sides
+    perimeter = length * n
   </me>
   
   </p> </li>
@@ -70,7 +70,7 @@
   <p> Then the area of a regular polygon can be found with the following formula:</p>
   <p>
   <me>
-  area = perimeter * apothem / 2
+  area = \frac{perimeter * apothem}{2}
   </me>
     
   </p>
@@ -107,26 +107,26 @@
 <program language="python">
     <input>
       def apothem (sides:int,length:float ) -> float:
-        """With sides more than 3 and length greater than zero"""
-        from math import tan, radians # math module's tan only works in radians
-        anApo = length / (2 * tan (radians(180/sides)))
-        return anApo 
+          """With sides more than 3 and length greater than zero"""
+          from math import tan, radians # math module's tan only works in radians
+          an_apo = length / (2 * tan (radians(180/sides)))
+          return an_apo 
 
       def perimeter (sides:int, length:float) -> float:
-        """with sides more than 3 and length greater than zero"""
-        aPer = sides * length
-        return aPer 
+          """with sides more than 3 and length greater than zero"""
+          a_per = sides * length
+          return a_per 
 
       def area(sides:int, length:float)->float:
-        """with sides more than 3 and length greater than zero"""
-        apo = apothem(sides,length)
-        per = perimeter(sides, length)
-        return per * apo /2 
+          """with sides more than 3 and length greater than zero"""
+          apo = apothem(sides,length)
+          per = perimeter(sides, length)
+          return per * apo /2 
 
     </input>
   </program>
 
-<p>On paper, trace what will happen, the values of the local and global variables with this function call testing a square with of 10 units long: <c>test=area(4,10)</c>. 
+<p><alert>On paper</alert>, trace what will happen, the values of the local and global variables with this function call testing a square with of 10 units long: <c>test=area(4,10)</c>. 
 Try some other polygons of your own to test the algorithm. <em>In your own words, express how the algorithm to find the area of a regular polygon has been
 functionally decomposed.</em></p>
 

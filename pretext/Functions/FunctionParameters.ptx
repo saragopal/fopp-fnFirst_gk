@@ -18,14 +18,24 @@
     so useful to explain a function). The 'user'
     must know the name of the function and what arguments it needs to be passed. The details of how the
     function works are hidden inside the <q>black-box</q>.</p>
-  <p>You have already been making function invocations with parameters. For example, when you write <c>len("abc")</c>, len is 
-  the name of a function, and the value that you put inside the
-    parentheses, the string <q>abc</q> is a parameter value. Or <c>print("Answer", 3 - 4, sep=" is equal to ")</c> where the print function is passed three
-    parameters, a string, an expression and a named parameter.</p>
-  <p>You can see that when a function has one or more parameters, the names of the parameters appear in the function
-    definition, are separated by commas, and the
-    values assigned to those parameters appear inside the parentheses of the function invocation in the same order.</p>
-  <p>In the definition, the <term>parameter list</term> is sometimes referred to as the <term>formal parameters</term>, <term>ideal parameters</term>
+  <p>You have already been making function invocations with parameters. For example, when you write <c>len("abc")</c>, <c>len</c> is 
+  the name of a function, and the string <q>abc</q> is a parameter value. Or <c>print("Answer", 3 - 4, sep=" is equal to ")</c> where the print function is passed three
+    parameters: a string, an expression and a named parameter.</p>
+  <p>When a function has one or more parameters, the following holds:</p>
+  <ol>
+    <li>
+        The names of the parameters appear in the function definition
+    </li>
+
+    <li>
+        The parameters are separated by commas
+    </li>
+
+    <li>
+        The values in the parentheses of the function invocation are assigned to the parameters <em>in the same order</em>
+    </li>
+  </ol> 
+  <p>In the function definition, the <term>parameter list</term> is sometimes referred to as the <term>formal parameters</term>, <term>ideal parameters</term>
     or <term>parameter names</term>. These names can be any valid variable name.</p>
   <p>In the function invocation, inside the parentheses one value should be provided for each of the
     parameter names. These
@@ -65,8 +75,8 @@
   <program xml:id="ac4_4_1" interactive="activecode" language="python">
     <input>
       def hello2(who: str) -&gt; None:
-        print("Hello " + who)
-        print("Glad to meet you")
+          print("Hello " + who)
+          print("Glad to meet you")
 
       hello2("Iman" + " and Jackie")
       hello2("Class " * 3)
@@ -76,8 +86,8 @@
   <program xml:id="clens4_4_2" interactive="codelens" language="python">
     <input>
       def hello3(s: str, n: int) -&gt; None:
-        greeting = f"Hello {s} "
-        print(greeting*n)
+          greeting = f"Hello {s} "
+          print(greeting*n)
 
       hello3("Wei", 4)
       hello3("", 1)
@@ -92,13 +102,12 @@
     provided. The second parameter name is bound to the second value provided. And so on.
     </p>
     <p>
-    <em>Try defining a similar function as the above on your own, but when your code invokes the 
-    function pass the arguments in the reverse order:<c>hello3(4, "Wei")</c>.
-    What happens when you run the code? It should produce a <term>runtime' error</term>- an error that happens
-    only when the <em>syntactic (correct)</em> is run there are errors in the code like when it
+    <em>Try writing your own version of the program above, but pass the arguments in the reverse order, e.g. <c>hello3(4, "Wei")</c>.
+    What happens when you run the code? It should produce a <term>runtime error</term> - an error that happens
+    when the code is <em>syntactically correct</em> and runs, but encounters an issue during execution; in this case, it
     can't deal with the variables being of a different than expected data type.</em></p>
   <p>
-    <term>Check your understanding</term>
+    <alert>Check your understanding</alert>
   </p>
   <exercise label="question4_4_1">
     <statement>
@@ -146,9 +155,9 @@
       <program language="python">
         <input>
           def print_many(x: str, y: int) -&gt; None:
-            """Print out string x, y times."""
-            message = x * y
-            print(message)
+              """Print out string x, y times."""
+              message = x * y
+              print(message)
         </input>
       </program>
     </statement>
@@ -195,9 +204,9 @@
       <program language="python">
         <input>
           def print_many(x: str, y: int) -&gt; None:
-            """Print out string x, y times."""
-            message = x * y
-            print(message)
+              """Print out string x, y times."""
+              message = x * y
+              print(message)
         </input>
       </program>
     </statement>
@@ -330,9 +339,9 @@
       <p>What output will the following code produce?</p>
       <program language="python">
         <input>
+          CONSTANT_VALUE = -8
           def cyu(n1: int, n2: int) -&gt; int:
-            CONSTANT_VALUE = -8
-            return n1 + n2 - CONSTANT_VALUE
+              print(n1 + n2 - CONSTANT_VALUE)
 
           cyu(4, 3)
         </input>

@@ -13,10 +13,10 @@
   <program xml:id="clens4_3_1" interactive="codelens" language="python">
     <input>
       def hello() -&gt; None:
-        """Illustrative function that requires no parameters
-        and merely displays to screen."""
-        print("Hello")
-        print("Glad to meet you")
+          """Illustrative function that requires no parameters
+          and merely displays to screen."""
+          print("Hello")
+          print("Glad to meet you")
 
       print(type(hello))
       print(type("hello"))

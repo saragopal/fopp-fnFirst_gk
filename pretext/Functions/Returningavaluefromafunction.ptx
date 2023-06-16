@@ -8,22 +8,19 @@
   functions don't appear to be useful is because few of them have returned a value. In this section we will discuss how to create more useful functions that 
   produce useful data for our problem solving.</p>
 
-  <p>Functions that don't return a value are sometimes called <term>procedures</term>, and <term>non-fruitful</term> or <em>void</em> functions. 
-  Notice how in the function header example below the function definition indicates the function returns <c>-> None</c>, that there
-  is no data being processed, and that there is no <c>return</c> statement.<term>None</term> is a special Python value used to indicate no value at all.
+  <p>Functions that don't return a value are sometimes called <term>procedures</term>, <term>non-fruitful</term> or <term>void functions</term>. 
+  Notice how in the function header example below the function definition indicates the function returns <c>-> None</c>, that there is no data being processed, and that there is no <c>return</c> statement. <term>None</term> is a special Python value used to indicate no value at all.</p>
   <note>
-  <alert>None</alert> is not the same as 0, False of an empty string (<c>""</c>). It is its own data type (<c>NoneType</c>). Other computer languages
-  use the term <c>null</c>.
+  <alert>None</alert> is not the same as 0, False, or an empty string (<c>""</c>). It is its own data type (<c>NoneType</c>). Some other computer languages use the term <c>null</c>.
   </note>
-  </p>
   
   <program xml:id="ac4_2_1" interactive="activecode" language="python">
     <input>
       def hello() -&gt; None:
-        """This function says hello and greets you
-        but no value is returned."""
-        print("Hello")
-        print("Glad to meet you")
+          """This function says hello and greets you
+          but no value is returned."""
+          print("Hello")
+          print("Glad to meet you")
     </input>
   </program> 
 
@@ -32,8 +29,8 @@
   <image source="Functions/Figures/function_call.gif" width="50%"
     alt="gif of a box labeled function with three spaces on the top for input and a space on the bottom for output. Three arrows enter the top and are labeled as input or arguments. The function box shakes, and then one arrow leaves the bottom of the function box." />
 
-<p>You probably can apprecaite how a built-in Python function like <c>= abs()</c> will find, and then return, the absolute
-value of a provided number. Or how <c>=input()</c> returns anything a user types on the keyboard as a string.</p>
+<p>You probably can appreciate how a built-in Python function like <c>= abs()</c> will find, and then return, the absolute
+value of a provided number. Or how <c>= input()</c> returns anything a user types on the keyboard as a string.</p>
 
 <p>These kinds of functions, ones that return values are sometimes called <term>fruitful functions</term> because they <em>produce</em> a result.</p>
  
@@ -48,17 +45,17 @@ value of a provided number. Or how <c>=input()</c> returns anything a user types
 
   <program xml:id="ac4_5_1" interactive="activecode" language="python">
     <input>
-      def square(anInteger: int) -&gt; int:
-        """With any integer, this function will produce its squared value."""
-        result = anInteger * anInteger
-        return result
+      def square(an_integer: int) -&gt; int:
+          """With any integer, this function will produce its squared value."""
+          result = an_integer * an_integer
+          return result
 
-      theInteger = 10
-      result = square(theInteger)
-      print(f"The result of {theInteger} squared is {result}.")
-      anotherInteger = 11
-      result = square(anotherInteger)
-      print(f"The result of {theInteger} squared is {result}.")
+      the_integer = 10
+      result = square(the_integer)
+      print(f"The result of {the_integer} squared is {result}.")
+      another_integer = 11
+      result = square(another_integer)
+      print(f"The result of {another_integer} squared is {result}.")
 
     </input>
   </program>
@@ -67,7 +64,7 @@ value of a provided number. Or how <c>=input()</c> returns anything a user types
     is returned to the caller (the line of code that invoked the function) as the <q>fruit</q> of calling this function. 
     Because the return
     statement can contain any Python expression we could have avoided creating the <term>temporary
-    variable</term> <c>result</c> and simply used <c>return anInteger*anInteger</c>. Try modifying the square function
+    variable</term> <c>result</c> and simply used <c>return an_integer * an_integer</c>. Try modifying the square function
     above to see that this works just the same. On the other hand, using <term>temporary variables</term>
     like <c>result</c> in the function above makes debugging easier, especially when a function is a many step process. 
     These temporary variables are
@@ -75,9 +72,9 @@ value of a provided number. Or how <c>=input()</c> returns anything a user types
     <c>return</c> statement.</p>
   
   <p>Notice something important here: the name of the variable we pass as an argument does not have
-   to have anything to do with the name of the formal parameter &#x2014; <c>anInteger</c>.
-   You can see this very clearly in the Codelens: it doesn't matter what names the caller uses &#x2014; <c>theInteger</c> or 
-   <c>anotherInteger</c>). When <c>square</c> is executed, inside that function, its parameter, a local variable &#x2014; <c>anInteger</c>, 
+   to have anything to do with the name of the formal parameter &#x2014; <c>an_integer</c>.
+   You can see this very clearly in the Codelens: it doesn't matter what names the caller uses &#x2014; <c>the_integer</c> or 
+   <c>another_integer</c>). When <c>square</c> is executed, inside that function, its parameter, a local variable &#x2014; <c>an_integer</c>, 
    is given the value that is passed, the <em>local temporary</em> variable &#x2014; <c>result</c> is determined, and finally, is the return value that the
    function produces.</p>
   <p>Return the previous CodeLens example and step through the code once again. This time make note of the <em>Frames</em> being displayed, the appearance 
@@ -88,71 +85,69 @@ value of a provided number. Or how <c>=input()</c> returns anything a user types
   a value based on its parameter(s).
   Thus, our <c>square</c> function can work <c>"""With any integer..."""</c>.</p>
 
-  <p>It should also be apparent that using <em>self-documenting</em> variables names, like <c>theInteger</c> and 
-  <c>anotherInteger</c>, make clearer what is being passed to the function and what variables are local to the function (<c>anInteger</c> 
+  <p>It should also be apparent that using <em>self-documenting</em> variables names, like <c>the_integer</c> and 
+  <c>another_integer</c>, make clearer what is being passed to the function and what variables are local to the function (<c>an_integer</c> 
   and <c>result</c>). And, using these kinds of self-documenting variable names makes the code easier to design, develop and debug.</p>
 
   <p>There is one more aspect of fruitful functions. By default, all Python functions
     return the special value <c>None</c> to indicate there is no value at all. This is not the same as <c>0</c>, <c>False</c>, 
     nor an empty string <c>""</c>.</p>
 
-  <p><em>A function will only return a value if it includes an explicit return statement with a value in the function's body.</em></p>
+  <note><p>A function will only return a non-None value if it includes an explicit return statement with a value in the function's body.</p>
+  </note>
 
   <p>Notice in the following how the <c>square</c> function does not contain a <c>return</c> statement.
     As you step through this example, pay very close attention to the Return Value in
     the square function's frame. Then look at what is printed when the function is over.</p>
   <program xml:id="clens4_5_2" interactive="codelens" language="python">
     <input>
-      def square(anInteger: int) -&gt; None:
-        y = anInteger * anInteger
+      def square(an_integer: int) -&gt; None:
+        y = an_integer * an_integer
         print(y) # Bad! This is confusing! Should use return instead!
 
-      theInteger = 10
-      squareResult = square(theInteger)
-      print(f"The result of {theInteger} squared is {squareResult}.")
+      the_integer = 10
+      square_result = square(the_integer)
+      print(f"The result of {the_integer} squared is {square_result}.")
     </input>
   </program>
 
   <p>A problem with this function is that even though it prints the resulting squared value (line 3),
     that value will not be available to be subsequently displayable, accessed nor used after the function has been executed.
     Instead, the value <c>None</c>
-    will be returned to the caller's scope. Since line 6 assigns the function's return value to <c>squareResult</c>, 
+    will be returned to the caller's scope. Since line 6 assigns the function's return value to <c>square_result</c>, 
     that variable will have <c>None</c> as its value and that is what will be printed in line 7.</p>
   <p> Much more usefully one would code a fruitful function that 
     return a value and assigns that value to a variables for later processing or display.</p>
 
   <p>Next, a return statement, once executed, immediately terminates execution of a function, even if it
     is not the last statement in the function. In the following code, when line 3 executes, the
-    value 5 is returned and assigned to the variable x, then printed. Lines 4 and 5 never execute.
+    value 5 is returned and assigned to the variable x, then printed. <alert>Lines 4 and 5 never execute.</alert>
     Run the following code and try making some modifications of it to make sure you understand why <q>
     there</q> and 10 never print out.</p>
   <program xml:id="ac4_5_2" interactive="activecode" language="python">
     <input>
       def weird() -&gt; int:
-        print("here")
-        return 5
-        print("there")
-        return 10
+          print("here")
+          return 5
+          print("there")
+          return 10
 
       x = weird()
       print(x)
     </input>
   </program>
   <p>The fact that a return statement immediately ends execution of the code block inside a function is important to
-    understand for writing complex programs, and it can also be useful. The following example algorithm uses a programming structure,
+    understand for writing complex programs. The following example algorithm uses a programming structure,
     <term>conditionals</term>, that we will cover later, but for now we will use the idea here to hint at what is possible.</p>
-    <p>Consider a circumstance where <em>all</em> of a student's previous 35 course grades had to be greater than or equal to 60% to use them as prerequisites
-    for an honours program. 
-    If we used a function to look at each course grade one at a time, and found one was below 60%, it would be inefficient to continue checking
-    the rest of the grades - the function would already have been to return <c>False</c>.</p>
+    <p>Consider a circumstance where a student's grade has to be greater than or equal to 60% to use it as a prerequisite. A function to check this could be written as follows:</p>
   <program language="python">
      <input>
-    def prerequisite_checker( gradesList ) -> bool:pret
-      # look at first grade, if less than 60%, return False
-      # look at second grade, if less than 60%, return False
-      # et cetera
-      # having checked all 35 previous grades, and not finding any less than 60%, return True
-
+    def prerequisite_checker( grade: float ) -> bool:
+        """Checks if student meets prerequisite grade requirements"""
+        if grade &lt; 60:
+            return False
+        else:
+            return True
       </input> 
   </program>
   <p>Do consider the challenges with using multiple return statements: the programmer (and thus the function's code) has to repeat the return statement
@@ -163,36 +158,36 @@ value of a provided number. Or how <c>=input()</c> returns anything a user types
   tracing and debugging the complex function code easier.</p>
 
   <p>So far, we have just seen return values being assigned to variables. For example, we had the
-    line <c>squareResult = square(theInteger)</c>. As with all assignment statements, the right-hand
+    line <c>square_result = square(the_integer)</c>. As with all assignment statements, the right-hand
     side of that instruction is executed first. It invokes the <c>square</c> function, passing in a parameter value 10
-    (the current value of <c>theInteger</c>). The function returns a value 100, which completes the evaluation
-    of the right-hand side of the assignment. The value 100 is then assigned to the variable <c>squareResult</c>.
+    (the current value of <c>the_integer</c>). The function returns a value 100, which completes the evaluation
+    of the right-hand side of the assignment. The value 100 is then assigned to the variable <c>square_result</c>.
     In this case, the function invocation was the entire expression that was evaluated.</p>
   <p>Function invocations, however, can also be used as part of more complicated expressions. For
-    example, <c>squareResult = 2 * square(theInteger + 1)</c>. In this case, the value 11 is evaluated, passed to the function,
+    example, <c>square_result = 2 * square(the_integer + 1)</c>. In this case, the value 11 is evaluated, passed to the function,
     and is returned to the right-hand side of the instructions. Then, the returned value (121) is multiplied by 2 to produce the value 242.</p>
-  <p>To reiterate, when executing the line of code <c>squareResult = 2 * square(theInteger + 1)</c>, the
+  <p>To reiterate, when executing the line of code <c>square_result = 2 * square(the_integer + 1)</c>, the
     Python interpreter does these steps:</p>
   <p>
     <ol marker="1">
       <li>
         <p>It's an assignment statement, so it evaluates the right-hand side expression 
-        <c>2 * square(theInteger + 1)</c>.</p>
+        <c>2 * square(the_integer + 1)</c>.</p>
       </li>
       <li>
-        <p>Looks up the values of the variables square and theInteger: square is a function object and
-          theInteger is 10</p>
+        <p>Looks up the values of the variables square and the_integer: square is a function object and
+          the_integer is 10</p>
       </li>
-      <li><p>Evalutes the argument expression <c>(theInteger + 1)</c> as 11</p>
+      <li><p>Evalutes the argument expression <c>(the_integer + 1)</c> as 11</p>
       </li>
       <li>
-        <p>Pasess 11 as a parameter value to the square function (where anInteger is assigned 11 as a value), get back the return value 121</p>
+        <p>Pasess 11 as a parameter value to the square function (where an_integer is assigned 11 as a value), get back the return value 121</p>
       </li>
       <li>
         <p>Substitutes 121 for square, so that the expression now reads <c>2 * 121</c></p>
       </li>
       <li>
-        <p>Assigns 242 to variable <c>squareResult</c></p>
+        <p>Assigns 242 to variable <c>square_result</c></p>
       </li>
     </ol>
   </p>
@@ -204,9 +199,9 @@ value of a provided number. Or how <c>=input()</c> returns anything a user types
       <p>What is wrong with the following function definition:</p>
       <program language="python">
         <input>
-          def addEm(x, y, z):
-            return x+y+z
-            print('the answer is', x+y+z)
+          def add_em(x, y, z):
+              return x+y+z
+              print('the answer is', x+y+z)
         </input>
       </program>
     </statement>
@@ -261,8 +256,8 @@ value of a provided number. Or how <c>=input()</c> returns anything a user types
       <p>What will the following function return?</p>
       <program language="python">
         <input>
-          def addEm(x: int, y: int, z: int):
-            print(x+y+z)
+          def add_em(x: int, y: int, z: int):
+              print(x+y+z)
         </input>
       </program>
     </statement>
@@ -305,8 +300,8 @@ value of a provided number. Or how <c>=input()</c> returns anything a user types
       <program language="python">
         <input>
           def square(x: int) -&gt; int:
-            y = x * x
-            return y
+              y = x * x
+              return y
 
           print(square(5) + square(5))
         </input>
@@ -346,8 +341,8 @@ value of a provided number. Or how <c>=input()</c> returns anything a user types
       <program language="python">
         <input>
           def square(x: int) -&gt; int:
-            y = x * x
-            return y
+              y = x * x
+              return y
 
           print(square(square(2)))
         </input>
@@ -448,12 +443,12 @@ value of a provided number. Or how <c>=input()</c> returns anything a user types
       <program language="python">
         <input>
           def square(x: int) -&gt; int:
-            print("square")
-            return x*x
+              print("square")
+              return x*x
 
           def g(y: int) -&gt; int:
-            print("g")
-            return y + 3
+              print("g")
+              return y + 3
 
           print(square(g(2)))
         </input>
@@ -551,9 +546,9 @@ value of a provided number. Or how <c>=input()</c> returns anything a user types
         from unittest.gui import TestCaseGui
 
         class myTests(TestCaseGui):
+            def testOne(self):
+                self.assertEqual(same('hello'), 'hello', "Testing the same function on input 'hello'.")
 
-        def testOne(self):
-        self.assertEqual(same('hello'), 'hello', "Testing the same function on input 'hello'.")
         myTests().main()
       </input>
     </program>
@@ -571,11 +566,9 @@ value of a provided number. Or how <c>=input()</c> returns anything a user types
         from unittest.gui import TestCaseGui
 
         class myTests(TestCaseGui):
-
-        def testOne(self):
-        self.assertEqual(same_thing(5), 5,"Testing the function same_thing with input 5")
-        self.assertEqual(same_thing("Welcome"), "Welcome", "Testing the function same_thing with
-        input 'Welcome'")
+            def testOne(self):
+                self.assertEqual(same_thing(5), 5,"Testing the function same_thing with input 5")
+                self.assertEqual(same_thing("Welcome"), "Welcome", "Testing the function same_thing with input 'Welcome'")
 
         myTests().main()
       </input>
@@ -594,10 +587,10 @@ value of a provided number. Or how <c>=input()</c> returns anything a user types
         from unittest.gui import TestCaseGui
 
         class myTests(TestCaseGui):
-
-        def testOne(self):
-        self.assertEqual(subtract_three(9), 6, "Testing the subtract_three function on input 9.")
-        self.assertEqual(subtract_three(-5), -8, "Testing the subtract_three function on input -5.")
+            def testOne(self):
+                self.assertEqual(subtract_three(9), 6, "Testing the subtract_three function on input 9.")
+                self.assertEqual(subtract_three(-5), -8, "Testing the subtract_three function on input -5.")
+        
         myTests().main()
       </input>
     </program>
@@ -615,10 +608,10 @@ value of a provided number. Or how <c>=input()</c> returns anything a user types
         from unittest.gui import TestCaseGui
 
         class myTests(TestCaseGui):
-
-        def testOne(self):
-        self.assertEqual(change(5), 12,"Testing the function change with input 5")
-        self.assertEqual(change(-10), -3, "Testing the function change with input -10")
+            def testOne(self):
+                self.assertEqual(change(5), 12,"Testing the function change with input 5")
+                self.assertEqual(change(-10), -3, "Testing the function change with input -10")
+        
         myTests().main()
       </input>
     </program>
@@ -638,10 +631,8 @@ value of a provided number. Or how <c>=input()</c> returns anything a user types
         from unittest.gui import TestCaseGui
 
         class myTests(TestCaseGui):
-
-        def testOne(self):
-        self.assertEqual(intro("Mike"), "Hello, my name is Mike and I love COMP 1701.", "Testing the
-        intro function on input 'Mike'.")
+            def testOne(self):
+                self.assertEqual(intro("Mike"), "Hello, my name is Mike and I love COMP 1701.", "Testing the intro function on input 'Mike'.")
 
         myTests().main()
       </input>
@@ -660,12 +651,9 @@ value of a provided number. Or how <c>=input()</c> returns anything a user types
         from unittest.gui import TestCaseGui
 
         class myTests(TestCaseGui):
-
-        def testOne(self):
-        self.assertEqual(s_change("Coding"), "Coding for fun." ,"Testing the function s_change with
-        input coding")
-        self.assertEqual(s_change("We go to the beach"), "We go to the beach for fun." , "Testing
-        the function s_change with input We go to the beach")
+            def testOne(self):
+                self.assertEqual(s_change("Coding"), "Coding for fun." ,"Testing the function s_change with input coding")
+                self.assertEqual(s_change("We go to the beach"), "We go to the beach for fun." , "Testing the function s_change with input We go to the beach")
 
         myTests().main()
       </input>

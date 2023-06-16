@@ -14,7 +14,7 @@
   <title>Instructor's Note</title>
   <p>
     Relying on global variables is a really bad habit to pick up, as
-    Python is a language that lets you get away with gloabls pretty
+    Python is a language that lets you get away with globals pretty
     easily. As you move on to other languages, you'll be
     in for a world of pain if you don't learn to avoid globals. Be warned.
   </p>
@@ -73,7 +73,7 @@ print(result)
   <p>If you really want to change the value of a global variable inside a function,
             you can can do it by explicitly declaring the variable to be global, as in the example
             below. Again, you should <em>not</em> do this in your code. The example is here only
-            to cement your understanding of how scope in Python works.</p>
+            to illustrate how scope in Python works.</p>
   <program xml:id="clens4_9_2" interactive="codelens" language="python">
     <input>
 def powerof(x,p):
@@ -117,7 +117,7 @@ print(z)
 
   <p>
     <alert>Instructor's Counsel:</alert> <em>Just because you can, doesn't mean you should.</em> Global variables exist,
-  but, as a novice programmer, you really should not use them. </p>
+  but, as a novice programmer, you really should not use them (except in the case of <term>named constants</term>). </p>
 
   </note>
   
@@ -236,17 +236,17 @@ print(z)
        <program language="python">
     <input>
     from math import pi as PI
-      def areaCircle( anyRadius: float ) -> float:
+    def area_circle( any_radius: float ) -> float:
         """with any length greater than zero, returns area"""
-        return (PI * anyRadius**2)
+        return (PI * any_radius**2)
 
-      def circumferenceCircle(anyRadius:float) -> float:
+    def circumference_circle(any_radius:float) -> float:
         """with any length greater than zero, returns circumference"""
-        return (2 * PI * anyRadius)
+        return (2 * PI * any_radius)
 
-      def volumeSphere(anyRadius:float) -> float:
+    def volume_sphere(any_radius:float) -> float:
         """With any length greater than zero, returns volume"""
-        return (4/3 * PI * anyRadius**3)
+        return (4/3 * PI * any_radius**3)
 
     </input>
   </program>
