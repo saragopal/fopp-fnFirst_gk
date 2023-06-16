@@ -17,10 +17,10 @@
       <title><term>output</term></title>
       <p>Display data on the screen or send data to a file or other device.</p>
     </li>
-    <li>
+    <!-- <li>
       <title><term>assignment</term></title>
       <p>Create, and give a name to, a memory location that refers to a value or even a process.</p>
-    </li>
+    </li> -->
      <li>
       <title><term>expression</term> (processing)</title>
       <p>Perform basic mathematical operations like addition and multiplication; and logical
