@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
     <chapter xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
         <title>Nested Data and Nested Iteration</title>
+        <introduction>
+        <p>Last updated <today />.</p>
+        </introduction>
+
         <xi:include href='./ListswithComplexItems.ptx' />
         <xi:include href='./NestedDictionaries.ptx' />
         <xi:include href='./jsonlib.ptx' />

@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <chapter xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
     <title>Functions</title>
+        <introduction>
+        <p>Last updated <today />.</p>
+        </introduction>
+
     <xi:include href='./intro-Functions.ptx' />
     <xi:include href='./FunctionDefinitions.ptx' />
     <xi:include href='./FunctionInvocation.ptx' />

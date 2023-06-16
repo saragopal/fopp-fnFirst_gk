@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <chapter xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
     <title>More About Iteration</title>
+        <introduction>
+        <p>Last updated <today />.</p>
+        </introduction>
+
     <xi:include href='./intro-Iteration.ptx' />
     <xi:include href='./TheforLoop.ptx' />
     <xi:include href='./FlowofExecutionoftheforLoop.ptx' />
