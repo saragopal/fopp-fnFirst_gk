@@ -3,16 +3,16 @@
   <title>Glossary</title>
   <glossary sorted="False">
     <gi>
-      <title>activecode</title>
+      <title>Activecode</title>
       <p>A unique interpreter environment that allows Python to be executed from within a web browser.</p>
     </gi>
     <gi>
       <title>algorithm</title>
       <p>A step by step list of instructions that if followed exactly will solve the problem under consideration.</p>
     </gi>
-    <gi>
-      <title>bug</title>
-      <p>An error in a program.</p>
+     <gi>
+      <title>assignment</title>
+      <p>Binding a (variable) name to a specific value.</p>
     </gi>
     <gi>
       <title>byte code</title>
@@ -21,7 +21,7 @@
                             interpret the byte code with a program called a <em>virtual machine</em>.</p>
     </gi>
     <gi>
-      <title>codelens</title>
+      <title>CodeLens</title>
       <p>An interactive environment that allows the user to control the step by step execution of a Python program</p>
     </gi>
     <gi>
@@ -35,29 +35,41 @@
       <p>To translate a program written in a high-level language into a
                             low-level language all at once, in preparation for later execution.</p>
     </gi>
+
     <gi>
-      <title>debugging</title>
-      <p>The process of finding and removing any of the three kinds of
-                            programming errors: <term>*syntax error*</term>, <term>*semantic error*</term>, and <term>*runtime error*</term>.</p>
+    <title>conditional execution</title>
+    <p>Also known as selections or decisions. The checking to see which steps are appropriate to execute.
+    </p>
     </gi>
+
+
     <gi>
-      <title>exception</title>
-      <p>Another name for a runtime error.</p>
+      <title>execute</title>
+      <p>The process by which a computer program is read and acted upon. Also sometimes we say 'run'.</p>
     </gi>
-    <gi>
-      <title>executable</title>
-      <p>Another name for object code that is ready to be executed.</p>
-    </gi>
-    <gi>
+     <gi>
       <title>formal language</title>
       <p>Any one of the languages that people have designed for specific
                             purposes, such as representing mathematical ideas or computer programs;
                             all programming languages are formal languages.</p>
     </gi>
+    
     <gi>
       <title>high-level language</title>
       <p>A programming language like Python that is designed to be easy for
                             humans to read and write.</p>
+    </gi>
+   <gi>
+      <title>input</title>
+      <p>Getting data from the keyboard, a file, or some other device.
+              Also, <c>= input( )</c> a built-in Python function that gets data from the user via the keyboard.</p>
+    </gi>
+
+    <gi>
+  <title>integrated development environment (IDE) </title>
+  <p>
+    A software applications that helps programmers code efficiently by providing tools to develop,
+        edit, and test their programs. </p>
     </gi>
     <gi>
       <title>interpret</title>
@@ -77,12 +89,16 @@
       <title>object code</title>
       <p>The output of the compiler after it translates the program.</p>
     </gi>
+     <gi>
+      <title>output</title>
+      <p>Displaying data to the screen, to a file or other device.</p>
+    </gi>
     <gi>
       <title>parse</title>
       <p>To examine a program and analyze the syntactic structure.</p>
     </gi>
     <gi>
-      <title>portability</title>
+      <title>portable</title>
       <p>A property of a program that can run on more than one kind of computer.</p>
     </gi>
     <gi>
@@ -111,6 +127,15 @@
                             key to send these commands immediately to the interpreter for
                             processing. To initiate the Python Shell, the user should open theterminal and type <q>python</q>. Once the user presses           enter, the Python Shell appears and the user can interact with it.</p>
     </gi>
+
+    <gi>
+<title>repetition</title>
+<p>
+  Also called iterating. Executing a set of instructions, performing some algorithm steps, more than once.
+</p>
+
+
+    </gi>
     <gi>
       <title>runtime error</title>
       <p>An error that does not occur until the program has started to execute
@@ -136,7 +161,7 @@
     </gi>
     <gi>
       <title>syntax</title>
-      <p>The structure of a program.</p>
+      <p>The rules that define a programming language.</p>
     </gi>
     <gi>
       <title>syntax error</title>
@@ -147,6 +172,13 @@
       <title>token</title>
       <p>One of the basic elements of the syntactic structure of a program,
                             analogous to a word in a natural language.</p>
+    </gi>
+    <gi>
+      <title>virtual machine</title>
+      <p>Software that runs programs and apps that does not depend on the computer's physical hardware.
+                This allows those programs and apps to interact with the user in the same way no matter
+                what computer platform (OS, CPU etc.) the user has. Python's virtual machine converts
+                (interprets) the byte code into computer specific machine code. </p>
     </gi>
   </glossary>
 </section>

@@ -8,15 +8,18 @@
     <xi:include href='./Returningavaluefromafunction.ptx' />
     <xi:include href='./DecodingaFunction.ptx' />
     <xi:include href='./TypeAnnotations.ptx' />
-    <!-- <xi:include href='./Afunctionthataccumulates.ptx' /> -->
     <xi:include href='./Variablesandparametersarelocal.ptx' />
     <xi:include href='./GlobalVariables.ptx' />
     <xi:include href='./Functionscancallotherfunctions.ptx' />
     <xi:include href='./FlowofExecutionSummary.ptx' />
     <xi:include href='./Printvsreturn.ptx' />
-    <!-- <xi:include href='./PassingMutableObjects.ptx' /> -->
-    <xi:include href='./SideEffects.ptx' />
     <xi:include href='./Glossary.ptx' />
     <xi:include href='./Exercises.ptx' />
     <xi:include href='./ChapterAssessment.ptx' />
+
+    <!-- topics to include in Functions Revisited-->
+        <!-- xi:include href='./SideEffects.ptx' / --> 
+
+        <!-- <xi:include href='./Afunctionthataccumulates.ptx' / -->
+        <!-- <xi:include href='./PassingMutableObjects.ptx' / -->
 </chapter>

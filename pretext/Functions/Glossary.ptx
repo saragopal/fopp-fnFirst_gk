@@ -2,12 +2,20 @@
 <section xml:id="functions_glossary">
   <title>Glossary</title>
   <glossary sorted="False">
+     <gi>
+      <title>abstraction</title>
+      <p>A common computer programming approach and problem solving technique where, in order to make the algorithm less complex
+            easier to understand, the various sub-steps to the solution are 'hidden' within a named object (like a function) - the abstraction.
+            Then to solve a problem the the programmer refers to this and other abstractions without having conceptualize
+            their inner workings.</p>
+    </gi>
     <gi>
       <title>argument</title>
       <p>A value provided to a function when the function is called. This value
                             is assigned to the corresponding parameter in the function. The argument
                             can be the result of an expression which may involve operators,
-                            operands and calls to other fruitful functions.</p>
+                            operands and calls to other fruitful functions.
+                            Also called actual parameters or parameter values.</p>
     </gi>
     <gi>
       <title>body</title>
@@ -16,13 +24,7 @@
                             of the header. The standard amount of indentation used within the
                             Python community is 4 spaces.</p>
     </gi>
-    <gi>
-      <title>calling stack</title>
-      <p>A sequence (stack) of frames, showing all the function calls that are in process
-                            but not yet complete. When one function's code invokes another function call,
-                            there will be more than one frame on the stack.</p>
-    </gi>
-    <gi>
+     <gi>
       <title>compound statement</title>
       <p>A statement that consists of two parts:</p>
       <p>
@@ -40,17 +42,22 @@
       <p>The syntax of a compound statement looks like this:</p>
       <program language="python">
         <input>
-keyword expression:
-    statement
-    statement
-    ...
-</input>
+          keyword expression:
+              statement
+              statement
+              ...
+          </input>
       </program>
     </gi>
     <gi>
+      <title>decomposition</title>
+      <p>A computer science problem solving technique where a complex problem is broken into simpler (more easily solved) sub-parts who's solutions
+      are often coded for separately (often with functions). 
+              Also known as <em>factoring</em>, decomposed programs are easier to design, understand, code, and maintain.</p>
+    </gi>
+    <gi>
       <title>docstring</title>
-      <p>If the first thing in a function body is a string (or, we'll see later, in other situations
-                            too) that is attached to the function as its <c>__doc__</c> attribute.</p>
+      <p>Triple-quoted string, placed as the first line(s) of a function, that documents the function as its <c>__doc__</c> attribute.</p>
     </gi>
     <gi>
       <title>flow of execution</title>
@@ -58,13 +65,14 @@ keyword expression:
     </gi>
     <gi>
       <title>function</title>
-      <p>A named sequence of statements that performs some useful operation.
+      <p>A named sequence of statements that performs a specific operation. Specific functions can then be used (repeatedly and in
+      conjuction with other functions) to solve more complicated problems.
                             Functions may or may not take parameters and may or may not produce a
                             result.</p>
     </gi>
     <gi>
       <title>function call</title>
-      <p>A statement that executes a function. It consists of the name of the
+      <p>Also known as a function invocation. A statement that executes a function. It consists of the name of the
                             function followed by a list of arguments enclosed in parentheses.</p>
     </gi>
     <gi>
@@ -100,13 +108,15 @@ keyword expression:
     <gi>
       <title>local variable</title>
       <p>A variable defined inside a function. A local variable can only be used
-                            inside its function. Parameters of a function are also a special kind
+                            inside its function.It's <em>scope</em> means it only exists while 
+                            the function's code is being executed. Trying to access (to display or for later processing)
+                            a local variable outside of, or after a function will produce a runtime error - <c>NameError: variable name is not defined</c>.
+                            Parameters of a function are also a special kind
                             of local variable.</p>
     </gi>
-    <gi>
-      <title>method</title>
-      <p>A special kind of function that is invoked on objects of particular types of
-                            objects, using the syntax <c>&lt;expr&gt;.&lt;methodname&gt;(&lt;additional parameter values&gt;)</c></p>
+     <gi>
+      <title>non-fruitful (void) function</title>
+      <p>A function that does not return a value upon invocation. In some languages, this kind of function is called a procedure.</p>
     </gi>
     <gi>
       <title>None</title>
@@ -119,8 +129,22 @@ keyword expression:
                             to it as an argument.</p>
     </gi>
     <gi>
+      <title>parameter list</title>
+      <p>Also, formal parameters, ideal parameters, or parameter names, the ordered names of the parameters listed in the function definition.</p>
+    </gi>
+    <gi>
+      <title>return</title>
+      <p>The keyword or a statement, optionally followed by a value, ends a function call and provides a return value from the function to the caller.</p>
+    </gi>
+    <gi>
       <title>return value</title>
       <p>The value provided as the result of a function call.</p>
+    </gi>
+    <gi>
+      <title>scope</title>
+      <p>A description of where an identified item (a variable, a function etc.) is recognized and accessible: where in a program is that item valid to be used.
+              For example, a function can only be called after it has been defined. A parameter within a function can only be accessed by instructions
+              within the function.</p>
     </gi>
     <gi>
       <title>side effect</title>
@@ -128,12 +152,13 @@ keyword expression:
     </gi>
     <gi>
       <title>stack frame</title>
-      <p>A frame that keeps track of the values of local variables during a function execution,
-                            and where to return control when the function execution completes.</p>
+      <p>A frame that keeps track of the values of local variables during a function execution (within the scope of the function),
+                            and where (what scope) to return control to when the function execution completes.</p>
     </gi>
     <gi>
       <title>type annotation</title>
       <p>An optional notation that specifies the type of a function parameter or function result.</p>
     </gi>
+   
   </glossary>
 </section>

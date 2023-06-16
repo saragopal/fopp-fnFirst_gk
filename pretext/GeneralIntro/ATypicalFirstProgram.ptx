@@ -10,9 +10,10 @@ print("Hello, World!")
 </input>
   </program>
   <p>This is an example of using the <term>print function</term>, which doesn't actually
-            print anything on paper. It displays a value on the screen. In this case, the result is the phrase:</p>
+            print anything on paper. It displays a value on the screen. The term is left over from the 
+            days when it was more common to output the result of our computer programs to paper rather than to the screen. In this case, the result is the phrase:</p>
   <pre>Hello, World!</pre>
-  <p>Here is the example in an activecode window, where you can run it and modify it.</p>
+  <p>Here is the example in an ActiveCode window, where you can run it and modify it.</p>
   <program xml:id="ac1_7_1" interactive="activecode" language="python">
     <input>
 print("Hello, World!")

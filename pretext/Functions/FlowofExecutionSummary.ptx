@@ -2,29 +2,30 @@
 <section xml:id="functions_flow-of-execution-summary">
   <title>Flow of Execution Summary</title>
   <p>When you are working with functions it is really important to know the order in which
-    statements are executed. This is called the <term>flow of execution</term> and we've already
-    talked about it a number of times in this chapter.</p>
+    statements are executed. This is called the <term>flow of execution</term>. We've already
+    talked about it a number of times in this chapter and you've practiced every time you've traced the steps of an algorithm.</p>
+
   <p>Execution always begins at the first statement of the program. Statements are executed one at a
     time, in order, from
     top to bottom. Function definitions do not alter the flow of execution of the program, but
     remember that statements
-    inside the function are not executed until the function is called. Function calls are like a
+    inside a function are not executed until the function is called. Function calls are like a
     detour in the flow of
-    execution. Instead of going to the next statement, the flow jumps to the first line of the
-    called function, executes
+    execution. Instead of going to the next statement, the flow jumps into the scope of that called function, to the function's 
+    first line, executes
     all the statements there, and then comes back to pick up where it left off.</p>
   <p>That sounds simple enough, until you remember that one function can call another. While in the
     middle of one function,
-    the program might have to execute the statements in another function. But while executing that
+    the program might have to execute the statements in another function. And while executing that
     new function, the
     program might have to execute yet another function!</p>
   <p>Fortunately, the Python interperter is adept at keeping track of where it is, so each time a
     function completes, the
     program picks up where it left off in the function that called it. When it gets to the end of
     the program, it terminates.</p>
-  <p>What does all that mean for us when we try to understand a program? Don't read from top to
-    bottom. Instead, follow the
-    flow of execution. This means that you will read the def statements as you are scanning from top
+  <p>What does all that mean for us when we try to understand a program? Don't just read from top to
+    bottom. Instead, <alert>follow the
+    flow of execution</alert>. This means that you will read the def statements as you are scanning from top
     to bottom, but you
     should skip the body of the function until you reach a point where that function is called.</p>
   <p>
@@ -32,7 +33,7 @@
   </p>
   <exercise label="question4_11_1">
     <statement>
-      <p>Consider the following Python code. Note that line numbers are included on the left.</p>
+      <p>Consider the following Python code.</p>
       <program language="python">
         <input>
           def pow(b, p):
