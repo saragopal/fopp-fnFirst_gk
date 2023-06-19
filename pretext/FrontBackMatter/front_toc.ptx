@@ -8,29 +8,28 @@
             <institution>Mount Royal University</institution>
         </author>
 
-        <editor>
+        <author>
             <personname>Eric Chalmers</personname>
             <department>Department of Mathematics and Computing</department>
             <institution>Mount Royal University</institution>
-        </editor>
+        </author>
 
-        <editor>
+        <author>
             <personname>Charlotte Curtis</personname>
             <department>Department of Mathematics and Computing</department>
             <institution>Mount Royal University</institution>
-        </editor>
+        </author>
 
-        <editor>
+        <author>
             <personname>Patrick Perri</personname>
             <department>Department of Mathematics and Computing</department>
             <institution>Mount Royal University</institution>
-        </editor>
+        </author>
 
         <credit>
             <title>Original Foundations of Python Programming</title>
             <author>
-                <personname>Brad Miller, Paul Resnick, Lauren Murphy, Jeffrey Elkner, Peter Wentworth, Allen B. Downey, Chris
-Meyers, and Dario Mitchell.</personname>
+                <personname>Brad Miller and Paul Resnick</personname>
                 <institution>Runestone Academy</institution>
             </author>
         </credit>
