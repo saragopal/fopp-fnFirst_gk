@@ -1,4 +1,4 @@
-<section xml:id="front-back-matter_copyright-notice">
+<appendix xml:id="front-back-matter_copyright-notice">
         <title>Copyright Notice</title>
         <line_block>
             <line>Copyright (C)  Brad Miller, Paul Resnick, Lauren Murphy, Jeffrey Elkner, Peter Wentworth, Allen B. Downey, Chris</line>
@@ -9,5 +9,5 @@
             <line>Contributor List, no Front-Cover Texts, and no Back-Cover Texts.  A copy of</line>
             <line>the license is included in the section entitled <q>GNU Free Documentation License</q>.</line>
         </line_block>
-    </section>
+    </appendix>
 

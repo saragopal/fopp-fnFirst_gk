@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<section xml:id="front-back-matter_gnu-free-documentation-license">
+<appendix xml:id="front-back-matter_gnu-free-documentation-license">
   <title>GNU Free Documentation License</title>
   <p>Version 1.3, 3 November 2008</p>
   <!--This data file has been placed in the public domain.-->
@@ -381,4 +381,4 @@ Processed by unicode2rstsubs.py, part of Docutils:
                 CC-BY-SA on the same site at any time before August 1, 2009, provided the MMC
                 is eligible for relicensing.</p>
   </subsection>
-</section>
+</appendix>

@@ -35,6 +35,8 @@
 
         <xi:include href="./AdditionalResources/toctree.ptx" />
 
+        <xi:include href="./FrontBackMatter/back_toc.ptx" />
+
 
     </book>
 </pretext>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<backmatter xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
+<!-- <appendix xml:id="appendix-list-results">
+  <title>List of Glossary Terms</title>
+
+  <list-of elements="term" divisions="chapter" empty="no"/>
+</appendix> -->
+ <xi:include href="fdl-1.3.ptx" />
+ <xi:include href="copyright.ptx" />
+</backmatter>
