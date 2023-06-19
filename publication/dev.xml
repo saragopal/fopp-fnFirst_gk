@@ -1,20 +1,20 @@
-<!-- Testing for Runestone -->
+<!-- Basically the same as runestone.ptx, but host="web" seems to be necessary for ActiveCode to
+work locally -->
 <publication>
 
+    <!-- Uncomment the following to remove pagination (one HTML file per chapter) -->
     <!-- <common>
         <chunking level="1" />
     </common> -->
 
+    <!-- directories are relative to the main source PreTeXt file -->
     <source>
         <directories external="Figures" generated="GenFigs" />
     </source>
 
     <html>
         <platform host="web" />
-        <platform host="runestone" />
         <!-- knowled checkpoints interfere with ActiveCode problems -->
         <knowl exercise-inline="no" example="no" listing="yes" />
     </html>
-
-    <stringparam key="debug.rs.services.file" value="https://runestone.academy/cdn/runestone/latest/webpack_static_imports.xml" />
 </publication>
