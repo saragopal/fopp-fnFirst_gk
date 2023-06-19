@@ -1,11 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <chapter xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
     <title>Additional Resources</title>
-    <xi:include href='./intro-AdditionalResources.ptx' />
-    <xi:include href='./BooksAndBookshelves.ptx' />
+    <introduction>
+    <p>This section contains resources to help you
+        develop and improve your skillset.</p>
+    <p>These resources are not required, but are provided as a way to
+        help you continue to learn and grow.</p>
+    <p>Last updated <today />.</p>
+    </introduction>
+
     <xi:include href='./FileSystems.ptx' />
     <xi:include href='./CommandLine.ptx' />
     <xi:include href='./IntroToGit.ptx' />
     <xi:include href='./AdvancedGit.ptx' />
     <xi:include href='./VSCode.ptx' />
+    <xi:include href='./BooksAndBookshelves.ptx' />
 </chapter>
