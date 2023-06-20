@@ -10,7 +10,7 @@
         <p>For this section, GitBash will be used as the command line interface. GitBash is a
             command line interface that is included with Git for Windows. It is a Bash shell
             emulator that provides a Linux-like CLI environment on Windows. GitBash can be
-            downloaded from <ulink url="https://gitforwindows.org/">https://gitforwindows.org/</ulink>
+            downloaded from <url href="https://gitforwindows.org/" visual="https://gitforwindows.org/">https://gitforwindows.org/</url>
             .</p>
         <p>Once GitBash is installed, it can be opened through a shortcut, or by right-clicking in a
             folder and selecting <guibutton>Git Bash Here</guibutton>.</p>
@@ -27,34 +27,33 @@
             entered on the same line by separating them with a semicolon. </p>
         <subsection xml:id="command_line-commands-navigation">
             <title>Navigation Commands</title>
-            <p> Arguably the most important command is <command>cd</command>, which is used to
+            <p> Arguably the most important command is <c>cd</c>, which is used to
                 change directories. Directories are the folders that contain files. The current
-                directory is displayed in the command line prompt. To change directories, enter <command>
-                cd</command> followed by the name of the directory. For example, to change to the <filename>
-                src</filename> directory, enter <command>cd src</command>. </p>
+                directory is displayed in the command line prompt. To change directories, enter <c>cd</c> followed by the name of the directory. For example, to change to the <em>
+                src</em> directory, enter <c>cd src</c>. </p>
             <p> In order to navigate into a parent directory - that is, the directory that contains
-                the current directory - use <command>cd ..</command>. For example, if the current
-                directory is <filename>src</filename>, then <command>cd ..</command> will change to
+                the current directory - use <c>cd ..</c>. For example, if the current
+                directory is <em>src</em>, then <c>cd ..</c> will change to
                 the parent directory. </p>
-            <p> Next, the <command>ls</command> command is used to list the contents of the current
+            <p> Next, the <c>ls</c> command is used to list the contents of the current
                 directory. This command will list the files and directories in the current
-                directory. For example, if the current directory contains the files <filename>
-                main.py</filename> and <filename>README.md</filename>, then <command>ls</command>
+                directory. For example, if the current directory contains the files <em>
+                main.py</em> and <em>README.md</em>, then <c>ls</c>
                 will list these files. Folders, when listed, will not have a file extension, and
                 instead will be followed by a forward slash. For example, if the current directory
-                contains the folder <filename>src</filename>, then <command>ls</command> will list <filename>
-                src/</filename>. </p>
+                contains the folder <em>src</em>, then <c>ls</c> will list <em>
+                src/</em>. </p>
         </subsection>
         <subsection xml:id="command_line-commands-files_directories">
             <title>File and Directory Commands</title>
-            <p> To create a new directory, use the <command>mkdir</command> command. For example, to
-                create a new directory named <filename>src</filename>, enter <command>mkdir src</command>
+            <p> To create a new directory, use the <c>mkdir</c> command. For example, to
+                create a new directory named <em>src</em>, enter <c>mkdir src</c>
                 . </p>
-            <p> To create a new file, use the <command>touch</command> command. For example, to
-                create a new file named <filename>main.py</filename>, enter <command>touch main.py</command>
+            <p> To create a new file, use the <c>touch</c> command. For example, to
+                create a new file named <em>main.py</em>, enter <c>touch main.py</c>
                 . </p>
-            <p> To remove a file, use the <command>rm</command> command. For example, to remove the
-                file <filename>main.py</filename>, enter <command>rm main.py</command>. Be warned,
+            <p> To remove a file, use the <c>rm</c> command. For example, to remove the
+                file <em>main.py</em>, enter <c>rm main.py</c>. Be warned,
                 this command will permanently delete the file. </p>
         </subsection>
         <exercise label="pp11_5_1" indentation="show" language="python">
