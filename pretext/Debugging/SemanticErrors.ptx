@@ -81,7 +81,7 @@ Expected Output: 5</pre>
         </choice>
         <choice>
           <statement>
-            <p>Forgetting a semi-colon at the end of a statement where one is required.</p>
+            <p>Forgetting the closing parenthesis <c>)</c> on a <c>print</c> statement.</p>
           </statement>
           <feedback>
             <p>A semantic error is an error in logic. In this case the program does not produce the correct output because the code can not be processed by the compiler or interpreter. This would be considered a syntax error.</p>

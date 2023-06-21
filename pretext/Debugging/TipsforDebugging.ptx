@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<section xml:id="debugging_tips-for-debugging">
+  <title>Tips for Debugging</title>
+  <p>Debugging a program is a different way of thinking than writing a program. The process of
+    debugging is much more like being a detective. Here are a few useful debugging strategies:</p>
+  <p>
+    <ol marker="1">
+      <li>
+        <p>
+          Pay close attention to error messages. What clues do you get from the error message? Where does it say the problem occurred? Ask yourself how the problem indicated could have occurred given your program's inputs.
+        </p>
+      </li>
+      <li>
+        <p>
+          Comment out some lines of code to simplify the program. Commenting out some of the operations around where the error occurs can help you zero-in on the problem.
+        </p>
+      </li>
+      <li>
+        <p>
+          Use <c>print</c> statements to print out variable values, user inputs, and intermediate calcaultion results so you can compare them to what you expected. Note this requires you to have an expectation in the first place! Do the work to figure out how your program <em>should</em> be working, then pinpoint where it starts to deviate from your expectation.
+        </p>
+      </li>
+      <li>
+        <p>
+          Run your program with test inputs to check its functionality.
+        </p>
+      </li>
+      <li>
+        <p>
+          Use your IDE! Most Integrated Development Environments (IDEs - programs that help you write code) include useful debugging tools that allow you to step through your code (like the Codelens feature of this book) and see how variable values are changing along the way. Most IDEs will automatically highlight syntax errors too.
+        </p>
+      </li>
+      
+    </ol>
+  </p>
+</section>
