@@ -106,7 +106,7 @@ else:
           <p>Yes</p>
         </statement>
         <feedback>
-          <p>This will cause an error because the second else-block is not attached to a corresponding if-block.</p>
+          <p>This will cause an error because the second else-block is not attached to a corresponding if-block. In other words, each <c>if</c> can have at most one <c>else</c>.</p>
         </feedback>
       </choice>
     </choices>
