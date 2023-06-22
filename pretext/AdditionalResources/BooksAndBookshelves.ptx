@@ -6,7 +6,7 @@
         before attempting.</p>
     <p> You're given two classes, <c>Bookshelf</c> and <c>Book</c>. <c>Book</c>s have a few
         properties: a <c>title</c>, an <c>author</c>, and a <c>year of publication</c>. We set these
-        when instantiating the book. A <c>Bookshelf</c> only has one property: a <c>books list</c>.
+        when instantiating the book. A <c>Bookshelf</c> only has one property: a <c>books</c> list.
         It's empty by default. </p>
 
     <program language="python">
@@ -166,7 +166,7 @@ Animal Farm,George Orwell,1945
         </program>
         <p>
             You're gonna need to make some edits to some existing functions. Not all these authors have a last name, so you'll have to use their first name without an initial.
-Also, a few searching methods may need to be revised. Some books may have been written in the same year, or by the same author. If this is the case, return a string where each book is separated by a newline.
+Also, a few searching methods may need to be revised. Some books may have been written in the same year, or by the same author. Change the <c>get_book_by_author()</c> and <c>get_book_by_year()</c> methods to return a list of all matching <c>Book</c> objects. If the search returns only one match, the list will contain only one item. If the search returns nothing the list will be empty.
         </p>
     </subsection>
     <subsection xml:id="additonal_resources-books-bookshelves-final-touches">
@@ -176,7 +176,7 @@ Also, a few searching methods may need to be revised. Some books may have been w
         </p>
         <p>
             There were a lot of classics on that list, so add a method to the <c>Bookshelf</c> class that returns a list of books written before a specified year. Make sure
-            this method returns a list of <c>Book</c> objects, not strings. Also, make sure the year is inclusive.
+            this method returns a list of <c>Book</c> objects. Also, make sure the year is inclusive.
         </p>
         <p>
             Some authors appear on that list more than others. Write a method that returns a list of authors that have more than one book on the shelf. Make sure this method returns a list of strings, not <c>Book</c> objects.
