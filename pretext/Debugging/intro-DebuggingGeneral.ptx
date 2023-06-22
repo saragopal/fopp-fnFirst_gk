@@ -14,10 +14,10 @@
     <p>
       <ul>
         <li>
-          <p>To understand good programming strategies to avoid errors</p>
+          <p>To understand common kinds of exceptions and their likely causes</p>
         </li>
         <li>
-          <p>To understand common kinds of exceptions and their likely causes</p>
+          <p>To practice finding and fixing errors</p>
         </li>
       </ul>
     </p>
@@ -27,10 +27,10 @@
     <p>
       <ul>
         <li>
-          <p>Given a piece of code identify the Syntax errors based on error messages</p>
+          <p>Identify errors based on error messages</p>
         </li>
         <li>
-          <p>Given a piece of code find the (ValueError, TypeError, SyntaxError, ParseError, NameError)</p>
+          <p>Understand various kinds of errors: ValueError, TypeError, SyntaxError, NameError</p>
         </li>
       </ul>
     </p>

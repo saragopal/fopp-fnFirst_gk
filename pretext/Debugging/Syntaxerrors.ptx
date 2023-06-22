@@ -34,24 +34,19 @@ print("All finished!")
       </li>
       <li>
         <p>The error is on line 2 of the program. However, even though there is nothing
-                    wrong with line 1, the print statement does not execute &#x2014; <term>none</term> of the program successfully executes
+                    wrong with line 1, the print statement does not execute &#x2014; <alert>none</alert> of the program successfully executes
                     because of the presence of just one syntax error.</p>
       </li>
       <li>
-        <p>The error gives the line number where Python believes the error exists. In this case, the error message pinpoints the
-                    location correctly. But in other cases, the line number can be inaccurate or entirely missing.</p>
-        <p>To see an example of the latter, try removing just the <term>right</term> parenthesis <c>)</c> from line 2 and
-                    running the program again. Notice how the error message gives no line number at all. With syntax errors, you need to be
-                    prepared to hunt around a bit in order to locate the trouble.</p>
+        <p>The error gives the line number where the error occurred. In this case, the error message pinpoints the
+                    location of the problem. But this may not always be the case: for example, try removing just the <alert>right</alert> parenthesis <c>)</c> from line 2 and
+                    running the program again. Notice how the error message gives no line number at all. You need to be prepared to hunt around a bit in order to locate the trouble.</p>
       </li>
     </ol>
   </p>
-  <p>One aspect of syntax you have to watch out for in Python involves indentation. Python requires you to begin all
-            statements at the beginning of the line, unless you are using a flow control statement like a <c>for</c> or an <c>if</c> statement
-            (we'll discuss these soon&#x2026; stay tuned!). To see an example of this kind of problem, modify the program above by inserting a
-            couple of spaces at the beginning of one of the lines.</p>
+  <p>One aspect of syntax you have to watch out for in Python involves indentation. Indentation (the amount of whitespace at the beginning of a line of code) has special meaning in Python. This will be discussed in subsequent chapters, but to see an example of an indentation-related syntax problem, modify the program above by inserting a couple of spaces at the beginning of one of the lines.</p>
   <p>
-    <term>Check your understanding</term>
+    <alert>Check your understanding</alert>
   </p>
   <exercise label="question3_3_1">
     <statement>
@@ -68,10 +63,10 @@ print("All finished!")
       </choice>
       <choice correct="yes">
         <statement>
-          <p>Forgetting a colon at the end of a statement where one is required.</p>
+          <p>Forgetting the closing parenthesis <c>)</c> on a <c>print</c> statement.</p>
         </statement>
         <feedback>
-          <p>This is a problem with the formal structure of the program.  Python knows where colons are required and can detect when one is missing simply by looking at the code without running it.</p>
+          <p>This is a problem with the formal structure of the program.  Python knows that each opening parenthesis must have a corresponding closing parenthesis, and can detect when one is missing simply by looking at the code without running it.</p>
         </feedback>
       </choice>
       <choice>
