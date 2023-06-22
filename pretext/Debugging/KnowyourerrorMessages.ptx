@@ -33,7 +33,7 @@
       print(final_time_int)
     </input>
   </program>
-  <p>Aha! Now we have an error message that might be useful. The name error tells us that <c>wait_time_int</c> is not defined. It also tells us that the error is on line 5. That's <term>really</term> useful information. Now look at line five and you will see that <c>wait_time_int</c>
+  <p>Aha! Now we have an error message that might be useful. The name error tells us that <c>wait_time_int</c> is not defined. It also tells us that the error is on line 5. That's <alert>really</alert> useful information. Now look at line five and you will see that <c>wait_time_int</c>
     is used on both the left and the right hand side of the assignment statement.</p>
   <note>
     <p>The error descriptions you see in activecode may be different (and more understandable!) than
