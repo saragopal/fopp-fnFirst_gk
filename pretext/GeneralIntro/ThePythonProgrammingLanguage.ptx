@@ -2,30 +2,31 @@
 <section xml:id="general-intro_the-python-programming-language">
   <title>The Python Programming Language</title>
   <p>The programming language you will be learning is Python. Python is an example
-            of a <term>high-level language</term>; other high-level languages you might have heard
+            of a <term>high-level language</term> that is designed to be easily read by humans and where 
+            the human does <em>not</em> need to have specific knowledge about the computer 
+            hardware. Other high-level languages you might have heard
             of are C++, PHP, and Java.</p>
-  <p>As you might infer from the name high-level language, there are also
+  <p>As you can infer from the name high-level language, there are also
             <term>low-level languages</term>, sometimes referred to as machine languages or assembly
-            languages. Loosely speaking, computers can only execute programs written in
+            languages. Loosely speaking, low-level languages use numerical codes or symbols to tell the 
+            computer how to process and move data. Generally, computers can only execute programs written in
             low-level languages. Thus, programs written in a high-level language have to be
             processed before they can run. This extra processing takes some time, which is
             a small disadvantage of high-level languages.
             However, the advantages to high-level languages are enormous.</p>
   <p>First, it is much easier to program in a
-            high-level language. Programs written in a high-level language take less time
-            to write, they are shorter and easier to read, and they are more likely to be
-            correct. Second, high-level languages are <term>portable</term>, meaning that they can
+            high-level language. Programs are shorter so they take less time
+            to write, and being easier to read, they are easier to correct. Second, high-level languages are <term>portable</term>, meaning that they can
             run on different kinds of computers with few or no modifications. Low-level
-            programs can run on only one kind of computer and have to be rewritten to run
-            on another.</p>
+            programs are based on the hardward for a particular kind of computer system 
+            and have to be rewritten to run on another.</p>
   <p>Due to these advantages, almost all programs are written in high-level
-            languages. Low-level languages are used only for a few specialized
-            applications.</p>
+            languages. Low-level languages are used for a few specialized
+            applications where, being designed for a specific kind of computer, they can run very fast.</p>
   <p>Two kinds of programs process high-level languages into low-level languages:
             <term>interpreters</term> and <term>compilers</term>. An interpreter reads a high-level program
-            and executes it, meaning that it does what the program says. It processes the
-            program a little at a time, alternately reading lines and performing
-            computations.</p>
+            and executes it, meaning that it does what the program says one line at a time. It 
+            alternates between reading lines and performing computations.</p>
   <image source="GeneralIntro/Figures/interpret.png" width="50%" alt="Interpret illustration"/>
   <p>A compiler reads the program and translates it completely before the program
             starts running. In this case, the high-level program is called the <term>source
@@ -33,17 +34,24 @@
             <term>executable</term>. Once a program is compiled, you can execute it repeatedly
             without further translation.</p>
   <image source="GeneralIntro/Figures/compile.png" width="50%" alt="Compile illustration"/>
-  <p>Many modern languages use both processes. They are first compiled into a lower
+  <p>Like many modern languages, Python uses both processes. Programs are first compiled into a lower
             level language, called <term>byte code</term>, and then interpreted by a program called
-            a <term>virtual machine</term>. Python uses both processes, but because of the way
-            programmers interact with it, it is usually considered an interpreted language.</p>
+            a <term>virtual machine</term>. <em>Because of the way
+            programmers interact with it (often adding individual lines of code and then running their programms), 
+            and because of the speed of modern computers, Python is usually considered an interpreted language.</em></p>
   <p>For the core material in this book, you will not need to install
-            or run python natively on your computer. Instead, you'll be writing simple
+            or run Python natively on your computer. Instead, you'll be writing simple
             programs and executing them right in your browser.</p>
-  <p>At some point, you will find it useful to have a complete python environment, rather than the limited environment
-            available in this online textbook. To do that, you will either
-            install python on your computer so that it can run natively, or use a remote server that provides either a
-            command line shell or a jupyter notebook environment.</p>
+  <p>However, if you are using this book for a course, you will need a complete Python environment, rather than the limited environment
+            available in this online textbook. To do that, either
+            install Python and an <term>integrated development environment</term> on your computer so that it can run natively, or use a remote server that provides a
+            command line shell or IDE.</p>
+  <note>
+  <title>Example IDEs (2023)</title>
+  <p>Downloadable: Visual Studio Code, PyCharm, Jupyter, Thonny</p>
+  <p>Online servers: <url href= "https://pythontutor.com/" visual="pythontutor.com">Python Tutor</url>, 
+  <url href="https://colab.research.google.com/" visual="Colab">Google Colaboratory</url></p>
+  </note>
   <p>
     <term>Check your understanding</term>
   </p>
@@ -127,15 +135,17 @@
   </exercise>
   <exercise label="question1_3_3">
     <statement>
-      <p>Pick the best replacements for 1 and 2 in the following sentence: When comparing compilers and interpreters, a compiler is like 1 while an interpreter is like 2.</p>
+      <p>Pick the best replacements for <m>1</m> and <m>2</m> in the following sentence:</p>
+      <p> When comparing compilers and interpreters, a compiler is like <m>1</m> while an interpreter is like <m>2</m>.</p>
     </statement>
     <choices>
       <choice>
         <statement>
-          <p>1 = a process, 2 = a function</p>
+          <p>1 = pseudocode, 2 = an algorithm</p>
         </statement>
         <feedback>
-          <p>Compiling is a software process, and running the interpreter is invoking a function, but how is a process different than a function?</p>
+          <p>Both compiling and interpreting are processes that convert a program into code that can be understood by a computer. Who is the audience 
+          for pseudocode and algorithms? Humans.</p>
         </feedback>
       </choice>
       <choice correct="yes">

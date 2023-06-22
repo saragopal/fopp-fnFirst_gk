@@ -32,25 +32,48 @@ while b &lt; 60:
             the value of 5 inside, on line 4. By the time 7 has been added to b on line 6, we then have to
             check if b is less than 60. Because it isn't we again run line 4, and set the value of b to 5
             again. There is no way to break out of this loop.</p>
-  <p>Sometimes programs can take a while to run, so how can you determine if your code is just talking a while or if it is stuck inside an infinite loop? Print statements are for people, so take advantage of them! You can add print statements to keep track of how your variables are changing as the program processes the instructions given to them. Below is an example of an infinite loop. Try adding print statments to see where it's coming from. When you're done, check out the answer to see what our solution was.</p>
+        
+<note>
   <p>
-        <exercise label="question6_5_3">
-          <statement/>
-          <program interactive="" language=""/>
-          <solution>
-            <program xml:id="ac14_11_3" language="python">
-              <input>
-d = {'x': []}
-print("starting the while loop")
-while len(d.keys()) &lt;= 2:
-    print("number of keys in d:", len(d.keys()))
-    print('Dictionaries')
-    d['x'].append('d')
-    print("number of keys in d after appending:", len(d.keys()))
-print("end of the while loop")
-        </input>
-            </program>
-          </solution>
-        </exercise>
+    The ActiveCode exercises don't provide a way to stop an infinite loop like you would find in an IDE. To stop the code running in this book, refresh the page.
   </p>
+</note>
+<exercise label="question6_5_3">
+  <statement>
+      <p>Sometimes programs can take a while to run, so how can you determine if your code is just talking a while or if it is stuck inside an infinite loop? Print statements are for people, so take advantage of them! You can add print statements to keep track of how your variables are changing as the program processes the instructions given to them. Below is an example of an infinite loop. Try adding print statments to see where it's coming from. When you're done, check out the answer to see what our solution was.</p>
+  </statement>
+  <program xml:id="ac14_11_3" language="python" interactive="activecode">
+    <input>
+    account_balance = 0
+    enough_money = 1000
+    while account_balance &lt; enough_money:
+        account_balance += 100
+        enough_money += 100
+    
+    print("Final account_balance: ", account_balance)
+    </input>
+    </program>
+</exercise>
+<solution>
+  <p>
+      The problem is that whenever we add more money to the account, we also increase the value of "enough". As long as "enough_money" increases by an amount less than the additional amount, the loop will eventually terminate.
+  </p>
+    <program language="python">
+      <input>
+account_balance = 0
+enough_money = 1000
+while account_balance &lt; enough_money:
+    print("account_balance: ", account_balance)
+    print("enough_money: ", enough_money)
+    account_balance += 100
+    enough_money += 10
+
+print("Final account_balance: ", account_balance)
+
+    </input>
+  </program>
+
+
+</solution>
+
 </section>

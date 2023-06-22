@@ -1,38 +1,48 @@
 <?xml version="1.0"?>
 <section xml:id="functions_function-parameters">
   <title>Function Parameters</title>
-  <p>Named functions are nice because, once they are defined and we understand what they do, we can
-    refer to them by name
-    and not think too much about what they do. With parameters, functions are even more powerful,
-    because they can do
-    pretty much the same thing on each invocation, but not exactly the same thing. The parameters
-    can cause them to do
-    something a little different.</p>
-  <p>The figure below shows this relationship. A function needs certain information to do its work.
-    These values, often called <term>arguments</term> or <term>actual parameters</term> or <term>parameter
-    values</term>, are passed to the function by the user.</p>
+  <p>Named functions are very useful because, once they are defined and we understand what they do, we can
+    refer to them by name and no longer have to think too much about their inner workings. The functions then can be treated as
+    separate tools that we can use repeatedly and in conjunction with other functions to solve a larger <em>decomposed</em> problem.</p>
+  <p>With parameters, functions are even more powerful,
+    because they allow us to generalize a function's actions so that it can do the same thing on each invocation, 
+    but with different starting values. With parameters our functions becomes <em>adjustable</em> tools that can be resused to solve different
+    problems.</p>
+  <p>The figure below shows a function's relationship with its parameters. A function needs certain information to do its specific work.
+    These values, often called <term>arguments</term>, <term>actual parameters</term> or <term>parameter
+    values</term>, are <em>passed</em> to the function by the code that invokes the function.</p>
   <image source="Functions/Figures/blackboxproc.png" width="50%" />
   <p>This type of diagram is often called a <term>black-box diagram</term> because it only states
-    the requirements from the perspective of the user (well, the programmer, but the programmer who
-    uses the function, who may be different than the programmer who created the function). The user
-    must know the name of the function and what arguments need to be passed. The details of how the
+    the requirements from the perspective of the 'user' (well, the programmer, but the programmer who
+    writes the code that uses the function, who may be different than the programmer who created the function - which, by the way, is why docstrings are 
+    so useful to explain a function). The 'user'
+    must know the name of the function and what arguments it needs to be passed. The details of how the
     function works are hidden inside the <q>black-box</q>.</p>
-  <p>You have already been making function invocations with parameters. For example, when you write <c>
-    len("abc")</c>, len is the name of a function, and the value that you put inside the
-    parentheses, the string <q>abc</q> is a parameter value.</p>
-  <p>When a function has one or more parameters, the names of the parameters appear in the function
-    definition, and the
-    values to assign to those parameters appear inside the parentheses of the function invocation.
-    Let's look at each of
-    those a little more carefully.</p>
-  <p>In the definition, the parameter list is sometimes referred to as the <term>formal parameters</term>
-    or <term>parameter names</term>. These names can be any valid variable name. If there is more
-    than one, they are separated by commas.</p>
+  <p>You have already been making function invocations with parameters. For example, when you write <c>len("abc")</c>, <c>len</c> is 
+  the name of a function, and the string <q>abc</q> is a parameter value. Or <c>print("Answer", 3 - 4, sep=" is equal to ")</c> where the print function is passed three
+    parameters: a string, an expression and a named parameter.</p>
+  <p>When a function has one or more parameters, the following holds:</p>
+  <ol>
+    <li>
+        The names of the parameters appear in the function definition
+    </li>
+
+    <li>
+        The parameters are separated by commas
+    </li>
+
+    <li>
+        The values in the parentheses of the function invocation are assigned to the parameters <em>in the same order</em>
+    </li>
+  </ol> 
+  <p>In the function definition, the <term>parameter list</term> is sometimes referred to as the <term>formal parameters</term>, <term>ideal parameters</term>
+    or <term>parameter names</term>. These names can be any valid variable name.</p>
   <p>In the function invocation, inside the parentheses one value should be provided for each of the
     parameter names. These
-    values are separated by commas. The values can be specified either directly, or by any python
-    expression including a
-    reference to some other variable name.</p>
+    <term>arguments</term> can be specified directly (<c>"abc"</c>),  by any Python
+    expression (e.g. <c>3 - 4</c>) including a
+    reference to some other variable or function name (<c>abs(3 - 4)</c>), or by name 
+    (also known as keyword arguments - like <c>speed = 5.4</c> or <c>sep = " is equal to "</c>.</p>
   <p>That can get kind of confusing, so let's start by looking at a function with just one
     parameter. The revised hello
     function personalizes the greeting: the person to greet is specified by the parameter.</p>
@@ -46,53 +56,58 @@
       hello2("Jackie")
     </input>
   </program>
-  <p>First, notice that hello2 has one formal parameter, s. You can tell that because
-    there is exactly one variable name inside the parentheses on line 1.</p>
+  <p>First, notice that hello2 has one formal parameter, <c>s</c>. You can tell that because
+    there is exactly one variable name inside the parentheses on line 1 
+    (the colon and the 'str' are part of Type Annotation, a topic we will discuss shortly).</p>
   <p>Next, notice what happened during Step 2. Control was passed to the function, just like we saw
-    before. But in addition, the variable s was bound to a value, the string <q>Iman</q>. When it
-    got to Step 7, for the second invocation of the function, s was bound to <q>Jackie</q>.</p>
+    before. But in addition, the variable<c>s</c> was bound to a value, the string <q>Iman</q>. When it
+    got to Step 7, for the second invocation of the function, <c>who</c> was bound to <q>Jackie</q>.</p>
   <p>Function invocations always work that way. The expression inside the parentheses on the line
     that invokes the function
     is evaluated before control is passed to the function. The value is assigned to the
     corresponding formal parameter.
     Then, when the code block inside the function is executing, it can refer to that formal
     parameter and get its value,
-    the value that was &#x2018;passed into' the function.</p>
+    the value that was <em>passed into</em> the function.</p>
   <exercise runestone="eval4_4_1" />
-  <p>To get a feel for that, let's invoke hello2 using some more complicated expressions. Try some
-    of your own, too.</p>
+  <p>To get a feel for that, let's invoke hello2 using some more complicated expressions, but one where we use more self-documenting parameter names. 
+  Feel free to modify things on your own - allowing them to 'break' but then fixing things too.</p>
   <program xml:id="ac4_4_1" interactive="activecode" language="python">
     <input>
-      def hello2(s: str) -&gt; None:
-        print("Hello " + s)
-        print("Glad to meet you")
+      def hello2(who: str) -&gt; None:
+          print("Hello " + who)
+          print("Glad to meet you")
 
       hello2("Iman" + " and Jackie")
       hello2("Class " * 3)
     </input>
   </program>
-  <p>Now let's consider a function with two parameters. This version of hello takes
-    a parameter that controls how many times the greeting will be printed.</p>
+  <p>Now let's consider a function with two (not all that self-documenting) parameters. Can you determine what the two variables are? What they are for?</p>
   <program xml:id="clens4_4_2" interactive="codelens" language="python">
     <input>
       def hello3(s: str, n: int) -&gt; None:
-        greeting = f"Hello {s} "
-        print(greeting*n)
+          greeting = f"Hello {s} "
+          print(greeting*n)
 
       hello3("Wei", 4)
       hello3("", 1)
       hello3("Kitty", 11)
     </input>
   </program>
-  <p>At Step 3 of the execution, in the first invocation of hello3, notice that the variable s is
-    bound to the value <q>Wei</q> and the variable n is bound to the value 4.</p>
-  <p>That's how function invocations always work. Each of the expressions, separated by commas, that
-    are inside the
-    parentheses are evaluated to produce values. Then those values are matched up positionally
-    with the formal parameters. The first parameter name is bound to the first value
-    provided. The second parameter name is bound to the second value provided. And so on.</p>
+  <p>At Step 2 of the execution, in the first invocation of hello3, notice that the variable <c>s</c> is
+    bound to the value <q>Wei</q> and the variable <c>n</c> is bound to the value 4.</p>
+  <p>That's how function invocations always work. Each of the comma separated expressions inside the
+    parentheses are evaluated to produce values. Then those values are matched up positionally (in the same order)
+    with the formal parameters of the function definition. The first parameter name is bound to the first value
+    provided. The second parameter name is bound to the second value provided. And so on.
+    </p>
+    <p>
+    <em>Try writing your own version of the program above, but pass the arguments in the reverse order, e.g. <c>hello3(4, "Wei")</c>.
+    What happens when you run the code? It should produce a <term>runtime error</term> - an error that happens
+    when the code is <em>syntactically correct</em> and runs, but encounters an issue during execution; in this case, it
+    can't deal with the variables being of a different than expected data type.</em></p>
   <p>
-    <term>Check your understanding</term>
+    <alert>Check your understanding</alert>
   </p>
   <exercise label="question4_4_1">
     <statement>
@@ -140,9 +155,9 @@
       <program language="python">
         <input>
           def print_many(x: str, y: int) -&gt; None:
-            """Print out string x, y times."""
-            message = x * y
-            print(message)
+              """Print out string x, y times."""
+              message = x * y
+              print(message)
         </input>
       </program>
     </statement>
@@ -189,9 +204,9 @@
       <program language="python">
         <input>
           def print_many(x: str, y: int) -&gt; None:
-            """Print out string x, y times."""
-            message = x * y
-            print(message)
+              """Print out string x, y times."""
+              message = x * y
+              print(message)
         </input>
       </program>
     </statement>
@@ -324,9 +339,9 @@
       <p>What output will the following code produce?</p>
       <program language="python">
         <input>
+          CONSTANT_VALUE = -8
           def cyu(n1: int, n2: int) -&gt; int:
-            n3 = -8
-            return n1 + n2 - CONSTANT_VALUE
+              print(n1 + n2 - CONSTANT_VALUE)
 
           cyu(4, 3)
         </input>

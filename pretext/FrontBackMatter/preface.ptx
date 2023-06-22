@@ -1,6 +1,7 @@
 <?xml version="1.0"?>
-<section xml:id="front-back-matter_preface">
+<preface xml:id="front-back-matter_preface">
   <title>Preface</title>
+  <introduction>
   <p>Today, it is hard to imagine life without computers.  We carry them in our pockets, read with them on the couch, and use them on our desk at work.  Computing is the Swiss Army knife of the 21st century: a convenient tool that can be used to solve a wide array of problems. The original computers were large and limited in function: nothing more than very basic calculators. The military was the first to find some of the many applications of this technology: made small, computers could be used to improve the precision of bombing; made large and (relatively) powerful, they could be used to break military codes. As computers continued to grow in power and drop in price, many more peaceful applications were found:</p>
   <p>
     <ul>
@@ -46,10 +47,11 @@
       </li>
     </ul>
   </p>
-  <subsection xml:id="front-back-matter_get-in-the-learning-zone">
+  </introduction>
+  <paragraphs xml:id="front-back-matter_get-in-the-learning-zone">
     <title>Get in the Learning Zone</title>
     <p>Programs execute very reliably, and very quickly, but not creatively. Computers do what you tell them to do, not what you mean for them to do. Thus, understanding computer code involves a lot of mental simulation of what will actually happen, not what you wish would happen. This can be frustrating at times but it's something that you will get better at with practice. As you go through the activities in this class, some will be easy for you to complete, i.e. in your comfort zone. Being in your comfort zone is nice but it probably means you are not learning very much. More challenging activities will encourage you to think through the problems and to refer back to the reading to allow you to enter your learning zone. This is the zone that you strive to be in for as much of the course as possible. Beyond your learning zone lies the panic zone where the problem overwhelms your ability to grow and learn. If you find yourself in the panic zone, please seek help from your instructor and/or classmates: none of the activities in this book are intended to stump you. As you understand how to solve some simpler problems, you will develop the ability to join these solutions together to solve increasingly challenging problems with real-world applications.</p>
     <image source="FrontBackMatter/Figures/LearningZones.png" width="50%"/>
     <p>In addition to mechanistic thinking, writing computer programs requires creative problem solving or the ability to identify a complex situation, think creatively about possible solutions, and express those solutions clearly and accurately. As it turns out, the process of learning to program is an excellent opportunity to practice problem solving skills you can use in other parts of your life. We sincerely believe that the combination of knowledge of Python, creative problem solving skills and expressing those solutions in such a way that a computer can effectively carry them out (computational thinking) will make you more productive and efficient in tackling your work in future classes,whether in Computer Science, Business, Psychology or History. And it may even pique your interest in becoming a Data Scientist or a Computer Scientist.</p>
-  </subsection>
-</section>
+  </paragraphs>
+</preface>

@@ -13,9 +13,6 @@
     will occur.</p>
   <p>A prediction is not a random guess. It is based on some explanation you have about what the
     current state of
-    variables is and about what you think certain commands in python do.</p>
-  <p>While you read the textbook you'll see chapters, pages, or snippets of text that begin with <q>
-    WP:</q>. This denotes sections that talk about the Way of the Programmer: advice or information
-    that will help you to be a better programmer and make better programs. Be on the lookout for
-    other WP pages!</p>
+    variables is and about what you think certain commands in Python do.</p>
+  
 </section>

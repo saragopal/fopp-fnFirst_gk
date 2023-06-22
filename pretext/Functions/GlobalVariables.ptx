@@ -2,26 +2,26 @@
 <section xml:id="functions_global-variables">
   <title>Global Variables</title>
   <p>Variable names that are at the <em>top-level</em>, not inside any function definition,
-            are called global.</p>
-  <p>It is legal for a function to access a global variable. However, this is considered
-            <term>bad form</term> by nearly all programmers and should be avoided. This subsection
+            are called <term>global variables</term> and they have a global scope.</p>
+  <p>It is possible and syntactically valid for a function to access a global variable. However, doing so is considered
+            <alert>bad form</alert> by nearly all programmers and should be avoided. This subsection
             includes some examples that illustrate the potential interactions of global and
-            local variables. These will help you understand exactly how python works. Hopefully,
+            local variables. These will help you better understand variable scope. Hopefully,
             they will also convince you that things can get pretty confusing when you mix
             local and global variables, and that you really shouldn't do it.</p>
 
 <note>
-  <title>Editor's Note</title>
+  <title>Instructor's Note</title>
   <p>
     Relying on global variables is a really bad habit to pick up, as
-    Python is a language that lets you get away with gloabls pretty
+    Python is a language that lets you get away with globals pretty
     easily. As you move on to other languages, you'll be
     in for a world of pain if you don't learn to avoid globals. Be warned.
   </p>
   
 </note>
 
-  <p>Look at the following, nonsensical variation of the square function.</p>
+  <p>Look at the following, working but poor form variation of the square function.</p>
   <program xml:id="ac4_9_1" interactive="activecode" language="python">
     <input>
 def badsquare(x):
@@ -33,22 +33,22 @@ result = badsquare(10)
 print(result)
         </input>
   </program>
-  <p>Although the <c>badsquare</c> function works, it is silly and poorly written. We have done it here to illustrate
+  <p>Although the <c>badsquare</c> function works, it is poorly written. It illustrates
             an important rule about how variables are looked up in Python.
             First, Python looks at the variables that are defined as local variables in
-            the function.  We call this the <term>local scope</term>. If the variable name is not
+            the function.  Recall, this is the function's <alert>local</alert> scope. If the variable name is not
             found in the local scope, then Python looks at the global variables,
-            or <term>global scope</term>. This is exactly the case illustrated in the code above.
-            <c>power</c> is not found locally in <c>badsquare</c> but it does exist globally.
-            The appropriate way to write this function would be to pass power as a parameter.
-            For practice, you should rewrite the badsquare example to have a second parameter called power.</p>
-  <p>There is another variation on this theme of local versus global variables. Assignment statements in the local function cannot
-            change variables defined outside the function. Consider the following
-            codelens example:</p>
+            or <alert>global</alert> scope. This is the case illustrated in the code above.
+            The variable <c>power</c> is not found locally in <c>badsquare</c> but it does exist globally.
+            The appropriate way to write this function would be to pass power as a second parameter.
+            Practice this by using <c>Edit this code</c> to rewrite the badsquare example to have a second parameter.</p>
+  <p>There is another variation on this theme of local versus global variables. <alert>Assignment statements in the local function cannot
+            change variables defined outside the function.</alert> Consider the following
+            CodeLens example:</p>
   <program xml:id="clens4_9_1" interactive="codelens" language="python">
     <input>
 def powerof(x,p):
-    power = p   # Another dumb mistake
+    power = p     # Another dumb mistake
     y = x ** power
     return y
 
@@ -59,19 +59,21 @@ print(result)
   </program>
   <p>Now step through the code. What do you notice about the values of variable <c>power</c>
             in the local scope compared to the variable <c>power</c> in the global scope?</p>
-  <p>The value of <c>power</c> in the local scope was different than the global scope.
-            That is because in this example <c>power</c> was used on the left hand side of the
-            assignment statement <c>power = p</c>. When a variable name is used on the
-            left hand side of an assignment statement Python creates a local variable.
+  <p>There are two variables called <c>power</c>, each with a different scope: a <c>power</c> variable local to the function's scope
+  (created at line 3 inside the function),
+  and a separate <c>power</c> variable that has global scope (assigned a value at line 7).</p>
+  <p> When a variable name is used on the
+            left hand side of an assignment statement Python creates a variable that with a set scope.
             When a local variable has the same name as a global variable we say that the
             local shadows the global. A <term>shadow</term> means that the global variable cannot
             be accessed by Python because the local variable will be found first. This is
-            another good reason not to use global variables. As you can see,
+            another good reason not to use global variables with the same names as local variables. 
+            As you can see,
             it makes your code confusing and difficult to understand.</p>
   <p>If you really want to change the value of a global variable inside a function,
             you can can do it by explicitly declaring the variable to be global, as in the example
             below. Again, you should <em>not</em> do this in your code. The example is here only
-            to cement your understanding of how python works.</p>
+            to illustrate how scope in Python works.</p>
   <program xml:id="clens4_9_2" interactive="codelens" language="python">
     <input>
 def powerof(x,p):
@@ -86,9 +88,9 @@ print(result)
 print(power)
     </input>
   </program>
-  <p>To cement all of these ideas even further lets look at one final example.
-            Inside the <c>square</c> function we are going to make an assignment to the
-            parameter <c>x</c>  There's no good reason to do this other than to emphasize
+  <p>To cement your understanding of these ideas even further lets look at one final example.
+            Inside the following <c>square</c> function we are going to make an assignment to the
+            parameter <c>x</c> in line 3.  There's no good reason to do this other than to emphasize
             the fact that the parameter <c>x</c> is a local variable.  If you step through
             the example in codelens you will see that although <c>x</c> is 0 in the local
             variables for <c>square</c>, the <c>x</c> in the global scope remains 2.  This is confusing
@@ -96,6 +98,7 @@ print(power)
             formal parameter will cause a change to the value of the variable that was
             used as the actual parameter, especially when the two share the same name.
             But this example demonstrates that that is clearly not how Python operates.</p>
+
   <program xml:id="clens4_9_3" interactive="codelens" language="python">
     <input>
 def square(x):
@@ -108,8 +111,18 @@ z = square(x)
 print(z)
     </input>
   </program>
+
+
+  <note>
+
   <p>
-    <term>Check your understanding</term>
+    <alert>Instructor's Counsel:</alert> <em>Just because you can, doesn't mean you should.</em> Global variables exist,
+  but, as a novice programmer, you really should not use them (except in the case of <term>named constants</term>). </p>
+
+  </note>
+  
+  <p>
+    <alert>Check your understanding</alert>
   </p>
   <exercise label="question4_9_1">
     <statement>
@@ -205,7 +218,40 @@ print(z)
     </choices>
   </exercise>
   <note>
-    <p>WP: Scope</p>
-    <p>You may be asking yourself at this point when you should make some object a local variable and when should you make it a global variable. Generally, we do not recommend making variables global. Imagine you are trying to write a program that keeps track of money while purchasing groceries. You may make a variable that represents how much money the person has, called <c>wallet</c>. You also want to make a function called <c>purchase</c>, which will take the name of the item and its price, and then add the item to a list of groceries, and deduct the price from the amount stored in <c>wallet</c>. If you initialize wallet before the function as a variable within the global scope instead of passing it as a third parameter for <c>purchase</c>, then an error would occur because wallet would not be found in the local scope. Though there are ways to get around this, as outlined in this page, if your program was supposed to handle groceries for multiple people, then you would need to declare each wallet as a global variable in the functions that want to use wallet, and that would become very confusing and tedious to deal with.</p>
+    <p><alert>Are there any times one should use global variables? No.</alert></p>
+
+    <p>More correctly, you should not use global variables unless there is a very good reason.</p>
+
+    <p>The problem with with global variables is that they can easily lead to unintentional changes that propagate
+    throughout the the entire programs. While it may make sense to change a global variable for one specific function, doing so 
+    may mess up the processing for all the other functions. Consider a function that is designed to round and display
+    an assessment's mark to the nearest whole percentage (78.7% becomes 79%). However, when calculating 
+    an overall course grade, we don't use the individual assignments' rounded marks, we use their raw, unrounded marks (you don't 'round' a 'rounded' mark).
+    So global changes to individual assessement grades would make the overall course grade incorrect. However, it <em>might</em> make sense to 
+    round the overall course grade (changed as a global variable) when that final overall grade is being sent to the Registrar.</p>
+    <p>An example of an appropriate use of a global variable is the use of a constant by a series of functions. In the example below, <c>PI</c> is 
+    a global variable (a constant) that does not need to be defined locally for each of the functions. Do note, <c>PI</c> is <alert>not</alert>
+    changed within any of the functions.</p>
+<p>
+       <program language="python">
+    <input>
+    from math import pi as PI
+    def area_circle( any_radius: float ) -> float:
+        """with any length greater than zero, returns area"""
+        return (PI * any_radius**2)
+
+    def circumference_circle(any_radius:float) -> float:
+        """with any length greater than zero, returns circumference"""
+        return (2 * PI * any_radius)
+
+    def volume_sphere(any_radius:float) -> float:
+        """With any length greater than zero, returns volume"""
+        return (4/3 * PI * any_radius**3)
+
+    </input>
+  </program>
+    </p>
+    
   </note>
+  
 </section>

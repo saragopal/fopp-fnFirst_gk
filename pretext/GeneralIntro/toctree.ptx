@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
     <chapter xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
         <title>General Introduction</title>
+        <introduction>
+        <p>Last updated <today />.</p>
+        </introduction>
+
         <xi:include href='./intro-TheWayoftheProgram.ptx' />
         <xi:include href='./Algorithms.ptx' />
         <xi:include href='./ThePythonProgrammingLanguage.ptx' />

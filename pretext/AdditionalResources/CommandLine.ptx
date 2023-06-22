@@ -59,38 +59,38 @@
         <exercise label="pp11_5_1" indentation="show" language="python">
             <statement>
                 <p>Using the following file structure, move into the <c>src</c> directory, remove <c>main.py</c>, add the file <c>not_main.py</c>, and return to the <c>home</c> directory:</p>
-                <program>
-                    home/
-                      src/
-                        main.py
-                        README.md
-                      test/
-                        test_main.py
-                        README.md
-                      plans/
-                        whatever.txt
-                        old.txt
-                </program>
+                <c>
+home/
+    src/
+        main.py
+        README.md
+    test/
+        test_main.py
+        README.md
+    plans/
+        whatever.txt
+        old.txt
+                </c>
             </statement>
             <blocks>
-                <block order="2">
+                <block order="2" correct="no">
                     <cline>ls</cline>
                 </block>
                 <block order="1">
                     <cline>cd src</cline>
                 </block>
-                <block order="6">
-                    <cline>cd ..</cline>
+                <block order="4">
+                    <cline>rm main.py</cline>
                 </block>
                 <block order="5">
                     <cline>touch not_main.py</cline>
                 </block>
-                <block order="3">
+                <block order="6">
+                    <cline>cd ..</cline>
+                </block>
+                <block order="3" correct="no">
                     <cline>main.py</cline>
                     <cline>README.md</cline>
-                </block>
-                <block order="4">
-                    <cline>rm main.py</cline>
                 </block>
             </blocks>
         </exercise>

@@ -2,7 +2,7 @@
 <section xml:id="general-intro_formal-and-natural-languages">
   <title>Formal and Natural Languages</title>
   <p><term>Natural languages</term> are the languages that people speak, such as English,
-            Spanish, Korean, and Mandarin Chinese. They were not designed by people (although people try to
+            Spanish, Korean, and Mandarin Chinese. They were not purposely designed by people (although people have tried to
             impose some order on them); they evolved naturally.</p>
   <p><term>Formal languages</term> are languages that are designed by people for specific
             applications. For example, the notation that mathematicians use is a formal
@@ -11,92 +11,88 @@
             molecules. And most importantly:</p>
   <blockquote>
     <p>
-      <em>Programming languages are formal languages that have been designed to
-                    express computations.</em>
+      <alert>Programming languages are formal languages that have been designed to
+                    express computations.</alert>
     </p>
   </blockquote>
-  <p>Formal languages tend to have strict rules about syntax. For example, <c>3+3=6</c>
-            is a syntactically correct mathematical statement, but <c>3=+6$</c> is not.
-            H<subscript>2</subscript>O is a syntactically correct chemical name, but <subscript>2</subscript>Zz is
+  <p>Formal languages tend to have strict rules about syntax. For example, <c>3 + 3 = 6</c>
+            is a syntactically correct mathematical statement, but <c>3 = + 6 $</c> is not.
+            H&#8322;O is a syntactically correct chemical name, but &#8322;Zz is
             not.</p>
-  <p>Syntax rules come in two flavors, pertaining to <term>tokens</term> and structure.
+  <p>Syntax rules come in two flavors, pertaining to <term>tokens</term> and <term>structure</term>.
             Tokens are the basic elements of the language, such as words, numbers, and
-            chemical elements. One of the problems with <c>3=+6$</c> is that <c>$</c> is not a
+            symbols. One of the problems with <c>3 = + 6 $</c> is that the symbol <c>$</c> is not a
             legal token in mathematics (at least as far as we know). Similarly,
-            <subscript>2</subscript>Zz is not legal because there is no element with the abbreviation
+            &#8322;Zz is not legal in chemistry because there is no element with the abbreviation
             <c>Zz</c>.</p>
+  <p>When you read a word in English, you have to make sure the tokens are correct and appropriate.
+  Humans are quite good at figuring out the tokens despite their many variations as seen by our ability to read various fonts, bumper stickers,
+  and Internet spellings (e.g.: &#945;, &#8704;, and <em>a</em> are all recognizable as the letter a; the text 'e5c4p3' can be read as 'escape').</p>
+
   <p>The second type of syntax rule pertains to the <term>structure</term> of a statement&#x2014;
-            that is, the way the tokens are arranged. The statement <c>3=+6$</c> is
+            that is, the way the tokens are arranged. The statement <c>3 = + 6 $</c> is
             structurally illegal because you can't place a plus sign immediately after an
             equal sign.  Similarly, molecular formulas have to have subscripts after the
             element name, not before.</p>
   <p>When you read a sentence in English or a statement in a formal language, you
             have to figure out what the structure of the sentence is (although in a natural
-            language you do this subconsciously). This process is called <term>parsing</term>.</p>
-  <p>For example, when you hear the sentence, <q>The other shoe fell</q>, you understand
+            language you do this subconsciously). This process is called <term>parsing</term>. 
+            For example, when you hear the sentence, <q>The other shoe fell</q>, you understand
             that the other shoe is the subject and fell is the verb.  Once you have parsed
-            a sentence, you can figure out what it means, or the <term>semantics</term> of the sentence.
+            a sentence, you can figure out what it means &#x2014; the <term>semantics</term> of the sentence.
             Assuming that you know what a shoe is and what it means to fall, you will
             understand the general implication of this sentence.</p>
-  <p>Although formal and natural languages have many features in common &#x2014; tokens,
+
+  <p>People who grow up speaking a natural language&#x2014;that is, everyone&#x2014;often have a hard
+            time adjusting to formal languages like computer programing languages. Although formal and natural languages 
+            have many features in common &#x2014; tokens,
             structure, syntax, and semantics &#x2014; there are many differences:</p>
-  <glossary sorted="False">
-    <gi>
+  <dl>
+    <li>
       <title>ambiguity</title>
       <p>Natural languages are full of ambiguity, which people deal with by
-                            using contextual clues and other information. Formal languages are
-                            designed to be nearly or completely unambiguous, which means that any
+                            using contextual clues and other information.</p>
+      <p>Formal languages are designed to be nearly or completely unambiguous, which means that any
                             statement has exactly one meaning, regardless of context.</p>
-    </gi>
-    <gi>
-      <title>redundancy</title>
-      <p>In order to make up for ambiguity and reduce misunderstandings, natural
-                            languages employ lots of redundancy. As a result, they are often
-                            verbose.  Formal languages are less redundant and more concise.</p>
-    </gi>
-    <gi>
+      <p>For example, in a natural language, someone may be 'tall' for their age. However in a
+                          a formal language like Python, <c>tall = True</c> has one meaning.</p>
+    </li>
+      <li>
       <title>literalness</title>
-      <p>Formal languages mean exactly what they say.  On the other hand,
-                            natural languages are full of idiom and metaphor. If someone says, <q>The
-                            other shoe fell</q>, there is probably no shoe and nothing falling.</p>
-      <note>
-        <p>You'll need to find the original joke to understand the idiomatic
-                                meaning of the other shoe falling.  <em>Yahoo! Answers</em> thinks it
-                                knows!</p>
-      </note>
-    </gi>
-  </glossary>
-  <p>People who grow up speaking a natural language&#x2014;that is, everyone&#x2014;often have a hard
-            time adjusting to formal languages. In some ways, the difference between natural and formal
-            language is like the difference between poetry and prose, but more
-            so:</p>
-  <glossary sorted="False">
-    <gi>
-      <title>poetry</title>
-      <p>Words are used for their sounds as well as for their meaning, and the
-                            whole poem together creates an effect or emotional response. Ambiguity
-                            is not only common but often deliberate.</p>
-    </gi>
-    <gi>
-      <title>prose</title>
-      <p>The literal meaning of words is more important, and the structure
-                            contributes more meaning. Prose is more amenable to analysis than
-                            poetry but still often ambiguous.</p>
-    </gi>
-    <gi>
-      <title>program</title>
-      <p>The meaning of a computer program is unambiguous and literal, and can
-                            be understood entirely by analysis of the tokens and structure.</p>
-    </gi>
-  </glossary>
-  <p>Here are some suggestions for reading programs (and other formal languages).
-            First, remember that formal languages are much more dense than natural
-            languages, so it takes longer to read them. Also, the structure is very
-            important, so it is usually not a good idea to read from top to bottom, left to
-            right. Instead, learn to parse the program in your head, identifying the tokens
-            and interpreting the structure.  Finally, the details matter. Little things
-            like spelling errors and bad punctuation, which you can get away with in
-            natural languages, can make a big difference in a formal language.</p>
+      <p>Formal languages mean exactly what they say; in Python we code <c>height = 192.6</c>. On the other hand,
+                            natural languages are full of idiom and metaphor. If someone says, <q>How's the
+                            weather up there?</q> we can assume they are implying the other person is 
+                            so tall that they must experience a different weather at their head's elevation.</p>
+      </li>
+  </dl>
+
+  <p>Here are some suggestions for reading programs (and other formal languages):</p>
+  <ol marker="a">
+<li>
+  <p>
+    Remember that formal languages are much more dense than natural languages. It takes longer to read them and little inconsistencies in spelling and punctuation, 
+          which you can get away with in natural languages, will make a big difference in a formal language. <alert>Practice paying extra attention to all the tokens.</alert>
+  </p>
+</li>
+<li>
+  <p>
+    Recognize that structure is very important, and is usually quite consistent, in formal languages. Always start reading a formal language from top to bottom but 
+        make note of indentations (it really matters) and other ways the program's flow will be modified.
+          Recognize that some instructions will be executed but not others (conditional execution) or that some actions will happen more than once (repetition). Learn to
+          to identify these kinds of structures, the algorithm's parts and the program's overall flow. <alert>Learn to see, identify, and use common
+          programming structures.</alert>
+  </p>
+</li>
+<li>
+  <p>It bears repeating, computers will do only what you tell them to do and nothing more. They do not 'understand' your intentions. 
+  In later chapters we will discuss how to make 'self-documenting' code that makes your programing intentions plainer to others reading your code,
+  but <alert>always be ready to parse the program to understand what the code is actually doing and not what you assume it ought to do.</alert>    
+  </p>
+</li>
+
+  </ol>
+
+
   <p>
     <term>Check your understanding</term>
   </p>
@@ -115,10 +111,10 @@
       </choice>
       <choice correct="yes">
         <statement>
-          <p>ambiguity, redundancy, and literalness.</p>
+          <p>ambiguity and literalness.</p>
         </statement>
         <feedback>
-          <p>All of these can be present in natural languages, but cannot exist in formal languages.</p>
+          <p>Both of these can be present in natural languages, but cannot exist in formal languages.</p>
         </feedback>
       </choice>
       <choice>

@@ -1,15 +1,17 @@
 <?xml version="1.0"?>
 <section xml:id="functions_introduction-to-functions">
   <title>Introduction to Functions</title>
-  <p>In Python, a <term>function</term> is a chunk of code that performs some operation that is
-    meaningful for a person to think about as a whole unit, for example calculating a student's GPA
+  <p>In Python, a <term>function</term> is a chunk of code that performs a specific operation that is a
+    meaningful and self-contained part of a larger problem, such as calculating a student's GPA
     in a learning system or responding to the jump action in a video game. Once a function has been
-    defined and you are satisfied that it does what it is supposed to do, you will start thinking
+    defined and you are satisfied that it does what it is supposed to do, it is useful to start thinking
     about it in terms of the larger operation that it performs rather than the specific lines of
     code that make it work.</p>
-  <p>This breaking down of a task or problem is crucial to the successful implementation of any
-    program of more than 50 or so lines (and plenty of smaller ones too). For example, the program
-    that displays the Instagram landing page is made up of functions that:</p>
+  <p>In computer programming, this breaking down of a task or problem into smaller, solveable, sub-functions, is called <term>decomposition</term>
+  and the idea of hiding the complexity of the sub-steps of the algorithm in a function is called <term>abstraction</term>.
+  Learning how to do both of these problem solving techniques is crucial to the successful implementation of any
+    program of more than 50 or so lines (and plenty of smaller ones too). For example, the programmer who coded the Instagram landing page
+    decomposed it into functions that:</p>
   <p>
     <ul>
       <li>
@@ -27,12 +29,9 @@
     </ul>
   </p>
   <p>And each of those is made up of functions as well. For example, the function that displays your
-    friends' posts is a for loop that calls a function to:</p>
+    friends' posts is a <c>for</c> loop that calls a 'sub'-function to display a single post, which in turn calls 'sub-sub'-functions to:</p>
   <p>
     <ul>
-      <li>
-        <p>display a single post which in turn calls functions to:</p>
-      </li>
       <li>
         <p>display the photo and name of the person posting the story</p>
       </li>
@@ -48,23 +47,27 @@
       <li>
         <p>etc.</p>
       </li>
-    </ul>
+     </ul>
   </p>
-  <p>In this chapter you will learn about named functions, functions that can be referred to by name
+  <p>In this chapter you will learn about named functions, i.e. functions that are referred to by a name
     when you want to execute them.</p>
   <subsection xml:id="functions_introduction-to-functions_topics">
     <title>Topics</title>
     <p>
       <ul>
         <li>
-          <p>functions as a means of abstraction</p>
+          <p>The purpose of functions as a means of abstraction</p>
         </li>
         <li>
-          <p>local and global scope</p>
+          <p>The syntax and parts of functions</p>
+          <ul>
+            <li>Function headers</li>
+            <li>Parameters and arguments</li>
+            <li>Body and return statement</li>
+            </ul>
         </li>
-        <li>
-          <p>side effects</p>
-        </li>
+        <li><p>Local and global scope and the flow of execution</p></li>
+        <!-- <li><p>Side effects</p></li> -->
       </ul>
     </p>
   </subsection>
@@ -77,7 +80,7 @@
           <p>identify formal parameters and parameter values in a code sample</p>
         </li>
         <li>
-          <p>predict the return value of a function given sample parameter values</p>
+          <p>predict the return value of a function given sample parameter values (aka arguments)</p>
         </li>
         <li>
           <p>define functions with appropriate names for formal parameter</p>
@@ -86,9 +89,9 @@
           <p>avoid the use of global variables in function definitions by creating formal parameters
             for all values that are needed</p>
         </li>
-        <li>
+        <!-- <li>
           <p>identify whether a function has any side effects</p>
-        </li>
+        </li> -->
       </ul>
     </p>
   </subsection>

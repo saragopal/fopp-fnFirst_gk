@@ -1,16 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <pretext xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
-    <!-- <xi:include href="./bookinfo.ptx"/> -->
+    <xi:include href="./bookinfo.ptx"/>
 
-    <!-- 13 chapters-->
-    <book xml:id="thinkcspy" permid="tcs">
-        <title>Mount Royal University - Intro to Programming</title>
-        <subtitle>The Interative Textbook for COMP1701</subtitle>
-        <frontmatter>
-            <titlepage>
-            </titlepage>
-            <xi:include href="./FrontBackMatter/preface.ptx" />
-        </frontmatter>
+    <book xml:id="fopp-ff" permid="tcs">
+        <title>Foundations of Python Programming</title>
+        <subtitle>Functions First</subtitle>
+        <xi:include href="./FrontBackMatter/front_toc.ptx" />
 
         <xi:include href="./GeneralIntro/toctree.ptx" />
 
@@ -39,6 +34,8 @@
         <xi:include href="./Classes/toctree.ptx" />
 
         <xi:include href="./AdditionalResources/toctree.ptx" />
+
+        <xi:include href="./FrontBackMatter/back_toc.ptx" />
 
 
     </book>

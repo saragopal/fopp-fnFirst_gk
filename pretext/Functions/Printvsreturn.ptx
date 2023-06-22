@@ -1,54 +1,56 @@
 <?xml version="1.0"?>
 <section xml:id="functions_print-vs-return">
   <title>Print vs. return</title>
-  <p>Many beginning programmers find the distinction between print and return very confusing,
-    especially since most of the illustrations of return values in intro texts like this one show
+  <p>Many beginning programmers find the distinction between a non-fruitful-, void-fuction that prints
+  the results, and a fruitful function that returns a value, very confusing.
+  This is especially difficult since most of the illustrations of return values in intro texts like this one show
     the returned value from a function call by printing it, as in <c>print(square(g(2)))</c>.</p>
-  <p>The print statement is fairly easy to understand. It takes a python object and outputs a
+  <p>The print statement is fairly easy to understand. It takes a Python object and outputs a
     printed representation of it
     in the output window. You can think of the print statement as something that takes an object
     from the land of the
-    program and makes it visible to the land of the human observer.</p>
+    program and makes it visible to the land of the human observer/program user.</p>
   <note>
-    <p><term>Print is for people</term>. Remember that slogan. Printing has no effect on the ongoing
+    <p><alert>Print is for people</alert>. Remember that slogan. Printing has no effect on the ongoing
       execution of a program. It doesn't assign a value to a variable. It doesn't return a value
       from a function call.</p>
+      <p><alert>Return is for reuse</alert>. When you, the programmer, need to use or reuse a value determined by a function in 
+      a later step of your program, you should assign it to a variable. Ensure the function's <alert>return value</alert> goes to a variable.</p>
   </note>
   <p>If you're confused, chances are the source of your confusion is really about returned values
     and the evaluation of complex expressions. A function that returns a value is producing a value
     for use <em>by the program</em>, in particular for use in the part of the code where the
     function was invoked. Remember that when a function is invoked, the function's code block is
     executed &#x2013; all that code indented under the <c>def</c> statement gets executed, following
-    the rules of the Python formal language for what should and should not execute as it goes. But
-    when the function returns, control goes back to the calling location, and a return value may
+    the rules of the Python language for what should and should not execute as it flows through the program. But
+    when the function returns, control goes back to the calling location, and a return value can
     come back with it.</p>
-  <p>You've already seen some function calls in Chapter 1. When we told you about the function <c>
-    square</c> that we defined, you saw that the expression <c>square(2)</c> evaluated to the
+  <p>You've seen some function calls in earlier chapters. When we told you about the function <c>square</c> 
+  that we defined, you saw that the expression <c>square(2)</c> evaluated to the
     integer value <c>4</c>.</p>
   <p>That's because the <c>square</c> function <em>returns</em> a value: the square of whatever
     input is passed into it.</p>
-  <p>If a returned value is for use <em>by the program</em>, why did you make that function
-    invocation to return a value? What do you use the result of the function call for? There are
-    three possibilities.</p>
+  <p>What do you use the result of a function call for? There are many possibilities.</p>
   <p>
     <ol marker="1">
       <li>
         <dl>
           <li>
             <title>Save it for later.</title>
-            <p>The returned value may be:</p>
+            <p>The returned value may be:<fn>The last two possibilities, data structures and files, will be discussed in later chapters</fn></p>
             <p>
               <ul>
                 <li>
                   <p>Assigned to a variable. For example, <c>w = square(3)</c></p>
                 </li>
-                <!-- <li>
-                  <p>Put in a list. For example, <c>L.append(square(3))</c></p>
+                <li>
+                  <p>Put into a data structure like a list. For example, <c>L.append(square(3))</c></p>
                 </li>
                 <li>
-                  <p>Put in a dictionary. For example, <c>d[3] = square(3)</c></p>
-                </li> -->
+                  <p>Sent to a file. For example, <c>someFile.write(square(3))</c></p>
+                </li>
               </ul>
+              
             </p>
           </li>
         </dl>
@@ -81,7 +83,7 @@
     definition and not bother to return anything from the function (the value None will be
     returned). In that case, invoke the function without a print statement. For example, you can
     have an entire line of code that reads <c>f(3)</c>. That will run the function f and throw away
-    the return value. Of course, if square doesn't print anything out or have any side effects, it's
+    the return value. Of course, if square doesn't print anything out, it's
     useless to call it and do nothing with the return value. But with a function that has print
     statements inside it, it can be quite useful.</p>
   <p>The other possibility is to return a value from the function and print it, as in <c>print(f(3))</c>.
@@ -101,13 +103,13 @@
       <program language="python">
         <input>
           def square(x):
-            return x*x
+              return x*x
 
           def g(y):
-            return y + 3
+              return y + 3
 
           def h(y):
-            return square(y) + 3
+              return square(y) + 3
 
           print(h(2))
         </input>
@@ -162,13 +164,13 @@
       <program language="python">
         <input>
           def square(x):
-            return x*x
+              return x*x
 
           def g(y):
-            return y + 3
+              return y + 3
 
           def h(y):
-            return square(y) + 3
+              return square(y) + 3
 
           print(g(h(2)))
         </input>
