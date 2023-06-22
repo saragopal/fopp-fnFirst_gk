@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<section xml:id="conditionals_intro-what-we-can-do-with-conditionals">
+  <title>Intro: What we can do with Conditionals</title>
+  <p>So far, our programs have been a series of statements which always execute sequentially. But sometimes programs must change the statements they execute depending on the situation. For example, a messaging app might only set a message's title bold if it has not been read by the user. Or a video game needs to update the position of all the characters that are not asleep. This is done with something called a <term>selection</term> or a <term>conditional statement</term>.</p>
+  <p>
+    The following program changes the message that is printed, based on user input:
+  </p>
+
+  <program interactive="activecode" language="python">
+    <input>
+temperature_str = input("enter temperature in degrees celsius")
+temperature_num = float(temperature_str)
+
+if temperature_num > 37.8:
+    print("fever")
+else:
+    print("normal")
+    </input>
+  </program>
+
+  <p>
+    The program above accepts a body temperature from the user and checks to see if it indicates a fever. Lines 4-7 contain <term>conditional statements</term>. If the temperature is greater than 37.8 the print statement on line 5 executes, otherwise the print statement on line 7 exectutes. Conditional statements like this create a branching effect in our program: the program no longer runs strictly sequentially.
+  </p>
+  <p>This chapter will further detail how to use conditional statements.</p>
+
+  <subsection xml:id="conditionals_learning-goals">
+    <title>Learning Goals</title>
+    <p>
+      <ul>
+        <li>
+          <p>To understand boolean expressions and logical operators</p>
+        </li>
+        <li>
+          <p>To understand conditional execution</p>
+        </li>
+        <li>
+          <p>To be able to write a boolean function</p>
+        </li>
+        <li>
+          <p>To know when to use binary, unary, chained and nested conditional statements</p>
+        </li>
+      </ul>
+    </p>
+  </subsection>
+  <subsection xml:id="conditionals_objectives">
+    <title>Objectives</title>
+    <p>
+      <ul>
+        <li>
+          <p>To properly evaluate a (compound) boolean expression</p>
+        </li>
+        <li>
+          <p>To use parenthesis to properly demonstrate operator precedence</p>
+        </li>
+        <li>
+          <p>To use conditional statements to properly branch code</p>
+        </li>
+      </ul>
+    </p>
+  </subsection>
+</section>
