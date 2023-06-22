@@ -34,19 +34,19 @@ print("All finished!")
       </li>
       <li>
         <p>The error is on line 2 of the program. However, even though there is nothing
-                    wrong with line 1, the print statement does not execute &#x2014; <term>none</term> of the program successfully executes
+                    wrong with line 1, the print statement does not execute &#x2014; <alert>none</alert> of the program successfully executes
                     because of the presence of just one syntax error.</p>
       </li>
       <li>
         <p>The error gives the line number where the error occurred. In this case, the error message pinpoints the
-                    location of the problem. But this may not always be the case: for example, try removing just the <term>right</term> parenthesis <c>)</c> from line 2 and
+                    location of the problem. But this may not always be the case: for example, try removing just the <alert>right</alert> parenthesis <c>)</c> from line 2 and
                     running the program again. Notice how the error message gives no line number at all. You need to be prepared to hunt around a bit in order to locate the trouble.</p>
       </li>
     </ol>
   </p>
   <p>One aspect of syntax you have to watch out for in Python involves indentation. Indentation (the amount of whitespace at the beginning of a line of code) has special meaning in Python. This will be discussed in subsequent chapters, but to see an example of an indentation-related syntax problem, modify the program above by inserting a couple of spaces at the beginning of one of the lines.</p>
   <p>
-    <term>Check your understanding</term>
+    <alert>Check your understanding</alert>
   </p>
   <exercise label="question3_3_1">
     <statement>
