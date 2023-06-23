@@ -1,8 +1,25 @@
 <?xml version="1.0"?>
 <section xml:id="exceptions_when-to-use-try-except">
+  <title>Handling Exceptions</title>
+<p>
+  You encountered several kinds of errors or <term>Exceptions</term> in <xref ref="debugging_chapter">chapter</xref>, and doubtless have encountered others as you've practiced programming. Until now these exceptions have likely cause your program to fail and end. Using Python's <c>try</c> and <c>except</c> statements, we can write a program that attempts a set of statements, and executes another set if the first set causes an exception. This is called <term>exception handling</term>, and allows our program to respond to an exception without crashing.
+</p> 
+<p>
+  The most basic syntax for using <c>try</c> and <c>except</c> is as follows:
+</p>
+<program language="python">
+<input>
+try:
+    # statements to attempt
+except:
+    # statements to execute if an exception occurs in the try block
+</input>
+</program>
+
+<subsection>
   <title>When to use try/except</title>
   <p>The reason to use try/except is when you have a code block to execute that will sometimes run correctly and sometimes not, depending on conditions you can't foresee at the time you're writing the code.</p>
-  <p>For example, when you are running code that fetches data from a website, you may run the code when you don't have a network connection or when the external website is temporarily not responding. If your program can still do something useful in those situations, you would like to handle the exception and have the rest of your code execute.</p>
+  <p>For example, code that fetches data from a website may run when there is no network connection or when the external website is temporarily not responding. If your program can still do something useful in those situations, you would like to handle the exception and have the rest of your code execute.</p>
   <p>As another example, suppose you have fetched some nested data from a website into a dictionary d. When you try to extract specific elements, some may be missing: d may not include a particular key, for example. If you anticipate a particular key potentially not being present, you could write an if..else check to take care of it.</p>
   <program language="python">
     <input>
@@ -32,4 +49,5 @@ except KeyError:
 </input>
   </program>
   <p>We won't go into more details of exception handling in this introductory course. Check out the official <url href="https://docs.python.org/3/tutorial/errors.html" visual="https://docs.python.org/3/tutorial/errors.html">python tutorial section on error handling</url> if you're interested.</p>
+</subsection>
 </section>
