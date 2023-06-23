@@ -112,7 +112,7 @@ myTests().main()
         </input>
     </program>
   </exercise>
-  <exercise label="ac12_04_5">
+  <!-- <exercise label="ac12_04_5">
     <statement>
       <p>Write code so that the buggy code provided works using a try/except. When the codes does not work in the try, have it append to the list <c>attempt</c> the string <q>Error</q>.</p>
     </statement>
@@ -166,7 +166,7 @@ class myTests(TestCaseGui):
 myTests().main()
         </input>
     </program>
-  </exercise>
+  </exercise> -->
   
   <!-- <exercise label="ac12_04_7">
     <statement>
