@@ -98,19 +98,14 @@
   </p>
   <program xml:id="ac13_7_3" interactive="activecode" language="python">
     <input>
-      =====
+    class Cereal:
+        # Add your code here
+    
+    c1 = Cereal("Corn Flakes", "Kellog's", 2)
+    c2 = Cereal("Honey Nut Cheerios", "General Mills", 3)
 
-      from unittest.gui import TestCaseGui
-
-      class myTests(TestCaseGui):
-
-        def testOne(self):
-          self.assertEqual(c1.__str__(), 'Corn Flakes cereal is produced by Kelloggs and has 2 grams of fiber in every serving!', 'Testing that c1 prints correctly.')
-        
-        def testTwo(self):
-          self.assertEqual(c2.__str__(), 'Honey Nut Cheerios cereal is produced by General Mills and has 3 grams of fiber in every serving!', 'Testing that c2 prints correctly.')
-
-      myTests().main()
+    print(c1)
+    print(c2)
     </input>
   </program>
 </section>
