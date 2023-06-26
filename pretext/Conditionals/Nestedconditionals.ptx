@@ -36,24 +36,11 @@ else:
         </input>
   </program>
   <note>
-    <p>In some programming languages, matching the if and the else is a problem. However, in Python this is not
+    <p>In some programming languages, matching the if and the else is visually difficult. However, in Python this is not
                 the case. The indentation pattern tells us exactly which else belongs to which if.</p>
   </note>
-  <p>If you are still a bit unsure, here is the same selection as part of a codelens example.  Step through it to see how the correct <c>print</c> is chosen.</p>
-  <program xml:id="clens5_8_1" interactive="codelens" language="python">
-    <input>
-x = 10
-y = 10
-
-if x &lt; y:
-    print("x is less than y")
-else:
-    if x &gt; y:
-        print("x is greater than y")
-    else:
-        print("x and y must be equal")
-    </input>
-  </program>
+  <p>If you are still a bit unsure, use Codelens to step through the example above and see how the correct <c>print</c> is chosen.</p>
+  
   <p>
     <term>Check your understanding</term>
   </p>

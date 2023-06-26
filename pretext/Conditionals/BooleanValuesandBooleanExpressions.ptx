@@ -1,8 +1,7 @@
 <?xml version="1.0"?>
 <section xml:id="conditionals_boolean-values-and-boolean-expressions">
   <title>Boolean Values and Boolean Expressions</title>
-  <p>The Python type for storing true and false values is called <c>bool</c>, named
-            after the British mathematician, George Boole. George Boole created <em>Boolean
+  <p>The Python type for storing true and false values is called <c>bool</c>. That is, a <c>bool</c> variable stores True or False, just as a <c>float</c> variable stores a number and a <c>str</c> variable stores text. The Bool type is named after the British mathematician, George Boole. George Boole created <em>Boolean
                 Algebra</em>, which is the basis of all modern computer arithmetic.</p>
   <p>There are only two <term>boolean values</term>.  They are <c>True</c> and <c>False</c>.  Capitalization
             is important, since <c>true</c> and <c>false</c> are not boolean values (remember Python is case
@@ -26,18 +25,16 @@ print(type(True))
 print(type("True"))
         </input>
   </program>
-  <p>A <term>boolean expression</term> is an expression that evaluates to a boolean value.
-            The equality operator, <c>==</c>, compares two values and produces a boolean value related to whether the
-            two values are equal to one another.</p>
+  <p>A <term>boolean expression</term> is an expression that evaluates to a boolean value. Below are two examples of boolean expressions that use the equality operator <c>==</c>, which tests whether two things are equal and returns the bool result.</p>
   <program xml:id="ac5_2_3" interactive="activecode" language="python">
     <input>
 print(5 == 5)
 print(5 == 6)
         </input>
   </program>
-  <p>In the first statement, the two operands are equal, so the expression evaluates
+  <p>In the first statement, the two operands are equal, so the boolean expression evaluates
             to <c>True</c>.  In the second statement, 5 is not equal to 6, so we get <c>False</c>.</p>
-  <p>The <c>==</c> operator is one of six common <term>comparison operators</term>; the others are:</p>
+  <p>The <c>==</c> operator is one of six common <term>comparison operators</term> that can be used to construct boolean expressions; the others are:</p>
   <program language="python">
     <input>
 x != y               # x is not equal to y

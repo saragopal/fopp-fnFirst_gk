@@ -237,8 +237,7 @@ myTests().main()
       <p>Create a variable, <c>b</c>, and assign it the value of <c>15</c>. Then, write code to see
         if the value <c>b</c> is greater than that of <c>a</c>. If it is, <c>a</c>'s value should be
         multiplied by 2. If the value of <c>b</c> is less than or equal to <c>a</c>, nothing should
-        happen. Finally, create variable <c>c</c> and assign it the value of the sum of <c>a</c> and <c>
-        b</c>.</p>
+        happen. Finally, create variable <c>c</c> and assign it the value of the sum of <c>a</c> and <c>b</c>.</p>
     </statement>
     <program xml:id="ac5_6_4_editor" interactive="activecode" language="python">
       <input>

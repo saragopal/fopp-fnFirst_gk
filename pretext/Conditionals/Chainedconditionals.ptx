@@ -16,9 +16,8 @@
   <p>The flow of control can be drawn in a different orientation but the resulting pattern is
     identical to the one shown above.</p>
   <image source="Conditionals/Figures/flowchart_chained_conditional.png" width="50%" />
-  <p><c>elif</c> is an abbreviation of <c>else if</c>. Again, exactly one branch will be executed.
-    There is no limit of the number of <c>elif</c> statements but only a single (and optional) final <c>
-    else</c> statement is allowed and it must be the last branch in the statement.</p>
+  <p><c>elif</c> is an abbreviation of <c>else if</c>. Exactly one branch will be executed.
+    There is no limit on the number of <c>elif</c> statements but only a single (and optional) final <c>else</c> statement is allowed and it must be the last branch in the statement.</p>
   <image source="Conditionals/Figures/conditionals_overview.png" width="50%" />
   <p>Each condition is checked in order. If the first is false, the next is checked,
     and so on. If one of them is true, the corresponding branch executes, and the
