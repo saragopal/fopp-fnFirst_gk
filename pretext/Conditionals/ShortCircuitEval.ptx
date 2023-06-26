@@ -21,13 +21,15 @@ if answer == 'Y' or answer == 'y':
     <program xml:id="ac5_3_3" interactive="activecode" language="python">
       <input>
         def check_average_weight() -&gt; None:
-          total_weight = int(input('Enter total weight of luggage:'))
-          num_pieces = int(input('Number of pieces of luggage?'))
+            total_weight = int(input('Enter total weight of luggage:'))
+            num_pieces = int(input('Number of pieces of luggage?'))
 
-          if total_weight / num_pieces &gt; 50:
-            print('Average weight is greater than 50 pounds -&gt; $100 surcharge.')
+            if total_weight / num_pieces &gt; 50:
+              print('Average weight is greater than 50 pounds -&gt; $100 surcharge.')
 
-          print('Luggage check complete.')
+            print('Luggage check complete.')
+        
+        check_average_weight()
       </input>
     </program>
     <p>This code checks to see if the average weight of a given number of pieces of luggage is
@@ -47,13 +49,15 @@ if answer == 'Y' or answer == 'y':
     <program xml:id="ac5_3_4" interactive="activecode" language="python">
       <input>
         def check_average_weight() -&gt; None:
-          total_weight = int(input('Enter total weight of luggage:'))
-          num_pieces = int(input('Number of pieces of luggage?'))
+            total_weight = int(input('Enter total weight of luggage:'))
+            num_pieces = int(input('Number of pieces of luggage?'))
 
-          if num_pieces != 0 and total_weight / num_pieces &gt; 50:
-            print('Average weight is greater than 50 pounds -&gt; $100 surcharge.')
+            if num_pieces != 0 and total_weight / num_pieces &gt; 50:
+              print('Average weight is greater than 50 pounds -&gt; $100 surcharge.')
 
-          print('Luggage check complete.')
+            print('Luggage check complete.')
+        
+        check_average_weight()
       </input>
     </program>
     <p>But wait a minute: is this code safe? Try running the program and entering the value <c>500</c>
