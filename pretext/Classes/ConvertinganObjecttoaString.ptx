@@ -28,8 +28,7 @@
     </input>
   </program>
   <p>The <c>print</c> function shown above produces a string representation of the Point <c>p</c>.
-    The default functionality provided by Python tells you that <c>p</c> is an object of type <c>
-    Point</c>. However, it does not tell you anything about the specific state of the point.</p>
+    The default functionality provided by Python tells you that <c>p</c> is an object of type <c>Point</c>. However, it does not tell you anything about the specific state of the point.</p>
   <p>We can improve on this representation if we include a special method call <c>__str__</c>.
     Notice that this method uses the same naming convention as the constructor, that is two
     underscores before and after the name. It is common that Python uses this naming technique for
@@ -88,13 +87,11 @@
     <ol marker="1">
       <li>
         <p>Create a class called Cereal that accepts three inputs: 2 strings and 1 integer, and
-          assigns them to 3 instance variables in the constructor: <c>name</c>, <c>brand</c>, and <c>
-          fiber</c>. When an instance of <c>Cereal</c> is printed, the user should see the
+          assigns them to 3 instance variables in the constructor: <c>name</c>, <c>brand</c>, and <c>fiber</c>. When an instance of <c>Cereal</c> is printed, the user should see the
           following: <q>[name] cereal is produced by [brand] and has [fiber integer] grams of fiber
           in every serving!</q> To the variable name <c>c1</c>, assign an instance of <c>Cereal</c>
           whose name is <c>"Corn Flakes"</c>, brand is <c>"Kellogg's"</c>, and fiber is <c>2</c>. To
-          the variable name <c>c2</c>, assign an instance of <c>Cereal</c> whose name is <c>"Honey
-          Nut Cheerios"</c>, brand is <c>"General Mills"</c>, and fiber is <c>3</c>. Practice
+          the variable name <c>c2</c>, assign an instance of <c>Cereal</c> whose name is <c>"Honey Nut Cheerios"</c>, brand is <c>"General Mills"</c>, and fiber is <c>3</c>. Practice
           printing both!</p>
       </li>
     </ol>
@@ -107,12 +104,11 @@
 
       class myTests(TestCaseGui):
 
-      def testOne(self):
-      self.assertEqual(c1.__str__(), "Corn Flakes cereal is produced by Kellogg's and has 2 grams of
-      fiber in every serving!", "Testing that c1 prints correctly.")
-      def testTwo(self):
-      self.assertEqual(c2.__str__(), "Honey Nut Cheerios cereal is produced by General Mills and has
-      3 grams of fiber in every serving!", "Testing that c2 prints correctly.")
+        def testOne(self):
+          self.assertEqual(c1.__str__(), 'Corn Flakes cereal is produced by Kelloggs and has 2 grams of fiber in every serving!', 'Testing that c1 prints correctly.')
+        
+        def testTwo(self):
+          self.assertEqual(c2.__str__(), 'Honey Nut Cheerios cereal is produced by General Mills and has 3 grams of fiber in every serving!', 'Testing that c2 prints correctly.')
 
       myTests().main()
     </input>
