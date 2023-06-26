@@ -10,7 +10,7 @@
       <format>html</format>
       <source>pretext/main.ptx</source>
       <publication>publication/runestone.xml</publication>
-      <output-dir>output/foppff</output-dir>
+      <output-dir>published/foppff</output-dir>
     </target>
     <!-- To build this target, run `pretext build web` -->
     <target name="web">
