@@ -48,8 +48,7 @@
         the pet adds the new word to its list of words. In response to the <c>hi()</c> method, it
         prints out one of the words it knows, randomly picking one from its list of known words.
         Both <c>hi()</c> and <c>teach()</c> cause an invocation of the <c>reduce_boredom()</c>
-        method. It decrements the boredom state by an amount that it reads from the class variable <c>
-        boredom_decrement</c>. The boredom state can never go below <c>0</c>.</p>
+        method. It decrements the boredom state by an amount that it reads from the class variable <c>boredom_decrement</c>. The boredom state can never go below <c>0</c>.</p>
     <p>To relieve hunger, we call the <c>feed()</c> method.</p>
     <program xml:id="ac13_11_1" interactive="activecode" language="python">
         <input>

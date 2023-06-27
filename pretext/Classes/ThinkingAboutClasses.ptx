@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <section xml:id="classes_thinking-about-classes-and-instances">
   <title>Thinking About Classes and Instances</title>
-  <p>You can now imagine some reasons you may want to define a class. You have seen examples of creating types that are more complicated or specific than the ones built in to Python (like lists or strings). <c>Turtle</c>, with all the instance variables and methods you learned about using earlier in the semester, is a class that programmers defined which is now included in the Python language. In this chapter, we defined <c>Point</c> with some functionality that can make it easier to write programs that involve <c>x,y</c> coordinate <c>Point</c> instances. And shortly, you'll see how you can define classes to represent objects in a game.</p>
-  <p>You can also use self-defined classes to hold data &#x2013; for example, data you get from making a request to a REST API.</p>
+  <p>You can now imagine some reasons you may want to define a class. You have seen examples of creating types that are more complicated or specific than the ones built in to Python (like lists or strings). In this chapter, we defined <c>Point</c> with some functionality that can make it easier to write programs that involve <c>x,y</c> coordinate <c>Point</c> instances. And shortly, you'll see how you can define classes to represent objects in a game.</p>
+  <p>You can also use self-defined classes to hold data &#x2013; for example, data you get from making a request to a web server.</p>
   <p>Before you decide to define a new class, there are a few things to keep in mind, and questions you should ask yourself:</p>
   <p>
     <ul>
