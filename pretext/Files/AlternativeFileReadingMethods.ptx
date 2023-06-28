@@ -99,7 +99,7 @@
       <p>
         <ol marker="1">
           <li>
-            <p>Using the file <c>school_prompt2.txt</c>, find the number of characters in the file and assign that value to the variable <c>num_char</c>.</p>
+            <p>Using the file <c>school_prompt2.txt</c> (shown below), find the number of characters in the file and assign that value to the variable <c>num_char</c>.</p>
           </li>
         </ol>
       </p>
@@ -124,7 +124,7 @@ myTests().main()
       <p>
         <ol marker="1">
           <li>
-            <p>Find the number of lines in the file, <c>travel_plans2.txt</c>, and assign it to the variable <c>num_lines</c>.</p>
+            <p>Find the number of lines in the file <c>travel_plans2.txt</c> (shown below), and assign it to the variable <c>num_lines</c>.</p>
           </li>
         </ol>
       </p>
