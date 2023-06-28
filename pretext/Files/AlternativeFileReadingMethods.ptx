@@ -95,20 +95,7 @@
   <p>
     <term>Check your Understanding</term>
   </p>
-  <raw format="html" xml:space="preserve">&lt;pre id="school_prompt.txt"&gt;
-Writing essays for school can be difficult but
-many students find that by researching their topic that they
-have more to say and are better informed. Here are the university
-we require many undergraduate students to take a first year writing requirement
-so that they can
-have a solid foundation for their writing skills. This comes
-in handy for many students.
-Different schools have different requirements, but everyone uses
-writing at some point in their academic career, be it essays, research papers,
-technical write ups, or scripts.
-&lt;/pre&gt;</raw>
   <exercise label="ac11_3_1">
-    <statement>
       <p>
         <ol marker="1">
           <li>
@@ -116,7 +103,6 @@ technical write ups, or scripts.
           </li>
         </ol>
       </p>
-    </statement>
     <program xml:id="ac11_3_1_editor" interactive="activecode" language="python">
       <input>
 
@@ -133,21 +119,8 @@ myTests().main()
         </input>
     </program>
   </exercise>
-  <raw format="html" xml:space="preserve">&lt;pre id="travel_plans.txt"&gt;
-This summer I will be travelling.
-I will go to...
-Italy: Rome
-Greece: Athens
-England: London, Manchester
-France: Paris, Nice, Lyon
-Spain: Madrid, Barcelona, Granada
-Austria: Vienna
-I will probably not even want to come back!
-However, I wonder how I will get by with all the different languages.
-I only know English!
-&lt;/pre&gt;</raw>
+
   <exercise label="ac11_3_2">
-    <statement>
       <p>
         <ol marker="1">
           <li>
@@ -155,7 +128,6 @@ I only know English!
           </li>
         </ol>
       </p>
-    </statement>
     <program xml:id="ac11_3_2_editor" interactive="activecode" language="python">
       <input>
 
@@ -172,17 +144,8 @@ myTests().main()
         </input>
     </program>
   </exercise>
-  <raw format="html" xml:space="preserve">&lt;pre id="emotion_words.txt"&gt;
-Sad upset blue down melancholy somber bitter troubled
-Angry mad enraged irate irritable wrathful outraged infuriated
-Happy cheerful content elated joyous delighted lively glad
-Confused disoriented puzzled perplexed dazed befuddled
-Excited eager thrilled delighted
-Scared afraid fearful panicked terrified petrified startled
-Nervous anxious jittery jumpy tense uneasy apprehensive
-&lt;/pre&gt;</raw>
-  <exercise label="ac11_3_3">
-    <statement>
+  
+  <!-- <exercise label="ac11_3_3">
       <p>
         <ol marker="1">
           <li>
@@ -190,7 +153,6 @@ Nervous anxious jittery jumpy tense uneasy apprehensive
           </li>
         </ol>
       </p>
-    </statement>
     <program xml:id="ac11_3_3_editor" interactive="activecode" language="python">
       <input>
 
@@ -205,11 +167,49 @@ class myTests(TestCaseGui):
 myTests().main()
         </input>
     </program>
-  </exercise>
-  <DataFileNode line="175" runestone_options="{'fromfile': 'travel_plans.txt', 'hide': None, 'subchapter': 'AlternativeFileReadingMethods', 'chapter': 'Files', 'basecourse': 'fopp', 'optional': '', 'optclass': '', 'divid': 'travel_plans2.txt', 'qnumber': '', 'cols': 65, 'rows': 20, 'filecontent': 'This summer I will be travelling.\nI will go to...\nItaly: Rome\nGreece: Athens\nEngland: London, Manchester\nFrance: Paris, Nice, Lyon\nSpain: Madrid, Barcelona, Granada\nAustria: Vienna\nI will probably not even want to come back!\nHowever, I wonder how I will get by with all the different languages.\nI only know English!\n', 'hidden': 'data-hidden', 'edit': 'false', 'question_label': '10.3.4'}" source="/home/ccurtis/Documents/Runestone/fopp-pretext/_sources/Files/AlternativeFileReadingMethods.rst">
-        </DataFileNode>
-  <DataFileNode line="179" runestone_options="{'fromfile': 'school_prompt.txt', 'hide': None, 'subchapter': 'AlternativeFileReadingMethods', 'chapter': 'Files', 'basecourse': 'fopp', 'optional': '', 'optclass': '', 'divid': 'school_prompt2.txt', 'qnumber': '', 'cols': 65, 'rows': 20, 'filecontent': 'Writing essays for school can be difficult but\nmany students find that by researching their topic that they\nhave more to say and are better informed. Here are the university\nwe require many undergraduate students to take a first year writing requirement\nso that they can\nhave a solid foundation for their writing skills. This comes\nin handy for many students.\nDifferent schools have different requirements, but everyone uses\nwriting at some point in their academic career, be it essays, research papers,\ntechnical write ups, or scripts.\n', 'hidden': 'data-hidden', 'edit': 'false', 'question_label': '10.3.5'}" source="/home/ccurtis/Documents/Runestone/fopp-pretext/_sources/Files/AlternativeFileReadingMethods.rst">
-        </DataFileNode>
-  <DataFileNode line="183" runestone_options="{'fromfile': 'emotion_words.txt', 'hide': None, 'subchapter': 'AlternativeFileReadingMethods', 'chapter': 'Files', 'basecourse': 'fopp', 'optional': '', 'optclass': '', 'divid': 'emotion_words2.txt', 'qnumber': '', 'cols': 62, 'rows': 20, 'filecontent': 'Sad upset blue down melancholy somber bitter troubled\nAngry mad enraged irate irritable wrathful outraged infuriated\nHappy cheerful content elated joyous delighted lively glad\nConfused disoriented puzzled perplexed dazed befuddled\nExcited eager thrilled delighted\nScared afraid fearful panicked terrified petrified startled\nNervous anxious jittery jumpy tense uneasy apprehensive\n', 'hidden': 'data-hidden', 'edit': 'false', 'question_label': '10.3.6'}" source="/home/ccurtis/Documents/Runestone/fopp-pretext/_sources/Files/AlternativeFileReadingMethods.rst">
-        </DataFileNode>
+  </exercise> -->
+
+  <datafile label="school_prompt2.txt" filename="school_prompt2.txt">
+    <pre>
+Writing essays for school can be difficult but
+many students find that by researching their topic that they
+have more to say and are better informed. Here are the university
+we require many undergraduate students to take a first year writing requirement
+so that they can
+have a solid foundation for their writing skills. This comes
+in handy for many students.
+Different schools have different requirements, but everyone uses
+writing at some point in their academic career, be it essays, research papers,
+technical write ups, or scripts.
+    </pre>
+  </datafile>
+
+  <datafile label="travel_plans2.txt" filename="travel_plans2.txt">>
+  <pre>
+This summer I will be travelling.
+I will go to...
+Italy: Rome
+Greece: Athens
+England: London, Manchester
+France: Paris, Nice, Lyon
+Spain: Madrid, Barcelona, Granada
+Austria: Vienna
+I will probably not even want to come back!
+However, I wonder how I will get by with all the different languages.
+I only know English!
+  </pre>
+  </datafile>
+
+<!-- <datafile label="emotion_words2.txt" filename="emotion_words2.txt">
+<pre>
+Sad upset blue down melancholy somber bitter troubled
+Angry mad enraged irate irritable wrathful outraged infuriated
+Happy cheerful content elated joyous delighted lively glad
+Confused disoriented puzzled perplexed dazed befuddled
+Excited eager thrilled delighted
+Scared afraid fearful panicked terrified petrified startled
+Nervous anxious jittery jumpy tense uneasy apprehensive
+</pre>
+</datafile> -->
+
 </section>
