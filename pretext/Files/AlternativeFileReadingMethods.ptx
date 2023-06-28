@@ -21,7 +21,7 @@
           <term>Explanation</term>
         </cell>
       </row>
-      <row>
+      <!-- <row>
         <cell>
           <c>write</c>
         </cell>
@@ -33,7 +33,7 @@
                                 <c>filevar</c> must refer to a file that has
                                 been  opened for writing.
                         </cell>
-      </row>
+      </row> -->
       <row>
         <cell>
           <c>read(n)</c>
