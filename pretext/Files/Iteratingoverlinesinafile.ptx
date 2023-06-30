@@ -14,19 +14,19 @@
     statement1
     statement2
     ...</pre>
-  <p>To process all of our olypmics data, we will use a <em>for</em> loop to iterate over the lines of the file. Using
+  <p>To process all of our olympics data (shown below), we will use a <em>for</em> loop to iterate over the lines of the file. Using
             the <c>split</c> method, we can break each line into a list containing all the fields of interest about the
             athlete. We can then take the values corresponding to name, team and event to
             construct a simple sentence.</p>
   <program xml:id="ac11_4_1" interactive="activecode" language="python">
     <input>
-olypmicsfile = open("olypmics.txt", "r")
+olympicsfile = open("olympics.txt", "r")
 
-for aline in olypmicsfile.readlines():
+for aline in olympicsfile.readlines():
     values = aline.split(",")
     print(values[0], "is from", values[3], "and is on the roster for", values[4])
 
-olypmicsfile.close()
+olympicsfile.close()
         </input>
   </program>
   <p>To make the code a little simpler, and to allow for more efficient processing, Python provides a built-in way to
@@ -35,16 +35,48 @@ olypmicsfile.close()
             to read it. And when you start dealing with big files, you may notice the efficiency gains of using it.</p>
   <program xml:id="ac11_4_2" interactive="activecode" language="python">
     <input>
-olypmicsfile = open("olypmics.txt", "r")
+olympicsfile = open("olympics.txt", "r")
 
-for aline in olypmicsfile:
+for aline in olympicsfile:
     values = aline.split(",")
     print(values[0], "is from", values[3], "and is on the roster for", values[4])
 
-olypmicsfile.close()
+olympicsfile.close()
         </input>
   </program>
-  <raw format="html" xml:space="preserve">&lt;pre hidden id="olypmics.txt"&gt;
+
+  <p>
+    <term>Check your Understanding</term>
+  </p>
+
+  <exercise label="ac11_4_3">
+      <p>
+        <ol marker="1">
+          <li>
+            <p>Write code to find out how many lines are in the file <c>emotion_words.txt</c> as shown below. Save this value to the variable <c>num_lines</c>. Do not use the len method.</p>
+          </li>
+        </ol>
+      </p>
+    <program xml:id="ac11_4_3_editor" interactive="activecode" language="python">
+      <input>
+
+=====
+
+from unittest.gui import TestCaseGui
+
+class myTests(TestCaseGui):
+
+   def testOne(self):
+      self.assertEqual(num_lines, 7, "Testing that num_lines was assigned to the correct value.")
+      <!-- self.assertNotIn('len', self.getEditorText(), "Testing your code (Don't worry about actual and expected values).") -->
+
+myTests().main()
+        </input>
+    </program>
+  </exercise>
+
+<datafile label="olympics.txt" filename="olympics.txt">
+<pre>
 Name,Sex,Age,Team,Event,Medal
 A Dijiang,M,24,China,Basketball,NA
 A Lamusi,M,23,China,Judo,NA
@@ -69,11 +101,11 @@ Minna Maarit Aalto,F,34,Finland,Sailing,NA
 Pirjo Hannele Aalto (Mattila-),F,32,Finland,Biathlon,NA
 Timo Antero Aaltonen,M,31,Finland,Athletics,NA
 Win Valdemar Aaltonen,M,54,Finland,Art Competitions,NA
-&lt;/pre&gt;</raw>
-  <p>
-    <term>Check your Understanding</term>
-  </p>
-  <raw format="html" xml:space="preserve">&lt;pre id="emotion_words.txt"&gt;
+</pre>
+</datafile>
+
+<datafile label="emotion_words.txt" filename="emotion_words.txt">
+<pre>
 Sad upset blue down melancholy somber bitter troubled
 Angry mad enraged irate irritable wrathful outraged infuriated
 Happy cheerful content elated joyous delighted lively glad
@@ -81,32 +113,7 @@ Confused disoriented puzzled perplexed dazed befuddled
 Excited eager thrilled delighted
 Scared afraid fearful panicked terrified petrified startled
 Nervous anxious jittery jumpy tense uneasy apprehensive
-&lt;/pre&gt;</raw>
-  <exercise label="ac11_4_3">
-    <statement>
-      <p>
-        <ol marker="1">
-          <li>
-            <p>Write code to find out how many lines are in the file <c>emotion_words.txt</c> as shown above. Save this value to the variable <c>num_lines</c>. Do not use the len method.</p>
-          </li>
-        </ol>
-      </p>
-    </statement>
-    <program xml:id="ac11_4_3_editor" interactive="activecode" language="python">
-      <input>
+</pre>
+</datafile>
 
-=====
-
-from unittest.gui import TestCaseGui
-
-class myTests(TestCaseGui):
-
-   def testOne(self):
-      self.assertEqual(num_lines, 7, "Testing that num_lines was assigned to the correct value.")
-      self.assertNotIn('len', self.getEditorText(), "Testing your code (Don't worry about actual and expected values).")
-
-myTests().main()
-        </input>
-    </program>
-  </exercise>
 </section>

@@ -15,9 +15,8 @@
   <pre>with &lt;create some object that understands context&gt; as &lt;some name&gt;:
     do some stuff with the object
     ...</pre>
-  <p>When the program exits the with block, the context manager handles the common stuff that normally happens at the end, in our case closing a file. A simple example will clear up all of this abstract discussion of contexts. Here are the contents of a file called <q>mydata.txt</q>.</p>
-  <DataFileNode line="39" runestone_options="{'subchapter': 'With', 'chapter': 'Files', 'basecourse': 'fopp', 'optional': '', 'optclass': '', 'divid': 'mydata.txt', 'qnumber': '', 'cols': 5, 'rows': 20, 'filecontent': '1 2 3\n4 5 6\n', 'hidden': '', 'edit': 'false', 'question_label': '10.6.1'}" source="/home/ccurtis/Documents/Runestone/fopp-pretext/_sources/Files/With.rst">
-        </DataFileNode>
+  <p>When the program exits the with block, the context manager handles the common stuff that normally happens at the end, in our case closing a file. A simple example will clear up all of this abstract discussion of contexts. See the contents of a file called <q>mydata.txt</q> below.</p>
+
   <program xml:id="ac11_6_1" interactive="activecode" language="python">
     <input>
 with open('mydata.txt', 'r') as md:
@@ -37,4 +36,12 @@ md.close()
 # continue with other code
         </input>
   </program>
+
+<datafile label='mydata.txt' filename='mydata.txt'>
+<pre>
+1 2 3
+4 5 6
+</pre>
+</datafile>
+
 </section>

@@ -9,8 +9,7 @@
             the use of the <c>'w'</c> flag instead of the <c>'r'</c> flag as the second parameter. When we open
             a file for writing, a new, empty file with that name is created and made ready to accept our
             data. If an existing file has the same name, its contents are overwritten. As before, the function returns a reference to the new file object.</p>
-  <p><xref ref="files_alternative-file-reading-methods"/> shows one additional method on file objects that we have not used
-            thus far. The <c>write</c> method allows us to add data to a text file. Recall that text files
+  <p>The <c>write</c> method allows us to add data to a text file. Recall that text files
             contain sequences of characters. We usually think of these character sequences as being the
             lines of the file where each line ends with the newline <c>\n</c> character. Be very careful to
             notice that the <c>write</c> method takes one parameter, a string. When invoked, the characters of
