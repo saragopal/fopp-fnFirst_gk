@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <docinfo>
     <document-id edition="1">foppff</document-id>
-    <author-biographies length="short" />
+    <author-biographies length="short" />   
 
-    <blurb shelf="Intro to Computer Science Textbooks">
-    An adpatation of Foundations of Python Programming with functions introduced before conditionals and loops. This version de-emphasizes Python-specific syntax to focus on procedural programming fundamentals.
+    <blurb shelf="Intro to Computer Science">
+    An adaptation of Foundations of Python Programming with functions introduced before conditionals and loops. This version de-emphasizes Python-specific syntax to focus on procedural programming fundamentals.
     </blurb>
 </docinfo>
