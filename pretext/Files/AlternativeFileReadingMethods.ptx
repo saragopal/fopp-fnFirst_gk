@@ -10,6 +10,9 @@
             methods and the following session shows them in action.</p>
   <table xml:id="files_files_filemethods2a">
     <tabular>
+      <col />
+      <col />
+      <col width="50%"/>
       <row header="yes">
         <cell>
           <term>Method Name</term>
@@ -34,7 +37,7 @@
                                 been  opened for writing.
                         </cell>
       </row> -->
-      <row>
+      <row bottom="minor">
         <cell>
           <c>read(n)</c>
         </cell>
@@ -42,43 +45,36 @@
           <c>filevar.read()</c>
         </cell>
         <cell>
+        <p>
                             Read and return a string of <c>n</c>
                                 characters, or the entire file as a
                                 single string if  <c>n</c> is not provided.
-                        </cell>
+                        </p></cell>
       </row>
-      <row>
+      <row bottom="minor">
         <cell>
-          <c>readline(n)</c>
+          <c>readline()</c>
         </cell>
         <cell>
           <c>filevar.readline()</c>
         </cell>
-        <cell>
+        <cell><p>
                             Read and return the next line of the file with
                                 all text up to and including the
-                                newline character. If <c>n</c> is provided as
-                                a parameter, then only <c>n</c> characters
-                                will be returned if the line is longer
-                                than <c>n</c>. <term>Note</term> the parameter <c>n</c> is not supported in the browser version of Python, and in fact is rarely used in practice, you can safely ignore it.
-                        </cell>
+                                newline character.
+                       </p></cell>
       </row>
       <row>
         <cell>
-          <c>readlines(n)</c>
+          <c>readlines()</c>
         </cell>
         <cell>
           <c>filevar.readlines()</c>
         </cell>
-        <cell>
+        <cell><p>
                             Returns a list of strings, each
                                 representing a single line of the file.
-                                If <c>n</c> is not provided then all lines of
-                                the file are returned. If <c>n</c> is provided
-                                then <c>n</c> characters are read but <c>n</c> is
-                                rounded up so that an entire line is
-                                returned.  <term>Note</term> Like <c>readline</c> <c>readlines</c> ignores the parameter <c>n</c> in the browser.
-                        </cell>
+                       </p></cell>
       </row>
     </tabular>
   </table>
