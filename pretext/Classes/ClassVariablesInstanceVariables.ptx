@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <section xml:id="classes_class-variables-and-instance-variables">
   <title>Class Variables and Instance Variables</title>
-  <p>You have already seen that each instance of a class has its own namespace with its own instance variables. Two instances of the Point class each have their own instance variable x. Setting x in one instance doesn't affect the other instance.</p>
+  <p>You have already seen that each instance of a class has its own instance variables. Two instances of the Point class each have their own instance variable x. Setting x in one instance doesn't affect the other instance.</p>
   <p>A class can also have class variables. A class variable is set as part of the class definition.</p>
   <p>For example, consider the following version of the Point class. Here we have added a graph method that generates a string representing a little text-based graph with the Point plotted on the graph. It's not a very pretty graph, in part because the y-axis is stretched like a rubber band, but you can get the idea from this.</p>
   <p>Note that there is an assignment to the variable printed_rep on line 4. It is not inside any method. That makes it a class variable. It is accessed in the same way as instance variables. For example, on line 16, there is a reference to self.printed_rep. If you change line 4, you have it print a different character at the x,y coordinates of the Point in the graph.</p>

@@ -104,25 +104,7 @@ print(p is q)
   <p>The combined process of <q>make me a new object</q> and <q>get its settings initialized
             to the factory default settings</q> is called <term>instantiation</term>.</p>
   <p>To get a clearer understanding of what happens when instantiating a new instance, examine the previous code using CodeLens.</p>
-  <program xml:id="ac13_3_3" interactive="codelens" language="python">
-    <input>
-class Point:
-    """ Point class for representing and manipulating x,y coordinates. """
-
-    def __init__(self):
-
-        self.x = 0
-        self.y = 0
-
-p = Point()         # Instantiate an object of type Point
-q = Point()         # and make a second point
-
-print(p)
-print(q)
-
-print(p is q)
-    </input>
-  </program>
+  
   <p>At Step 2 in the CodeLens execution, you can see that <c>Point</c> has been bound to an object representing the <c>Point</c> class, but there are not yet any instances. The execution of line 9, <c>p = Point()</c>, occurs at steps 3-5. First, at step 3, you can see that a blank instance of the class has been created, and is passed as the first (and only parameter) to the <c>__init__</c> method. That method's code is executed, with the variable <c>self</c> bound to that instance. At steps 4 and 5, two instance variables are filled in: <c>x</c> and <c>y</c> are both set to <c>0</c>. Nothing is returned from the <c>__init__</c> method, but the point object itself is returned from the call to <c>Point()</c>. Thus, at step 7, <c>p</c> is bound to the new point that was created and initialized.</p>
   <p>Skipping ahead, by the time we get to Step 14, <c>p</c> and <c>q</c> are each bound to different <c>Point</c> instances. Even though both have <c>x</c> and <c>y</c> instance variables set to <c>0</c>, they are <em>different objects</em>. Thus <c>p is q</c> evaluates to <c>False</c>.</p>
 </section>
