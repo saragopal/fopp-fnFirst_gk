@@ -21,11 +21,11 @@
 
         class myTests(TestCaseGui):
 
-        def testOne(self):
-        self.assertEqual(type(xyz), type(3), "Checking type of xyz")
-        self.assertEqual(xyz, 25, "Checking if xyz is 25")
-        self.assertIn('square', self.getEditorText(), "Testing that 'square' is in your code. (Don't
-        worry about Actual and Expected Values.)")
+          def testOne(self):
+            self.assertEqual(type(xyz), type(3), "Checking type of xyz")
+            self.assertEqual(xyz, 25, "Checking if xyz is 25")
+            self.assertIn(self.getEditorText(), 'square', 
+              "Testing that 'square' is in your code. (Don't worry about Actual and Expected Values.)")
 
         myTests().main()
       </input>
@@ -53,9 +53,8 @@
 
         class myTests(TestCaseGui):
 
-        def testOne(self):
-        self.assertEqual(num_chars, len(rv), "Testing that num_chars has been set to the length of
-        rv")
+          def testOne(self):
+            self.assertEqual(num_chars, len(rv), "Testing that num_chars has been set to the length of rv")
 
         myTests().main()
       </input>
@@ -127,7 +126,7 @@
     <program xml:id="assess_addl_functions_editor" interactive="activecode" language="python">
       <input>
 
-        def square(num: int) -&gt; int:
+        def square(num: int) -> int:
           return num**2
       </input>
     </program>
