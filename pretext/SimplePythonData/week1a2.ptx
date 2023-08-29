@@ -4,14 +4,20 @@
   <p>
     <term>Check your understanding</term>
   </p>
-  <exercise label="assess_ps_01_01">
-    <statement>
-      <p>There is a function we are providing in for you in this problem called <c>square</c>. It
-        takes one integer and returns the square of that integer value. Write code to assign a
-        variable called <c>xyz</c> the value <c>5*5</c> (five squared). Use the square function,
-        rather than just multiplying with <c>*</c>.</p>
-    </statement>
-    <program xml:id="assess_ps_01_01_editor" interactive="activecode" language="python">
+  <!-- <exercise label="assess_ps_01_01"> -->
+    <listing>
+    <program xml:id="square_def" interactive="activecode" language="python" label="square_def">
+      <input>
+        def square(x: int) -&gt; int:
+          return x * x
+      </input>
+    </program>
+  </listing>
+    <p>There is a function we are providing in for you in this problem called <c>square</c>. It
+      takes one integer and returns the square of that integer value. Write code to assign a
+      variable called <c>xyz</c> the value <c>5*5</c> (five squared). Use the square function,
+      rather than just multiplying with <c>*</c>.</p>
+    <program xml:id="assess_ps_01_01_editor" interactive="activecode" language="python" include="square_def">
       <input>
         xyz = ""
 
@@ -24,13 +30,13 @@
           def testOne(self):
             self.assertEqual(type(xyz), type(3), "Checking type of xyz")
             self.assertEqual(xyz, 25, "Checking if xyz is 25")
-            self.assertIn(self.getEditorText(), 'square', 
+            self.assertIn('square', self.getEditorText(),
               "Testing that 'square' is in your code. (Don't worry about Actual and Expected Values.)")
 
         myTests().main()
       </input>
     </program>
-  </exercise>
+  <!-- </exercise> -->
   <exercise label="assess_ps_01_02">
     <statement>
       <p>Write code to assign the number of <em>characters</em> in the string <c>rv</c> to a
@@ -117,18 +123,5 @@
         </feedback>
       </choice>
     </choices>
-  </exercise>
-  <exercise label="assess_addl_functions">
-    <statement>
-      <p>(This is not an assessment question) The code below defines functions used by one of the
-        questions above. Do not modify the code, but feel free to take a look.</p>
-    </statement>
-    <program xml:id="assess_addl_functions_editor" interactive="activecode" language="python">
-      <input>
-
-        def square(num: int) -> int:
-          return num**2
-      </input>
-    </program>
   </exercise>
 </section>
