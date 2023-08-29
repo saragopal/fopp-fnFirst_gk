@@ -29,7 +29,7 @@
   <p>It is also possible for programmers to define new functions in their programs. You will learn
     how to do that later in the course. For now, you just need to learn how to invoke, or call, a
     function, and understand that the execution of the function returns a computed value.</p>
-  <program xml:id="ac2_4_1" interactive="activecode" language="python">
+  <program xml:id="ac2_4_1" interactive="activecode" language="python" label="ac2_4_1">
     <input>
       def square(x: int) -&gt; int:
         return x * x
@@ -46,7 +46,7 @@
     work. The visual below illustrates how the <c>square</c> function works.</p>
   <image source="SimplePythonData/Figures/square_function.gif" width="50%"
     alt="a visual of the square function. Four is provided as the input, the function object shakes, and then sixteen comes out from the bottom of the function object." />
-  <program xml:id="ac2_4_2" interactive="activecode" language="python">
+  <program xml:id="ac2_4_2" interactive="activecode" language="python" include="ac2_4_1">
     <input>
       print(square(3))
       square(5)
@@ -69,7 +69,7 @@
       function invocation that
       produces a number.</p>
     <p>For example:</p>
-    <program xml:id="ac2_4_3" interactive="activecode" language="python">
+    <program xml:id="ac2_4_3" interactive="activecode" language="python" include="ac2_4_1">
       <input>
         print(square(3) + 2)
         print(sub(square(3), square(1+1)))
@@ -87,7 +87,7 @@
       the function object, you'll get one of those not-so-nice printed representations.</p>
     <p>Just typing the name of the function refers to the function as an object. Typing the name of
       the function followed by parentheses <c>()</c> invokes the function.</p>
-    <program xml:id="ac2_4_4" interactive="activecode" language="python">
+    <program xml:id="ac2_4_4" interactive="activecode" language="python" include="ac2_4_1">
       <input>
         print(square)
         print(square(3))
