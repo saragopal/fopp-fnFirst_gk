@@ -29,6 +29,7 @@
   <p>It is also possible for programmers to define new functions in their programs. You will learn
     how to do that later in the course. For now, you just need to learn how to invoke, or call, a
     function, and understand that the execution of the function returns a computed value.</p>
+  <listing>
   <program xml:id="ac2_4_1" interactive="activecode" language="python" label="ac2_4_1">
     <input>
       def square(x: int) -&gt; int:
@@ -38,6 +39,7 @@
         return x - y
     </input>
   </program>
+</listing>
   <p>We've defined two functions above. The code is hidden so as not to bother you (yet) with how
     functions are defined. <c>square</c> takes a single input parameter, and returns that input
     multiplied by itself. <c>sub</c> takes two input parameters and returns the result of
