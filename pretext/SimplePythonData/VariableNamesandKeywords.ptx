@@ -1,18 +1,41 @@
 <?xml version="1.0"?>
 <section xml:id="simple-python-data_variable-names-and-keywords">
   <title>Variable Names and Keywords</title>
-  <p><term>Variable names</term> can be arbitrarily long. They can contain both letters and digits,
-    but they have to begin with a letter or an underscore. Although it is legal to use uppercase
-    letters, by convention we don't. If you do, remember that case matters. <c>Bruce</c> and <c>
-    bruce</c> are different variables.</p>
-  <warning>
-    <p>Variable names can never contain spaces.</p>
-  </warning>
-  <p>The underscore character ( <c>_</c>) can also appear in a name. It is often used in names with
-    multiple words, such as <c>my_name</c> or <c>price_of_tea_in_china</c>. There are some
-    situations in which names beginning with an underscore have special meaning, so a safe rule for
-    beginners is to start all names with a letter.</p>
-  <p>If you give a variable an illegal name, you get a syntax error. In the example below, each
+  <p>You may choose your own<term>Variable names</term>. They should describe their purpose or
+    what they represent. The names you choose should help you (and other people) understand how they 
+    are being used in your program. Variable names can be arbitrarily long, particularly if you choose to 
+    string a few words together. </p>
+  <p> There only a few <term>rules</term> for naming variables &#8212;
+    <ol>
+      <li>The first character must be a (lower-case) letter.</li>
+      <li>You may use any letter, digit, or the underscore <c>_</c> in your variable names 
+        (but not the first character-see #1 above)</li>
+      <li>You may not use any <em>reserved words</em> as variable names. (See the table below)   </li>
+    </ol>
+    In short, they can contain both letters and digits, but they have to begin with a letter (or an underscore).
+  </p>
+  <p> There are also a few <term>conventions</term> to follow &#8212;
+    <ol>
+      <li>The first character is a lower-case letter. Python will not <em>break</em> if you 
+          use an upper-case letter, but it signifies something to advanced programmers that you do not intend.</li>
+      <li>You may string words together to make a helpful variable name.
+           <ul>
+            <li><c>momAge</c> This is called "camel case" because the capital letters create humps (like on a camel).</li>
+            <li><c>mom_age</c> This is called "snake case" because the words are connected like a snake.</li>
+            <li>Warning - Variable names can never contain spaces.</li>
+           </ul>
+      </li>
+      <li>Single letter variable names are generally not a good idea.</li>
+    </ol>
+  </p>
+  
+  <note><p>Although it is legal to start a variable name with an uppercase letters, by convention we don't. Beginning a variable 
+    name with capital letter implies something about data types that will be introduced in a later chapter. </p>
+  </note>
+  <note> <p>There are some situations in which names beginning with an underscore have special meaning, so a safe rule for
+    beginners is to start all names with a lower-case letter.</p>
+  </note>
+  <p>If you give a variable an illegal name, you get a syntax error. In the code below, each
     of the variable names is illegal.</p>
   <pre>76trombones = "big parade"
 more$ = 1000000

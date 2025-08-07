@@ -5,17 +5,21 @@
   <p>
     <ul>
       <li>
-        <p>literals, like numbers and character strings</p>
+        <p>variables, which are labels for values</p>
       </li>
+      <li>
+        <p>literals, like numbers and character strings which cannot change</p>
+      </li>
+      <li>
+        <p>date types, which describes the kind of data of a value</p>
+      </li>      
       <li>
         <p>operators, like <c>+</c> and <c>*</c></p>
       </li>
       <li>
-        <p>function calls, which take values as inputs and compute new values</p>
+        <p>function calls, specifically <c>print()</c> and <c>input()</c> which perform actions</p>
       </li>
-      <li>
-        <p>variables, which save values so they can be used later in the program</p>
-      </li>
+      
     </ul>
   </p>
   <p>These are the basic building blocks that are assembled to create programs that you interact with everyday&#x2014;from the software running on your smartwatch, to the infrastructure behind the largest websites, and every app running on your phone.</p>
@@ -24,10 +28,10 @@
     <p>
       <ul>
         <li>
-          <p>To understand Python's storage model</p>
+          <p>To recognize a value's data type</p>
         </li>
         <li>
-          <p>To solve problems using the &#x2018;accumulator pattern'</p>
+          <p>To understand mathematical operators in Python</p>
         </li>
         <li>
           <p>To understand operator precedence</p>
@@ -41,23 +45,20 @@
       </ul>
     </p>
   </subsection>
+  <!--
   <subsection xml:id="simple-python-data_objectives">
     <title>Objectives</title>
     <p>
       <ul>
         <li>
-          <p>Given some sample code identify variables that reference an object of a particular type</p>
+          <p>Given some sample code identify variables that reference values of a particular type</p>
         </li>
         <li>
-          <p>Given a variable of one type convert it to another</p>
+          <p>Given a variable of one type convert it to another (casting)</p>
         </li>
         <li>
           <p>Simulate evaluation of an expression and assignment statement</p>
         </li>
-        <li>
-          <p>Use reassignment to increment a variable (accumulator pattern)</p>
-        </li>
-        <li>
           <p>Get input from a user and convert the input to the appropriate type</p>
         </li>
         <li>
@@ -74,5 +75,5 @@
         </li>
       </ul>
     </p>
-  </subsection>
+  </subsection> -->
 </section>

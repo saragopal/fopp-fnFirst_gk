@@ -60,7 +60,7 @@
     
     </p>
 
-<datafile label="olympics.txt" filename="olympics.txt">
+<datafile label="olympics_readingcsv.txt" filename="olympics.txt">
 <pre>
 Name,Sex,Age,Team,Event,Medal
 A Dijiang,M,24,China,Basketball,NA

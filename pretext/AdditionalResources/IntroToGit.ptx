@@ -91,9 +91,7 @@
             download Git from <url href="https://git-scm.com/downloads" visible="https://git-scm.com/downloads">git-scm.com/downloads</url>.
             Once you have Git installed, you can clone a repository by running the following
             command: </p>
-        <pre>
-            <code class="language-bash">git clone &lt;YOUR_REPOSITORY_URL&gt;</code>
-        </pre>
+        <pre>git clone &lt;YOUR_REPOSITORY_URL&gt;</pre>
         <p> You can find the URL for your repository by selecting the <code>Code</code> button on
             your repository's page on GitHub, and then selecting the <code>HTTPS</code> option. All
             Git repositories hosted on GitHub end in <code>.git</code>. </p>
@@ -106,29 +104,17 @@
             given point in time. A commit is a way to save your work, and it allows you to revert
             back to that point in time if you make a mistake. </p>
         <p> To stage a file, you can run the following command: </p>
-        <pre>
-            <code class="language-bash">git add &lt;FILE&gt;</code>
-        </pre>
+        <pre>git add &lt;FILE&gt;</pre>
         <p> To stage all of the files in your repository, you can run the following command: </p>
-        <pre>
-            <code class="language-bash">git add .</code>
-        </pre>
+        <pre>git add .</pre>
         <p> In order to
             verify that the files have been staged, you can run the following command: </p>
-        <pre>
-            <code class="language-bash">
-                git status
-            </code>
-        </pre>
+        <pre>git status</pre>
         <p> This will show you all of the files that have been staged, as well as all of the files
             that have been modified since the last commit. </p>
         <p> Once you have staged all of the files that you want to include in your commit, you can
             run the following command to create a commit: </p>
-        <pre>
-            <code class="language-bash">
-                git commit -m "YOUR COMMIT MESSAGE"
-            </code>
-        </pre>
+        <pre>git commit -m "YOUR COMMIT MESSAGE"</pre>
         <p> The commit message should be a short description of the changes that you made. If you'd
             like to add a second line to your commit message, you can tag on the <code>-m</code>
             flag again, followed by another message. </p>
@@ -139,11 +125,7 @@
             <term>Pushing</term> a commit means uploading the commit to the repository on GitHub.
             This allows others to see the changes that you've made. </p>
         <p> To push a commit, you can run the following command: </p>
-        <pre>
-            <code class="language-bash">
-                git push
-            </code>
-        </pre>
+        <pre>git push</pre>
         <p> Up to this point outlines the basic workflow for working with Git. You can make changes
             to the files in your repository, stage the files that you want to include in your
             commit, create a commit, and then push the commit to GitHub. </p>
@@ -152,11 +134,7 @@
             from GitHub. This allows you to see the changes that others have made, and it allows you
             to work on the latest version of the code. </p>
         <p> To pull changes from GitHub, you can run the following command: </p>
-        <pre>
-            <code class="language-bash">
-                git pull
-            </code>
-        </pre>
+        <pre>git pull</pre>
         <note>
             <title>
                 Rule of Thumb

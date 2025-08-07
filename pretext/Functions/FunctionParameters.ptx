@@ -1,13 +1,94 @@
 <?xml version="1.0"?>
 <section xml:id="functions_function-parameters">
   <title>Function Parameters</title>
-  <p>Named functions are very useful because, once they are defined and we understand what they do, we can
+  <p>Remember that functions are very useful because, once they are defined and we understand what they do, we can
     refer to them by name and no longer have to think too much about their inner workings. The functions then can be treated as
-    separate tools that we can use repeatedly and in conjunction with other functions to solve a larger <em>decomposed</em> problem.</p>
-  <p>With parameters, functions are even more powerful,
-    because they allow us to generalize a function's actions so that it can do the same thing on each invocation, 
-    but with different starting values. With parameters our functions becomes <em>adjustable</em> tools that can be resused to solve different
-    problems.</p>
+    separate tools that we can use repeatedly and in conjunction with other functions to solve a larger <em>decomposed</em> problem.
+</p>
+<p>If we can give values to a function so it can perform its task in a more customized way, they are even more powerful. Doing 
+   so allows us to generalize a function's actions so that it can do the same thing each time it is called/invoked, 
+    but with different starting values. </p>
+<p>The function <c>feet_to_miles()</c>below implements the calculation of a formula. It expects a value when it is called and uses
+   the value to calculate its result. The formula is always the same, but it used whatever number it is given. 
+</p>
+
+<program xml:id="ac4_5_1_params" interactive="activecode" language="python">
+  <input>
+  def feet_to_miles(ft):
+      miles = ft / 5280
+      miles = round(miles, 1)
+      print(ft, "feet is", miles, "miles.")
+
+  feet_to_miles(10560)
+  feet_to_miles(30000)
+  </input>
+</program>
+
+<p>Let us revisit <term>"The GK Golden Rules for Calling Functions"</term> with a focus on Rule #3 &#8212;</p>
+<p>
+  <table>
+    <tabular>
+      <row>
+        <cell>
+          (1) In order to use a function we have to call it.
+        </cell>
+      </row>
+      <row>
+        <cell>
+          (2) When we call a function, we always put a pair of parentheses after the name of the function.
+        </cell>
+      </row>
+      <row>
+        <cell>
+          <term>(3) The type and number of values that belong in the parentheses in a function call (arguments) must match the 
+          rules for the function signature (parameters)</term>.
+        </cell>
+      </row>
+      <row>
+        <cell>
+          (4) If the function returns a value, we must capture it into a variable with an assignment statement (or
+           use the value in some other way, like print it).
+        </cell>
+      </row>
+    </tabular>
+  </table>
+</p>
+<p>The signature (first line) for the definition of <c>feet_to_miles()</c> is different from <c>say_hello()</c> in the previous sections because 
+the paretheses are not empty. Specifically, there is a variable called <c>ft</c> mentioned. When this function <c>feet_to_miles()</c> executes, it uses 
+ <c>ft</c> to generate a new numeric value (called "miles"). Depending on the value passed into <c>ft</c>, a different resulting value for <c>miles</c> is
+ calculated and displayed to the screen.</p>
+ <p>A <term>parameter</term> is a variable that is introduced to a function in the signature (in the parentheses). Parameters get their initial
+ value when the function is called.</p>
+<p> How does the function know what value to use for its parameter called <c>ft</c>? Notice that the function calls (lines 6 and 7) each have a numeric value inside the 
+  parentheses. This value is mapped to the parameter <c>ft</c>, like an invisible assignment statement.
+</p>
+
+<p>Here are some function that require one value (or more) from the caller:</p>
+<program xml:id="ac4_5_2_params" interactive="activecode" language="python">
+  <input>
+  def hello2(name):
+    print("Hello,", name)
+    print("I hope you have an excellent day!")
+
+  def hello3(name, age):
+    print("Hello,", name)
+    print("On your next birthday, you will turn", age + 1)
+
+  hello2("Amalia")
+  hello2("Tedwin")
+  hello3("Timo", 17)
+  </input>
+</program>
+
+<p> Notice that the signature for <c>hello2()</c> has one paremeter (variable name in the parentheses). The function call
+  on line 9 assigns "Amalia" to <c>name</c>. The function call on line 10 assigns <c>name</c> to the value 
+  "Tedwin". Also, tell yourself "<c>name</c> is a <term>parameter</term>." </p>
+
+<p>The function <c>say_hello3()</c> has a different signature. Specifically, there are <em>two</em> parameters. This implies that 
+calls to this function must include <em>two</em> values in the parantheses of the function call. On line 11, there is a call 
+to <c>say_hello3()</c> and there are two values sent to the function. The first one gets mapped to <c>name</c> and the 
+second one gets mappted to <c>age</c>. This is the behavior you would expect and we can be grateful that it works this way.</p>  
+<!--    
   <p>The figure below shows a function's relationship with its parameters. A function needs certain information to do its specific work.
     These values, often called <term>arguments</term>, <term>actual parameters</term> or <term>parameter
     values</term>, are <em>passed</em> to the function by the code that invokes the function.</p>
@@ -308,7 +389,7 @@
       </choice>
     </choices>
   </exercise>
-  <!-- <exercise label="question11_3_x">
+  <exercise label="question11_3_x">
     <statement>
       <p>True or false: A function can be called several times by placing a function call in the
         body of a for loop.</p>
@@ -333,7 +414,7 @@
         </feedback>
       </choice>
     </choices>
-  </exercise> -->
+  </exercise> 
   <exercise label="question4_4_5">
     <statement>
       <p>What output will the following code produce?</p>
@@ -386,4 +467,5 @@
       </choice>
     </choices>
   </exercise>
+-->
 </section>

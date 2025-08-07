@@ -1,20 +1,19 @@
 <?xml version="1.0"?>
 <section xml:id="simple-python-data_operators-and-operands">
   <title>Operators and Operands</title>
-  <p>You can build complex expressions out of simpler ones using <term>operators</term>. Operators are special tokens that represent computations like addition,
-            multiplication and division. The values the operator works on are called
-            <term>operands</term>.</p>
-  <p>The following are all legal Python expressions whose meaning is more or less
-            clear:</p>
+  <p>One meaninful thing that programs can do is arithmetic calculations. Most arithmetic operations occur in Python (and most programming languages) 
+    in ways that you would expect. You can build complex expressions out of simpler ones using <term>operators</term>. Operators are special 
+    tokens (symbols) that represent computations like addition, multiplication and division. </p>
+  <p>The following are all legal Python expressions whose meaning is more or less clear:</p>
   <pre>20 + 32
+16 - 99    
 5 ** 2
 (5 + 9) * (15 - 7)</pre>
-  <p>The tokens <c>+</c>, <c>-</c>, and <c>*</c>, and the use of parentheses for grouping,
-            mean in Python what they mean in mathematics. The asterisk (<c>*</c>) is the
-            token for multiplication, and <c>**</c> is the token for exponentiation.
-            Addition, subtraction, multiplication, and exponentiation all do what you
-            expect.</p>
-  <p>Remember that if we want to see the results of the computation, the program needs to specify that with the word <c>print</c>. The first three computations occur, but their results are not printed out.</p>
+  <p>The tokens <c>+</c>, <c>-</c>, and <c>*</c>, and the use of parentheses for grouping, mean in Python what they mean in 
+    mathematics. The asterisk (<c>*</c>) is the token for multiplication, and <c>**</c> is the token for exponentiation. 
+    Addition, subtraction, multiplication, and exponentiation all do what you expect.</p>
+  <p>Remember that if we want to see the results of the computation, the program needs to specify that with <c>print()</c>. In the 
+    code below, the first three computations occur, but their results are not printed out.</p>
   <program xml:id="ac2_3_1" interactive="activecode" language="python">
     <input>
 20 + 32
@@ -23,42 +22,87 @@
 print(7 + 5)
         </input>
   </program>
-  <p>In Python 3, which we will be using, the division operator <c>/</c> produces a floating point result (even if the result is an integer; <c>4/2</c> is <c>2.0</c>). If you want truncated division, which ignores the remainder, you can use the <c>//</c> operator (for example, <c>5//2</c> is <c>2</c>).</p>
+  <p><term>Three Kinds of Division</term> </p>
+  <p>Doing division in Python (or any programming language) requires further explanation. To understand why, consider
+    the result of <c>21 &#247; 5</c>. The precise result is 4.2, which is a <em>float</em>. But the operands of this quotient (division operation)
+    are integers, so maybe the result should be 4, since there are four 5's in 21. This may be a desired result in some instances, but information is
+    lost regarding the remainder. (Is there a remainder? What is is?) We can see that the result of <c>24 &#247; 5</c> would be the same as the 
+    <c>21 &#247; 5</c> if we were to focus on just the <em>whole number</em> part of a quotient. </p>
+    <p>Consequently, Python (and most programming languages) has three options for division! To explore them, run the code 
+      below and make meaning of the results. Observe the <em>actual values</em> and also the <em>data type</em> of each result.</p>
   <program xml:id="ac2_3_2" interactive="activecode" language="python">
     <input>
-print(9 / 5)
-print(5 / 9)
-print(9 // 5)
+print(21 / 5)
+print(21 // 5)
+print(21 % 5)
         </input>
   </program>
-  <p>Pay particular attention to the examples above. Note that <c>9//5</c> truncates rather than rounding, so it produces the value 1 rather 2.</p>
-  <p>The truncated division operator, <c>//</c>, also works on floating point numbers. It truncates to the nearest integer, but still produces a floating point result. Thus <c>7.0 // 3.0</c> is <c>2.0</c>.</p>
-  <program xml:id="ac2_3_3" interactive="activecode" language="python">
+  <!-- DECIMAL DIVISION-->
+  <p><term>(1)</term> FLOATING POINT division using <c>/</c> generates the precise result of a quotient (division operation). The result is
+    a <term>float</term> regardless of the data types of the operands (int, float, or one of each). Observe the results of these examples:
+  </p>
+  <program xml:id="ac2_3_3a" interactive="activecode" language="python">
+    <input>
+print(30 / 5)      # int / int
+print(16.4 / .6)   # float / float
+print(14.4 / 3)    # float / int 
+#what about int / float? You try it on the next line!  
+        </input>
+  </program>
+  
+  <!-- INTEGER DIVISION-->
+  <p><term>(2)</term> INTEGER division using <c>//</c> (you can say "slash slash" or "double slash") generates the whole number part of 
+    division with two integer operands. The result is an <term>int</term> when both operands are integers. (and the result is a float when
+    the operands are floats, but you will probably never see/use it!). Remember, <c>//</c> will <em>truncate</em> any remainder of integer division.
+    (There is no rounding!) 
+  </p>
+  <program xml:id="ac2_3_3b" interactive="activecode" language="python">
+    <input>
+print(30 // 5)      # int / int
+print(34 // 5)      # float / float
+print(14.4 % 3)    # float / int   
+        </input>
+  </program>  
+  
+  <!-- MODULO DIVISION-->
+   <p>So, what happens to the <em>remainder</em> of integer division?! Luckily, there is a <em>third</em> kind of division:</p>
+  <p><term>(3)</term> MODULAR division (sometimes called <em>remainder operator</em> or <em>integer remainder operator</em>)using <c>%</c> 
+    generates the remainder part of integer division. The result is an <term>int</term> when both operands are integers. (We sometimes call 
+    this the "mod" operator. "Thirty mod five") 
+  </p>
+  <program xml:id="ac2_3_3c" interactive="activecode" language="python">
+    <input>
+print(30 % 5)
+print(34 % 5)
+print(100 % 20)
+print(107 % 20)
+        </input>
+  </program>  
+<p>The modulus operator turns out to be surprisingly useful. You can&#x2014;
+  <ul>
+    <li>Check whether one number is divisible by another. If <c>x % y</c> is zero, then
+      <c>x</c> is divisible by <c>y</c>.</li>
+    <li>Extract the right-most digit or digits from a number. For example, <c>x % 10</c> 
+      yields the right-most digit of <c>x</c> (in base 10). Similarly <c>x % 100</c> yields the last two digits.</li>
+    </ul>
+  </p>    
+  <p>Remember that when you are using division in your programs, you choose among <c>/</c>, <c>//</c>, and <c>%</c> intentionally so that you
+  arrive at the outcome(s) you expect.</p>
+  <p> Can you predict the (1)result and (2) data type of each quotient (division calculation) below before executing them?</p>
+  <program xml:id="ac2_3_4" interactive="activecode" language="python">
     <input>
 print(7.0 / 3.0)
 print(7.0 // 3.0)
+print(7 / 3)
+print(7 // 3)
+print(7 % 3)
         </input>
   </program>
-  <p xml:id="simple-python-data_modulus-operator">The <term>modulus operator</term>, sometimes also called the <term>remainder operator</term> or <term>integer remainder operator</term> works on integers (and integer expressions) and yields
-            the remainder when the first operand is divided by the second. In Python, the
-            modulus operator is a percent sign (<c>%</c>). The syntax is the same as for other
-            operators.</p>
-  <program xml:id="ac2_3_4" interactive="activecode" language="python">
-    <input>
-print(7 // 3)    # This is the integer division operator
-print(7 % 3)     # This is the remainder or modulus operator
-        </input>
-  </program>
+  
   <p>In the above example, 7 divided by 3 is 2 when we use integer division and there is a remainder of 1.</p>
-  <p>The modulus operator turns out to be surprisingly useful. For example, you can
-            check whether one number is divisible by another&#x2014;if <c>x % y</c> is zero, then
-            <c>x</c> is divisible by <c>y</c>.
-            Also, you can extract the right-most digit or digits from a number.  For
-            example, <c>x % 10</c> yields the right-most digit of <c>x</c> (in base 10).
-            Similarly <c>x % 100</c> yields the last two digits.</p>
-  <p>
+  
     <term>Check your understanding</term>
-  </p>
+  
   <exercise label="question2_3_1">
     <statement>
       <p>What value is printed when the following statement executes?</p>

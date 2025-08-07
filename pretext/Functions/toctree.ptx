@@ -6,10 +6,12 @@
         </introduction>
 
     <xi:include href='./intro-Functions.ptx' />
-    <xi:include href='./FunctionDefinitions.ptx' />
+    <xi:include href='./FunctionsWeKnow.ptx' />
     <xi:include href='./FunctionInvocation.ptx' />
+    <xi:include href='./BasicFunctionSyntax.ptx' />
     <xi:include href='./FunctionParameters.ptx' />
     <xi:include href='./Returningavaluefromafunction.ptx' />
+    <xi:include href='./FunctionDefinitions.ptx' />
     <xi:include href='./DecodingaFunction.ptx' />
     <xi:include href='./TypeAnnotations.ptx' />
     <xi:include href='./Variablesandparametersarelocal.ptx' />

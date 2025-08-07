@@ -23,8 +23,8 @@
     question is no, you're probably hard- coding, which you should avoid &#x2013; and there's
     probably at least a slightly more concise way to construct your answer!</p>
   <p>For example, in this following code, if you're asked in an exercise to create a variable <c>zx</c>
-    and assign it the value of the sum of the value of <c>y</c> and the value of <c>x</c>, writing <c>zx
-    = 55</c> is <em>hard-coding</em>.</p>
+    and assign it the value of the sum of the value of <c>y</c> and the value of <c>x</c>, writing 
+    <c>zx = 55</c> is <em>hard-coding</em>.</p>
   <program xml:id="hard_coding_example" interactive="activecode" language="python">
     <input>
       x = 20
@@ -35,13 +35,13 @@
   <p>The operation <c>20 + 35</c> may be easy math to do in your head or with a calculator, but when
     you learn to program, you want to train yourself to notice useful patterns of how to solve
     problems, which will make your life easier (perhaps beyond programming, even).</p>
-  <p>The correct way to answer that sort of exercise would be to write: <c>zx = y + x</c> (or <c>zx
-    = x + y</c>, as you were just reminded of the order of operations). That is not hard-coding, and
+  <p>The correct way to answer that sort of exercise would be to write: <c>zx = y + x</c> 
+    (or <c>zx = x + y</c>, as you were just reminded of the order of operations). That is not hard-coding, and
     it will be correct no matter what the values of <c>x</c> and <c>y</c> are.</p>
   <p>In the code above, if the value of <c>x</c> were <c>40</c>, <c>55</c> would not be the correct
     value for <c>zx</c> to have. But <c>zx = y + x</c> would still be absolutely correct.</p>
   <p>Try as much as you can not to rely on your brilliant but fallible human brain to do <em>
     computation</em> when you program &#x2013; use your brain to determine how to write the correct
-    code to solve the problem for you! That's why we require you to avoid hard -coding for most
+    code to solve the problem for you! That's why we require you to avoid hard-coding for most
     exercises in this book.</p>
 </section>

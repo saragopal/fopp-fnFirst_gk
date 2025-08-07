@@ -1,15 +1,18 @@
 <?xml version="1.0"?>
 <section xml:id="functions_introduction-to-functions">
   <title>Introduction to Functions</title>
-  <p>In Python, a <term>function</term> is a chunk of code that performs a specific operation that is a
+  <p>Functions are one of the most important structures of any modern programming language. A <term>function</term> is a block of code that 
+    performs a specific task. The name of a function is the label given to the chunk of code. To request that the block of code is executed,
+    we "call" or "invoke" the function by putting its name in our code. </p>
+    
+    <p>A <term>function</term> is a chunk of code that performs a specific operation. It is usually a
     meaningful and self-contained part of a larger problem, such as calculating a student's GPA
     in a learning system or responding to the jump action in a video game. Once a function has been
-    defined and you are satisfied that it does what it is supposed to do, it is useful to start thinking
-    about it in terms of the larger operation that it performs rather than the specific lines of
-    code that make it work.</p>
+    defined and you are satisfied that it does what it is supposed to do, you and other programmers can use it in the context of larger tasks without
+     concern for how it works.</p>
   <p>In computer programming, this breaking down of a task or problem into smaller, solveable, sub-functions, is called <term>decomposition</term>
   and the idea of hiding the complexity of the sub-steps of the algorithm in a function is called <term>abstraction</term>.
-  Learning how to do both of these problem solving techniques is crucial to the successful implementation of any
+  Learning to use and apply these problem-solving techniques is crucial to the successful implementation of any
     program of more than 50 or so lines (and plenty of smaller ones too). For example, the programmer who coded the Instagram landing page
     decomposed it into functions that:</p>
   <p>

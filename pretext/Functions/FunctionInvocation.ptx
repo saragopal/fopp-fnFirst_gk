@@ -1,69 +1,76 @@
 <?xml version="1.0"?>
 <section xml:id="functions_function-invocation">
-  <title>Function Invocation</title>
-  <p>Defining a new function does not make the function run. To execute the function, we need a <term>function
-    call</term>. This is also known as a <term>function invocation</term>.</p>
-  <note>
-    <p>This section is a review of something we learned in the beginning of the textbook.</p>
-  </note>
-  <p>The way to invoke a function is to refer to it by name, followed by parentheses. Since there
-    are no parameters for the function hello, we won't need to put anything inside the parentheses when we call it.</p>
-  <p><em> Once we've defined a function, we can call it as often as we like and its statements will 
-    be executed each time we call it.</em></p>
-  <program xml:id="clens4_3_1" interactive="codelens" language="python">
+  <title>Writing and Calling Basic Functions</title>
+
+<p>The following set of rules <term>"The GK Golden Rules for Calling Functions"</term> will guide our understanding of functions. </p>
+<p>
+  <table>
+    <tabular>
+      <row>
+        <cell>
+          (1) In order to use a function we have to call it.
+        </cell>
+      </row>
+      <row>
+        <cell>
+          (2) When we call a function, we always put a pair of parentheses after the name of the function.
+        </cell>
+      </row>
+      <row>
+        <cell>
+          (3) The type and number of values (<em>arguments</em>)that belong in the parentheses must match the 
+          rules for the function (<em>parameters</em>).
+        </cell>
+      </row>
+      <row>
+        <cell>
+          (4) If the function returns a value, we must capture it into a variable with an assignment statement (or
+           use the value in some other way, like print it).
+        </cell>
+      </row>
+    </tabular>
+  </table>
+ </p>
+  <p>Rule #1 seems obvious, but it's a good starting place for examining a user-defined function.</p>
+  <p><term>(1) In order to use a function we have to call it.</term></p>  
+
+  <p>The code below contains a function called "say_hello" that will display two lines of text to the screen. </p>
+<program xml:id="ac4_3_1" interactive="activecode" language="python" label="ac2_4_1">
     <input>
-      def hello() -&gt; None:
-          """Illustrative function that requires no parameters
-          and merely displays to screen."""
-          print("Hello")
-          print("Glad to meet you")
+      def say_hello():
+        print("Hello, world")
+        print("Have a great day!")
 
-      print(type(hello))
-      print(type("hello"))
 
-      hello()
-      print("Hey, that just printed two lines with one line of code!")
-      hello() # do it again, just because we can...
+
     </input>
   </program>
-  <p>Let's take a closer look at what happens when you define a function and when you execute the
-    function.
-    Try stepping through the code above.</p>
-  <p>First, note that in Step 1, when it executes line 1, it does <em>not</em> execute lines 2 and
-    3. Instead, as you can see in blue <q>Global variables</q> area, it creates a variable named
-    hello whose value is a Python object of the 'function' class. In the diagram that object is labeled hello()
-    with a notation above it that it is a function.</p>
-  <p>At Step 2, the next line of code to execute is line 5. Just to emphasize that hello is a
-    variable like any other, and
-    that functions are Python objects like any other, just of a particular type, line 5 prints out
-    the type of the object
-    referred to by the variable hello. It's type is officially &#x2018;function'.</p>
-  <p>Line 6 is just there to remind you of the difference between referring to the variable name
-    (function name) hello and referring to the string <q>hello</q>. When we print a string's type, we see it is of the 'str' class.</p>
-  <p>At Step 4 we get to line 8, which has an <em>invocation of the function</em>. When  a function is <em>called</em> (or <em>invoked</em> by a line of code,
-    the lines of code inside the function's body are executed in the usual way,
-    <em>but at the end of the function's code block</em>, the program's execution jumps back to line of code just
-    after the function invocation.</p>
-  <p>You can see that by following the next few steps. At Step 5, the green arrow indicates the 'line that just executed', aka the function's invocation, 
-  and the red arrow shows us the 'next line to execute' which has moved to the function. We say that <em>control has passed</em> 
-  from the top-level program (not 'top' as in the 'top of the code' but as in top-hierarchial level) to
-    the function hello. After Steps 5 through 7 print out two lines, at Step 8, control will be passed
-    back to the point after where the invocation was started. By Step 9, that has happened.</p>
-  <p>The same process of invocation occurs again on line 10, with the function's body (lines 2 and 3) getting executed a
-    second time.</p>
-  <note>
-    <title>Common Mistakes with Functions</title>
-    <p>There are two common mistakes beginners tend to make:</p>
+
+  <p>When you run this code, it appears that <em>nothing happens</em>! The function "say_hello" is defined, but it is not <em>called</em>. Just as print() or 
+  input() are defined behind the scenes for all Python programs, they don't <em>do their job</em> unless they are called. That is, defining a function does not 
+  make it run. To execute the function, we need to <term>call</term> or <term>invoke</term> it.</p> 
+  <p>Make these changes to the code above 
     <ol>
-    <li>They tend to forget the pair of <em>parentheses after the function name</em>.
-      This is particularly common in the function that do not require parameters. Because the hello function defined
-      above does not
-      require parameters, it's easy to forget the parentheses. This is less common, but still
-      possible, when trying to
-      call functions that require parameters.</li>
-      <li>They tend to overlook the <em>indentation</em> that separates the function's body code from the code that invokes the function. </li>
+      <li>Type the instruction <c>say_hello()</c> on line 4 and you can see the function run and generate output.</li>
+      <li>Insert additional calls to say_hello on lines 5, 6, etc. <em> Once we've defined a function, we can call 
+        it as often as we like and its statements will be executed each time we call it.</em></li>
       </ol>
-  </note>
+  </p> 
+
+  <note><p>A novice programmer will spend their time and energy developing an algorithm and writing the necessary code to 
+    implement the algorithm in a function, as they should. Subsequently, the programmer will debug their code until the Python interpreter
+   makes no complaints. Then, when they run the code, nothing happens. Remember <term>GK Golden Rule #1</term> ... call your function!
+  </p></note>
+
+  <p>The name of the function above is "say_hello" but we must include parentheses <c>()</c> after the name. The parentheses are necessary because, 
+  without them, Python will try to reference a variable with this name, not a function. </p>
+  <p><term>(2) When we call a function, we always put a pair of parentheses after the name of the function.</term></p>
+  <p>Once you get in the habit of writing parentheses, this rule will seem trivial.</p>
+  
+  <p>This section and the previous discusses <em>calling</em> functions. We have covered calling functions that are built into Python, 
+    such as <c>type()</c> and <c>input()</c>. This section focuses on calling functions that are written by a programmer (<em>you</em> are the
+    programmer!). In the next section, we'll take an intial look at the syntax (grammer rules) for writing a function from scratch.
+  </p>
   <p>
     <term>Check your understanding</term>
   </p>
@@ -253,4 +260,5 @@
       </choice>
     </choices>
   </exercise>
+
 </section>

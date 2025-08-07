@@ -17,14 +17,10 @@
             When a conflict occurs, Git will mark the file with conflict markers. These markers
             look like this:
         </p>
-        <pre>
-                <code>
-                &lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
-                This is the original text.
-                &gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; 77976da35a11db4580b80ae27e8d65caf5208086
-                This is the modified text.
-                </code>
-            </pre>
+        <pre>&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
+This is the original text.
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; 77976da35a11db4580b80ae27e8d65caf5208086
+This is the modified text.</pre>
         <p> The text between the <c>&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD</c> and <c>=======</c>
             markers is the original text. The text between the <c>=======</c> and <c>&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;77976da35a11db4580b80ae27e8d65caf5208086</c> markers is the modified text. You will need
             to manually edit the file to resolve the conflict. Once you have resolved the conflict,
@@ -45,26 +41,14 @@
         </p>
         <p> To create a branch, use the <c>git branch</c> command. For example, to create a branch
             named <c>feature</c>, you would use the following command: </p>
-        <pre>
-            <code>
-            git branch feature
-            </code>
-        </pre>
+        <pre>git branch feature</pre>
         <p> To switch to a branch, use the <c>git checkout</c> command. For example, to switch to
             the <c>feature</c> branch, you would use the following command: </p>
-        <pre>
-            <code>
-            git checkout feature
-            </code>
-        </pre>
+        <pre>git checkout feature</pre>
         <p> To create a branch and switch to it at the same time, use the <c>git checkout</c>
             command with the <c>-b</c> option. For example, to create a branch named <c>feature</c>
             and switch to it, you would use the following command: </p>
-        <pre>
-            <code>
-            git checkout -b feature
-            </code>
-        </pre>
+        <pre>git checkout -b feature</pre>
     </subsection>
     <subsection xml:id="advanced-git_merging">
         <title>Merging Branches</title>
@@ -77,11 +61,7 @@
         <p> To merge a branch into the current branch, use the <c>git merge</c> command. For
             example, to merge the <c>feature</c> branch into the current branch, you would use the
             following command: </p>
-        <pre>
-            <code>
-            git merge feature
-            </code>
-        </pre>
+        <pre>git merge feature</pre>
         <p>
             When you merge a branch into the current branch, Git will automatically merge changes
             when possible. When it cannot, it will mark the file as having a conflict. When this
@@ -97,11 +77,7 @@
             resolve the conflict.
         </p>
         <p> To rebase a branch, use the <c>git rebase</c> command. For example, to rebase the <c>feature</c> branch onto the <c>master</c> branch, you would use the following command: </p>
-        <pre>
-            <code>
-            git rebase master
-            </code>
-        </pre>
+        <pre>git rebase master</pre>
         <p>
             When you rebase a branch, Git will automatically merge changes when possible. When it
             cannot, it will mark the file as having a conflict. When this happens, you will need to
@@ -118,10 +94,6 @@
         <p> To stash your changes, use the <c>git stash</c> command. To restore your changes, use
             the <c>git stash pop</c> command. For example, to restore your changes, you would use
             the following command: </p>
-        <pre>
-            <code>
-            git stash pop
-            </code>
-        </pre>
+        <pre>git stash pop</pre>
     </subsection>
 </section>

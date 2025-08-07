@@ -3,8 +3,7 @@
     <xi:include href="./bookinfo.ptx"/>
 
     <book xml:id="fopp-ff" permid="tcs">
-        <title>Foundations of Python Programming</title>
-        <subtitle>Functions First</subtitle>
+        <title>Foundations of Python Programming: Functions First</title>
         <xi:include href="./FrontBackMatter/front_toc.ptx" />
 
         <xi:include href="./GeneralIntro/toctree.ptx" />

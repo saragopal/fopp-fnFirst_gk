@@ -14,7 +14,7 @@
   <alert>None</alert> is not the same as 0, False, or an empty string (<c>""</c>). It is its own data type (<c>NoneType</c>). Some other computer languages use the term <c>null</c>.
   </note>
   
-  <program xml:id="ac4_2_1" interactive="activecode" language="python">
+  <program xml:id="ac4_2_1_alt" interactive="activecode" language="python">
     <input>
       def hello() -&gt; None:
           """This function says hello and greets you
